@@ -4,5 +4,6 @@ __pycache__/
 .openclaw/
 .clawhub/
 scripts/steam_data/daily_snapshots.json
+scripts/gaming_trends_data/daily_snapshots.json
 scripts/*_output.txt
 canvas/

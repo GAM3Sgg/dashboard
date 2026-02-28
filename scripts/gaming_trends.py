@@ -316,35 +316,75 @@ def fetch_steam_wishlisted():
 # ── IGDB data ─────────────────────────────────────────────────────────────────
 
 def fetch_upcoming_releases(client_id, token):
-    """Games releasing in the next 30 days via release_dates endpoint."""
+    """Games releasing in the next 30 days, sorted by IGDB hypes (anticipation).
+    Uses games endpoint with hypes field to surface notable titles first."""
     now = int(datetime.now().timestamp())
     future = int((datetime.now() + timedelta(days=30)).timestamp())
+
+    # Query games sorted by hypes (anticipation score) — only games with confirmed exact dates
     body = (
-        f"fields game.name,game.url,game.follows,game.total_rating,date,platform.name,human;"
-        f" where date >= {now} & date <= {future};"
-        f" sort date asc; limit 100;"
+        f"fields name,url,hypes,follows,total_rating,first_release_date,platforms.name;"
+        f" where first_release_date >= {now} & first_release_date <= {future} & hypes > 0;"
+        f" sort hypes desc; limit 50;"
     )
-    raw = igdb_post("release_dates", body, client_id, token)
-    seen = {}
-    results = []
-    for entry in raw:
-        game = entry.get("game", {})
-        name = game.get("name", "")
-        if not name or name in seen:
-            if name in seen and entry.get("platform"):
-                seen[name]["platforms"].append(entry["platform"])
+    games = igdb_post("games", body, client_id, token)
+    if not games:
+        return []
+
+    # Get human-readable dates + date_format from release_dates endpoint
+    # date_format: 0=YYYYMMDD (exact day), 1=YYYYMM (month), 2=YYYYQ (quarter), 3=YYYY, 4=TBD
+    game_ids = [str(g["id"]) for g in games]
+    ids_str = ",".join(game_ids)
+    rd_body = (
+        f"fields game,date,human,platform.name,date_format;"
+        f" where game = ({ids_str});"
+        f" limit 500;"
+    )
+    rd_raw = igdb_post("release_dates", rd_body, client_id, token)
+
+    rd_map = {}
+    for entry in rd_raw:
+        gid = entry.get("game")
+        if not gid:
             continue
-        item = {
-            "name": name,
-            "url": game.get("url", ""),
-            "follows": game.get("follows", 0) or 0,
-            "total_rating": game.get("total_rating"),
-            "date": entry.get("date"),
-            "human": entry.get("human", ""),
-            "platforms": [entry["platform"]] if entry.get("platform") else []
-        }
-        seen[name] = item
-        results.append(item)
+        if gid not in rd_map:
+            rd_map[gid] = {
+                "human": entry.get("human", ""),
+                "date_format": entry.get("date_format", 99),
+                "platforms": []
+            }
+        else:
+            # Keep the most precise date (lowest date_format number)
+            if entry.get("date_format", 99) < rd_map[gid]["date_format"]:
+                rd_map[gid]["human"] = entry.get("human", "")
+                rd_map[gid]["date_format"] = entry.get("date_format", 99)
+        if entry.get("platform"):
+            rd_map[gid]["platforms"].append(entry["platform"])
+
+    results = []
+    for g in games:
+        gid = g.get("id")
+        rd = rd_map.get(gid, {})
+        ts = g.get("first_release_date")
+        date_fmt = rd.get("date_format", 99)
+
+        # Only include games with confirmed exact dates (date_format 0 = YYYYMMDD)
+        if date_fmt != 0:
+            continue
+
+        human = rd.get("human", "")
+        if not human and ts:
+            human = datetime.fromtimestamp(ts).strftime("%b %d, %Y")
+        results.append({
+            "name": g.get("name", ""),
+            "url": g.get("url", ""),
+            "hypes": g.get("hypes", 0) or 0,
+            "follows": g.get("follows", 0) or 0,
+            "total_rating": g.get("total_rating"),
+            "date": ts,
+            "human": human,
+            "platforms": rd.get("platforms", g.get("platforms", []))
+        })
     return results
 
 def fetch_just_released(client_id, token):
@@ -595,9 +635,9 @@ def build_daily_report(client_id, token, today, snapshots, prev_viewers, prev_na
             meta = []
             if plats:
                 meta.append(plats)
-            follows = g.get("follows", 0)
-            if follows:
-                meta.append(f"{fmt_num(follows)} follows")
+            hypes = g.get("hypes", 0)
+            if hypes:
+                meta.append(f"{fmt_num(hypes)} hype")
             meta_str = f" — {' · '.join(meta)}" if meta else ""
             lines.append(f"  {date}: {link}{meta_str}")
         lines.append("")

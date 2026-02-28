@@ -1,0 +1,584 @@
+{
+  "updated": "2026-02-28T16:27:55.366708",
+  "report_date": "2026-02-28",
+  "top_streamed": [
+    {
+      "name": "RESIDENT EVIL: requiem",
+      "viewers": 177451,
+      "streams": 100,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/resident-evil-requiem"
+    },
+    {
+      "name": "Grand Theft Auto V",
+      "viewers": 130004,
+      "streams": 98,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/grand-theft-auto-v"
+    },
+    {
+      "name": "World of Warcraft",
+      "viewers": 80859,
+      "streams": 100,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/world-of-warcraft"
+    },
+    {
+      "name": "League of Legends",
+      "viewers": 81536,
+      "streams": 100,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/league-of-legends"
+    },
+    {
+      "name": "Counter-Strike",
+      "viewers": 67596,
+      "streams": 99,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/counter-strike"
+    }
+  ],
+  "breakout": [
+    {
+      "name": "VALORANT",
+      "viewers": 39667,
+      "streams": 99,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/valorant"
+    },
+    {
+      "name": "Dota 2",
+      "viewers": 24196,
+      "streams": 98,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/dota-2"
+    },
+    {
+      "name": "Overwatch",
+      "viewers": 22354,
+      "streams": 100,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/overwatch"
+    },
+    {
+      "name": "Marathon",
+      "viewers": 22326,
+      "streams": 98,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/marathon"
+    },
+    {
+      "name": "Apex Legends",
+      "viewers": 13872,
+      "streams": 100,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/apex-legends"
+    },
+    {
+      "name": "Fortnite",
+      "viewers": 12295,
+      "streams": 99,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/fortnite"
+    },
+    {
+      "name": "2XKO",
+      "viewers": 14308,
+      "streams": 35,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/2xko"
+    },
+    {
+      "name": "Dead by Daylight",
+      "viewers": 10806,
+      "streams": 100,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/dead-by-daylight"
+    },
+    {
+      "name": "Minecraft",
+      "viewers": 8524,
+      "streams": 100,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/minecraft"
+    },
+    {
+      "name": "ARC Raiders",
+      "viewers": 10978,
+      "streams": 91,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/arc-raiders"
+    },
+    {
+      "name": "Pokémon FireRed/LeafGreen",
+      "viewers": 11619,
+      "streams": 100,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/pokémon-firered/leafgreen"
+    },
+    {
+      "name": "World of Tanks",
+      "viewers": 12030,
+      "streams": 100,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/world-of-tanks"
+    },
+    {
+      "name": "Hearthstone",
+      "viewers": 11739,
+      "streams": 98,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/hearthstone"
+    },
+    {
+      "name": "EA Sports FC 26",
+      "viewers": 10582,
+      "streams": 99,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/ea-sports-fc-26"
+    },
+    {
+      "name": "Marvel Rivals",
+      "viewers": 9079,
+      "streams": 95,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/marvel-rivals"
+    },
+    {
+      "name": "Virtual Casino",
+      "viewers": 9937,
+      "streams": 24,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/virtual-casino"
+    },
+    {
+      "name": "Black Desert",
+      "viewers": 9864,
+      "streams": 100,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/black-desert"
+    },
+    {
+      "name": "Rocket League",
+      "viewers": 7880,
+      "streams": 98,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/rocket-league"
+    },
+    {
+      "name": "Megabonk",
+      "viewers": 8387,
+      "streams": 26,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/megabonk"
+    },
+    {
+      "name": "Teamfight Tactics",
+      "viewers": 7965,
+      "streams": 99,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/teamfight-tactics"
+    }
+  ],
+  "languages": {
+    "Arabic": [
+      {
+        "name": "Rainbow",
+        "viewers": 131
+      },
+      {
+        "name": "KovaaK's Aim Trainer",
+        "viewers": 105
+      },
+      {
+        "name": "A Way Out",
+        "viewers": 95
+      }
+    ],
+    "Chinese": [
+      {
+        "name": "RESIDENT EVIL: requiem",
+        "viewers": 27555
+      },
+      {
+        "name": "2XKO",
+        "viewers": 13546
+      },
+      {
+        "name": "League of Legends",
+        "viewers": 8198
+      }
+    ],
+    "English": [
+      {
+        "name": "RESIDENT EVIL: requiem",
+        "viewers": 34536
+      },
+      {
+        "name": "World of Warcraft",
+        "viewers": 31667
+      },
+      {
+        "name": "League of Legends",
+        "viewers": 12905
+      }
+    ],
+    "French": [
+      {
+        "name": "World of Warcraft",
+        "viewers": 6691
+      },
+      {
+        "name": "RESIDENT EVIL: requiem",
+        "viewers": 5490
+      },
+      {
+        "name": "League of Legends",
+        "viewers": 4688
+      }
+    ],
+    "German": [
+      {
+        "name": "World of Warcraft",
+        "viewers": 21714
+      },
+      {
+        "name": "RESIDENT EVIL: requiem",
+        "viewers": 10880
+      },
+      {
+        "name": "League of Legends",
+        "viewers": 6438
+      }
+    ],
+    "Italian": [
+      {
+        "name": "RESIDENT EVIL: requiem",
+        "viewers": 2264
+      },
+      {
+        "name": "Counter-Strike",
+        "viewers": 1063
+      },
+      {
+        "name": "Fortnite",
+        "viewers": 774
+      }
+    ],
+    "Japanese": [
+      {
+        "name": "Grand Theft Auto V",
+        "viewers": 111405
+      },
+      {
+        "name": "RESIDENT EVIL: requiem",
+        "viewers": 52564
+      },
+      {
+        "name": "VALORANT",
+        "viewers": 22545
+      }
+    ],
+    "Korean": [
+      {
+        "name": "League of Legends",
+        "viewers": 318
+      },
+      {
+        "name": "World of Warcraft",
+        "viewers": 80
+      },
+      {
+        "name": "Don't Starve Together",
+        "viewers": 52
+      }
+    ],
+    "Portuguese": [
+      {
+        "name": "Virtual Casino",
+        "viewers": 9271
+      },
+      {
+        "name": "Counter-Strike",
+        "viewers": 6290
+      },
+      {
+        "name": "Legend of YMIR",
+        "viewers": 2311
+      }
+    ],
+    "Russian": [
+      {
+        "name": "Counter-Strike",
+        "viewers": 39236
+      },
+      {
+        "name": "RESIDENT EVIL: requiem",
+        "viewers": 29350
+      },
+      {
+        "name": "Dota 2",
+        "viewers": 14556
+      }
+    ],
+    "Spanish": [
+      {
+        "name": "League of Legends",
+        "viewers": 12453
+      },
+      {
+        "name": "Albion Online",
+        "viewers": 2231
+      },
+      {
+        "name": "RESIDENT EVIL: requiem",
+        "viewers": 2028
+      }
+    ],
+    "Turkish": [
+      {
+        "name": "VALORANT",
+        "viewers": 969
+      },
+      {
+        "name": "Rise Online",
+        "viewers": 702
+      },
+      {
+        "name": "Knight Online",
+        "viewers": 700
+      }
+    ]
+  },
+  "wishlisted": [
+    {
+      "name": "Subnautica 2",
+      "steam_url": "https://store.steampowered.com/app/1962700",
+      "igdb_url": "https://www.igdb.com/games/subnautica-2",
+      "release_date": "TBA"
+    },
+    {
+      "name": "Deadlock",
+      "steam_url": "https://store.steampowered.com/app/1422450",
+      "igdb_url": "https://www.igdb.com/games/deadlock",
+      "release_date": "Aug 15"
+    },
+    {
+      "name": "Fire &amp; Light: Thrones of Tyberion",
+      "steam_url": "https://store.steampowered.com/app/2719590",
+      "igdb_url": "https://www.igdb.com/games/fire-and-light-thrones-of-tyberion",
+      "release_date": "TBA"
+    },
+    {
+      "name": "Slay the Spire II",
+      "steam_url": "https://store.steampowered.com/app/2868840",
+      "igdb_url": "https://www.igdb.com/games/slay-the-spire-ii",
+      "release_date": "TBA"
+    },
+    {
+      "name": "Forza Horizon 6",
+      "steam_url": "https://store.steampowered.com/app/2483190",
+      "igdb_url": "https://www.igdb.com/games/forza-horizon-6",
+      "release_date": "May 19"
+    },
+    {
+      "name": "Kingmakers",
+      "steam_url": "https://store.steampowered.com/app/2109770",
+      "igdb_url": "https://www.igdb.com/games/kingmakers",
+      "release_date": "TBA"
+    },
+    {
+      "name": "Crimson Desert",
+      "steam_url": "https://store.steampowered.com/app/3321460",
+      "igdb_url": "https://www.igdb.com/games/crimson-desert",
+      "release_date": "Mar 19"
+    },
+    {
+      "name": "Blight: Survival",
+      "steam_url": "https://store.steampowered.com/app/1774880",
+      "igdb_url": "https://www.igdb.com/games/blight-survival",
+      "release_date": "TBA"
+    },
+    {
+      "name": "Fable",
+      "steam_url": "https://store.steampowered.com/app/2769570",
+      "igdb_url": "https://www.igdb.com/games/fable-484f2a75-7a61-4dba-9952-7e70e6bd881b",
+      "release_date": "Dec 31"
+    },
+    {
+      "name": "Ark II",
+      "steam_url": "https://store.steampowered.com/app/2050420",
+      "igdb_url": "https://www.igdb.com/games/ark-ii",
+      "release_date": "TBA"
+    }
+  ],
+  "releasing": [
+    {
+      "name": "Crimson Desert",
+      "date": "Mar 19, 2026",
+      "platforms": "PS5 · PC · Mac · XSX",
+      "hypes": 232,
+      "igdb_url": "https://www.igdb.com/games/crimson-desert"
+    },
+    {
+      "name": "Marathon",
+      "date": "Mar 05, 2026",
+      "platforms": "PS5 · XSX · PC",
+      "hypes": 88,
+      "igdb_url": "https://www.igdb.com/games/marathon--2"
+    },
+    {
+      "name": "John Carpenter's Toxic Commando",
+      "date": "Mar 12, 2026",
+      "platforms": "PC · PS5 · XSX",
+      "hypes": 35,
+      "igdb_url": "https://www.igdb.com/games/john-carpenters-toxic-commando"
+    },
+    {
+      "name": "Screamer",
+      "date": "Mar 26, 2026",
+      "platforms": "PS5 · XSX · PC",
+      "hypes": 32,
+      "igdb_url": "https://www.igdb.com/games/screamer--1"
+    },
+    {
+      "name": "1348: Ex Voto",
+      "date": "Mar 12, 2026",
+      "platforms": "PS5 · XSX · PC",
+      "hypes": 27,
+      "igdb_url": "https://www.igdb.com/games/1348-ex-voto"
+    },
+    {
+      "name": "Fatal Frame II: Crimson Butterfly Remake",
+      "date": "Mar 12, 2026",
+      "platforms": "Switch 2 · PC · PS5 · XSX",
+      "hypes": 26,
+      "igdb_url": "https://www.igdb.com/games/fatal-frame-ii-crimson-butterfly-remake"
+    },
+    {
+      "name": "Planet of Lana II: Children of the Leaf",
+      "date": "Mar 05, 2026",
+      "platforms": "Switch 2 · PC · PS4 · PS5 · Switch",
+      "hypes": 22,
+      "igdb_url": "https://www.igdb.com/games/planet-of-lana-ii-children-of-the-leaf"
+    },
+    {
+      "name": "Scott Pilgrim EX",
+      "date": "Mar 03, 2026",
+      "platforms": "Switch · PC · Linux · PS4 · XSX",
+      "hypes": 20,
+      "igdb_url": "https://www.igdb.com/games/scott-pilgrim-ex"
+    },
+    {
+      "name": "Esoteric Ebb",
+      "date": "Mar 03, 2026",
+      "platforms": "PC",
+      "hypes": 20,
+      "igdb_url": "https://www.igdb.com/games/esoteric-ebb"
+    },
+    {
+      "name": "Pokémon Pokopia",
+      "date": "Mar 05, 2026",
+      "platforms": "Switch 2",
+      "hypes": 15,
+      "igdb_url": "https://www.igdb.com/games/pokemon-pokopia"
+    },
+    {
+      "name": "Monster Hunter Stories 3: Twisted Reflection",
+      "date": "Mar 13, 2026",
+      "platforms": "PS5 · PC · Switch 2 · XSX",
+      "hypes": 14,
+      "igdb_url": "https://www.igdb.com/games/monster-hunter-stories-3-twisted-reflection"
+    },
+    {
+      "name": "The Seven Deadly Sins: Origin",
+      "date": "Mar 16, 2026",
+      "platforms": "PS5 · iOS · PC · Android",
+      "hypes": 14,
+      "igdb_url": "https://www.igdb.com/games/the-seven-deadly-sins-origin"
+    }
+  ],
+  "just_released": [
+    {
+      "name": "Sunbreak War",
+      "igdb_url": "https://www.igdb.com/games/sunbreak-war",
+      "platforms": "PC"
+    },
+    {
+      "name": "The Town of Nowhere: End Of The Line",
+      "igdb_url": "https://www.igdb.com/games/the-town-of-nowhere-end-of-the-line",
+      "platforms": "PC"
+    },
+    {
+      "name": "Top Cop: Police Training",
+      "igdb_url": "https://www.igdb.com/games/top-cop-police-training",
+      "platforms": "Switch"
+    },
+    {
+      "name": "Glowfall Vale",
+      "igdb_url": "https://www.igdb.com/games/glowfall-vale",
+      "platforms": "Switch"
+    },
+    {
+      "name": "Pokémon Legends: Z-A: Additional Story Content",
+      "igdb_url": "https://www.igdb.com/games/pokemon-legends-z-a-additional-story-content",
+      "platforms": "Switch"
+    },
+    {
+      "name": "Dimensional Animals",
+      "igdb_url": "https://www.igdb.com/games/dimensional-animals",
+      "platforms": "XSX · XB1 · PS5 · PS4 · Switch"
+    },
+    {
+      "name": "Darkest Cube",
+      "igdb_url": "https://www.igdb.com/games/darkest-cube",
+      "platforms": "PC"
+    },
+    {
+      "name": "Night Clerk",
+      "igdb_url": "https://www.igdb.com/games/night-clerk--1",
+      "platforms": "PC"
+    },
+    {
+      "name": "Cozy Holes",
+      "igdb_url": "https://www.igdb.com/games/cozy-holes",
+      "platforms": "PC"
+    },
+    {
+      "name": "Peace Island",
+      "igdb_url": "https://www.igdb.com/games/peace-island",
+      "platforms": "PC · Mac · Linux"
+    }
+  ],
+  "history": {
+    "2026-02-28": {
+      "viewers": {
+        "RESIDENT EVIL: requiem": 177451,
+        "Grand Theft Auto V": 130004,
+        "World of Warcraft": 80859,
+        "League of Legends": 81536,
+        "Counter-Strike": 67596,
+        "VALORANT": 39667,
+        "Dota 2": 24196,
+        "Overwatch": 22354,
+        "Marathon": 22326,
+        "Apex Legends": 13872,
+        "Fortnite": 12295,
+        "2XKO": 14308,
+        "Dead by Daylight": 10806,
+        "Minecraft": 8524,
+        "ARC Raiders": 10978,
+        "Pokémon FireRed/LeafGreen": 11619,
+        "World of Tanks": 12030,
+        "Hearthstone": 11739,
+        "EA Sports FC 26": 10582,
+        "Marvel Rivals": 9079,
+        "Virtual Casino": 9937,
+        "Black Desert": 9864,
+        "Rocket League": 7880,
+        "Megabonk": 8387,
+        "Teamfight Tactics": 7965
+      }
+    }
+  }
+}

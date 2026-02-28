@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OG Gaming Dashboard</title>
+<style>
+:root {
+  --bg: #0d1117;
+  --card: #161b22;
+  --border: #30363d;
+  --text: #e6edf3;
+  --text-dim: #8b949e;
+  --accent: #58a6ff;
+  --green: #3fb950;
+  --red: #f85149;
+  --orange: #d29922;
+  --purple: #bc8cff;
+  --radius: 8px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+header h1 { font-size: 20px; font-weight: 600; }
+header .updated { font-size: 13px; color: var(--text-dim); }
+header .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--green); margin-right: 6px; }
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+}
+.tab {
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--text-dim);
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  transition: all 0.15s;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-family: inherit;
+}
+.tab:hover { color: var(--text); }
+.tab.active { color: var(--text); border-bottom-color: var(--accent); }
+
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+/* Grid */
+.grid { display: grid; gap: 16px; }
+.grid-2 { grid-template-columns: 1fr 1fr; }
+.grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+
+@media (max-width: 768px) {
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+}
+
+/* Cards */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+.card h2 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-dim);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.card h2 .icon { font-size: 14px; }
+
+/* Game list */
+.game-list { list-style: none; }
+.game-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  gap: 8px;
+}
+.game-item:last-child { border-bottom: none; }
+.game-rank {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-dim);
+  min-width: 24px;
+}
+.game-info { flex: 1; min-width: 0; }
+.game-name {
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.game-meta {
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-top: 2px;
+}
+.game-stats {
+  text-align: right;
+  white-space: nowrap;
+}
+.game-viewers {
+  font-size: 14px;
+  font-weight: 600;
+}
+.game-change {
+  font-size: 12px;
+  font-weight: 500;
+}
+.change-up { color: var(--green); }
+.change-down { color: var(--red); }
+.change-new { color: var(--orange); }
+
+/* Sparkline */
+.sparkline { display: inline-block; vertical-align: middle; }
+.sparkline svg { display: block; }
+
+/* Badge */
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  padding: 1px 6px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+.badge-green { background: rgba(63,185,80,0.15); color: var(--green); }
+.badge-red { background: rgba(248,81,73,0.15); color: var(--red); }
+.badge-orange { background: rgba(210,153,34,0.15); color: var(--orange); }
+.badge-purple { background: rgba(188,140,255,0.15); color: var(--purple); }
+.badge-blue { background: rgba(88,166,255,0.15); color: var(--accent); }
+
+/* Review bar */
+.review-bar {
+  height: 4px;
+  background: var(--red);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+.review-bar-fill {
+  height: 100%;
+  background: var(--green);
+  border-radius: 2px;
+}
+
+/* Language grid */
+.lang-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 8px;
+}
+.lang-item {
+  padding: 8px 10px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 6px;
+  font-size: 13px;
+}
+.lang-name {
+  font-weight: 600;
+  color: var(--accent);
+  margin-right: 6px;
+}
+.lang-games { color: var(--text-dim); }
+
+/* Calendar */
+.cal-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  gap: 12px;
+}
+.cal-item:last-child { border-bottom: none; }
+.cal-date {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--orange);
+  min-width: 90px;
+  padding-top: 2px;
+}
+.cal-info { flex: 1; }
+.cal-name { font-size: 14px; font-weight: 500; }
+.cal-meta { font-size: 12px; color: var(--text-dim); margin-top: 2px; }
+
+/* Platform badges */
+.plat-badge {
+  display: inline-block;
+  font-size: 10px;
+  padding: 1px 5px;
+  border-radius: 3px;
+  background: rgba(255,255,255,0.08);
+  color: var(--text-dim);
+  margin-right: 3px;
+  margin-top: 2px;
+}
+
+/* Loading / Error */
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-dim);
+}
+.error {
+  text-align: center;
+  padding: 40px;
+  color: var(--red);
+}
+
+/* Scroll shadow for overflow */
+.scroll-card {
+  max-height: 500px;
+  overflow-y: auto;
+}
+.scroll-card::-webkit-scrollbar { width: 6px; }
+.scroll-card::-webkit-scrollbar-track { background: transparent; }
+.scroll-card::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>OG Gaming Dashboard</h1>
+    <div class="updated" id="last-updated"><span class="dot"></span>Loading...</div>
+  </header>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="twitch">Twitch & IGDB</button>
+    <button class="tab" data-tab="steam">Steam</button>
+  </div>
+
+  <!-- TWITCH & IGDB TAB -->
+  <div class="tab-content active" id="tab-twitch">
+    <div class="grid grid-2" style="margin-bottom:16px">
+      <!-- Top 5 Most Streamed -->
+      <div class="card">
+        <h2><span class="icon">&#9654;</span> Top 5 Most Streamed</h2>
+        <ul class="game-list" id="top-streamed"></ul>
+      </div>
+      <!-- Breakout -->
+      <div class="card scroll-card">
+        <h2><span class="icon">&#9889;</span> Breakout — Surging</h2>
+        <ul class="game-list" id="breakout"></ul>
+      </div>
+    </div>
+
+    <!-- Language Breakdown -->
+    <div class="card" style="margin-bottom:16px">
+      <h2><span class="icon">&#127760;</span> Top Games by Language</h2>
+      <div class="lang-grid" id="languages"></div>
+    </div>
+
+    <div class="grid grid-2" style="margin-bottom:16px">
+      <!-- Most Wishlisted -->
+      <div class="card scroll-card">
+        <h2><span class="icon">&#10084;</span> Most Wishlisted (Steam)</h2>
+        <ul class="game-list" id="wishlisted"></ul>
+      </div>
+      <!-- Release Calendar -->
+      <div class="card scroll-card">
+        <h2><span class="icon">&#128197;</span> Releasing Next 30 Days</h2>
+        <div id="releasing"></div>
+      </div>
+    </div>
+
+    <!-- Just Released -->
+    <div class="card">
+      <h2><span class="icon">&#127381;</span> Just Released (7 Days)</h2>
+      <ul class="game-list" id="just-released"></ul>
+    </div>
+  </div>
+
+  <!-- STEAM TAB -->
+  <div class="tab-content" id="tab-steam">
+    <div class="grid grid-2" style="margin-bottom:16px">
+      <!-- Trending -->
+      <div class="card scroll-card">
+        <h2><span class="icon">&#128293;</span> Trending on Steam</h2>
+        <ul class="game-list" id="steam-trending"></ul>
+      </div>
+      <!-- Top Sellers -->
+      <div class="card scroll-card">
+        <h2><span class="icon">&#128176;</span> Top Sellers</h2>
+        <ul class="game-list" id="steam-topsellers"></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── Utilities ───────────────────────────────────────────────────
+function fmt(n) {
+  if (n == null) return '?';
+  if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
+  if (n >= 1000) return Math.round(n).toLocaleString();
+  return String(n);
+}
+
+function changeBadge(pct) {
+  if (pct == null) return '<span class="badge badge-orange">NEW</span>';
+  if (pct > 0) return `<span class="badge badge-green">+${pct.toFixed(0)}%</span>`;
+  if (pct < 0) return `<span class="badge badge-red">${pct.toFixed(0)}%</span>`;
+  return '';
+}
+
+function platformBadges(str) {
+  if (!str) return '';
+  return str.split(/\s*[·]\s*/).map(p => `<span class="plat-badge">${esc(p.trim())}</span>`).join('');
+}
+
+function reviewBar(pos, neg) {
+  const total = pos + neg;
+  if (!total) return '';
+  const pct = Math.round((pos / total) * 100);
+  return `<div class="review-bar"><div class="review-bar-fill" style="width:${pct}%"></div></div>`;
+}
+
+function esc(s) {
+  const d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+function sparkline(values, w, h) {
+  if (!values || values.length < 2) return '';
+  const min = Math.min(...values);
+  const max = Math.max(...values);
+  const range = max - min || 1;
+  const step = w / (values.length - 1);
+  const points = values.map((v, i) => `${(i * step).toFixed(1)},${(h - ((v - min) / range) * h).toFixed(1)}`).join(' ');
+  const color = values[values.length - 1] >= values[0] ? 'var(--green)' : 'var(--red)';
+  return `<span class="sparkline"><svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}"><polyline fill="none" stroke="${color}" stroke-width="1.5" points="${points}"/></svg></span>`;
+}
+
+// ── Data Loading ────────────────────────────────────────────────
+async function loadJSON(path) {
+  try {
+    const resp = await fetch(path);
+    if (!resp.ok) throw new Error(`${resp.status}`);
+    return await resp.json();
+  } catch (e) {
+    console.error(`Failed to load ${path}:`, e);
+    return null;
+  }
+}
+
+// ── Render Functions ────────────────────────────────────────────
+function renderGameList(containerId, games, opts = {}) {
+  const el = document.getElementById(containerId);
+  if (!games || !games.length) { el.innerHTML = '<li style="color:var(--text-dim);padding:16px 0">No data</li>'; return; }
+  el.innerHTML = games.map((g, i) => {
+    const rank = opts.showRank ? `<span class="game-rank">${i + 1}</span>` : '';
+    const url = g.twitch_url || g.steam_url || g.igdb_url || '#';
+    const viewers = opts.viewerLabel || 'viewers';
+    const count = g.viewers != null ? g.viewers : g.players;
+    const streams = g.streams ? ` &middot; ${g.streams}+ streams` : '';
+    const review = g.review ? `<div style="font-size:12px;color:var(--text-dim)">${esc(g.review)}</div>${reviewBar(g.review_positive, g.review_negative)}` : '';
+    const change = changeBadge(g.change_pct);
+    const hist = opts.historyKey && g._sparkline ? g._sparkline : '';
+    return `<li class="game-item">
+      ${rank}
+      <div class="game-info">
+        <div class="game-name"><a href="${esc(url)}" target="_blank">${esc(g.name)}</a></div>
+        <div class="game-meta">${fmt(count)} ${viewers}${streams}</div>
+        ${review}
+      </div>
+      <div class="game-stats">
+        ${hist}
+        ${change}
+      </div>
+    </li>`;
+  }).join('');
+}
+
+function renderLanguages(data) {
+  const el = document.getElementById('languages');
+  if (!data || !Object.keys(data).length) { el.innerHTML = '<div style="color:var(--text-dim)">No data</div>'; return; }
+  el.innerHTML = Object.entries(data).map(([lang, games]) => {
+    const gamesStr = games.map(g => `${esc(g.name)} (${fmt(g.viewers)})`).join(' &middot; ');
+    return `<div class="lang-item"><span class="lang-name">${esc(lang)}</span><span class="lang-games">${gamesStr}</span></div>`;
+  }).join('');
+}
+
+function renderWishlisted(data) {
+  const el = document.getElementById('wishlisted');
+  if (!data || !data.length) { el.innerHTML = '<li style="color:var(--text-dim);padding:16px 0">No data</li>'; return; }
+  el.innerHTML = data.map((g, i) => {
+    const steamLink = g.steam_url ? `<a href="${esc(g.steam_url)}" target="_blank">${esc(g.name)}</a>` : esc(g.name);
+    const igdbLink = g.igdb_url ? ` <a href="${esc(g.igdb_url)}" target="_blank" style="font-size:11px;color:var(--text-dim)">[IGDB]</a>` : '';
+    const dateBadge = g.release_date === 'TBA'
+      ? '<span class="badge badge-orange">TBA</span>'
+      : `<span class="badge badge-blue">${esc(g.release_date)}</span>`;
+    return `<li class="game-item">
+      <span class="game-rank">${i + 1}</span>
+      <div class="game-info">
+        <div class="game-name">${steamLink}${igdbLink}</div>
+      </div>
+      <div class="game-stats">${dateBadge}</div>
+    </li>`;
+  }).join('');
+}
+
+function renderReleasing(data) {
+  const el = document.getElementById('releasing');
+  if (!data || !data.length) { el.innerHTML = '<div style="color:var(--text-dim);padding:16px 0">No releases with confirmed dates</div>'; return; }
+  el.innerHTML = data.map(g => {
+    const link = g.igdb_url ? `<a href="${esc(g.igdb_url)}" target="_blank">${esc(g.name)}</a>` : esc(g.name);
+    const hype = g.hypes ? `<span class="badge badge-purple">${g.hypes} hype</span>` : '';
+    return `<div class="cal-item">
+      <div class="cal-date">${esc(g.date)}</div>
+      <div class="cal-info">
+        <div class="cal-name">${link} ${hype}</div>
+        <div class="cal-meta">${platformBadges(g.platforms)}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function renderJustReleased(data) {
+  const el = document.getElementById('just-released');
+  if (!data || !data.length) { el.innerHTML = '<li style="color:var(--text-dim);padding:16px 0">No data</li>'; return; }
+  el.innerHTML = data.map(g => {
+    const link = g.igdb_url ? `<a href="${esc(g.igdb_url)}" target="_blank">${esc(g.name)}</a>` : esc(g.name);
+    return `<li class="game-item">
+      <div class="game-info">
+        <div class="game-name">${link}</div>
+        <div class="game-meta">${platformBadges(g.platforms)}</div>
+      </div>
+    </li>`;
+  }).join('');
+}
+
+// ── Sparkline history helper ────────────────────────────────────
+function addSparklines(games, history, keyFn) {
+  if (!history || Object.keys(history).length < 2) return games;
+  const dates = Object.keys(history).sort();
+  return games.map(g => {
+    const values = dates.map(d => {
+      const dayData = history[d];
+      return keyFn(dayData, g) || 0;
+    });
+    g._sparkline = sparkline(values, 60, 20);
+    return g;
+  });
+}
+
+// ── Tab switching ───────────────────────────────────────────────
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+  });
+});
+
+// ── Main ────────────────────────────────────────────────────────
+async function init() {
+  const [gt, st] = await Promise.all([
+    loadJSON('data/gaming_trends.json'),
+    loadJSON('data/steam_trending.json')
+  ]);
+
+  // Update timestamp
+  const dates = [gt?.updated, st?.updated].filter(Boolean);
+  if (dates.length) {
+    const latest = dates.sort().pop();
+    const d = new Date(latest);
+    document.getElementById('last-updated').innerHTML =
+      `<span class="dot"></span>Updated ${d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })} at ${d.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}`;
+  }
+
+  // Gaming Trends
+  if (gt) {
+    const topWithSparklines = addSparklines(gt.top_streamed || [], gt.history, (d, g) => d.viewers?.[g.name]);
+    renderGameList('top-streamed', topWithSparklines, { showRank: true });
+    const breakoutWithSparklines = addSparklines(gt.breakout || [], gt.history, (d, g) => d.viewers?.[g.name]);
+    renderGameList('breakout', breakoutWithSparklines.slice(0, 10));
+    renderLanguages(gt.languages);
+    renderWishlisted(gt.wishlisted);
+    renderReleasing(gt.releasing);
+    renderJustReleased(gt.just_released);
+  }
+
+  // Steam
+  if (st) {
+    const trendingWithSparklines = addSparklines(st.trending || [], st.history, (d, g) => d.player_counts?.[g.appid]);
+    renderGameList('steam-trending', trendingWithSparklines, { showRank: true, viewerLabel: 'players' });
+    const sellersWithSparklines = addSparklines(st.topsellers || [], st.history, (d, g) => d.player_counts?.[g.appid]);
+    renderGameList('steam-topsellers', sellersWithSparklines, { showRank: true, viewerLabel: 'players' });
+  }
+}
+
+init();
+</script>
+</body>
+</html>

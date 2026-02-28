@@ -1,0 +1,384 @@
+{
+  "updated": "2026-02-28T07:45:07.341911",
+  "report_date": "2026-02-28",
+  "trending": [
+    {
+      "name": "Resident Evil Requiem",
+      "appid": "3764200",
+      "players": 281938,
+      "change_pct": null,
+      "review": "Very Positive",
+      "review_positive": 16320,
+      "review_negative": 1254,
+      "steam_url": "https://store.steampowered.com/app/3764200"
+    },
+    {
+      "name": "ARC Raiders",
+      "appid": "1808500",
+      "players": 182347,
+      "change_pct": null,
+      "review": "Very Positive",
+      "review_positive": 305551,
+      "review_negative": 46739,
+      "steam_url": "https://store.steampowered.com/app/1808500"
+    },
+    {
+      "name": "Baldur's Gate 3",
+      "appid": "1086940",
+      "players": 54315,
+      "change_pct": null,
+      "review": "Overwhelmingly Positive",
+      "review_positive": 800216,
+      "review_negative": 26362,
+      "steam_url": "https://store.steampowered.com/app/1086940"
+    },
+    {
+      "name": "Marvel Rivals",
+      "appid": "2767030",
+      "players": 102494,
+      "change_pct": null,
+      "review": "Mostly Positive",
+      "review_positive": 286878,
+      "review_negative": 84575,
+      "steam_url": "https://store.steampowered.com/app/2767030"
+    },
+    {
+      "name": "Warframe",
+      "appid": "230410",
+      "players": 54494,
+      "change_pct": null,
+      "review": "Very Positive",
+      "review_positive": 571872,
+      "review_negative": 80800,
+      "steam_url": "https://store.steampowered.com/app/230410"
+    },
+    {
+      "name": "Where Winds Meet",
+      "appid": "3564740",
+      "players": 23873,
+      "change_pct": null,
+      "review": "Very Positive",
+      "review_positive": 89405,
+      "review_negative": 12810,
+      "steam_url": "https://store.steampowered.com/app/3564740"
+    },
+    {
+      "name": "HELLDIVERS™ 2",
+      "appid": "553850",
+      "players": 71935,
+      "change_pct": null,
+      "review": "Mostly Positive",
+      "review_positive": 859281,
+      "review_negative": 249098,
+      "steam_url": "https://store.steampowered.com/app/553850"
+    },
+    {
+      "name": "Warhammer 40,000: Space Marine 2",
+      "appid": "2183900",
+      "players": 25795,
+      "change_pct": null,
+      "review": "Very Positive",
+      "review_positive": 166561,
+      "review_negative": 33133,
+      "steam_url": "https://store.steampowered.com/app/2183900"
+    },
+    {
+      "name": "Apex Legends™",
+      "appid": "1172470",
+      "players": 76004,
+      "change_pct": null,
+      "review": "Mixed",
+      "review_positive": 697431,
+      "review_negative": 335936,
+      "steam_url": "https://store.steampowered.com/app/1172470"
+    },
+    {
+      "name": "Kingdom Come: Deliverance II",
+      "appid": "1771300",
+      "players": 16593,
+      "change_pct": null,
+      "review": "Very Positive",
+      "review_positive": 160833,
+      "review_negative": 9619,
+      "steam_url": "https://store.steampowered.com/app/1771300"
+    },
+    {
+      "name": "Super Battle Golf",
+      "appid": "4069520",
+      "players": 19656,
+      "change_pct": null,
+      "review": "Overwhelmingly Positive",
+      "review_positive": 2430,
+      "review_negative": 111,
+      "steam_url": "https://store.steampowered.com/app/4069520"
+    },
+    {
+      "name": "War Thunder",
+      "appid": "236390",
+      "players": 49130,
+      "change_pct": null,
+      "review": "Mostly Positive",
+      "review_positive": 524002,
+      "review_negative": 195614,
+      "steam_url": "https://store.steampowered.com/app/236390"
+    },
+    {
+      "name": "Poppy Playtime",
+      "appid": "1721470",
+      "players": 11161,
+      "change_pct": null,
+      "review": "Very Positive",
+      "review_positive": 104153,
+      "review_negative": 16001,
+      "steam_url": "https://store.steampowered.com/app/1721470"
+    },
+    {
+      "name": "Rust",
+      "appid": "252490",
+      "players": 90841,
+      "change_pct": null,
+      "review": "Very Positive",
+      "review_positive": 1160699,
+      "review_negative": 172761,
+      "steam_url": "https://store.steampowered.com/app/252490"
+    },
+    {
+      "name": "Wuthering Waves",
+      "appid": "3513350",
+      "players": 9736,
+      "change_pct": null,
+      "review": "Very Positive",
+      "review_positive": 37182,
+      "review_negative": 4277,
+      "steam_url": "https://store.steampowered.com/app/3513350"
+    }
+  ],
+  "topsellers": [
+    {
+      "name": "Resident Evil Requiem",
+      "appid": "3764200",
+      "players": 281938,
+      "change_pct": null,
+      "review": "Very Positive",
+      "review_positive": 16320,
+      "review_negative": 1254,
+      "steam_url": "https://store.steampowered.com/app/3764200"
+    },
+    {
+      "name": "Counter-Strike 2",
+      "appid": "730",
+      "players": 795738,
+      "change_pct": null,
+      "review": "Very Positive",
+      "review_positive": 8131186,
+      "review_negative": 1288988,
+      "steam_url": "https://store.steampowered.com/app/730"
+    },
+    {
+      "name": "ARC Raiders",
+      "appid": "1808500",
+      "players": 182347,
+      "change_pct": null,
+      "review": "Very Positive",
+      "review_positive": 305551,
+      "review_negative": 46739,
+      "steam_url": "https://store.steampowered.com/app/1808500"
+    },
+    {
+      "name": "Baldur's Gate 3",
+      "appid": "1086940",
+      "players": 54315,
+      "change_pct": null,
+      "review": "Overwhelmingly Positive",
+      "review_positive": 800216,
+      "review_negative": 26362,
+      "steam_url": "https://store.steampowered.com/app/1086940"
+    },
+    {
+      "name": "Marvel Rivals",
+      "appid": "2767030",
+      "players": 102494,
+      "change_pct": null,
+      "review": "Mostly Positive",
+      "review_positive": 286878,
+      "review_negative": 84575,
+      "steam_url": "https://store.steampowered.com/app/2767030"
+    },
+    {
+      "name": "Super Battle Golf",
+      "appid": "4069520",
+      "players": 19656,
+      "change_pct": null,
+      "review": "Overwhelmingly Positive",
+      "review_positive": 2430,
+      "review_negative": 111,
+      "steam_url": "https://store.steampowered.com/app/4069520"
+    },
+    {
+      "name": "Marathon",
+      "appid": "3065800",
+      "players": 0,
+      "change_pct": null,
+      "review": "No user reviews",
+      "review_positive": 0,
+      "review_negative": 0,
+      "steam_url": "https://store.steampowered.com/app/3065800"
+    },
+    {
+      "name": "HELLDIVERS™ 2",
+      "appid": "553850",
+      "players": 71935,
+      "change_pct": null,
+      "review": "Mostly Positive",
+      "review_positive": 859281,
+      "review_negative": 249098,
+      "steam_url": "https://store.steampowered.com/app/553850"
+    },
+    {
+      "name": "Mewgenics",
+      "appid": "686060",
+      "players": 62673,
+      "change_pct": null,
+      "review": "Very Positive",
+      "review_positive": 28753,
+      "review_negative": 2331,
+      "steam_url": "https://store.steampowered.com/app/686060"
+    },
+    {
+      "name": "Warhammer 40,000: Space Marine 2",
+      "appid": "2183900",
+      "players": 25795,
+      "change_pct": null,
+      "review": "Very Positive",
+      "review_positive": 166561,
+      "review_negative": 33133,
+      "steam_url": "https://store.steampowered.com/app/2183900"
+    },
+    {
+      "name": "Apex Legends™",
+      "appid": "1172470",
+      "players": 76004,
+      "change_pct": null,
+      "review": "Mixed",
+      "review_positive": 697431,
+      "review_negative": 335936,
+      "steam_url": "https://store.steampowered.com/app/1172470"
+    },
+    {
+      "name": "Warframe",
+      "appid": "230410",
+      "players": 54494,
+      "change_pct": null,
+      "review": "Very Positive",
+      "review_positive": 571872,
+      "review_negative": 80800,
+      "steam_url": "https://store.steampowered.com/app/230410"
+    },
+    {
+      "name": "Where Winds Meet",
+      "appid": "3564740",
+      "players": 23873,
+      "change_pct": null,
+      "review": "Very Positive",
+      "review_positive": 89405,
+      "review_negative": 12810,
+      "steam_url": "https://store.steampowered.com/app/3564740"
+    },
+    {
+      "name": "Kingdom Come: Deliverance II",
+      "appid": "1771300",
+      "players": 16593,
+      "change_pct": null,
+      "review": "Very Positive",
+      "review_positive": 160833,
+      "review_negative": 9619,
+      "steam_url": "https://store.steampowered.com/app/1771300"
+    },
+    {
+      "name": "Halo: The Master Chief Collection",
+      "appid": "976730",
+      "players": 8414,
+      "change_pct": null,
+      "review": "Very Positive",
+      "review_positive": 234345,
+      "review_negative": 20049,
+      "steam_url": "https://store.steampowered.com/app/976730"
+    },
+    {
+      "name": "War Thunder",
+      "appid": "236390",
+      "players": 49130,
+      "change_pct": null,
+      "review": "Mostly Positive",
+      "review_positive": 524002,
+      "review_negative": 195614,
+      "steam_url": "https://store.steampowered.com/app/236390"
+    },
+    {
+      "name": "Crimson Desert",
+      "appid": "3321460",
+      "players": 0,
+      "change_pct": null,
+      "review": "No user reviews",
+      "review_positive": 0,
+      "review_negative": 0,
+      "steam_url": "https://store.steampowered.com/app/3321460"
+    },
+    {
+      "name": "Overwatch®",
+      "appid": "2357570",
+      "players": 98702,
+      "change_pct": null,
+      "review": "Mostly Negative",
+      "review_positive": 108017,
+      "review_negative": 274500,
+      "steam_url": "https://store.steampowered.com/app/2357570"
+    },
+    {
+      "name": "Poppy Playtime",
+      "appid": "1721470",
+      "players": 11161,
+      "change_pct": null,
+      "review": "Very Positive",
+      "review_positive": 104153,
+      "review_negative": 16001,
+      "steam_url": "https://store.steampowered.com/app/1721470"
+    },
+    {
+      "name": "NBA 2K26",
+      "appid": "3472040",
+      "players": 21149,
+      "change_pct": null,
+      "review": "Mixed",
+      "review_positive": 10248,
+      "review_negative": 5569,
+      "steam_url": "https://store.steampowered.com/app/3472040"
+    }
+  ],
+  "history": {
+    "2026-02-28": {
+      "player_counts": {
+        "3764200": 281938,
+        "1808500": 182347,
+        "1086940": 54315,
+        "2767030": 102494,
+        "230410": 54494,
+        "3564740": 23873,
+        "553850": 71935,
+        "2183900": 25795,
+        "1172470": 76004,
+        "1771300": 16593,
+        "4069520": 19656,
+        "236390": 49130,
+        "1721470": 11161,
+        "252490": 90841,
+        "3513350": 9736,
+        "730": 795738,
+        "686060": 62673,
+        "976730": 8414,
+        "2357570": 98702,
+        "3472040": 21149
+      }
+    }
+  }
+}
