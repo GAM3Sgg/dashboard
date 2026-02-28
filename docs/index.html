@@ -6,36 +6,43 @@
 <title>OG Gaming Dashboard</title>
 <style>
 :root {
-  --bg: #0d1117;
-  --card: #161b22;
-  --border: #30363d;
-  --text: #e6edf3;
-  --text-dim: #8b949e;
-  --accent: #58a6ff;
-  --green: #3fb950;
-  --red: #f85149;
-  --orange: #d29922;
-  --purple: #bc8cff;
-  --radius: 8px;
+  --bg: #000000;
+  --card: #0a0a0a;
+  --card-hover: #111111;
+  --border: #1a1a1a;
+  --border-light: #222222;
+  --text: #f0f0f0;
+  --text-secondary: #a0a0a0;
+  --text-dim: #666666;
+  --accent: #ffffff;
+  --link: #a0a0a0;
+  --link-hover: #ffffff;
+  --green: #00d26a;
+  --red: #ff3b30;
+  --orange: #ff9500;
+  --purple: #a78bfa;
+  --cyan: #22d3ee;
+  --radius: 10px;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.5;
   min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
 }
 
-a { color: var(--accent); text-decoration: none; }
-a:hover { text-decoration: underline; }
+a { color: var(--link); text-decoration: none; transition: color 0.15s; }
+a:hover { color: var(--link-hover); }
 
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 16px;
+  padding: 20px;
 }
 
 /* Header */
@@ -43,52 +50,68 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 0;
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 16px;
+  padding: 24px 0 20px;
+  margin-bottom: 20px;
   flex-wrap: wrap;
   gap: 8px;
 }
-header h1 { font-size: 20px; font-weight: 600; }
-header .updated { font-size: 13px; color: var(--text-dim); }
-header .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--green); margin-right: 6px; }
+header h1 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--accent);
+}
+header .updated {
+  font-size: 12px;
+  color: var(--text-dim);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+header .dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green);
+}
 
 /* Tabs */
 .tabs {
   display: flex;
-  gap: 4px;
-  margin-bottom: 16px;
-  border-bottom: 1px solid var(--border);
-  overflow-x: auto;
+  gap: 2px;
+  margin-bottom: 20px;
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 3px;
+  border: 1px solid var(--border);
+  width: fit-content;
 }
 .tab {
-  padding: 8px 16px;
+  padding: 7px 20px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: 500;
   color: var(--text-dim);
-  border-bottom: 2px solid transparent;
-  white-space: nowrap;
+  border: none;
+  border-radius: 7px;
   transition: all 0.15s;
-  background: none;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  background: transparent;
   font-family: inherit;
 }
-.tab:hover { color: var(--text); }
-.tab.active { color: var(--text); border-bottom-color: var(--accent); }
+.tab:hover { color: var(--text-secondary); }
+.tab.active {
+  color: var(--accent);
+  background: var(--border-light);
+}
 
 .tab-content { display: none; }
 .tab-content.active { display: block; }
 
 /* Grid */
-.grid { display: grid; gap: 16px; }
+.grid { display: grid; gap: 14px; }
 .grid-2 { grid-template-columns: 1fr 1fr; }
-.grid-3 { grid-template-columns: 1fr 1fr 1fr; }
-
-@media (max-width: 768px) {
-  .grid-2, .grid-3 { grid-template-columns: 1fr; }
-}
+@media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
 
 /* Cards */
 .card {
@@ -96,18 +119,17 @@ header .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 16px;
+  transition: border-color 0.15s;
 }
+.card:hover { border-color: var(--border-light); }
 .card h2 {
-  font-size: 13px;
+  font-size: 11px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   color: var(--text-dim);
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
+  margin-bottom: 14px;
+  font-weight: 600;
 }
-.card h2 .icon { font-size: 14px; }
 
 /* Game list */
 .game-list { list-style: none; }
@@ -115,45 +137,38 @@ header .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 0;
+  padding: 9px 0;
   border-bottom: 1px solid var(--border);
-  gap: 8px;
+  gap: 10px;
 }
 .game-item:last-child { border-bottom: none; }
 .game-rank {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 700;
   color: var(--text-dim);
-  min-width: 24px;
+  min-width: 22px;
+  font-variant-numeric: tabular-nums;
 }
 .game-info { flex: 1; min-width: 0; }
 .game-name {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .game-meta {
-  font-size: 12px;
+  font-size: 11px;
   color: var(--text-dim);
-  margin-top: 2px;
+  margin-top: 1px;
 }
 .game-stats {
   text-align: right;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
-.game-viewers {
-  font-size: 14px;
-  font-weight: 600;
-}
-.game-change {
-  font-size: 12px;
-  font-weight: 500;
-}
-.change-up { color: var(--green); }
-.change-down { color: var(--red); }
-.change-new { color: var(--orange); }
 
 /* Sparkline */
 .sparkline { display: inline-block; vertical-align: middle; }
@@ -162,21 +177,22 @@ header .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%
 /* Badge */
 .badge {
   display: inline-block;
-  font-size: 11px;
-  padding: 1px 6px;
-  border-radius: 10px;
-  font-weight: 500;
+  font-size: 10px;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
 }
-.badge-green { background: rgba(63,185,80,0.15); color: var(--green); }
-.badge-red { background: rgba(248,81,73,0.15); color: var(--red); }
-.badge-orange { background: rgba(210,153,34,0.15); color: var(--orange); }
-.badge-purple { background: rgba(188,140,255,0.15); color: var(--purple); }
-.badge-blue { background: rgba(88,166,255,0.15); color: var(--accent); }
+.badge-green { background: rgba(0,210,106,0.12); color: var(--green); }
+.badge-red { background: rgba(255,59,48,0.12); color: var(--red); }
+.badge-orange { background: rgba(255,149,0,0.12); color: var(--orange); }
+.badge-purple { background: rgba(167,139,250,0.12); color: var(--purple); }
+.badge-dim { background: rgba(255,255,255,0.06); color: var(--text-secondary); }
 
 /* Review bar */
 .review-bar {
-  height: 4px;
-  background: var(--red);
+  height: 3px;
+  background: rgba(255,59,48,0.3);
   border-radius: 2px;
   overflow: hidden;
   margin-top: 4px;
@@ -191,17 +207,18 @@ header .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%
 .lang-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 8px;
+  gap: 6px;
 }
 .lang-item {
   padding: 8px 10px;
-  background: rgba(255,255,255,0.03);
+  background: rgba(255,255,255,0.02);
+  border: 1px solid var(--border);
   border-radius: 6px;
-  font-size: 13px;
+  font-size: 12px;
 }
 .lang-name {
   font-weight: 600;
-  color: var(--accent);
+  color: var(--text-secondary);
   margin-right: 6px;
 }
 .lang-games { color: var(--text-dim); }
@@ -216,48 +233,44 @@ header .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%
 }
 .cal-item:last-child { border-bottom: none; }
 .cal-date {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
-  color: var(--orange);
+  color: var(--text-secondary);
   min-width: 90px;
   padding-top: 2px;
+  font-variant-numeric: tabular-nums;
 }
 .cal-info { flex: 1; }
-.cal-name { font-size: 14px; font-weight: 500; }
-.cal-meta { font-size: 12px; color: var(--text-dim); margin-top: 2px; }
+.cal-name { font-size: 13px; font-weight: 500; }
+.cal-meta { font-size: 11px; color: var(--text-dim); margin-top: 2px; }
 
 /* Platform badges */
 .plat-badge {
   display: inline-block;
-  font-size: 10px;
+  font-size: 9px;
   padding: 1px 5px;
   border-radius: 3px;
-  background: rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.05);
   color: var(--text-dim);
-  margin-right: 3px;
+  margin-right: 2px;
   margin-top: 2px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
 }
 
-/* Loading / Error */
-.loading {
-  text-align: center;
-  padding: 40px;
-  color: var(--text-dim);
-}
-.error {
-  text-align: center;
-  padding: 40px;
-  color: var(--red);
-}
-
-/* Scroll shadow for overflow */
+/* Scroll */
 .scroll-card {
-  max-height: 500px;
+  max-height: 480px;
   overflow-y: auto;
 }
-.scroll-card::-webkit-scrollbar { width: 6px; }
+.scroll-card::-webkit-scrollbar { width: 4px; }
 .scroll-card::-webkit-scrollbar-track { background: transparent; }
-.scroll-card::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+.scroll-card::-webkit-scrollbar-thumb { background: var(--border-light); border-radius: 2px; }
+
+/* Color helpers for inline use */
+.c-green { color: var(--green); }
+.c-red { color: var(--red); }
+.c-dim { color: var(--text-dim); }
 </style>
 </head>
 <body>
@@ -275,95 +288,75 @@ header .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%
 
   <!-- TWITCH & IGDB TAB -->
   <div class="tab-content active" id="tab-twitch">
-    <div class="grid grid-2" style="margin-bottom:16px">
-      <!-- Top 5 Most Streamed -->
+    <div class="grid grid-2" style="margin-bottom:14px">
       <div class="card">
-        <h2><span class="icon">&#9654;</span> Top 5 Most Streamed</h2>
+        <h2>Top 5 Most Streamed</h2>
         <ul class="game-list" id="top-streamed"></ul>
       </div>
-      <!-- Breakout -->
       <div class="card scroll-card">
-        <h2><span class="icon">&#9889;</span> Breakout — Surging</h2>
+        <h2>Breakout — Surging</h2>
         <ul class="game-list" id="breakout"></ul>
       </div>
     </div>
-
-    <!-- Language Breakdown -->
-    <div class="card" style="margin-bottom:16px">
-      <h2><span class="icon">&#127760;</span> Top Games by Language</h2>
+    <div class="card" style="margin-bottom:14px">
+      <h2>Top Games by Language</h2>
       <div class="lang-grid" id="languages"></div>
     </div>
-
-    <div class="grid grid-2" style="margin-bottom:16px">
-      <!-- Most Wishlisted -->
+    <div class="grid grid-2" style="margin-bottom:14px">
       <div class="card scroll-card">
-        <h2><span class="icon">&#10084;</span> Most Wishlisted (Steam)</h2>
+        <h2>Most Wishlisted (Steam)</h2>
         <ul class="game-list" id="wishlisted"></ul>
       </div>
-      <!-- Release Calendar -->
       <div class="card scroll-card">
-        <h2><span class="icon">&#128197;</span> Releasing Next 30 Days</h2>
+        <h2>Releasing Next 30 Days</h2>
         <div id="releasing"></div>
       </div>
     </div>
-
-    <!-- Just Released -->
     <div class="card">
-      <h2><span class="icon">&#127381;</span> Just Released (7 Days)</h2>
+      <h2>Just Released (7 Days)</h2>
       <ul class="game-list" id="just-released"></ul>
     </div>
   </div>
 
   <!-- STEAM TAB -->
   <div class="tab-content" id="tab-steam">
-    <div class="grid grid-2" style="margin-bottom:16px">
-      <!-- New & Trending -->
+    <div class="grid grid-2" style="margin-bottom:14px">
       <div class="card scroll-card">
-        <h2><span class="icon">&#128293;</span> New &amp; Trending</h2>
+        <h2>New & Trending</h2>
         <ul class="game-list" id="steam-trending"></ul>
       </div>
-      <!-- Top Sellers Paid -->
       <div class="card scroll-card">
-        <h2><span class="icon">&#128176;</span> Top Sellers (Paid)</h2>
+        <h2>Top Sellers (Paid)</h2>
         <ul class="game-list" id="steam-topsellers-paid"></ul>
       </div>
     </div>
-
-    <div class="grid grid-2" style="margin-bottom:16px">
-      <!-- Top Free-to-Play -->
+    <div class="grid grid-2" style="margin-bottom:14px">
       <div class="card scroll-card">
-        <h2><span class="icon">&#127918;</span> Top Free-to-Play</h2>
+        <h2>Top Free-to-Play</h2>
         <ul class="game-list" id="steam-topsellers-free"></ul>
       </div>
-      <!-- Biggest Deals -->
       <div class="card scroll-card">
-        <h2><span class="icon">&#128184;</span> Biggest Deals</h2>
+        <h2>Biggest Deals</h2>
         <ul class="game-list" id="steam-deals"></ul>
       </div>
     </div>
-
-    <div class="grid grid-2" style="margin-bottom:16px">
-      <!-- Rising -->
+    <div class="grid grid-2" style="margin-bottom:14px">
       <div class="card scroll-card">
-        <h2><span class="icon">&#128200;</span> Rising (Player Gains)</h2>
+        <h2>Rising (Player Gains)</h2>
         <ul class="game-list" id="steam-rising"></ul>
       </div>
-      <!-- Falling -->
       <div class="card scroll-card">
-        <h2><span class="icon">&#128201;</span> Falling (Player Drops)</h2>
+        <h2>Falling (Player Drops)</h2>
         <ul class="game-list" id="steam-falling"></ul>
       </div>
     </div>
-
-    <div class="grid grid-2" style="margin-bottom:16px">
-      <!-- Most Wishlisted -->
+    <div class="grid grid-2" style="margin-bottom:14px">
       <div class="card scroll-card">
-        <h2><span class="icon">&#11088;</span> Most Wishlisted</h2>
+        <h2>Most Wishlisted</h2>
         <ul class="game-list" id="steam-wishlisted"></ul>
       </div>
-      <!-- Watch This Week -->
       <div class="card scroll-card">
-        <h2><span class="icon">&#128064;</span> Watch This Week</h2>
+        <h2>Watch This Week</h2>
         <ul class="game-list" id="steam-watch"></ul>
       </div>
     </div>
@@ -371,7 +364,6 @@ header .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%
 </div>
 
 <script>
-// ── Utilities ───────────────────────────────────────────────────
 function fmt(n) {
   if (n == null) return '?';
   if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
@@ -415,7 +407,6 @@ function sparkline(values, w, h) {
   return `<span class="sparkline"><svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}"><polyline fill="none" stroke="${color}" stroke-width="1.5" points="${points}"/></svg></span>`;
 }
 
-// ── Data Loading ────────────────────────────────────────────────
 async function loadJSON(path) {
   try {
     const resp = await fetch(path);
@@ -427,57 +418,49 @@ async function loadJSON(path) {
   }
 }
 
-// ── Render Functions ────────────────────────────────────────────
+// ── Twitch Renders ──────────────────────────────────────────────
 function renderGameList(containerId, games, opts = {}) {
   const el = document.getElementById(containerId);
-  if (!games || !games.length) { el.innerHTML = '<li style="color:var(--text-dim);padding:16px 0">No data</li>'; return; }
+  if (!games || !games.length) { el.innerHTML = '<li class="c-dim" style="padding:16px 0">No data</li>'; return; }
   el.innerHTML = games.map((g, i) => {
     const rank = opts.showRank ? `<span class="game-rank">${i + 1}</span>` : '';
     const url = g.twitch_url || g.steam_url || g.igdb_url || '#';
-    const viewers = opts.viewerLabel || 'viewers';
     const count = g.viewers != null ? g.viewers : g.players;
     const streams = g.streams ? ` &middot; ${g.streams}+ streams` : '';
-    const review = g.review ? `<div style="font-size:12px;color:var(--text-dim)">${esc(g.review)}</div>${reviewBar(g.review_positive, g.review_negative)}` : '';
     const change = changeBadge(g.change_pct);
-    const hist = opts.historyKey && g._sparkline ? g._sparkline : '';
+    const hist = g._sparkline || '';
     return `<li class="game-item">
       ${rank}
       <div class="game-info">
         <div class="game-name"><a href="${esc(url)}" target="_blank">${esc(g.name)}</a></div>
-        <div class="game-meta">${fmt(count)} ${viewers}${streams}</div>
-        ${review}
+        <div class="game-meta">${fmt(count)} viewers${streams}</div>
       </div>
-      <div class="game-stats">
-        ${hist}
-        ${change}
-      </div>
+      <div class="game-stats">${hist}${change}</div>
     </li>`;
   }).join('');
 }
 
 function renderLanguages(data) {
   const el = document.getElementById('languages');
-  if (!data || !Object.keys(data).length) { el.innerHTML = '<div style="color:var(--text-dim)">No data</div>'; return; }
+  if (!data || !Object.keys(data).length) { el.innerHTML = '<div class="c-dim">No data</div>'; return; }
   el.innerHTML = Object.entries(data).map(([lang, games]) => {
-    const gamesStr = games.map(g => `${esc(g.name)} (${fmt(g.viewers)})`).join(' &middot; ');
-    return `<div class="lang-item"><span class="lang-name">${esc(lang)}</span><span class="lang-games">${gamesStr}</span></div>`;
+    const gamesStr = games.map(g => `${esc(g.name)} <span class="c-dim">(${fmt(g.viewers)})</span>`).join(' &middot; ');
+    return `<div class="lang-item"><span class="lang-name">${esc(lang)}</span>${gamesStr}</div>`;
   }).join('');
 }
 
 function renderWishlisted(data) {
   const el = document.getElementById('wishlisted');
-  if (!data || !data.length) { el.innerHTML = '<li style="color:var(--text-dim);padding:16px 0">No data</li>'; return; }
+  if (!data || !data.length) { el.innerHTML = '<li class="c-dim" style="padding:16px 0">No data</li>'; return; }
   el.innerHTML = data.map((g, i) => {
     const steamLink = g.steam_url ? `<a href="${esc(g.steam_url)}" target="_blank">${esc(g.name)}</a>` : esc(g.name);
-    const igdbLink = g.igdb_url ? ` <a href="${esc(g.igdb_url)}" target="_blank" style="font-size:11px;color:var(--text-dim)">[IGDB]</a>` : '';
+    const igdbLink = g.igdb_url ? ` <a href="${esc(g.igdb_url)}" target="_blank" style="font-size:10px;color:var(--text-dim)">[IGDB]</a>` : '';
     const dateBadge = g.release_date === 'TBA'
-      ? '<span class="badge badge-orange">TBA</span>'
-      : `<span class="badge badge-blue">${esc(g.release_date)}</span>`;
+      ? '<span class="badge badge-dim">TBA</span>'
+      : `<span class="badge badge-dim">${esc(g.release_date)}</span>`;
     return `<li class="game-item">
       <span class="game-rank">${i + 1}</span>
-      <div class="game-info">
-        <div class="game-name">${steamLink}${igdbLink}</div>
-      </div>
+      <div class="game-info"><div class="game-name">${steamLink}${igdbLink}</div></div>
       <div class="game-stats">${dateBadge}</div>
     </li>`;
   }).join('');
@@ -485,7 +468,7 @@ function renderWishlisted(data) {
 
 function renderReleasing(data) {
   const el = document.getElementById('releasing');
-  if (!data || !data.length) { el.innerHTML = '<div style="color:var(--text-dim);padding:16px 0">No releases with confirmed dates</div>'; return; }
+  if (!data || !data.length) { el.innerHTML = '<div class="c-dim" style="padding:16px 0">No confirmed releases</div>'; return; }
   el.innerHTML = data.map(g => {
     const link = g.igdb_url ? `<a href="${esc(g.igdb_url)}" target="_blank">${esc(g.name)}</a>` : esc(g.name);
     const hype = g.hypes ? `<span class="badge badge-purple">${g.hypes} hype</span>` : '';
@@ -501,7 +484,7 @@ function renderReleasing(data) {
 
 function renderJustReleased(data) {
   const el = document.getElementById('just-released');
-  if (!data || !data.length) { el.innerHTML = '<li style="color:var(--text-dim);padding:16px 0">No data</li>'; return; }
+  if (!data || !data.length) { el.innerHTML = '<li class="c-dim" style="padding:16px 0">No data</li>'; return; }
   el.innerHTML = data.map(g => {
     const link = g.igdb_url ? `<a href="${esc(g.igdb_url)}" target="_blank">${esc(g.name)}</a>` : esc(g.name);
     return `<li class="game-item">
@@ -513,46 +496,22 @@ function renderJustReleased(data) {
   }).join('');
 }
 
-// ── Sparkline history helper ────────────────────────────────────
-function addSparklines(games, history, keyFn) {
-  if (!history || Object.keys(history).length < 2) return games;
-  const dates = Object.keys(history).sort();
-  return games.map(g => {
-    const values = dates.map(d => {
-      const dayData = history[d];
-      return keyFn(dayData, g) || 0;
-    });
-    g._sparkline = sparkline(values, 60, 20);
-    return g;
-  });
-}
-
-// ── Tab switching ───────────────────────────────────────────────
-document.querySelectorAll('.tab').forEach(tab => {
-  tab.addEventListener('click', () => {
-    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
-    tab.classList.add('active');
-    document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
-  });
-});
-
-// ── Steam Render Functions ───────────────────────────────────────
+// ── Steam Renders ───────────────────────────────────────────────
 function renderSteamList(containerId, games, opts = {}) {
   const el = document.getElementById(containerId);
-  if (!games || !games.length) { el.innerHTML = '<li style="color:var(--text-dim);padding:16px 0">No data</li>'; return; }
+  if (!games || !games.length) { el.innerHTML = '<li class="c-dim" style="padding:16px 0">No data</li>'; return; }
   el.innerHTML = games.map((g, i) => {
     const rank = opts.showRank ? `<span class="game-rank">${i + 1}</span>` : '';
     const url = g.steam_url || '#';
     const players = g.players > 0 ? `${fmt(g.players)} playing` : '';
-    const price = opts.showPrice && g.price_str ? `<span class="badge badge-blue">${esc(g.price_str)}</span>` : '';
+    const price = opts.showPrice && g.price_str ? `<span class="badge badge-dim">${esc(g.price_str)}</span>` : '';
     const newBadge = g.is_new ? ' <span class="badge badge-orange">NEW</span>' : '';
     const eaBadge = g.is_early_access ? ' <span class="badge badge-purple">EA</span>' : '';
     const change = g.change_pct != null && g.change_pct !== 0 ? changeBadge(g.change_pct) : '';
-    const review = g.review ? `<span style="font-size:11px;color:var(--text-dim);margin-left:4px">${esc(g.review)}</span>` : '';
+    const review = g.review ? `<span style="font-size:10px;color:var(--text-dim);margin-left:4px">${esc(g.review)}</span>` : '';
     const revBar = g.review_positive ? reviewBar(g.review_positive, g.review_negative) : '';
     const hist = g._sparkline || '';
-    const genres = g.genres && g.genres.length ? `<div style="font-size:11px;color:var(--text-dim)">${g.genres.slice(0,3).map(esc).join(' / ')}</div>` : '';
+    const genres = g.genres && g.genres.length ? `<div style="font-size:10px;color:var(--text-dim)">${g.genres.slice(0,3).map(esc).join(' / ')}</div>` : '';
     return `<li class="game-item">
       ${rank}
       <div class="game-info">
@@ -560,25 +519,21 @@ function renderSteamList(containerId, games, opts = {}) {
         <div class="game-meta">${players}${review}</div>
         ${genres}${revBar}
       </div>
-      <div class="game-stats">
-        ${hist}${price}${change}
-      </div>
+      <div class="game-stats">${hist}${price}${change}</div>
     </li>`;
   }).join('');
 }
 
 function renderDeals(containerId, deals) {
   const el = document.getElementById(containerId);
-  if (!deals || !deals.length) { el.innerHTML = '<li style="color:var(--text-dim);padding:16px 0">No deals right now</li>'; return; }
+  if (!deals || !deals.length) { el.innerHTML = '<li class="c-dim" style="padding:16px 0">No deals right now</li>'; return; }
   el.innerHTML = deals.map((d, i) => {
     const url = d.steam_url || '#';
     const disc = d.discount_pct ? `<span class="badge badge-green">-${d.discount_pct}%</span>` : '';
-    const price = d.price ? `<span style="font-size:12px;color:var(--text-dim)">${esc(d.price)}</span>` : '';
+    const price = d.price ? `<span class="c-red" style="font-size:12px;font-weight:600">${esc(d.price)}</span>` : '';
     return `<li class="game-item">
       <span class="game-rank">${i + 1}</span>
-      <div class="game-info">
-        <div class="game-name"><a href="${esc(url)}" target="_blank">${esc(d.name)}</a></div>
-      </div>
+      <div class="game-info"><div class="game-name"><a href="${esc(url)}" target="_blank">${esc(d.name)}</a></div></div>
       <div class="game-stats">${price} ${disc}</div>
     </li>`;
   }).join('');
@@ -586,18 +541,18 @@ function renderDeals(containerId, deals) {
 
 function renderMovers(containerId, movers, direction) {
   const el = document.getElementById(containerId);
-  if (!movers || !movers.length) { el.innerHTML = '<li style="color:var(--text-dim);padding:16px 0">No data (need 2+ days)</li>'; return; }
+  if (!movers || !movers.length) { el.innerHTML = '<li class="c-dim" style="padding:16px 0">Need 2+ days of data</li>'; return; }
   el.innerHTML = movers.map(m => {
     const url = m.steam_url || '#';
+    const cls = direction === 'up' ? 'c-green' : 'c-red';
     const absStr = direction === 'up' ? `+${fmt(m.abs_change)}` : fmt(m.abs_change);
-    const cls = direction === 'up' ? 'change-up' : 'change-down';
     const pctBadge = direction === 'up'
       ? `<span class="badge badge-green">+${m.pct_change.toFixed(0)}%</span>`
       : `<span class="badge badge-red">${m.pct_change.toFixed(0)}%</span>`;
     return `<li class="game-item">
       <div class="game-info">
         <div class="game-name"><a href="${esc(url)}" target="_blank">${esc(m.name)}</a></div>
-        <div class="game-meta"><span class="${cls}">${absStr}</span> (${fmt(m.prev_players)} &rarr; ${fmt(m.players)})</div>
+        <div class="game-meta"><span class="${cls}">${absStr}</span> <span class="c-dim">(${fmt(m.prev_players)} &rarr; ${fmt(m.players)})</span></div>
       </div>
       <div class="game-stats">${pctBadge}</div>
     </li>`;
@@ -606,26 +561,24 @@ function renderMovers(containerId, movers, direction) {
 
 function renderSteamSimple(containerId, games, opts = {}) {
   const el = document.getElementById(containerId);
-  if (!games || !games.length) { el.innerHTML = '<li style="color:var(--text-dim);padding:16px 0">No data</li>'; return; }
+  if (!games || !games.length) { el.innerHTML = '<li class="c-dim" style="padding:16px 0">No data</li>'; return; }
   el.innerHTML = games.map((g, i) => {
     const rank = opts.showRank ? `<span class="game-rank">${i + 1}</span>` : '';
     const url = g.steam_url || '#';
     return `<li class="game-item">
       ${rank}
-      <div class="game-info">
-        <div class="game-name"><a href="${esc(url)}" target="_blank">${esc(g.name)}</a></div>
-      </div>
+      <div class="game-info"><div class="game-name"><a href="${esc(url)}" target="_blank">${esc(g.name)}</a></div></div>
     </li>`;
   }).join('');
 }
 
 function renderWatch(containerId, games) {
   const el = document.getElementById(containerId);
-  if (!games || !games.length) { el.innerHTML = '<li style="color:var(--text-dim);padding:16px 0">Nothing to watch</li>'; return; }
+  if (!games || !games.length) { el.innerHTML = '<li class="c-dim" style="padding:16px 0">Nothing to watch</li>'; return; }
   el.innerHTML = games.map(g => {
     const url = g.steam_url || '#';
-    const date = g.release_date ? `<span class="badge badge-orange">${esc(g.release_date)}</span>` : '';
-    const price = g.price_str ? `<span style="font-size:12px;color:var(--text-dim)">${esc(g.price_str)}</span>` : '';
+    const date = g.release_date ? `<span class="badge badge-dim">${esc(g.release_date)}</span>` : '';
+    const price = g.price_str ? `<span style="font-size:11px;color:var(--text-dim)">${esc(g.price_str)}</span>` : '';
     const ea = g.is_early_access ? ' <span class="badge badge-purple">EA</span>' : '';
     return `<li class="game-item">
       <div class="game-info">
@@ -637,14 +590,34 @@ function renderWatch(containerId, games) {
   }).join('');
 }
 
-// ── Main ────────────────────────────────────────────────────────
+// ── Sparkline helper ────────────────────────────────────────────
+function addSparklines(games, history, keyFn) {
+  if (!history || Object.keys(history).length < 2) return games;
+  const dates = Object.keys(history).sort();
+  return games.map(g => {
+    const values = dates.map(d => keyFn(history[d], g) || 0);
+    g._sparkline = sparkline(values, 56, 18);
+    return g;
+  });
+}
+
+// ── Tabs ────────────────────────────────────────────────────────
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+  });
+});
+
+// ── Init ────────────────────────────────────────────────────────
 async function init() {
   const [gt, st] = await Promise.all([
     loadJSON('data/gaming_trends.json'),
     loadJSON('data/steam_trending.json')
   ]);
 
-  // Update timestamp
   const dates = [gt?.updated, st?.updated].filter(Boolean);
   if (dates.length) {
     const latest = dates.sort().pop();
@@ -653,22 +626,20 @@ async function init() {
       `<span class="dot"></span>Updated ${d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })} at ${d.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}`;
   }
 
-  // Gaming Trends
   if (gt) {
-    const topWithSparklines = addSparklines(gt.top_streamed || [], gt.history, (d, g) => d.viewers?.[g.name]);
-    renderGameList('top-streamed', topWithSparklines, { showRank: true });
-    const breakoutWithSparklines = addSparklines(gt.breakout || [], gt.history, (d, g) => d.viewers?.[g.name]);
-    renderGameList('breakout', breakoutWithSparklines.slice(0, 10));
+    const topS = addSparklines(gt.top_streamed || [], gt.history, (d, g) => d.viewers?.[g.name]);
+    renderGameList('top-streamed', topS, { showRank: true });
+    const brk = addSparklines(gt.breakout || [], gt.history, (d, g) => d.viewers?.[g.name]);
+    renderGameList('breakout', brk.slice(0, 10));
     renderLanguages(gt.languages);
     renderWishlisted(gt.wishlisted);
     renderReleasing(gt.releasing);
     renderJustReleased(gt.just_released);
   }
 
-  // Steam
   if (st) {
-    const trendingWithSparklines = addSparklines(st.trending || [], st.history, (d, g) => d.player_counts?.[g.appid]);
-    renderSteamList('steam-trending', trendingWithSparklines, { showRank: true });
+    const trS = addSparklines(st.trending || [], st.history, (d, g) => d.player_counts?.[g.appid]);
+    renderSteamList('steam-trending', trS, { showRank: true });
     renderSteamList('steam-topsellers-paid', st.topsellers_paid || [], { showRank: true, showPrice: true });
     renderSteamList('steam-topsellers-free', st.topsellers_free || [], { showRank: true });
     renderDeals('steam-deals', st.specials || []);
