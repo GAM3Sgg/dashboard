@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 Gaming Trends Daily Report — Twitch + IGDB combined.
-Tracks top games by live viewership (Twitch) and upcoming/recent releases (IGDB).
+Tracks top games by live viewership (Twitch), breakout games surging in attention,
+top games by language/region, and upcoming/anticipated releases (IGDB + Steam wishlists).
 """
 
 import json
@@ -16,12 +17,37 @@ REQUEST_DELAY = 0.3
 DATA_DIR = Path(__file__).parent / "gaming_trends_data"
 SNAPSHOT_FILE = DATA_DIR / "daily_snapshots.json"
 CREDS_FILE = Path.home() / ".openclaw" / "credentials" / "twitch-api.json"
+STEAM_KEY_FILE = Path.home() / ".openclaw" / "credentials" / "steam-api.json"
+
+# Non-game Twitch categories to filter out
+BLACKLIST_CATEGORIES = {
+    "just chatting", "irl", "always on", "music", "art", "asmr",
+    "sports", "pools, hot tubs, and beaches", "talk shows & podcasts",
+    "food & drink", "travel & outdoors", "makers & crafting",
+    "science & technology", "special events", "politics",
+    "software and game development", "chess", "poker",
+}
+
+# Top languages to track (ISO 639-1 codes)
+TRACKED_LANGUAGES = {
+    "en": "English", "es": "Spanish", "pt": "Portuguese",
+    "ja": "Japanese", "ko": "Korean", "fr": "French",
+    "de": "German", "ru": "Russian", "zh": "Chinese",
+    "tr": "Turkish", "ar": "Arabic", "it": "Italian",
+}
 
 # ── Auth ──────────────────────────────────────────────────────────────────────
 
 def load_credentials():
     with open(CREDS_FILE, "r", encoding="utf-8") as f:
         return json.load(f)
+
+def load_steam_key():
+    try:
+        with open(STEAM_KEY_FILE, "r", encoding="utf-8") as f:
+            return json.load(f).get("key", "")
+    except Exception:
+        return ""
 
 def get_access_token(client_id, client_secret):
     """Get OAuth2 app access token (client credentials flow)."""
@@ -65,6 +91,19 @@ def igdb_post(endpoint, body, client_id, token):
         print(f"  IGDB error ({endpoint}): {e}", file=sys.stderr)
         return []
 
+def steam_get(url, params=None):
+    """GET request to Steam Store API."""
+    if params:
+        url += "?" + urllib.parse.urlencode(params)
+    req = urllib.request.Request(url, headers={"User-Agent": "GamingTrends/1.0"})
+    time.sleep(REQUEST_DELAY)
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            return json.loads(resp.read())
+    except Exception as e:
+        print(f"  Steam error: {e}", file=sys.stderr)
+        return {}
+
 # ── Formatting helpers ────────────────────────────────────────────────────────
 
 def fmt_num(n):
@@ -76,7 +115,7 @@ def fmt_num(n):
         return f"{n:,.0f}"
     return str(n)
 
-def pct_change(current, previous):
+def pct_change_str(current, previous):
     if not previous or not current:
         return ""
     change = ((current - previous) / previous) * 100
@@ -85,14 +124,56 @@ def pct_change(current, previous):
     sign = "+" if change > 0 else ""
     return f" ({sign}{change:.0f}%)"
 
-def twitch_link(name, game_id=None):
-    """Create Twitch directory link."""
-    slug = name.lower().replace(" ", "-").replace("'", "").replace(":", "")
+def twitch_link(name):
+    """Create clickable Twitch directory link."""
+    slug = name.lower().replace(" ", "-").replace("'", "").replace(":", "").replace(".", "")
     safe = name.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
     return f'<a href="https://www.twitch.tv/directory/category/{urllib.parse.quote(slug)}">{safe}</a>'
 
+def igdb_link(game):
+    """Create clickable IGDB link."""
+    name = safe_html(game.get("name", "Unknown"))
+    url = game.get("url", "")
+    if url:
+        return f'<a href="{url}">{name}</a>'
+    return name
+
+def steam_link(name, appid):
+    """Create clickable Steam store link."""
+    safe = name.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    return f'<a href="https://store.steampowered.com/app/{appid}">{safe}</a>'
+
 def safe_html(text):
-    return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    return str(text).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+def fmt_date(unix_ts):
+    if not unix_ts:
+        return "TBA"
+    return datetime.fromtimestamp(unix_ts).strftime("%b %d")
+
+def fmt_platforms(platforms):
+    if not platforms:
+        return ""
+    names = [p.get("name", "") for p in platforms[:5]]
+    short = []
+    for n in names:
+        if "PC" in n or "Windows" in n:
+            short.append("PC")
+        elif "PlayStation 5" in n:
+            short.append("PS5")
+        elif "PlayStation 4" in n:
+            short.append("PS4")
+        elif "Xbox Series" in n:
+            short.append("XSX")
+        elif "Xbox One" in n:
+            short.append("XB1")
+        elif "Switch" in n and "2" in n:
+            short.append("Switch 2")
+        elif "Switch" in n:
+            short.append("Switch")
+        else:
+            short.append(n[:10])
+    return " · ".join(dict.fromkeys(short))
 
 # ── Snapshots ─────────────────────────────────────────────────────────────────
 
@@ -105,7 +186,6 @@ def load_snapshots():
 def save_snapshot(snapshots, today_key, data):
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     snapshots[today_key] = data
-    # 30-day retention
     cutoff = (datetime.now() - timedelta(days=30)).strftime("%Y-%m-%d")
     snapshots = {k: v for k, v in snapshots.items() if k >= cutoff}
     with open(SNAPSHOT_FILE, "w", encoding="utf-8") as f:
@@ -118,92 +198,139 @@ def get_previous_snapshot(snapshots, today_key):
 
 # ── Twitch data ───────────────────────────────────────────────────────────────
 
+def is_game_category(name):
+    return name.lower() not in BLACKLIST_CATEGORIES
+
 def fetch_top_games(client_id, token, count=100):
-    """Fetch top games by current viewer count."""
+    """Fetch top games by current viewer count, filtering non-game categories."""
     games = []
     cursor = None
-    while len(games) < count:
-        params = {"first": min(100, count - len(games))}
+    fetched = 0
+    while len(games) < count and fetched < 300:
+        params = {"first": 100}
         if cursor:
             params["after"] = cursor
         resp = twitch_get("games/top", params, client_id, token)
         batch = resp.get("data", [])
         if not batch:
             break
-        games.extend(batch)
+        for g in batch:
+            if is_game_category(g["name"]) and len(games) < count:
+                games.append(g)
+        fetched += len(batch)
         cursor = resp.get("pagination", {}).get("cursor")
         if not cursor:
             break
     return games
 
-def fetch_stream_counts(client_id, token, game_ids):
-    """Get viewer + stream counts per game via streams endpoint."""
-    counts = {}
-    for gid in game_ids:
-        resp = twitch_get("streams", {"game_id": gid, "first": 1}, client_id, token)
-        # The pagination total isn't available, but we can get viewer count from games/top
-        # Just count streams for top games
-        streams = resp.get("data", [])
-        if streams:
-            counts[gid] = {"live_streams": len(streams)}
-    return counts
-
-def get_top_games_with_viewers(client_id, token):
-    """Get top games with viewer counts from the top games endpoint."""
-    # Twitch /games/top doesn't return viewer counts directly in newer API
-    # We need to use /streams to aggregate
-    # But for efficiency, we'll fetch top games and then get stream data
-
-    # Step 1: Get top 100 games
-    games_raw = fetch_top_games(client_id, token, count=100)
-
-    # Step 2: For top 30, get stream data to count viewers
+def enrich_with_streams(client_id, token, games, count=15):
+    """Get viewer + stream counts for top N games."""
     results = []
-    for game in games_raw[:30]:
+    for game in games[:count]:
         game_id = game["id"]
         game_name = game["name"]
-
-        # Fetch first page of streams for this game (sorted by viewers desc)
         resp = twitch_get("streams", {"game_id": game_id, "first": 100}, client_id, token)
         streams = resp.get("data", [])
-
         total_viewers = sum(s.get("viewer_count", 0) for s in streams)
         stream_count = len(streams)
-
-        # For very popular games, there are more than 100 streams
-        # The first page gives us a good approximation
-        # We note this is a lower bound for massive games
-
         results.append({
             "id": game_id,
             "name": game_name,
             "viewers": total_viewers,
             "streams": stream_count,
-            "box_art_url": game.get("box_art_url", "")
         })
-
     return results
+
+def fetch_breakout_games(client_id, token, top_game_ids, count=50):
+    """Fetch games outside top 15 to find breakout titles.
+    We look at positions 16-100 and compare to yesterday's snapshot."""
+    games = fetch_top_games(client_id, token, count=count)
+    # Only games NOT in the top 15
+    breakout_candidates = [g for g in games if g["id"] not in top_game_ids]
+    # Enrich top 20 candidates with stream data
+    results = []
+    for game in breakout_candidates[:20]:
+        game_id = game["id"]
+        game_name = game["name"]
+        resp = twitch_get("streams", {"game_id": game_id, "first": 100}, client_id, token)
+        streams = resp.get("data", [])
+        total_viewers = sum(s.get("viewer_count", 0) for s in streams)
+        stream_count = len(streams)
+        results.append({
+            "id": game_id,
+            "name": game_name,
+            "viewers": total_viewers,
+            "streams": stream_count,
+        })
+    return results
+
+def fetch_top_by_language(client_id, token, lang_code, limit=3):
+    """Get top games for a specific language by looking at top streams."""
+    resp = twitch_get("streams", {"language": lang_code, "first": 100}, client_id, token)
+    streams = resp.get("data", [])
+    # Aggregate viewers per game
+    game_viewers = {}
+    game_names = {}
+    game_ids = {}
+    for s in streams:
+        gid = s.get("game_id", "")
+        gname = s.get("game_name", "")
+        if not gid or not gname or not is_game_category(gname):
+            continue
+        game_viewers[gid] = game_viewers.get(gid, 0) + s.get("viewer_count", 0)
+        game_names[gid] = gname
+        game_ids[gid] = gid
+    # Sort by viewers
+    ranked = sorted(game_viewers.items(), key=lambda x: -x[1])[:limit]
+    return [(game_names[gid], viewers) for gid, viewers in ranked]
+
+# ── Steam wishlists ──────────────────────────────────────────────────────────
+
+def fetch_steam_wishlisted():
+    """Fetch Steam's most wishlisted upcoming games."""
+    import re
+    url = "https://store.steampowered.com/search/results/"
+    params = {
+        "filter": "popularwishlist",
+        "ignore_preferences": 1,
+        "json": 1,
+        "count": 25,
+        "cc": "us",
+        "l": "english"
+    }
+    data = steam_get(url, params)
+    if not data:
+        return []
+
+    results = []
+    for item in data.get("items", []):
+        name = item.get("name", "")
+        logo = item.get("logo", "")
+        # Extract appid from logo URL: /apps/APPID/
+        m = re.search(r"/apps/(\d+)/", logo)
+        appid = m.group(1) if m else ""
+        if name and appid:
+            results.append({"appid": appid, "name": name})
+    return results[:15]
 
 # ── IGDB data ─────────────────────────────────────────────────────────────────
 
 def fetch_upcoming_releases(client_id, token):
-    """Games releasing in the next 14 days via release_dates endpoint."""
+    """Games releasing in the next 30 days via release_dates endpoint."""
     now = int(datetime.now().timestamp())
-    future = int((datetime.now() + timedelta(days=14)).timestamp())
+    future = int((datetime.now() + timedelta(days=30)).timestamp())
     body = (
         f"fields game.name,game.url,game.follows,game.total_rating,date,platform.name,human;"
         f" where date >= {now} & date <= {future};"
-        f" sort date asc; limit 50;"
+        f" sort date asc; limit 100;"
     )
     raw = igdb_post("release_dates", body, client_id, token)
-    # Dedupe by game name (multiple platforms create multiple entries)
     seen = {}
     results = []
     for entry in raw:
         game = entry.get("game", {})
         name = game.get("name", "")
         if not name or name in seen:
-            # Merge platform into existing entry
             if name in seen and entry.get("platform"):
                 seen[name]["platforms"].append(entry["platform"])
             continue
@@ -253,49 +380,56 @@ def fetch_just_released(client_id, token):
         results.append(item)
     return results
 
-def fetch_most_anticipated(client_id, token):
-    """Top upcoming games by follows count."""
+def fetch_igdb_popular(client_id, token):
+    """Get most popular upcoming/unreleased games from IGDB popularity primitives."""
+    # Fetch top 50 by want-to-play, then filter to unreleased
+    body = "fields game_id,value,popularity_type; where popularity_type = 7; sort value desc; limit 50;"
+    raw = igdb_post("popularity_primitives", body, client_id, token)
+    if not raw:
+        return []
+
+    game_ids = [str(entry["game_id"]) for entry in raw if "game_id" in entry]
+    if not game_ids:
+        return []
+
+    # Resolve game names — filter to unreleased or future release dates
     now = int(datetime.now().timestamp())
-    body = (
-        f"fields name,first_release_date,platforms.name,follows,url;"
-        f" where first_release_date > {now} & follows > 0;"
-        f" sort follows desc; limit 10;"
+    ids_str = ",".join(game_ids)
+    body2 = (
+        f"fields name,first_release_date,follows,url,platforms.name;"
+        f" where id = ({ids_str}) & (first_release_date > {now} | first_release_date = null);"
+        f" limit 50;"
     )
-    return igdb_post("games", body, client_id, token)
+    games = igdb_post("games", body2, client_id, token)
 
-def fmt_date(unix_ts):
-    if not unix_ts:
-        return "TBA"
-    return datetime.fromtimestamp(unix_ts).strftime("%b %d")
+    pop_map = {entry["game_id"]: entry["value"] for entry in raw}
+    for g in games:
+        g["popularity"] = pop_map.get(g["id"], 0)
 
-def fmt_platforms(platforms):
-    if not platforms:
-        return ""
-    names = [p.get("name", "") for p in platforms[:5]]
-    short = []
-    for n in names:
-        if "PC" in n or "Windows" in n:
-            short.append("PC")
-        elif "PlayStation 5" in n:
-            short.append("PS5")
-        elif "PlayStation 4" in n:
-            short.append("PS4")
-        elif "Xbox Series" in n:
-            short.append("XSX")
-        elif "Xbox One" in n:
-            short.append("XB1")
-        elif "Switch" in n:
-            short.append("Switch")
+    return sorted(games, key=lambda x: -x.get("popularity", 0))[:10]
+
+def match_wishlisted_to_igdb(wishlisted, client_id, token):
+    """Cross-reference Steam wishlisted games with IGDB for release dates."""
+    results = []
+    for game in wishlisted[:10]:
+        name = game["name"]
+        # Search IGDB for this game
+        safe_name = name.replace('"', '\\"')
+        body = f'search "{safe_name}"; fields name,first_release_date,follows,url,platforms.name; limit 1;'
+        matches = igdb_post("games", body, client_id, token)
+        if matches:
+            match = matches[0]
+            match["steam_appid"] = game["appid"]
+            results.append(match)
         else:
-            short.append(n[:10])
-    return " · ".join(dict.fromkeys(short))  # dedupe while preserving order
-
-def igdb_link(game):
-    name = safe_html(game.get("name", "Unknown"))
-    url = game.get("url", "")
-    if url:
-        return f'<a href="{url}">{name}</a>'
-    return name
+            results.append({
+                "name": name,
+                "steam_appid": game["appid"],
+                "first_release_date": None,
+                "url": "",
+                "follows": 0,
+            })
+    return results
 
 # ── Report builder ────────────────────────────────────────────────────────────
 
@@ -325,68 +459,133 @@ def build_daily_report(client_id, token, today, snapshots, prev_viewers, prev_na
     lines.append(f"<b>GAMING TRENDS — {today}</b>")
     lines.append("")
 
-    # ── Twitch: Top Games by Viewership ──
+    # ── 1. Twitch: Top 5 Most Streamed Games ──
     print("Fetching Twitch top games...", file=sys.stderr)
-    top_games = get_top_games_with_viewers(client_id, token)
+    all_games = fetch_top_games(client_id, token, count=50)
+    top5 = enrich_with_streams(client_id, token, all_games, count=5)
+    # Also enrich positions 6-50 for breakout detection
+    top5_ids = {g["id"] for g in all_games[:5]}
 
-    lines.append("<b>TWITCH — TOP GAMES BY VIEWERS</b>")
+    lines.append("<b>TOP 5 MOST STREAMED</b>")
     lines.append("")
-    for i, g in enumerate(top_games[:20], 1):
+    for i, g in enumerate(top5, 1):
         name = g["name"]
         viewers = g["viewers"]
         streams = g["streams"]
-        change = pct_change(viewers, prev_viewers.get(name, 0))
-        new_badge = " [NEW]" if name not in prev_names and prev_names else ""
+        change = pct_change_str(viewers, prev_viewers.get(name, 0))
         link = twitch_link(name)
-        lines.append(f"{i}. {link}{new_badge}")
+        lines.append(f"{i}. {link}")
         lines.append(f"   {fmt_num(viewers)} viewers · {streams}+ streams{change}")
     lines.append("")
 
-    # ── Rising / Falling ──
+    # ── 2. Breakout Games (surging in viewers/streams) ──
+    print("Fetching breakout candidates...", file=sys.stderr)
+    breakout_raw = fetch_breakout_games(client_id, token, top5_ids, count=50)
+
+    # Build full viewer map for snapshot
+    all_enriched = top5 + breakout_raw
+    current_viewers = {g["name"]: g["viewers"] for g in all_enriched}
+    current_streams = {g["name"]: g["streams"] for g in all_enriched}
+
     if prev_viewers:
-        current_viewers = {g["name"]: g["viewers"] for g in top_games}
-        all_names = set(current_viewers.keys()) | set(prev_viewers.keys())
-
-        changes = []
-        for name in all_names:
-            curr = current_viewers.get(name, 0)
+        # Score breakout by: % viewer increase OR high stream count for new entries
+        breakout_scored = []
+        for g in breakout_raw:
+            name = g["name"]
+            curr_v = g["viewers"]
             prev_v = prev_viewers.get(name, 0)
-            if prev_v >= 500 and curr > 0:  # minimum threshold
-                pct = ((curr - prev_v) / prev_v) * 100
-                changes.append((name, curr, prev_v, pct))
 
-        rising = sorted([c for c in changes if c[3] > 20], key=lambda x: -x[3])[:5]
-        falling = sorted([c for c in changes if c[3] < -20], key=lambda x: x[3])[:5]
+            if prev_v >= 200 and curr_v > prev_v:
+                # Returning game surging
+                pct = ((curr_v - prev_v) / prev_v) * 100
+                breakout_scored.append({**g, "score": pct, "type": "surge",
+                    "label": f"{fmt_num(prev_v)} → {fmt_num(curr_v)} (+{pct:.0f}%)"})
+            elif prev_v == 0 and curr_v >= 500:
+                # New entry with significant viewers
+                breakout_scored.append({**g, "score": curr_v, "type": "new",
+                    "label": f"{fmt_num(curr_v)} viewers [NEW]"})
 
-        if rising:
-            lines.append("<b>RISING</b>")
-            for name, curr, prev_v, pct in rising:
-                lines.append(f"  {safe_html(name)}: {fmt_num(prev_v)} → {fmt_num(curr)} (+{pct:.0f}%)")
-            lines.append("")
+        breakout_scored.sort(key=lambda x: -x["score"])
+        breakout_top = breakout_scored[:10]
+    else:
+        # No previous data — show top 10 by viewers outside top 5
+        breakout_top = sorted(breakout_raw, key=lambda x: -x["viewers"])[:10]
+        for g in breakout_top:
+            g["label"] = f"{fmt_num(g['viewers'])} viewers"
+            g["type"] = "current"
 
-        if falling:
-            lines.append("<b>FALLING</b>")
-            for name, curr, prev_v, pct in falling:
-                lines.append(f"  {safe_html(name)}: {fmt_num(prev_v)} → {fmt_num(curr)} ({pct:.0f}%)")
-            lines.append("")
+    if breakout_top:
+        lines.append("<b>BREAKOUT — SURGING IN ATTENTION</b>")
+        lines.append("")
+        for g in breakout_top:
+            link = twitch_link(g["name"])
+            streams = g["streams"]
+            lines.append(f"  {link} — {g['label']} · {streams}+ streams")
+        lines.append("")
 
-    # ── New Entries ──
-    if prev_names:
-        current_names = {g["name"] for g in top_games[:30]}
-        new_entries = current_names - prev_names
-        if new_entries:
-            lines.append("<b>NEW ENTRIES TODAY</b>")
-            for name in sorted(new_entries):
-                game = next((g for g in top_games if g["name"] == name), None)
-                if game:
-                    lines.append(f"  {safe_html(name)} — {fmt_num(game['viewers'])} viewers")
-            lines.append("")
+    # ── 3. Top 3 Games by Language ──
+    print("Fetching language breakdown...", file=sys.stderr)
+    lang_section = []
+    for code, lang_name in sorted(TRACKED_LANGUAGES.items(), key=lambda x: x[1]):
+        top3 = fetch_top_by_language(client_id, token, code, limit=3)
+        if top3:
+            games_str = " · ".join(f"{safe_html(n)} ({fmt_num(v)})" for n, v in top3)
+            lang_section.append(f"  <b>{lang_name}:</b> {games_str}")
 
-    # ── IGDB: Upcoming Releases ──
-    print("Fetching IGDB releases...", file=sys.stderr)
+    if lang_section:
+        lines.append("<b>TOP GAMES BY LANGUAGE</b>")
+        lines.append("")
+        lines.extend(lang_section)
+        lines.append("")
+
+    # ── 4. Most Wishlisted on Steam → IGDB release dates ──
+    print("Fetching Steam wishlisted games...", file=sys.stderr)
+    wishlisted = fetch_steam_wishlisted()
+    if wishlisted:
+        print("Cross-referencing with IGDB...", file=sys.stderr)
+        wishlist_igdb = match_wishlisted_to_igdb(wishlisted, client_id, token)
+        lines.append("<b>MOST WISHLISTED (Steam) + RELEASE DATES</b>")
+        lines.append("")
+        for i, g in enumerate(wishlist_igdb[:10], 1):
+            name = g.get("name", "Unknown")
+            appid = g.get("steam_appid", "")
+            s_link = steam_link(name, appid) if appid else safe_html(name)
+            release = fmt_date(g.get("first_release_date"))
+            follows = g.get("follows", 0) or 0
+            meta = [release]
+            if follows:
+                meta.append(f"{fmt_num(follows)} IGDB follows")
+            igdb_url = g.get("url", "")
+            if igdb_url:
+                meta.append(f'<a href="{igdb_url}">IGDB</a>')
+            lines.append(f"  {i}. {s_link} — {' · '.join(meta)}")
+        lines.append("")
+
+    # ── 5. IGDB Most Popular (want-to-play) ──
+    print("Fetching IGDB popularity...", file=sys.stderr)
+    popular = fetch_igdb_popular(client_id, token)
+    if popular:
+        lines.append("<b>IGDB — MOST WANTED</b>")
+        lines.append("")
+        for g in popular[:10]:
+            link = igdb_link(g)
+            date = fmt_date(g.get("first_release_date"))
+            follows = g.get("follows", 0) or 0
+            meta = []
+            if date != "TBA":
+                meta.append(date)
+            if follows:
+                meta.append(f"{fmt_num(follows)} follows")
+            meta_str = f" — {' · '.join(meta)}" if meta else ""
+            lines.append(f"  {link}{meta_str}")
+        lines.append("")
+
+    # ── 6. Upcoming Releases (next 30 days) ──
+    print("Fetching upcoming releases...", file=sys.stderr)
     upcoming = fetch_upcoming_releases(client_id, token)
     if upcoming:
-        lines.append("<b>RELEASING NEXT 14 DAYS</b>")
+        lines.append("<b>RELEASING NEXT 30 DAYS</b>")
+        lines.append("")
         for g in upcoming[:12]:
             name = safe_html(g["name"])
             url = g.get("url", "")
@@ -403,10 +602,11 @@ def build_daily_report(client_id, token, today, snapshots, prev_viewers, prev_na
             lines.append(f"  {date}: {link}{meta_str}")
         lines.append("")
 
-    # ── IGDB: Just Released ──
+    # ── 7. Just Released (7 days) ──
     just_released = fetch_just_released(client_id, token)
     if just_released:
         lines.append("<b>JUST RELEASED (7 DAYS)</b>")
+        lines.append("")
         for g in just_released[:10]:
             name = safe_html(g["name"])
             url = g.get("url", "")
@@ -418,50 +618,20 @@ def build_daily_report(client_id, token, today, snapshots, prev_viewers, prev_na
             lines.append(f"  {link}{plat_str}{rating_str}")
         lines.append("")
 
-    # ── IGDB: Most Anticipated ──
-    anticipated = fetch_most_anticipated(client_id, token)
-    if anticipated:
-        lines.append("<b>MOST ANTICIPATED</b>")
-        for g in anticipated[:10]:
-            link = igdb_link(g)
-            date = fmt_date(g.get("first_release_date"))
-            follows = g.get("follows", 0) or 0
-            meta = [date]
-            if follows:
-                meta.append(f"{fmt_num(follows)} follows")
-            lines.append(f"  {link} — {' · '.join(meta)}")
-        lines.append("")
-
-    # ── Cross-reference: Twitch trending + upcoming ──
-    if upcoming:
-        twitch_names = {g["name"].lower() for g in top_games[:30]}
-        releasing_on_twitch = [g for g in upcoming if g.get("name", "").lower() in twitch_names]
-        if releasing_on_twitch:
-            lines.append("<b>TRENDING ON TWITCH + RELEASING SOON</b>")
-            for g in releasing_on_twitch:
-                name = safe_html(g["name"])
-                url = g.get("url", "")
-                link = f'<a href="{url}">{name}</a>' if url else name
-                lines.append(f"  {link} — {g.get('human', 'TBA')}")
-            lines.append("")
-
     # ── Save snapshot ──
     snapshot_data = {
-        "top_games": [{"id": g["id"], "name": g["name"]} for g in top_games[:30]],
-        "top_game_names": [g["name"] for g in top_games[:30]],
-        "viewers": {g["name"]: g["viewers"] for g in top_games},
+        "top_game_names": [g["name"] for g in all_enriched[:50]],
+        "viewers": {g["name"]: g["viewers"] for g in all_enriched},
+        "streams": {g["name"]: g["streams"] for g in all_enriched},
         "date": datetime.now().isoformat()
     }
     save_snapshot(snapshots, today, snapshot_data)
 
     report = "\n".join(lines)
-
-    # Save to file
     output_file = Path(__file__).parent / "gaming_trends_output.txt"
     with open(output_file, "w", encoding="utf-8") as f:
         f.write(report)
     print(f"Report saved to {output_file}", file=sys.stderr)
-
     return report
 
 def build_summary_report(snapshots, today, days):
@@ -475,7 +645,6 @@ def build_summary_report(snapshots, today, days):
     period_name = "WEEKLY" if days <= 7 else "MONTHLY"
     lines = [f"<b>GAMING TRENDS — {period_name} SUMMARY ({days}d)</b>", ""]
 
-    # Consistency: games that appeared most often in top 30
     game_appearances = {}
     for snap in period_snaps.values():
         for name in snap.get("top_game_names", []):
@@ -484,17 +653,15 @@ def build_summary_report(snapshots, today, days):
     total_days = len(period_snaps)
     consistent = sorted(game_appearances.items(), key=lambda x: -x[1])[:10]
 
-    lines.append(f"<b>MOST CONSISTENT (top 30 for {total_days} days)</b>")
+    lines.append(f"<b>MOST CONSISTENT (top games for {total_days} days)</b>")
     for name, count in consistent:
         pct = (count / total_days) * 100
-        lines.append(f"  {safe_html(name)} — {count}/{total_days} days ({pct:.0f}%)")
+        lines.append(f"  {twitch_link(name)} — {count}/{total_days} days ({pct:.0f}%)")
     lines.append("")
 
-    # Biggest risers/fallers: compare first and last snapshot viewers
     sorted_dates = sorted(period_snaps.keys())
     first_snap = period_snaps[sorted_dates[0]]
     last_snap = period_snaps[sorted_dates[-1]]
-
     first_v = first_snap.get("viewers", {})
     last_v = last_snap.get("viewers", {})
 
@@ -510,16 +677,15 @@ def build_summary_report(snapshots, today, days):
     if risers:
         lines.append(f"<b>BIGGEST RISERS ({days}d)</b>")
         for name, curr, prev, pct in risers:
-            lines.append(f"  {safe_html(name)}: {fmt_num(prev)} → {fmt_num(curr)} (+{pct:.0f}%)")
+            lines.append(f"  {twitch_link(name)}: {fmt_num(prev)} → {fmt_num(curr)} (+{pct:.0f}%)")
         lines.append("")
 
     if fallers:
         lines.append(f"<b>BIGGEST FALLERS ({days}d)</b>")
         for name, curr, prev, pct in fallers:
-            lines.append(f"  {safe_html(name)}: {fmt_num(prev)} → {fmt_num(curr)} ({pct:.0f}%)")
+            lines.append(f"  {twitch_link(name)}: {fmt_num(prev)} → {fmt_num(curr)} ({pct:.0f}%)")
         lines.append("")
 
-    # New entries over the period
     first_names = set(first_snap.get("top_game_names", []))
     last_names = set(last_snap.get("top_game_names", []))
     new_this_period = last_names - first_names
@@ -529,7 +695,7 @@ def build_summary_report(snapshots, today, days):
         lines.append(f"<b>NEW ENTRIES THIS {period_name}</b>")
         for name in sorted(new_this_period):
             viewers = last_v.get(name, 0)
-            lines.append(f"  {safe_html(name)} — {fmt_num(viewers)} viewers")
+            lines.append(f"  {twitch_link(name)} — {fmt_num(viewers)} viewers")
         lines.append("")
 
     if dropped:
@@ -542,7 +708,6 @@ def build_summary_report(snapshots, today, days):
     output_file = Path(__file__).parent / "gaming_trends_output.txt"
     with open(output_file, "w", encoding="utf-8") as f:
         f.write(report)
-
     return report
 
 # ── CLI ───────────────────────────────────────────────────────────────────────
