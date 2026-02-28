@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OG Gaming Dashboard</title>
+<title>Gaming Analytics Dashboard</title>
 <style>
 :root {
   --bg: #000000;
@@ -282,39 +282,19 @@ header .dot {
 <!-- Password Gate -->
 <div id="auth-gate" style="display:flex;align-items:center;justify-content:center;min-height:100vh;background:var(--bg)">
   <div style="text-align:center">
-    <h1 style="font-size:20px;font-weight:700;color:var(--accent);margin-bottom:20px">OG Gaming Dashboard</h1>
-    <input id="auth-input" type="password" placeholder="Enter password"
-      style="background:var(--card);border:1px solid var(--border);border-radius:7px;padding:10px 16px;color:var(--text);font-size:14px;font-family:inherit;width:220px;outline:none;text-align:center">
-    <div id="auth-error" style="color:var(--red);font-size:12px;margin-top:8px;height:16px"></div>
+    <h1 style="font-size:20px;font-weight:700;color:var(--accent);margin-bottom:20px">Gaming Analytics Dashboard</h1>
+    <div style="display:flex;gap:8px;justify-content:center">
+      <input id="auth-input" type="password" placeholder="Enter password" autofocus
+        style="background:var(--card);border:1px solid var(--border);border-radius:7px;padding:10px 16px;color:var(--text);font-size:14px;font-family:inherit;width:220px;outline:none;text-align:center">
+      <button id="auth-btn" style="background:var(--border-light);border:1px solid var(--border);border-radius:7px;padding:10px 16px;color:var(--text);font-size:13px;font-weight:600;cursor:pointer;font-family:inherit">Enter</button>
+    </div>
+    <div id="auth-error" style="color:var(--red);font-size:12px;margin-top:10px;height:16px"></div>
   </div>
 </div>
-<script>
-(function(){
-  var h='aac98c9e';
-  function ck(p){var s=0;for(var i=0;i<p.length;i++)s=((s<<5)-s)+p.charCodeAt(i),s|=0;return(s>>>0).toString(16)}
-  var stored=localStorage.getItem('og_dash_auth');
-  if(stored===h){document.getElementById('auth-gate').style.display='none';return}
-  var gate=document.getElementById('auth-gate');
-  var inp=document.getElementById('auth-input');
-  var err=document.getElementById('auth-error');
-  document.querySelector('.container').style.display='none';
-  inp.addEventListener('keydown',function(e){
-    if(e.key==='Enter'){
-      if(ck(inp.value)===h){
-        localStorage.setItem('og_dash_auth',h);
-        gate.style.display='none';
-        document.querySelector('.container').style.display='block';
-      } else {
-        err.textContent='Wrong password';inp.value='';
-      }
-    }
-  });
-})();
-</script>
 
 <div class="container" style="display:none">
   <header>
-    <h1>OG Gaming Dashboard</h1>
+    <h1>Gaming Analytics Dashboard</h1>
     <div class="updated" id="last-updated"><span class="dot"></span>Loading...</div>
   </header>
 
@@ -806,7 +786,40 @@ async function init() {
   }
 }
 
-init();
+// ── Auth Gate ────────────────────────────────────────────────────
+(function(){
+  var h='aac98c9e';
+  function ck(p){var s=0;for(var i=0;i<p.length;i++)s=((s<<5)-s)+p.charCodeAt(i),s|=0;return(s>>>0).toString(16)}
+  var gate=document.getElementById('auth-gate');
+  var container=document.querySelector('.container');
+  var inp=document.getElementById('auth-input');
+  var btn=document.getElementById('auth-btn');
+  var err=document.getElementById('auth-error');
+
+  function unlock(){
+    gate.style.display='none';
+    container.style.display='block';
+    init();
+  }
+
+  function tryAuth(){
+    if(ck(inp.value)===h){
+      localStorage.setItem('og_dash_auth',h);
+      unlock();
+    } else {
+      err.textContent='Wrong password';
+      inp.value='';
+      inp.focus();
+    }
+  }
+
+  if(localStorage.getItem('og_dash_auth')===h){
+    unlock();
+  } else {
+    inp.addEventListener('keydown',function(e){ if(e.key==='Enter') tryAuth(); });
+    btn.addEventListener('click', tryAuth);
+  }
+})();
 </script>
 </body>
 </html>
