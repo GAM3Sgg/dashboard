@@ -287,8 +287,8 @@ header .dot {
 
   <div class="tabs">
     <button class="tab active" data-tab="steam">Steam</button>
-    <button class="tab" data-tab="deals">Deals</button>
     <button class="tab" data-tab="twitch">Twitch & IGDB</button>
+    <button class="tab" data-tab="deals">Deals</button>
   </div>
 
   <!-- DEALS TAB -->
@@ -569,7 +569,7 @@ function renderDeals(containerId, deals) {
   el.innerHTML = deals.map((d, i) => {
     const url = d.steam_url || '#';
     const disc = d.discount_pct ? `<span class="badge badge-green">-${d.discount_pct}%</span>` : '';
-    const price = d.price ? `<span class="c-red" style="font-size:12px;font-weight:600">${esc(d.price)}</span>` : '';
+    const price = d.price ? `<span style="font-size:12px;font-weight:600">${esc(d.price)}</span>` : '';
     return `<li class="game-item">
       <span class="game-rank">${i + 1}</span>
       <div class="game-info"><div class="game-name"><a href="${esc(url)}" target="_blank">${esc(d.name)}</a></div></div>
@@ -680,7 +680,7 @@ function renderCheapSharkDeals(containerId, deals) {
   if (!deals || !deals.length) { el.innerHTML = '<li class="c-dim" style="padding:16px 0">No deals right now</li>'; return; }
   el.innerHTML = deals.map((d, i) => {
     const url = d.deal_url || d.steam_url || '#';
-    const salePrice = `<span class="c-green" style="font-size:12px;font-weight:600">$${esc(d.sale_price)}</span>`;
+    const salePrice = `<span style="font-size:12px;font-weight:600">$${esc(d.sale_price)}</span>`;
     const origPrice = `<span style="text-decoration:line-through;color:var(--text-dim);font-size:11px">$${esc(d.normal_price)}</span>`;
     const savingsBadge = d.savings_pct > 0 ? `<span class="badge badge-green">-${d.savings_pct}%</span>` : '';
     const storeBadge = d.store_name ? `<span class="badge badge-dim">${esc(d.store_name)}</span>` : '';
