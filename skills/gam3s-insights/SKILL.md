@@ -24,17 +24,17 @@ Generate and send the GAM3S.GG daily analytics dashboard combining GA4 and Googl
 Run this command (must use utf-8 encoding on Windows):
 
 ```bash
-cd C:\Users\User\clawd && set PYTHONIOENCODING=utf-8 && python send_insights_telegram.py
+cd C:\Users\User\clawd\scripts && set PYTHONIOENCODING=utf-8 && python send_insights_telegram.py
 ```
 
 Or if only generating without sending to Telegram:
 
 ```bash
-cd C:\Users\User\clawd && set PYTHONIOENCODING=utf-8 && python gam3s_insights.py
+cd C:\Users\User\clawd\scripts && set PYTHONIOENCODING=utf-8 && python gam3s_insights.py
 ```
 
 The report will be:
-1. Saved to `C:\Users\User\clawd\insights_output.txt`
+1. Saved to `C:\Users\User\clawd\scripts\insights_output.txt`
 2. Sent to OG on Telegram (if using send_insights_telegram.py)
 
 ## What It Contains
@@ -53,6 +53,7 @@ The report will be:
 Tell OG the report has been sent to Telegram. If they're already in the Telegram chat, just confirm it's done. If there was an error, show the error message and suggest checking:
 - Google service account credentials at `~/.openclaw/credentials/gam3s-google-sa.json`
 - Python dependencies: `pip install -r C:\Users\User\clawd\requirements.txt`
+
 
 ## Notes
 

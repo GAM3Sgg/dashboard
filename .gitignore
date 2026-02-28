@@ -3,9 +3,6 @@ __pycache__/
 .pi/
 .openclaw/
 .clawhub/
-steam_data/daily_snapshots.json
-gaming_trends_data/
-*_output.txt
-gam3s_90d_*.txt
-insights_output.txt
+scripts/steam_data/daily_snapshots.json
+scripts/*_output.txt
 canvas/

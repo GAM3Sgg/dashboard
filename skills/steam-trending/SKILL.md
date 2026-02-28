@@ -24,28 +24,28 @@ Generate and send the Steam Trending Games daily report with player counts, tren
 
 **Daily report (default):**
 ```bash
-cd C:\Users\User\clawd && set PYTHONIOENCODING=utf-8 && python send_steam_trending_telegram.py
+cd C:\Users\User\clawd\scripts && set PYTHONIOENCODING=utf-8 && python send_steam_trending_telegram.py
 ```
 
 **Weekly summary (7-day trends):**
 ```bash
-cd C:\Users\User\clawd && set PYTHONIOENCODING=utf-8 && python send_steam_trending_telegram.py --weekly
+cd C:\Users\User\clawd\scripts && set PYTHONIOENCODING=utf-8 && python send_steam_trending_telegram.py --weekly
 ```
 
 **Monthly summary (30-day rollup):**
 ```bash
-cd C:\Users\User\clawd && set PYTHONIOENCODING=utf-8 && python send_steam_trending_telegram.py --monthly
+cd C:\Users\User\clawd\scripts && set PYTHONIOENCODING=utf-8 && python send_steam_trending_telegram.py --monthly
 ```
 
 Generate without sending to Telegram:
 ```bash
-cd C:\Users\User\clawd && set PYTHONIOENCODING=utf-8 && python steam_trending.py
-cd C:\Users\User\clawd && set PYTHONIOENCODING=utf-8 && python steam_trending.py --weekly
-cd C:\Users\User\clawd && set PYTHONIOENCODING=utf-8 && python steam_trending.py --monthly
+cd C:\Users\User\clawd\scripts && set PYTHONIOENCODING=utf-8 && python steam_trending.py
+cd C:\Users\User\clawd\scripts && set PYTHONIOENCODING=utf-8 && python steam_trending.py --weekly
+cd C:\Users\User\clawd\scripts && set PYTHONIOENCODING=utf-8 && python steam_trending.py --monthly
 ```
 
 The report will be:
-1. Saved to `C:\Users\User\clawd\steam_trending_output.txt`
+1. Saved to `C:\Users\User\clawd\scripts\steam_trending_output.txt`
 2. Sent to OG on Telegram (if using send_steam_trending_telegram.py)
 
 ## What It Contains
@@ -80,7 +80,7 @@ Tell OG the report has been sent to Telegram. If there was an error, suggest che
 
 - Uses Steam Store API (featured categories, search) + Steam Web API (player counts)
 - API key stored at `~/.openclaw/credentials/steam-api.json`
-- Daily snapshots stored at `C:\Users\User\clawd\steam_data/daily_snapshots.json` (14 day retention)
+- Daily snapshots stored at `C:\Users\User\clawd\scripts\steam_data/daily_snapshots.json` (14 day retention)
 - Day-over-day comparison requires at least 2 days of data
 - Scheduled task runs daily at 2:00 PM Dubai time
 - Some apps return 404 on player count (e.g. hardware like Steam Deck) — this is normal
