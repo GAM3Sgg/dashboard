@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.pi/
+.openclaw/
+.clawhub/
+steam_data/daily_snapshots.json
+gaming_trends_data/
+*_output.txt
+gam3s_90d_*.txt
+insights_output.txt
+canvas/
