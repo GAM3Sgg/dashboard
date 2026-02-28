@@ -315,10 +315,16 @@ def fetch_steam_wishlisted():
 # ── IGDB data ─────────────────────────────────────────────────────────────────
 
 def fetch_upcoming_releases(client_id, token):
-    """Games releasing in the next 30 days, sorted by IGDB hypes (anticipation).
+    """Games releasing through end of current month, sorted by IGDB hypes (anticipation).
     Uses games endpoint with hypes field to surface notable titles first."""
-    now = int(datetime.now().timestamp())
-    future = int((datetime.now() + timedelta(days=30)).timestamp())
+    now_dt = datetime.now()
+    now = int(now_dt.timestamp())
+    # End of current month (first day of next month, minus 1 second)
+    if now_dt.month == 12:
+        end_of_month = now_dt.replace(year=now_dt.year + 1, month=1, day=1) - timedelta(seconds=1)
+    else:
+        end_of_month = now_dt.replace(month=now_dt.month + 1, day=1) - timedelta(seconds=1)
+    future = int(end_of_month.timestamp())
 
     # Query games sorted by hypes (anticipation score) — only games with confirmed exact dates
     body = (
@@ -625,7 +631,8 @@ def build_daily_report(client_id, token, today, snapshots, prev_viewers, prev_na
     print("Fetching upcoming releases...", file=sys.stderr)
     upcoming = fetch_upcoming_releases(client_id, token)
     if upcoming:
-        lines.append("<b>RELEASING NEXT 30 DAYS</b>")
+        month_name = datetime.now().strftime("%B").upper()
+        lines.append(f"<b>RELEASING IN {month_name}</b>")
         lines.append("")
         for g in upcoming[:12]:
             name = safe_html(g["name"])

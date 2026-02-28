@@ -286,12 +286,12 @@ header .dot {
   </header>
 
   <div class="tabs">
-    <button class="tab active" data-tab="twitch">Twitch & IGDB</button>
-    <button class="tab" data-tab="steam">Steam</button>
+    <button class="tab" data-tab="twitch">Twitch & IGDB</button>
+    <button class="tab active" data-tab="steam">Steam</button>
   </div>
 
   <!-- TWITCH & IGDB TAB -->
-  <div class="tab-content active" id="tab-twitch">
+  <div class="tab-content" id="tab-twitch">
     <div class="grid grid-2" style="margin-bottom:14px">
       <div class="card scroll-card">
         <h2>Top 15 Most Streamed</h2>
@@ -312,7 +312,7 @@ header .dot {
         <ul class="game-list" id="wishlisted"></ul>
       </div>
       <div class="card scroll-card">
-        <h2>Releasing Next 30 Days</h2>
+        <h2>Releasing This Month</h2>
         <div id="releasing"></div>
       </div>
     </div>
@@ -323,7 +323,7 @@ header .dot {
   </div>
 
   <!-- STEAM TAB -->
-  <div class="tab-content" id="tab-steam">
+  <div class="tab-content active" id="tab-steam">
     <div class="grid grid-2" style="margin-bottom:14px">
       <div class="card scroll-card">
         <h2>New & Trending</h2>
@@ -376,7 +376,7 @@ function fmt(n) {
 }
 
 function changeBadge(pct) {
-  if (pct == null) return '<span class="badge badge-orange">NEW</span>';
+  if (pct == null) return '';
   if (pct > 0) return `<span class="badge badge-green">+${pct.toFixed(0)}%</span>`;
   if (pct < 0) return `<span class="badge badge-red">${pct.toFixed(0)}%</span>`;
   return '';
