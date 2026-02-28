@@ -204,7 +204,7 @@ def parse_gaming_trends_output():
 
 
 def build_steam_data():
-    """Build dashboard JSON from steam trending snapshots."""
+    """Build dashboard JSON from steam trending snapshots — all sections."""
     snapshots = load_json(STEAM_SNAPSHOTS)
     if not snapshots:
         print("  No steam snapshots found, skipping", file=sys.stderr)
@@ -221,28 +221,114 @@ def build_steam_data():
 
     # Previous day for changes
     prev_date = sorted_dates[-2] if len(sorted_dates) >= 2 else None
-    prev_players = snapshots[prev_date].get("player_counts", {}) if prev_date else {}
+    prev_snap = snapshots[prev_date] if prev_date else {}
+    prev_players = prev_snap.get("player_counts", {})
+    prev_trending_names = {g.get("name", "") for g in prev_snap.get("trending", [])}
+    prev_topseller_names = {g.get("name", "") for g in prev_snap.get("topsellers", [])}
 
-    def build_game(item):
+    def build_game(item, prev_names=None):
         appid = item.get("appid", "")
         name = item.get("name", "")
-        players = player_counts.get(appid, 0)
+        players = item.get("players", 0) or player_counts.get(appid, 0)
         prev_p = prev_players.get(appid, 0)
         change = round(((players - prev_p) / prev_p) * 100, 1) if prev_p > 0 else None
         rev = reviews.get(appid, {})
+        is_new = name not in prev_names if prev_names else False
         return {
             "name": name,
             "appid": appid,
             "players": players,
             "change_pct": change,
-            "review": rev.get("desc", ""),
+            "is_new": is_new,
+            "price_str": item.get("price_str", ""),
+            "discount_pct": item.get("discount_pct", 0),
+            "is_free": item.get("is_free", False),
+            "coming_soon": item.get("coming_soon", False),
+            "is_early_access": item.get("is_early_access", False),
+            "release_date": item.get("release_date", ""),
+            "genres": item.get("genres", []),
+            "review": rev.get("desc", "") or item.get("review_desc", ""),
             "review_positive": rev.get("positive", 0),
             "review_negative": rev.get("negative", 0),
             "steam_url": f"https://store.steampowered.com/app/{appid}"
         }
 
-    trending = [build_game(g) for g in latest.get("trending", [])]
-    topsellers = [build_game(g) for g in latest.get("topsellers", [])]
+    trending = [build_game(g, prev_trending_names) for g in latest.get("trending", [])]
+    topsellers_paid = [build_game(g, prev_topseller_names) for g in latest.get("topsellers_paid", [])]
+    topsellers_free = [build_game(g, prev_topseller_names) for g in latest.get("topsellers_free", [])]
+
+    # Fallback: if no paid/free split, use topsellers
+    if not topsellers_paid and not topsellers_free:
+        all_sellers = [build_game(g, prev_topseller_names) for g in latest.get("topsellers", [])]
+        topsellers_paid = [g for g in all_sellers if not g.get("is_free")]
+        topsellers_free = [g for g in all_sellers if g.get("is_free")]
+
+    # Rising / Falling
+    rising = []
+    falling = []
+    name_lookup = {}
+    for g in latest.get("trending", []) + latest.get("topsellers", []):
+        if g.get("appid"):
+            name_lookup[g["appid"]] = g.get("name", "")
+    if prev_players:
+        for appid, count in player_counts.items():
+            prev_p = prev_players.get(appid, 0)
+            if prev_p > 100:
+                abs_change = count - prev_p
+                pct = ((count - prev_p) / prev_p) * 100
+                entry = {
+                    "name": name_lookup.get(appid, f"App {appid}"),
+                    "appid": appid,
+                    "players": count,
+                    "prev_players": prev_p,
+                    "abs_change": abs_change,
+                    "pct_change": round(pct, 1),
+                    "steam_url": f"https://store.steampowered.com/app/{appid}"
+                }
+                if abs_change > 0:
+                    rising.append(entry)
+                elif pct < -15:
+                    falling.append(entry)
+        rising.sort(key=lambda x: -x["abs_change"])
+        falling.sort(key=lambda x: x["pct_change"])
+
+    # Deals
+    specials = []
+    for deal in latest.get("specials", []):
+        name = deal.get("name", "")
+        appid = deal.get("appid", "")
+        disc = deal.get("discount", 0)
+        final = deal.get("final", 0)
+        price = f"${final / 100:.2f}" if final else ""
+        specials.append({
+            "name": name,
+            "appid": appid,
+            "discount_pct": disc,
+            "price": price,
+            "steam_url": f"https://store.steampowered.com/app/{appid}"
+        })
+    specials.sort(key=lambda x: -x.get("discount_pct", 0))
+
+    # Wishlisted
+    wishlisted = []
+    for g in latest.get("wishlisted", []):
+        wishlisted.append({
+            "name": g.get("name", ""),
+            "appid": g.get("appid", ""),
+            "steam_url": f"https://store.steampowered.com/app/{g.get('appid', '')}"
+        })
+
+    # Watch This Week (unreleased / just launched)
+    watch = []
+    for g in latest.get("unreleased", []):
+        watch.append({
+            "name": g.get("name", ""),
+            "appid": g.get("appid", ""),
+            "release_date": g.get("release_date", "TBD"),
+            "price_str": g.get("price_str", ""),
+            "is_early_access": g.get("is_early_access", False),
+            "steam_url": f"https://store.steampowered.com/app/{g.get('appid', '')}"
+        })
 
     # History for sparklines
     history = {}
@@ -254,7 +340,13 @@ def build_steam_data():
         "updated": latest.get("date", datetime.now().isoformat()),
         "report_date": latest_date,
         "trending": trending,
-        "topsellers": topsellers,
+        "topsellers_paid": topsellers_paid[:10],
+        "topsellers_free": topsellers_free[:10],
+        "rising": rising[:8],
+        "falling": falling[:5],
+        "specials": specials[:8],
+        "wishlisted": wishlisted[:10],
+        "watch": watch[:6],
         "history": history
     }
 

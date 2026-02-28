@@ -436,9 +436,30 @@ def build_daily_report() -> str:
                 "negative": g.get("review_negative", 0),
             }
 
+    # Build enriched game details for snapshot
+    def game_detail(g):
+        return {
+            "name": g.get("name", ""),
+            "appid": g.get("appid", ""),
+            "players": g.get("players", 0),
+            "price_str": g.get("price_str", ""),
+            "discount_pct": g.get("discount_pct", 0),
+            "is_free": g.get("is_free", False),
+            "coming_soon": g.get("coming_soon", False),
+            "is_early_access": g.get("is_early_access", False),
+            "release_date": g.get("release_date", ""),
+            "genres": g.get("genres", []),
+            "type": g.get("type", "game"),
+        }
+
     save_snapshot({
-        "trending": [{"name": g.get("name", ""), "appid": g.get("appid", "")} for g in trending_raw[:15]],
-        "topsellers": [{"name": g.get("name", ""), "appid": g.get("appid", "")} for g in topsellers_raw[:20]],
+        "trending": [game_detail(all_games.get(g["appid"], g)) for g in trending_raw[:15]],
+        "topsellers": [game_detail(all_games.get(g["appid"], g)) for g in topsellers_raw[:20]],
+        "topsellers_paid": [game_detail(g) for g in topsellers_paid[:10]],
+        "topsellers_free": [game_detail(g) for g in topsellers_free[:10]],
+        "wishlisted": [{"name": g["name"], "appid": g.get("appid", "")} for g in wishlisted_raw[:10]],
+        "specials": specials[:10],
+        "unreleased": [game_detail(g) for g in unreleased_all.values()],
         "player_counts": player_counts,
         "reviews": reviews_snapshot,
         "date": datetime.now().isoformat(),
