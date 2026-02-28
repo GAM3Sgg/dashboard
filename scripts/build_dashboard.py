@@ -54,7 +54,7 @@ def build_gaming_trends_data():
     prev_viewers = snapshots[prev_date].get("viewers", {}) if prev_date else {}
 
     top_streamed = []
-    for name in top_names[:5]:
+    for name in top_names[:15]:
         v = viewers.get(name, 0)
         prev_v = prev_viewers.get(name, 0)
         change = round(((v - prev_v) / prev_v) * 100, 1) if prev_v > 0 else None
@@ -68,9 +68,9 @@ def build_gaming_trends_data():
         })
 
     breakout = []
-    top5_names = set(top_names[:5])
-    for name in top_names[5:25]:
-        if name in top5_names:
+    top15_names = set(top_names[:15])
+    for name in top_names[15:35]:
+        if name in top15_names:
             continue
         v = viewers.get(name, 0)
         prev_v = prev_viewers.get(name, 0)

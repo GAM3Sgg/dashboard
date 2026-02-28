@@ -242,10 +242,9 @@ def enrich_with_streams(client_id, token, games, count=15):
     return results
 
 def fetch_breakout_games(client_id, token, top_game_ids, count=50):
-    """Fetch games outside top 15 to find breakout titles.
-    We look at positions 16-100 and compare to yesterday's snapshot."""
+    """Fetch games outside top N to find breakout titles.
+    We look at lower-ranked games and compare to yesterday's snapshot."""
     games = fetch_top_games(client_id, token, count=count)
-    # Only games NOT in the top 15
     breakout_candidates = [g for g in games if g["id"] not in top_game_ids]
     # Enrich top 20 candidates with stream data
     results = []
@@ -385,6 +384,8 @@ def fetch_upcoming_releases(client_id, token):
             "human": human,
             "platforms": rd.get("platforms", g.get("platforms", []))
         })
+    # Sort chronologically (ascending by release date)
+    results.sort(key=lambda x: x.get("date") or 0)
     return results
 
 def fetch_just_released(client_id, token):
@@ -502,13 +503,13 @@ def build_daily_report(client_id, token, today, snapshots, prev_viewers, prev_na
     # ── 1. Twitch: Top 5 Most Streamed Games ──
     print("Fetching Twitch top games...", file=sys.stderr)
     all_games = fetch_top_games(client_id, token, count=50)
-    top5 = enrich_with_streams(client_id, token, all_games, count=5)
-    # Also enrich positions 6-50 for breakout detection
-    top5_ids = {g["id"] for g in all_games[:5]}
+    top15 = enrich_with_streams(client_id, token, all_games, count=15)
+    # Also enrich positions 16-50 for breakout detection
+    top15_ids = {g["id"] for g in all_games[:15]}
 
-    lines.append("<b>TOP 5 MOST STREAMED</b>")
+    lines.append("<b>TOP 15 MOST STREAMED</b>")
     lines.append("")
-    for i, g in enumerate(top5, 1):
+    for i, g in enumerate(top15, 1):
         name = g["name"]
         viewers = g["viewers"]
         streams = g["streams"]
@@ -520,10 +521,10 @@ def build_daily_report(client_id, token, today, snapshots, prev_viewers, prev_na
 
     # ── 2. Breakout Games (surging in viewers/streams) ──
     print("Fetching breakout candidates...", file=sys.stderr)
-    breakout_raw = fetch_breakout_games(client_id, token, top5_ids, count=50)
+    breakout_raw = fetch_breakout_games(client_id, token, top15_ids, count=50)
 
     # Build full viewer map for snapshot
-    all_enriched = top5 + breakout_raw
+    all_enriched = top15 + breakout_raw
     current_viewers = {g["name"]: g["viewers"] for g in all_enriched}
     current_streams = {g["name"]: g["streams"] for g in all_enriched}
 
