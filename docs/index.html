@@ -260,7 +260,11 @@ header .dot {
 
 /* Scroll */
 .scroll-card {
-  max-height: 480px;
+  max-height: 520px;
+  overflow-y: auto;
+}
+.scroll-card .game-list,
+.scroll-card > div:not(h2) {
   overflow-y: auto;
 }
 .scroll-card::-webkit-scrollbar { width: 4px; }
@@ -289,7 +293,7 @@ header .dot {
   <!-- TWITCH & IGDB TAB -->
   <div class="tab-content active" id="tab-twitch">
     <div class="grid grid-2" style="margin-bottom:14px">
-      <div class="card">
+      <div class="card scroll-card">
         <h2>Top 15 Most Streamed</h2>
         <ul class="game-list" id="top-streamed"></ul>
       </div>
