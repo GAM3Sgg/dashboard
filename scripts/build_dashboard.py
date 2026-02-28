@@ -17,6 +17,7 @@ DOCS_DATA_DIR = SCRIPTS_DIR.parent / "docs" / "data"
 GAMING_TRENDS_SNAPSHOTS = SCRIPTS_DIR / "gaming_trends_data" / "daily_snapshots.json"
 STEAM_SNAPSHOTS = SCRIPTS_DIR / "steam_data" / "daily_snapshots.json"
 EGS_SNAPSHOTS = SCRIPTS_DIR / "egs_data" / "daily_snapshots.json"
+CHEAPSHARK_SNAPSHOTS = SCRIPTS_DIR / "cheapshark_data" / "daily_snapshots.json"
 
 # Latest output files (HTML-formatted reports)
 GAMING_TRENDS_OUTPUT = SCRIPTS_DIR / "gaming_trends_output.txt"
@@ -374,6 +375,31 @@ def build_egs_data():
     }
 
 
+def build_cheapshark_data():
+    """Build dashboard JSON from CheapShark deal snapshots."""
+    snapshots = load_json(CHEAPSHARK_SNAPSHOTS)
+    if not snapshots:
+        print("  No CheapShark snapshots found, skipping", file=sys.stderr)
+        return None
+
+    sorted_dates = sorted(snapshots.keys())
+    latest_date = sorted_dates[-1] if sorted_dates else None
+    if not latest_date:
+        return None
+
+    latest = snapshots[latest_date]
+
+    return {
+        "updated": latest.get("date", datetime.now().isoformat()),
+        "report_date": latest_date,
+        "stores": latest.get("stores", {}),
+        "best_deals": latest.get("best_deals", []),
+        "biggest_discounts": latest.get("biggest_discounts", []),
+        "top_rated": latest.get("top_rated", []),
+        "aaa_deals": latest.get("aaa_deals", []),
+    }
+
+
 def main():
     DOCS_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -402,6 +428,14 @@ def main():
         with open(egs_path, "w", encoding="utf-8") as f:
             json.dump(egs_data, f, indent=2, ensure_ascii=False)
         print(f"  EGS free games: {egs_path}", file=sys.stderr)
+
+    # CheapShark Deals
+    cs_data = build_cheapshark_data()
+    if cs_data:
+        cs_path = DOCS_DATA_DIR / "cheapshark_deals.json"
+        with open(cs_path, "w", encoding="utf-8") as f:
+            json.dump(cs_data, f, indent=2, ensure_ascii=False)
+        print(f"  CheapShark deals: {cs_path}", file=sys.stderr)
 
     print("Dashboard data built.", file=sys.stderr)
 

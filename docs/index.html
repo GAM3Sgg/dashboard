@@ -287,20 +287,40 @@ header .dot {
 
   <div class="tabs">
     <button class="tab active" data-tab="steam">Steam</button>
-    <button class="tab" data-tab="epic">Epic Games</button>
+    <button class="tab" data-tab="deals">Deals</button>
     <button class="tab" data-tab="twitch">Twitch & IGDB</button>
   </div>
 
-  <!-- EPIC GAMES TAB -->
-  <div class="tab-content" id="tab-epic">
-    <div class="grid grid-2">
+  <!-- DEALS TAB -->
+  <div class="tab-content" id="tab-deals">
+    <div class="grid grid-2" style="margin-bottom:14px">
       <div class="card">
-        <h2>Free This Week</h2>
+        <h2>Epic — Free This Week</h2>
         <ul class="game-list" id="epic-current"></ul>
       </div>
       <div class="card">
-        <h2>Free Next Week</h2>
+        <h2>Epic — Free Next Week</h2>
         <ul class="game-list" id="epic-upcoming"></ul>
+      </div>
+    </div>
+    <div class="grid grid-2" style="margin-bottom:14px">
+      <div class="card scroll-card">
+        <h2>Best Deals</h2>
+        <ul class="game-list" id="cs-best"></ul>
+      </div>
+      <div class="card scroll-card">
+        <h2>Biggest Discounts</h2>
+        <ul class="game-list" id="cs-discounts"></ul>
+      </div>
+    </div>
+    <div class="grid grid-2">
+      <div class="card scroll-card">
+        <h2>Top Rated on Sale (MC 80+)</h2>
+        <ul class="game-list" id="cs-rated"></ul>
+      </div>
+      <div class="card scroll-card">
+        <h2>AAA on Sale</h2>
+        <ul class="game-list" id="cs-aaa"></ul>
       </div>
     </div>
   </div>
@@ -654,6 +674,31 @@ function renderEpicUpcoming(containerId, games) {
   }).join('');
 }
 
+// ── CheapShark Renders ──────────────────────────────────────────
+function renderCheapSharkDeals(containerId, deals) {
+  const el = document.getElementById(containerId);
+  if (!deals || !deals.length) { el.innerHTML = '<li class="c-dim" style="padding:16px 0">No deals right now</li>'; return; }
+  el.innerHTML = deals.map((d, i) => {
+    const url = d.deal_url || d.steam_url || '#';
+    const salePrice = `<span class="c-green" style="font-size:12px;font-weight:600">$${esc(d.sale_price)}</span>`;
+    const origPrice = `<span style="text-decoration:line-through;color:var(--text-dim);font-size:11px">$${esc(d.normal_price)}</span>`;
+    const savingsBadge = d.savings_pct > 0 ? `<span class="badge badge-green">-${d.savings_pct}%</span>` : '';
+    const storeBadge = d.store_name ? `<span class="badge badge-dim">${esc(d.store_name)}</span>` : '';
+    const meta = [];
+    if (d.metacritic) meta.push(`MC: ${d.metacritic}`);
+    if (d.steam_rating_text) meta.push(d.steam_rating_text);
+    const metaStr = meta.length ? `<div class="game-meta">${esc(meta.join(' / '))}</div>` : '';
+    return `<li class="game-item">
+      <span class="game-rank">${i + 1}</span>
+      <div class="game-info">
+        <div class="game-name"><a href="${esc(url)}" target="_blank">${esc(d.title)}</a> ${storeBadge}</div>
+        ${metaStr}
+      </div>
+      <div class="game-stats">${origPrice} ${salePrice} ${savingsBadge}</div>
+    </li>`;
+  }).join('');
+}
+
 // ── Sparkline helper ────────────────────────────────────────────
 function addSparklines(games, history, keyFn) {
   if (!history || Object.keys(history).length < 2) return games;
@@ -677,13 +722,14 @@ document.querySelectorAll('.tab').forEach(tab => {
 
 // ── Init ────────────────────────────────────────────────────────
 async function init() {
-  const [gt, st, egs] = await Promise.all([
+  const [gt, st, egs, cs] = await Promise.all([
     loadJSON('data/gaming_trends.json'),
     loadJSON('data/steam_trending.json'),
-    loadJSON('data/egs_free_games.json')
+    loadJSON('data/egs_free_games.json'),
+    loadJSON('data/cheapshark_deals.json')
   ]);
 
-  const dates = [gt?.updated, st?.updated, egs?.updated].filter(Boolean);
+  const dates = [gt?.updated, st?.updated, egs?.updated, cs?.updated].filter(Boolean);
   if (dates.length) {
     const latest = dates.sort().pop();
     const d = new Date(latest);
@@ -705,6 +751,13 @@ async function init() {
   if (egs) {
     renderEpicFree('epic-current', egs.current_free);
     renderEpicUpcoming('epic-upcoming', egs.upcoming_free);
+  }
+
+  if (cs) {
+    renderCheapSharkDeals('cs-best', cs.best_deals);
+    renderCheapSharkDeals('cs-discounts', cs.biggest_discounts);
+    renderCheapSharkDeals('cs-rated', cs.top_rated);
+    renderCheapSharkDeals('cs-aaa', cs.aaa_deals);
   }
 
   if (st) {
