@@ -286,8 +286,23 @@ header .dot {
   </header>
 
   <div class="tabs">
-    <button class="tab" data-tab="twitch">Twitch & IGDB</button>
     <button class="tab active" data-tab="steam">Steam</button>
+    <button class="tab" data-tab="epic">Epic Games</button>
+    <button class="tab" data-tab="twitch">Twitch & IGDB</button>
+  </div>
+
+  <!-- EPIC GAMES TAB -->
+  <div class="tab-content" id="tab-epic">
+    <div class="grid grid-2">
+      <div class="card">
+        <h2>Free This Week</h2>
+        <ul class="game-list" id="epic-current"></ul>
+      </div>
+      <div class="card">
+        <h2>Free Next Week</h2>
+        <ul class="game-list" id="epic-upcoming"></ul>
+      </div>
+    </div>
   </div>
 
   <!-- TWITCH & IGDB TAB -->
@@ -594,6 +609,51 @@ function renderWatch(containerId, games) {
   }).join('');
 }
 
+// ── Epic Games Renders ──────────────────────────────────────────
+function fmtEpicDate(isoStr) {
+  if (!isoStr) return 'TBA';
+  const d = new Date(isoStr);
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+}
+
+function renderEpicFree(containerId, games) {
+  const el = document.getElementById(containerId);
+  if (!games || !games.length) { el.innerHTML = '<li class="c-dim" style="padding:16px 0">No free games right now</li>'; return; }
+  el.innerHTML = games.map(g => {
+    const url = g.store_url || '#';
+    const price = g.original_price && g.original_price !== '0' ? `<span style="text-decoration:line-through;color:var(--text-dim);font-size:11px">${esc(g.original_price)}</span> ` : '';
+    const endDate = g.end_date ? fmtEpicDate(g.end_date) : '';
+    const endBadge = endDate ? `<span class="badge badge-orange">until ${endDate}</span>` : '';
+    const publisher = g.publisher ? `<div class="game-meta">${esc(g.publisher)}</div>` : '';
+    return `<li class="game-item">
+      <div class="game-info">
+        <div class="game-name"><a href="${esc(url)}" target="_blank">${esc(g.title)}</a> <span class="badge badge-green">FREE</span></div>
+        ${publisher}
+      </div>
+      <div class="game-stats">${price}${endBadge}</div>
+    </li>`;
+  }).join('');
+}
+
+function renderEpicUpcoming(containerId, games) {
+  const el = document.getElementById(containerId);
+  if (!games || !games.length) { el.innerHTML = '<li class="c-dim" style="padding:16px 0">No upcoming free games announced</li>'; return; }
+  el.innerHTML = games.map(g => {
+    const url = g.store_url || '#';
+    const price = g.original_price && g.original_price !== '0' ? `<span style="font-size:11px;color:var(--text-dim)">Worth ${esc(g.original_price)}</span>` : '';
+    const startDate = g.start_date ? fmtEpicDate(g.start_date) : 'TBA';
+    const dateBadge = `<span class="badge badge-dim">${startDate}</span>`;
+    const publisher = g.publisher ? `<div class="game-meta">${esc(g.publisher)}</div>` : '';
+    return `<li class="game-item">
+      <div class="game-info">
+        <div class="game-name"><a href="${esc(url)}" target="_blank">${esc(g.title)}</a></div>
+        ${publisher}
+      </div>
+      <div class="game-stats">${price} ${dateBadge}</div>
+    </li>`;
+  }).join('');
+}
+
 // ── Sparkline helper ────────────────────────────────────────────
 function addSparklines(games, history, keyFn) {
   if (!history || Object.keys(history).length < 2) return games;
@@ -617,12 +677,13 @@ document.querySelectorAll('.tab').forEach(tab => {
 
 // ── Init ────────────────────────────────────────────────────────
 async function init() {
-  const [gt, st] = await Promise.all([
+  const [gt, st, egs] = await Promise.all([
     loadJSON('data/gaming_trends.json'),
-    loadJSON('data/steam_trending.json')
+    loadJSON('data/steam_trending.json'),
+    loadJSON('data/egs_free_games.json')
   ]);
 
-  const dates = [gt?.updated, st?.updated].filter(Boolean);
+  const dates = [gt?.updated, st?.updated, egs?.updated].filter(Boolean);
   if (dates.length) {
     const latest = dates.sort().pop();
     const d = new Date(latest);
@@ -639,6 +700,11 @@ async function init() {
     renderWishlisted(gt.wishlisted);
     renderReleasing(gt.releasing);
     renderJustReleased(gt.just_released);
+  }
+
+  if (egs) {
+    renderEpicFree('epic-current', egs.current_free);
+    renderEpicUpcoming('epic-upcoming', egs.upcoming_free);
   }
 
   if (st) {

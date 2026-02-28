@@ -16,6 +16,7 @@ DOCS_DATA_DIR = SCRIPTS_DIR.parent / "docs" / "data"
 # Snapshot sources
 GAMING_TRENDS_SNAPSHOTS = SCRIPTS_DIR / "gaming_trends_data" / "daily_snapshots.json"
 STEAM_SNAPSHOTS = SCRIPTS_DIR / "steam_data" / "daily_snapshots.json"
+EGS_SNAPSHOTS = SCRIPTS_DIR / "egs_data" / "daily_snapshots.json"
 
 # Latest output files (HTML-formatted reports)
 GAMING_TRENDS_OUTPUT = SCRIPTS_DIR / "gaming_trends_output.txt"
@@ -351,6 +352,28 @@ def build_steam_data():
     }
 
 
+def build_egs_data():
+    """Build dashboard JSON from EGS free games snapshots."""
+    snapshots = load_json(EGS_SNAPSHOTS)
+    if not snapshots:
+        print("  No EGS snapshots found, skipping", file=sys.stderr)
+        return None
+
+    sorted_dates = sorted(snapshots.keys())
+    latest_date = sorted_dates[-1] if sorted_dates else None
+    if not latest_date:
+        return None
+
+    latest = snapshots[latest_date]
+
+    return {
+        "updated": latest.get("date", datetime.now().isoformat()),
+        "report_date": latest_date,
+        "current_free": latest.get("current_free", []),
+        "upcoming_free": latest.get("upcoming_free", []),
+    }
+
+
 def main():
     DOCS_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -371,6 +394,14 @@ def main():
         with open(st_path, "w", encoding="utf-8") as f:
             json.dump(st_data, f, indent=2, ensure_ascii=False)
         print(f"  Steam trending: {st_path}", file=sys.stderr)
+
+    # Epic Games Store
+    egs_data = build_egs_data()
+    if egs_data:
+        egs_path = DOCS_DATA_DIR / "egs_free_games.json"
+        with open(egs_path, "w", encoding="utf-8") as f:
+            json.dump(egs_data, f, indent=2, ensure_ascii=False)
+        print(f"  EGS free games: {egs_path}", file=sys.stderr)
 
     print("Dashboard data built.", file=sys.stderr)
 

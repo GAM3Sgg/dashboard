@@ -1,0 +1,45 @@
+{
+  "2026-03-01": {
+    "current_free": [
+      {
+        "title": "Boxes: Lost Fragments",
+        "publisher": "Snapbreak Games AB",
+        "original_price": "$14.99",
+        "description": "Escape a lavish mansion full of mysterious puzzle boxes!",
+        "store_url": "https://store.epicgames.com/en-US/p/boxes-lost-fragments-079041",
+        "start_date": "2026-02-26T16:00:00.000Z",
+        "end_date": "2026-03-05T16:00:00.000Z"
+      },
+      {
+        "title": "My Night Job",
+        "publisher": "Webcore Games",
+        "original_price": "$9.99",
+        "description": "My Night Job sends players into an abandoned building and sicks hordes of monsters on them. Using more than 60 weapons to defend themselves and save as many survivors as possible. But beware \u2013 if too many rooms are thrashed, the end may be nigh-er than you originally thought.",
+        "store_url": "https://store.epicgames.com/en-US/p/my-night-job-a416a6",
+        "start_date": "2026-02-26T16:00:00.000Z",
+        "end_date": "2026-03-05T16:00:00.000Z"
+      }
+    ],
+    "upcoming_free": [
+      {
+        "title": "Idle Champions of the Forgotten Realms",
+        "publisher": "Codename Entertainment",
+        "original_price": "0",
+        "description": "Idle Champions of the Forgotten Realms is a Dungeons & Dragons strategy management game uniting characters from throughout the D&D multiverse into a grand adventure.",
+        "store_url": "https://store.epicgames.com/en-US/p/idle-champions-of-the-forgotten-realms",
+        "start_date": "2026-03-05T16:00:00.000Z",
+        "end_date": "2026-03-12T15:00:00.000Z"
+      },
+      {
+        "title": "Turnip Boy Robs a Bank",
+        "publisher": "Graffiti Games",
+        "original_price": "$14.99",
+        "description": "Turnip Boy is back! This time he\u2019s teaming up with the fearsome Pickled Gang to plan and execute the weirdest heist of all time.",
+        "store_url": "https://store.epicgames.com/en-US/p/turnip-boy-robs-a-bank-3fae0e",
+        "start_date": "2026-03-05T16:00:00.000Z",
+        "end_date": "2026-03-12T15:00:00.000Z"
+      }
+    ],
+    "date": "2026-03-01T03:07:58.149440"
+  }
+}
