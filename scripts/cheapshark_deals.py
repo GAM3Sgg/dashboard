@@ -119,6 +119,28 @@ def save_snapshot(snapshots, today_key, data):
 
 # ── Report builder ───────────────────────────────────────────────────────────
 
+# Keywords that indicate non-game items (DLC, soundtracks, bundles, etc.)
+JUNK_KEYWORDS = [
+    "soundtrack", "ost", "artbook", "art book", "wallpaper", "costume pack",
+    "sfx", "sound forge", "sound effect", "royalty free", "music bundle",
+    "dlc", "season pass", "content pack", "expansion pass",
+    "bundle", "collection pack",
+    "rpg bundle", "edition bundle",
+    "skin pack", "voice pack", "emote pack",
+    "pdf", "ebook", "e-book", "guidebook", "manual",
+    "blender", "pathfinder", "c 4th edition",
+]
+
+
+def is_real_game(deal):
+    """Filter out non-game items like soundtracks, SFX packs, DLC, bundles."""
+    title = deal.get("title", "").lower()
+    for kw in JUNK_KEYWORDS:
+        if kw in title:
+            return False
+    return True
+
+
 def dedup_deals(deals, limit=15):
     """Keep only the best deal per game title (lowest sale price)."""
     seen = {}
@@ -144,12 +166,12 @@ def build_report():
     # Best deals (CheapShark's Deal Rating)
     print("Fetching best deals...", file=sys.stderr)
     best_raw = fetch_deals("Deal Rating", page_size=40)
-    best_deals = dedup_deals([parse_deal(d, stores) for d in best_raw])
+    best_deals = dedup_deals([parse_deal(d, stores) for d in best_raw if is_real_game(d)])
 
     # Biggest discounts — fetch more, filter to meaningful savings, dedup
     print("Fetching biggest discounts...", file=sys.stderr)
     disc_raw = fetch_deals("Savings", page_size=60)
-    disc_parsed = [parse_deal(d, stores) for d in disc_raw]
+    disc_parsed = [parse_deal(d, stores) for d in disc_raw if is_real_game(d)]
     disc_parsed = [d for d in disc_parsed if d["savings_pct"] >= 50]
     disc_parsed.sort(key=lambda d: -d["savings_pct"])
     biggest_discounts = dedup_deals(disc_parsed)
@@ -157,12 +179,12 @@ def build_report():
     # Top rated on sale (metacritic 80+, steam 80+)
     print("Fetching top rated on sale...", file=sys.stderr)
     rated_raw = fetch_deals("Metacritic", page_size=30, desc=1, metacritic=80, steamRating=80)
-    top_rated = dedup_deals([parse_deal(d, stores) for d in rated_raw])
+    top_rated = dedup_deals([parse_deal(d, stores) for d in rated_raw if is_real_game(d)])
 
     # AAA on sale — filter to meaningful discounts
     print("Fetching AAA deals...", file=sys.stderr)
     aaa_raw = fetch_deals("Savings", page_size=40, AAA=1)
-    aaa_parsed = [parse_deal(d, stores) for d in aaa_raw]
+    aaa_parsed = [parse_deal(d, stores) for d in aaa_raw if is_real_game(d)]
     aaa_parsed = [d for d in aaa_parsed if d["savings_pct"] >= 20]
     aaa_parsed.sort(key=lambda d: -d["savings_pct"])
     aaa_deals = dedup_deals(aaa_parsed)

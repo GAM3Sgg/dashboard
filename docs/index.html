@@ -698,9 +698,9 @@ function renderCheapSharkDeals(containerId, deals) {
     const savingsBadge = d.savings_pct > 0 ? `<span class="badge badge-green">-${d.savings_pct}%</span>` : '';
     const storeBadge = d.store_name ? `<span class="badge badge-dim">${esc(d.store_name)}</span>` : '';
     const meta = [];
-    if (d.metacritic) meta.push(`MC: ${d.metacritic}`);
-    if (d.steam_rating_text) meta.push(d.steam_rating_text);
-    const metaStr = meta.length ? `<div class="game-meta">${esc(meta.join(' / '))}</div>` : '';
+    meta.push(d.metacritic ? `MC: ${d.metacritic}` : 'MC: --');
+    meta.push(d.steam_rating_text ? d.steam_rating_text : (d.steam_rating ? `Steam: ${d.steam_rating}%` : 'No reviews'));
+    const metaStr = `<div class="game-meta">${esc(meta.join(' / '))}</div>`;
     return `<li class="game-item">
       <span class="game-rank">${i + 1}</span>
       <div class="game-info">
