@@ -11,9 +11,11 @@ import urllib.request
 import urllib.parse
 from pathlib import Path
 
-# Telegram config (same as other reports)
-BOT_TOKEN = "REDACTED_TOKEN"
-CHAT_ID = "1881550684"
+CREDS_FILE = Path.home() / ".openclaw" / "credentials" / "telegram-bot.json"
+with open(CREDS_FILE, "r", encoding="utf-8") as _f:
+    _creds = json.load(_f)
+BOT_TOKEN = _creds["bot_token"]
+CHAT_ID = _creds["chat_id"]
 
 def send_telegram(text, parse_mode="HTML"):
     """Send a message via Telegram Bot API with retry."""
