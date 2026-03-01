@@ -170,10 +170,6 @@ header .dot {
   gap: 6px;
 }
 
-/* Sparkline */
-.sparkline { display: inline-block; vertical-align: middle; }
-.sparkline svg { display: block; }
-
 /* Badge */
 .badge {
   display: inline-block;
@@ -454,17 +450,6 @@ function esc(s) {
   return d.innerHTML;
 }
 
-function sparkline(values, w, h) {
-  if (!values || values.length < 2) return '';
-  const min = Math.min(...values);
-  const max = Math.max(...values);
-  const range = max - min || 1;
-  const step = w / (values.length - 1);
-  const points = values.map((v, i) => `${(i * step).toFixed(1)},${(h - ((v - min) / range) * h).toFixed(1)}`).join(' ');
-  const color = values[values.length - 1] >= values[0] ? 'var(--green)' : 'var(--red)';
-  return `<span class="sparkline"><svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}"><polyline fill="none" stroke="${color}" stroke-width="1.5" points="${points}"/></svg></span>`;
-}
-
 async function loadJSON(path) {
   try {
     const resp = await fetch(path);
@@ -566,7 +551,6 @@ function renderSteamList(containerId, games, opts = {}) {
     const change = g.change_pct != null && g.change_pct !== 0 ? changeBadge(g.change_pct) : '';
     const review = g.review ? `<span style="font-size:10px;color:var(--text-dim);margin-left:4px">${esc(g.review)}</span>` : '';
     const revBar = g.review_positive ? reviewBar(g.review_positive, g.review_negative) : '';
-    const hist = g._sparkline || '';
     const genres = g.genres && g.genres.length ? `<div style="font-size:10px;color:var(--text-dim)">${g.genres.slice(0,3).map(esc).join(' / ')}</div>` : '';
     return `<li class="game-item">
       ${rank}
@@ -575,7 +559,7 @@ function renderSteamList(containerId, games, opts = {}) {
         <div class="game-meta">${players}${review}</div>
         ${genres}${revBar}
       </div>
-      <div class="game-stats">${hist}${price}${change}</div>
+      <div class="game-stats">${price}${change}</div>
     </li>`;
   }).join('');
 }
@@ -716,17 +700,6 @@ function renderCheapSharkDeals(containerId, deals) {
   }).join('');
 }
 
-// ── Sparkline helper ────────────────────────────────────────────
-function addSparklines(games, history, keyFn) {
-  if (!history || Object.keys(history).length < 2) return games;
-  const dates = Object.keys(history).sort();
-  return games.map(g => {
-    const values = dates.map(d => keyFn(history[d], g) || 0);
-    g._sparkline = sparkline(values, 56, 18);
-    return g;
-  });
-}
-
 // ── Tabs ────────────────────────────────────────────────────────
 document.querySelectorAll('.tab').forEach(tab => {
   tab.addEventListener('click', () => {
@@ -755,10 +728,8 @@ async function init() {
   }
 
   if (gt) {
-    const topS = addSparklines(gt.top_streamed || [], gt.history, (d, g) => d.viewers?.[g.name]);
-    renderGameList('top-streamed', topS, { showRank: true });
-    const brk = addSparklines(gt.breakout || [], gt.history, (d, g) => d.viewers?.[g.name]);
-    renderGameList('breakout', brk.slice(0, 10));
+    renderGameList('top-streamed', gt.top_streamed || [], { showRank: true });
+    renderGameList('breakout', (gt.breakout || []).slice(0, 10));
     renderLanguages(gt.languages);
     renderWishlisted(gt.wishlisted);
     renderReleasing(gt.releasing);
@@ -778,8 +749,7 @@ async function init() {
   }
 
   if (st) {
-    const trS = addSparklines(st.trending || [], st.history, (d, g) => d.player_counts?.[g.appid]);
-    renderSteamList('steam-trending', trS, { showRank: true });
+    renderSteamList('steam-trending', st.trending || [], { showRank: true });
     renderSteamList('steam-topsellers-paid', st.topsellers_paid || [], { showRank: true, showPrice: true });
     renderSteamList('steam-topsellers-free', st.topsellers_free || [], { showRank: true });
     renderDeals('steam-deals', st.specials || []);
