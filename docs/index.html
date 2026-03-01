@@ -406,22 +406,6 @@ header .dot {
         <ul class="game-list" id="insights-news"></ul>
       </div>
     </div>
-    <!-- Easy Wins -->
-    <div class="card" style="margin-bottom:14px">
-      <h2 style="color:var(--green)">Easy Wins — Content Opportunities</h2>
-      <div style="margin-bottom:16px">
-        <div class="section-label" style="color:var(--orange)">Cover Now (No Content Yet)</div>
-        <ul class="game-list" id="insights-cover-now"></ul>
-      </div>
-      <div style="margin-bottom:16px">
-        <div class="section-label" style="color:var(--green)">Capitalize (Already Performing)</div>
-        <ul class="game-list" id="insights-capitalize"></ul>
-      </div>
-      <div>
-        <div class="section-label" style="color:var(--red)">Update Needed</div>
-        <ul class="game-list" id="insights-update-needed"></ul>
-      </div>
-    </div>
     <!-- Trending + Fix -->
     <div class="grid grid-2" style="margin-bottom:14px">
       <div class="card scroll-card">
@@ -817,68 +801,17 @@ function renderInsightsTopics(containerId, topics) {
     const bounce = t.bounce_rate != null ? `${(t.bounce_rate * 100).toFixed(0)}% bounce` : '';
     const dur = t.avg_duration != null ? `${t.avg_duration.toFixed(0)}s avg` : '';
     const meta = [bounce, dur].filter(Boolean).join(' / ');
+    const url = t.urls && t.urls.length ? `https://gam3s.gg${t.urls[0]}` : '';
+    const nameHtml = url ? `<a href="${esc(url)}" target="_blank">${esc(t.title || t.topic)}</a>` : esc(t.title || t.topic);
     return `<li class="game-item">
       <span class="game-rank">${i + 1}</span>
       <div class="game-info">
-        <div class="game-name">${esc(t.title || t.topic)}</div>
+        <div class="game-name">${nameHtml}</div>
         <div class="game-meta">${fmt(t.sessions)} sessions / ${fmt(t.users || 0)} users${meta ? ' / ' + meta : ''}</div>
       </div>
       <div class="game-stats">${catBadge} ${growth}</div>
     </li>`;
   }).join('');
-}
-
-function renderEasyWins(wins) {
-  if (!wins) wins = {};
-  // Cover Now
-  const cn = document.getElementById('insights-cover-now');
-  const coverNow = wins.cover_now || [];
-  if (!coverNow.length) { cn.innerHTML = '<li class="c-dim" style="padding:12px 0">All trending games covered!</li>'; }
-  else { cn.innerHTML = coverNow.map((g, i) => {
-    const sources = g.sources ? g.sources.map(s => `<span class="badge badge-dim">${esc(s)}</span>`).join(' ') : '';
-    const stats = [];
-    if (g.twitch_viewers) stats.push(`${fmt(g.twitch_viewers)} viewers`);
-    if (g.steam_players) stats.push(`${fmt(g.steam_players)} players`);
-    return `<li class="game-item">
-      <span class="game-rank">${i + 1}</span>
-      <div class="game-info">
-        <div class="game-name" style="color:var(--orange)">${esc(g.game)}</div>
-        <div class="game-meta">${stats.join(' / ')} ${sources}</div>
-      </div>
-      <div class="game-stats"><span class="badge badge-orange">Hype ${g.hype_score}</span></div>
-    </li>`;
-  }).join(''); }
-
-  // Capitalize
-  const cap = document.getElementById('insights-capitalize');
-  const capitalize = wins.capitalize || [];
-  if (!capitalize.length) { cap.innerHTML = '<li class="c-dim" style="padding:12px 0">No matches yet</li>'; }
-  else { cap.innerHTML = capitalize.map((g, i) => {
-    const growth = g.growth_pct != null && g.growth_pct > 0 ? `<span class="badge badge-green">+${g.growth_pct.toFixed(0)}%</span>` : '';
-    return `<li class="game-item">
-      <span class="game-rank">${i + 1}</span>
-      <div class="game-info">
-        <div class="game-name" style="color:var(--green)">${esc(g.game)}</div>
-        <div class="game-meta">${esc(g.gam3s_title || '')} / ${fmt(g.gam3s_sessions)} sessions</div>
-      </div>
-      <div class="game-stats">${growth} <span class="badge badge-dim">Hype ${g.hype_score}</span></div>
-    </li>`;
-  }).join(''); }
-
-  // Update Needed
-  const upd = document.getElementById('insights-update-needed');
-  const updateNeeded = wins.update_needed || [];
-  if (!updateNeeded.length) { upd.innerHTML = '<li class="c-dim" style="padding:12px 0">Nothing to fix</li>'; }
-  else { upd.innerHTML = updateNeeded.map((g, i) => {
-    return `<li class="game-item">
-      <span class="game-rank">${i + 1}</span>
-      <div class="game-info">
-        <div class="game-name" style="color:var(--red)">${esc(g.game)}</div>
-        <div class="game-meta">${esc(g.gam3s_title || '')} / ${fmt(g.gam3s_sessions)} sessions / ${esc(g.reason || '')}</div>
-      </div>
-      <div class="game-stats"><span class="badge badge-red">${esc(g.reason || 'Fix')}</span></div>
-    </li>`;
-  }).join(''); }
 }
 
 function renderGSCQueries(containerId, queries) {
@@ -1007,7 +940,6 @@ async function init() {
     renderInsightsKPI(ins);
     renderInsightsTopics('insights-guides', ins.top_guides);
     renderInsightsTopics('insights-news', ins.top_news);
-    renderEasyWins(ins.easy_wins);
     renderInsightsTopics('insights-trending', ins.trending);
     renderInsightsTopics('insights-fixes', ins.fix_opportunities);
     renderGSCQueries('insights-gsc-top', ins.gsc_top_queries);
