@@ -1,0 +1,1048 @@
+{
+  "updated": "2026-03-01T05:26:59.047268+04:00",
+  "report_date": "2026-03-01",
+  "total_sessions_7d": 84831,
+  "total_sessions_prior": 168261,
+  "wow_pct": -49.6,
+  "top_pages": [
+    {
+      "topic": "2026",
+      "title": "2026年 おすすめゼルダの伝説シリーズ",
+      "category": "News",
+      "sessions": 20543,
+      "users": 20253,
+      "pageviews": 20973,
+      "bounce_rate": 0.63,
+      "avg_duration": 24.1,
+      "page_count": 9,
+      "growth_pct": null,
+      "urls": [
+        "/ja/news/2026年におすすめのゼルダの伝説シリーズ/",
+        "/ja/news/2026年におすすめのゼルダの伝説シリーズ/",
+        "/ja/news/2026年におすすめのゼルダの伝説シリーズ/"
+      ]
+    },
+    {
+      "topic": "mario-tennis-fever",
+      "title": "マリオテニスフィーバー：最強キャラtierリスト (Mario Tennis Fever)",
+      "category": "Guide",
+      "sessions": 14049,
+      "users": 13346,
+      "pageviews": 14986,
+      "bounce_rate": 0.405,
+      "avg_duration": 76.8,
+      "page_count": 22,
+      "growth_pct": -37.5,
+      "urls": [
+        "/ja/mario-tennis-fever/guides/マリオテニスフィーバー最強キャラtierリスト/",
+        "/ja/mario-tennis-fever/guides/マリオテニスフィーバー最強キャラtierリスト/",
+        "/ja/mario-tennis-fever/guides/マリオテニスフィーバー最強キャラtierリスト/"
+      ]
+    },
+    {
+      "topic": "nintendo-switch-online-2026",
+      "title": "Nintendo Switch Online 2026年2月アップデート情報 | GAMES.GG",
+      "category": "News",
+      "sessions": 4941,
+      "users": 4898,
+      "pageviews": 5071,
+      "bounce_rate": 0.679,
+      "avg_duration": 18.2,
+      "page_count": 1,
+      "growth_pct": null,
+      "urls": [
+        "/ja/news/nintendo-switch-online-2026年2月アップデート情報/"
+      ]
+    },
+    {
+      "topic": "assassins-creed-codename-hexe",
+      "title": "Assassin's Creed: Codename Hexe",
+      "category": "Page",
+      "sessions": 4309,
+      "users": 4171,
+      "pageviews": 4533,
+      "bounce_rate": 0.553,
+      "avg_duration": 46.6,
+      "page_count": 8,
+      "growth_pct": null,
+      "urls": [
+        "/assassins-creed-codename-hexe/",
+        "/ko/assassins-creed-codename-hexe/",
+        "/assassins-creed-codename-hexe/"
+      ]
+    },
+    {
+      "topic": "ポケモン30周年重大発表の可能性",
+      "title": "ポケモン30周年、重大発表の可能性 (ポケモン30周年重大発表の可能性)",
+      "category": "News",
+      "sessions": 4159,
+      "users": 3963,
+      "pageviews": 4247,
+      "bounce_rate": 0.461,
+      "avg_duration": 61.0,
+      "page_count": 4,
+      "growth_pct": null,
+      "urls": [
+        "/ja/news/ポケモン30周年重大発表の可能性/",
+        "/ja/news/ポケモン30周年重大発表の可能性/",
+        "/ja/news/ポケモン30周年重大発表の可能性/"
+      ]
+    },
+    {
+      "topic": "/",
+      "title": "GAM3S.GG | Gaming News, Reviews, Guides and Game Discovery",
+      "category": "Page",
+      "sessions": 3402,
+      "users": 3146,
+      "pageviews": 4523,
+      "bounce_rate": 0.423,
+      "avg_duration": 69.2,
+      "page_count": 8,
+      "growth_pct": -0.9,
+      "urls": [
+        "/",
+        "/",
+        "/"
+      ]
+    },
+    {
+      "topic": "slay-the-spire-2",
+      "title": "Slay the Spire 2 早期アクセス開始日と協力プレイの詳細が明らかに | GAMES.GG",
+      "category": "News",
+      "sessions": 3287,
+      "users": 3189,
+      "pageviews": 3370,
+      "bounce_rate": 0.645,
+      "avg_duration": 36.4,
+      "page_count": 7,
+      "growth_pct": null,
+      "urls": [
+        "/ja/news/slay-the-spire-2早期アクセス開始日と協力プレイの詳細が明らかに/",
+        "/ja/news/slay-the-spire-2早期アクセス開始日と協力プレイの詳細が明らかに/",
+        "/ja/news/slay-the-spire-2早期アクセス開始日と協力プレイの詳細が明らかに/"
+      ]
+    },
+    {
+      "topic": "xbox-series-x-volta-ao-estoque",
+      "title": "Xbox Series X Volta ao Estoque Após Esgotar",
+      "category": "News",
+      "sessions": 2530,
+      "users": 2470,
+      "pageviews": 2601,
+      "bounce_rate": 0.641,
+      "avg_duration": 28.6,
+      "page_count": 4,
+      "growth_pct": null,
+      "urls": [
+        "/pt-BR/news/xbox-series-x-volta-ao-estoque-após-esgotar/",
+        "/pt-BR/news/xbox-series-x-volta-ao-estoque-após-esgotar/",
+        "/pt-BR/news/xbox-series-x-volta-ao-estoque-após-esgotar/"
+      ]
+    },
+    {
+      "topic": "ghost-of-yotei-legends-2026",
+      "title": "Ghost of Yotei Legends 2026年3月発売決定",
+      "category": "News",
+      "sessions": 2508,
+      "users": 2457,
+      "pageviews": 2542,
+      "bounce_rate": 0.703,
+      "avg_duration": 18.0,
+      "page_count": 2,
+      "growth_pct": -74.7,
+      "urls": [
+        "/ja/news/ghost-of-yotei-legends-2026年3月発売決定/",
+        "/ja/news/ghost-of-yotei-legends-2026年3月発売決定/"
+      ]
+    },
+    {
+      "topic": "pokémon-windとpokémon-waveのリーク情報",
+      "title": "「Pokémon Wind」「Pokémon Wave」リーク情報 | GAMES.GG (Pokémon WindとPokémon Waveのリーク情報)",
+      "category": "News",
+      "sessions": 1835,
+      "users": 1812,
+      "pageviews": 1903,
+      "bounce_rate": 0.533,
+      "avg_duration": 28.0,
+      "page_count": 2,
+      "growth_pct": null,
+      "urls": [
+        "/ja/news/pokémon-windとpokémon-waveのリーク情報/",
+        "/ja/news/pokémon-windとpokémon-waveのリーク情報/"
+      ]
+    }
+  ],
+  "top_guides": [
+    {
+      "topic": "mario-tennis-fever",
+      "title": "マリオテニスフィーバー：最強キャラtierリスト (Mario Tennis Fever)",
+      "category": "Guide",
+      "sessions": 14049,
+      "users": 13346,
+      "pageviews": 14986,
+      "bounce_rate": 0.405,
+      "avg_duration": 76.8,
+      "page_count": 22,
+      "growth_pct": -37.5,
+      "urls": [
+        "/ja/mario-tennis-fever/guides/マリオテニスフィーバー最強キャラtierリスト/",
+        "/ja/mario-tennis-fever/guides/マリオテニスフィーバー最強キャラtierリスト/",
+        "/ja/mario-tennis-fever/guides/マリオテニスフィーバー最強キャラtierリスト/"
+      ]
+    },
+    {
+      "topic": "poppy-playtime",
+      "title": "Guía Puzzle Casilleros Poppy Playtime Cap. 5: Obtén Mano de Presión",
+      "category": "Guide",
+      "sessions": 1608,
+      "users": 1579,
+      "pageviews": 1780,
+      "bounce_rate": 0.727,
+      "avg_duration": 33.2,
+      "page_count": 5,
+      "growth_pct": -40.0,
+      "urls": [
+        "/es/poppy-playtime/guides/guía-puzzle-casilleros-poppy-playtime-cap-5-obtén-mano-de-presión/",
+        "/es/poppy-playtime/guides/guía-poppy-playtime-cap-5-ubicaciones-de-las-3-cintas-vhs/",
+        "/es/poppy-playtime/guides/guía-poppy-playtime-cap-5-ubicaciones-de-las-3-cintas-vhs/"
+      ]
+    },
+    {
+      "topic": "steal-a-brainrot",
+      "title": "Guía Steal A Brainrot: Evento San Valentín Pt 2",
+      "category": "Guide",
+      "sessions": 1506,
+      "users": 1469,
+      "pageviews": 1654,
+      "bounce_rate": 0.864,
+      "avg_duration": 16.7,
+      "page_count": 4,
+      "growth_pct": -93.1,
+      "urls": [
+        "/es/steal-a-brainrot/guides/guía-steal-a-brainrot-evento-san-valentín-pt-2/",
+        "/es/steal-a-brainrot/guides/guía-steal-a-brainrot-evento-san-valentín-pt-2/",
+        "/es/steal-a-brainrot/guides/guía-steal-a-brainrot-evento-san-valentín-pt-2/"
+      ]
+    },
+    {
+      "topic": "yapyap",
+      "title": "YAPYAP 완드 & 주문 가이드: 모든 목록",
+      "category": "Guide",
+      "sessions": 1223,
+      "users": 833,
+      "pageviews": 1278,
+      "bounce_rate": 0.464,
+      "avg_duration": 298.1,
+      "page_count": 6,
+      "growth_pct": 310.4,
+      "urls": [
+        "/ko/yapyap/guides/yapyap-완드-주문-가이드-모든-목록/",
+        "/ko/yapyap/guides/yapyap-완드-주문-가이드-모든-목록/",
+        "/ko/yapyap/guides/yapyap-완드-주문-가이드-모든-목록/"
+      ]
+    },
+    {
+      "topic": "arc-raiders",
+      "title": "Arc Raiders Surgeon Deckガイド：報酬と入手方法",
+      "category": "Guide",
+      "sessions": 848,
+      "users": 826,
+      "pageviews": 873,
+      "bounce_rate": 0.601,
+      "avg_duration": 44.2,
+      "page_count": 4,
+      "growth_pct": -63.8,
+      "urls": [
+        "/ja/arc-raiders/guides/arc-raiders-surgeon-deckガイド報酬と入手方法/",
+        "/ja/arc-raiders/guides/arc-raiders-shrouded-skyアップデート知っておくべきこと全て/",
+        "/ja/arc-raiders/guides/arc-raiders-shrouded-skyアップデート知っておくべきこと全て/"
+      ]
+    },
+    {
+      "topic": "marathon",
+      "title": "Best Marathon Controller & Keyboard Settings | GAMES.GG",
+      "category": "Guide",
+      "sessions": 442,
+      "users": 363,
+      "pageviews": 450,
+      "bounce_rate": 0.545,
+      "avg_duration": 135.5,
+      "page_count": 2,
+      "growth_pct": null,
+      "urls": [
+        "/marathon/guides/marathon-best-controller-keyboard-settings/",
+        "/marathon/guides/marathon-runner-shell-tier-list-best-picks-for-squad-play/"
+      ]
+    },
+    {
+      "topic": "high-on-life-2",
+      "title": "High On Life 2 Guide: All Luglox Exterminators Locations",
+      "category": "Guide",
+      "sessions": 230,
+      "users": 212,
+      "pageviews": 249,
+      "bounce_rate": 0.457,
+      "avg_duration": 116.2,
+      "page_count": 1,
+      "growth_pct": -97.3,
+      "urls": [
+        "/high-on-life-2/guides/high-on-life-2-all-luglox-exterminators-locations/"
+      ]
+    },
+    {
+      "topic": "overwatch-2",
+      "title": "Overwatchガイド：アンランのランクプレイ向け最強のコツとテクニック (Overwatch 2)",
+      "category": "Guide",
+      "sessions": 228,
+      "users": 218,
+      "pageviews": 226,
+      "bounce_rate": 0.627,
+      "avg_duration": 77.9,
+      "page_count": 1,
+      "growth_pct": null,
+      "urls": [
+        "/ja/overwatch-2/guides/overwatchガイドアンランのランクプレイ向け最強のコツとテクニック/"
+      ]
+    }
+  ],
+  "top_news": [
+    {
+      "topic": "2026",
+      "title": "2026年 おすすめゼルダの伝説シリーズ",
+      "category": "News",
+      "sessions": 20543,
+      "users": 20253,
+      "pageviews": 20973,
+      "bounce_rate": 0.63,
+      "avg_duration": 24.1,
+      "page_count": 9,
+      "growth_pct": null,
+      "urls": [
+        "/ja/news/2026年におすすめのゼルダの伝説シリーズ/",
+        "/ja/news/2026年におすすめのゼルダの伝説シリーズ/",
+        "/ja/news/2026年におすすめのゼルダの伝説シリーズ/"
+      ]
+    },
+    {
+      "topic": "nintendo-switch-online-2026",
+      "title": "Nintendo Switch Online 2026年2月アップデート情報 | GAMES.GG",
+      "category": "News",
+      "sessions": 4941,
+      "users": 4898,
+      "pageviews": 5071,
+      "bounce_rate": 0.679,
+      "avg_duration": 18.2,
+      "page_count": 1,
+      "growth_pct": null,
+      "urls": [
+        "/ja/news/nintendo-switch-online-2026年2月アップデート情報/"
+      ]
+    },
+    {
+      "topic": "ポケモン30周年重大発表の可能性",
+      "title": "ポケモン30周年、重大発表の可能性 (ポケモン30周年重大発表の可能性)",
+      "category": "News",
+      "sessions": 4159,
+      "users": 3963,
+      "pageviews": 4247,
+      "bounce_rate": 0.461,
+      "avg_duration": 61.0,
+      "page_count": 4,
+      "growth_pct": null,
+      "urls": [
+        "/ja/news/ポケモン30周年重大発表の可能性/",
+        "/ja/news/ポケモン30周年重大発表の可能性/",
+        "/ja/news/ポケモン30周年重大発表の可能性/"
+      ]
+    },
+    {
+      "topic": "slay-the-spire-2",
+      "title": "Slay the Spire 2 早期アクセス開始日と協力プレイの詳細が明らかに | GAMES.GG",
+      "category": "News",
+      "sessions": 3287,
+      "users": 3189,
+      "pageviews": 3370,
+      "bounce_rate": 0.645,
+      "avg_duration": 36.4,
+      "page_count": 7,
+      "growth_pct": null,
+      "urls": [
+        "/ja/news/slay-the-spire-2早期アクセス開始日と協力プレイの詳細が明らかに/",
+        "/ja/news/slay-the-spire-2早期アクセス開始日と協力プレイの詳細が明らかに/",
+        "/ja/news/slay-the-spire-2早期アクセス開始日と協力プレイの詳細が明らかに/"
+      ]
+    },
+    {
+      "topic": "xbox-series-x-volta-ao-estoque",
+      "title": "Xbox Series X Volta ao Estoque Após Esgotar",
+      "category": "News",
+      "sessions": 2530,
+      "users": 2470,
+      "pageviews": 2601,
+      "bounce_rate": 0.641,
+      "avg_duration": 28.6,
+      "page_count": 4,
+      "growth_pct": null,
+      "urls": [
+        "/pt-BR/news/xbox-series-x-volta-ao-estoque-após-esgotar/",
+        "/pt-BR/news/xbox-series-x-volta-ao-estoque-após-esgotar/",
+        "/pt-BR/news/xbox-series-x-volta-ao-estoque-após-esgotar/"
+      ]
+    },
+    {
+      "topic": "ghost-of-yotei-legends-2026",
+      "title": "Ghost of Yotei Legends 2026年3月発売決定",
+      "category": "News",
+      "sessions": 2508,
+      "users": 2457,
+      "pageviews": 2542,
+      "bounce_rate": 0.703,
+      "avg_duration": 18.0,
+      "page_count": 2,
+      "growth_pct": -74.7,
+      "urls": [
+        "/ja/news/ghost-of-yotei-legends-2026年3月発売決定/",
+        "/ja/news/ghost-of-yotei-legends-2026年3月発売決定/"
+      ]
+    },
+    {
+      "topic": "pokémon-windとpokémon-waveのリーク情報",
+      "title": "「Pokémon Wind」「Pokémon Wave」リーク情報 | GAMES.GG (Pokémon WindとPokémon Waveのリーク情報)",
+      "category": "News",
+      "sessions": 1835,
+      "users": 1812,
+      "pageviews": 1903,
+      "bounce_rate": 0.533,
+      "avg_duration": 28.0,
+      "page_count": 2,
+      "growth_pct": null,
+      "urls": [
+        "/ja/news/pokémon-windとpokémon-waveのリーク情報/",
+        "/ja/news/pokémon-windとpokémon-waveのリーク情報/"
+      ]
+    },
+    {
+      "topic": "epic-games-store",
+      "title": "Epic Games StoreモバイルでResidualが無料に",
+      "category": "News",
+      "sessions": 1396,
+      "users": 1348,
+      "pageviews": 1482,
+      "bounce_rate": 0.637,
+      "avg_duration": 44.9,
+      "page_count": 4,
+      "growth_pct": 68.6,
+      "urls": [
+        "/ja/news/epic-games-storeモバイルでresidualが無料に/",
+        "/ja/news/epic-games-storeモバイルでresidualが無料に/",
+        "/ja/news/epic-games-storeモバイルでresidualが無料に/"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Japanese",
+      "sessions": 83142,
+      "users": 78694,
+      "pageviews": 92364,
+      "growth_pct": -14.5
+    },
+    {
+      "language": "English",
+      "sessions": 66566,
+      "users": 61268,
+      "pageviews": 76050,
+      "growth_pct": -52.3
+    },
+    {
+      "language": "French",
+      "sessions": 30118,
+      "users": 26141,
+      "pageviews": 34732,
+      "growth_pct": -21.6
+    },
+    {
+      "language": "Spanish",
+      "sessions": 28100,
+      "users": 25314,
+      "pageviews": 32529,
+      "growth_pct": -55.4
+    },
+    {
+      "language": "Portuguese",
+      "sessions": 20917,
+      "users": 19198,
+      "pageviews": 24313,
+      "growth_pct": -47.5
+    },
+    {
+      "language": "German",
+      "sessions": 17999,
+      "users": 15974,
+      "pageviews": 20393,
+      "growth_pct": -23.4
+    },
+    {
+      "language": "Korean",
+      "sessions": 13723,
+      "users": 12378,
+      "pageviews": 16480,
+      "growth_pct": 8.6
+    },
+    {
+      "language": "Russian",
+      "sessions": 13467,
+      "users": 11487,
+      "pageviews": 16786,
+      "growth_pct": -26.0
+    },
+    {
+      "language": "Chinese",
+      "sessions": 12964,
+      "users": 11674,
+      "pageviews": 15780,
+      "growth_pct": -19.4
+    },
+    {
+      "language": "Italian",
+      "sessions": 9732,
+      "users": 8816,
+      "pageviews": 11152,
+      "growth_pct": -23.4
+    },
+    {
+      "language": "Turkish",
+      "sessions": 9442,
+      "users": 8851,
+      "pageviews": 10989,
+      "growth_pct": -56.2
+    },
+    {
+      "language": "Dutch",
+      "sessions": 4110,
+      "users": 3867,
+      "pageviews": 4482,
+      "growth_pct": 9.0
+    }
+  ],
+  "trending": [
+    {
+      "topic": "2026",
+      "title": "2026年 おすすめゼルダの伝説シリーズ",
+      "category": "News",
+      "sessions": 20543,
+      "users": 20253,
+      "pageviews": 20973,
+      "bounce_rate": 0.63,
+      "avg_duration": 24.1,
+      "page_count": 9,
+      "growth_pct": null,
+      "urls": [
+        "/ja/news/2026年におすすめのゼルダの伝説シリーズ/",
+        "/ja/news/2026年におすすめのゼルダの伝説シリーズ/",
+        "/ja/news/2026年におすすめのゼルダの伝説シリーズ/"
+      ]
+    },
+    {
+      "topic": "nintendo-switch-online-2026",
+      "title": "Nintendo Switch Online 2026年2月アップデート情報 | GAMES.GG",
+      "category": "News",
+      "sessions": 4941,
+      "users": 4898,
+      "pageviews": 5071,
+      "bounce_rate": 0.679,
+      "avg_duration": 18.2,
+      "page_count": 1,
+      "growth_pct": null,
+      "urls": [
+        "/ja/news/nintendo-switch-online-2026年2月アップデート情報/"
+      ]
+    },
+    {
+      "topic": "assassins-creed-codename-hexe",
+      "title": "Assassin's Creed: Codename Hexe",
+      "category": "Page",
+      "sessions": 4309,
+      "users": 4171,
+      "pageviews": 4533,
+      "bounce_rate": 0.553,
+      "avg_duration": 46.6,
+      "page_count": 8,
+      "growth_pct": null,
+      "urls": [
+        "/assassins-creed-codename-hexe/",
+        "/ko/assassins-creed-codename-hexe/",
+        "/assassins-creed-codename-hexe/"
+      ]
+    },
+    {
+      "topic": "ポケモン30周年重大発表の可能性",
+      "title": "ポケモン30周年、重大発表の可能性 (ポケモン30周年重大発表の可能性)",
+      "category": "News",
+      "sessions": 4159,
+      "users": 3963,
+      "pageviews": 4247,
+      "bounce_rate": 0.461,
+      "avg_duration": 61.0,
+      "page_count": 4,
+      "growth_pct": null,
+      "urls": [
+        "/ja/news/ポケモン30周年重大発表の可能性/",
+        "/ja/news/ポケモン30周年重大発表の可能性/",
+        "/ja/news/ポケモン30周年重大発表の可能性/"
+      ]
+    },
+    {
+      "topic": "slay-the-spire-2",
+      "title": "Slay the Spire 2 早期アクセス開始日と協力プレイの詳細が明らかに | GAMES.GG",
+      "category": "News",
+      "sessions": 3287,
+      "users": 3189,
+      "pageviews": 3370,
+      "bounce_rate": 0.645,
+      "avg_duration": 36.4,
+      "page_count": 7,
+      "growth_pct": null,
+      "urls": [
+        "/ja/news/slay-the-spire-2早期アクセス開始日と協力プレイの詳細が明らかに/",
+        "/ja/news/slay-the-spire-2早期アクセス開始日と協力プレイの詳細が明らかに/",
+        "/ja/news/slay-the-spire-2早期アクセス開始日と協力プレイの詳細が明らかに/"
+      ]
+    },
+    {
+      "topic": "xbox-series-x-volta-ao-estoque",
+      "title": "Xbox Series X Volta ao Estoque Após Esgotar",
+      "category": "News",
+      "sessions": 2530,
+      "users": 2470,
+      "pageviews": 2601,
+      "bounce_rate": 0.641,
+      "avg_duration": 28.6,
+      "page_count": 4,
+      "growth_pct": null,
+      "urls": [
+        "/pt-BR/news/xbox-series-x-volta-ao-estoque-após-esgotar/",
+        "/pt-BR/news/xbox-series-x-volta-ao-estoque-após-esgotar/",
+        "/pt-BR/news/xbox-series-x-volta-ao-estoque-após-esgotar/"
+      ]
+    },
+    {
+      "topic": "pokémon-windとpokémon-waveのリーク情報",
+      "title": "「Pokémon Wind」「Pokémon Wave」リーク情報 | GAMES.GG (Pokémon WindとPokémon Waveのリーク情報)",
+      "category": "News",
+      "sessions": 1835,
+      "users": 1812,
+      "pageviews": 1903,
+      "bounce_rate": 0.533,
+      "avg_duration": 28.0,
+      "page_count": 2,
+      "growth_pct": null,
+      "urls": [
+        "/ja/news/pokémon-windとpokémon-waveのリーク情報/",
+        "/ja/news/pokémon-windとpokémon-waveのリーク情報/"
+      ]
+    },
+    {
+      "topic": "epic-games-store",
+      "title": "Epic Games StoreモバイルでResidualが無料に",
+      "category": "News",
+      "sessions": 1396,
+      "users": 1348,
+      "pageviews": 1482,
+      "bounce_rate": 0.637,
+      "avg_duration": 44.9,
+      "page_count": 4,
+      "growth_pct": 68.6,
+      "urls": [
+        "/ja/news/epic-games-storeモバイルでresidualが無料に/",
+        "/ja/news/epic-games-storeモバイルでresidualが無料に/",
+        "/ja/news/epic-games-storeモバイルでresidualが無料に/"
+      ]
+    }
+  ],
+  "fix_opportunities": [
+    {
+      "topic": "steal-a-brainrot",
+      "title": "Guía Steal A Brainrot: Evento San Valentín Pt 2",
+      "category": "Guide",
+      "sessions": 1506,
+      "users": 1469,
+      "pageviews": 1654,
+      "bounce_rate": 0.864,
+      "avg_duration": 16.7,
+      "page_count": 4,
+      "growth_pct": -93.1,
+      "urls": [
+        "/es/steal-a-brainrot/guides/guía-steal-a-brainrot-evento-san-valentín-pt-2/",
+        "/es/steal-a-brainrot/guides/guía-steal-a-brainrot-evento-san-valentín-pt-2/",
+        "/es/steal-a-brainrot/guides/guía-steal-a-brainrot-evento-san-valentín-pt-2/"
+      ]
+    },
+    {
+      "topic": "nintendo-mario-serisini-abd-ma",
+      "title": "Nintendo Mario Serisini ABD Mağazalarına Getiriyor | GAMES.GG",
+      "category": "News",
+      "sessions": 1358,
+      "users": 1328,
+      "pageviews": 1501,
+      "bounce_rate": 0.884,
+      "avg_duration": 14.0,
+      "page_count": 4,
+      "growth_pct": null,
+      "urls": [
+        "/tr/news/nintendo-mario-serisini-abd-mağazalarına-getiriyor/",
+        "/tr/news/nintendo-mario-serisini-abd-mağazalarına-getiriyor/",
+        "/tr/news/nintendo-mario-serisini-abd-mağazalarına-getiriyor/"
+      ]
+    }
+  ],
+  "gsc_top_queries": [
+    {
+      "query": "マリオテニス フィーバー 攻略",
+      "clicks": 2016,
+      "impressions": 5335,
+      "ctr": 0.3779,
+      "position": 1.6
+    },
+    {
+      "query": "ポケモンデー",
+      "clicks": 1371,
+      "impressions": 14266,
+      "ctr": 0.0961,
+      "position": 2.4
+    },
+    {
+      "query": "マリオテニスフィーバー 最強",
+      "clicks": 1070,
+      "impressions": 2051,
+      "ctr": 0.5217,
+      "position": 1.3
+    },
+    {
+      "query": "マリオ テニス フィーバー 最強 キャラ",
+      "clicks": 877,
+      "impressions": 1782,
+      "ctr": 0.4921,
+      "position": 1.1
+    },
+    {
+      "query": "ポケモンデー 2026",
+      "clicks": 611,
+      "impressions": 5057,
+      "ctr": 0.1208,
+      "position": 1.8
+    },
+    {
+      "query": "マリオテニス 最強キャラ",
+      "clicks": 561,
+      "impressions": 923,
+      "ctr": 0.6078,
+      "position": 1.5
+    },
+    {
+      "query": "xbox game pass",
+      "clicks": 538,
+      "impressions": 12389,
+      "ctr": 0.0434,
+      "position": 3.3
+    },
+    {
+      "query": "ポケモンプレゼンツ 2026",
+      "clicks": 479,
+      "impressions": 6872,
+      "ctr": 0.0697,
+      "position": 3.0
+    },
+    {
+      "query": "マリオテニス フィーバー キャラ",
+      "clicks": 448,
+      "impressions": 1538,
+      "ctr": 0.2913,
+      "position": 2.7
+    },
+    {
+      "query": "nintendo switch online",
+      "clicks": 430,
+      "impressions": 1367,
+      "ctr": 0.3146,
+      "position": 4.1
+    }
+  ],
+  "gsc_rising_queries": [
+    {
+      "query": "ポケモンデー",
+      "clicks": 1371,
+      "impressions": 14266,
+      "ctr": 0.0961,
+      "position": 2.4,
+      "growth_pct": null
+    },
+    {
+      "query": "ポケモンデー 2026",
+      "clicks": 611,
+      "impressions": 5057,
+      "ctr": 0.1208,
+      "position": 1.8,
+      "growth_pct": null
+    },
+    {
+      "query": "xbox game pass",
+      "clicks": 538,
+      "impressions": 12389,
+      "ctr": 0.0434,
+      "position": 3.3,
+      "growth_pct": 466.3
+    },
+    {
+      "query": "ポケモンプレゼンツ 2026",
+      "clicks": 479,
+      "impressions": 6872,
+      "ctr": 0.0697,
+      "position": 3.0,
+      "growth_pct": null
+    },
+    {
+      "query": "nintendo switch online",
+      "clicks": 430,
+      "impressions": 1367,
+      "ctr": 0.3146,
+      "position": 4.1,
+      "growth_pct": null
+    },
+    {
+      "query": "ポケモン ウィンド ウェーブ リーク",
+      "clicks": 418,
+      "impressions": 2537,
+      "ctr": 0.1648,
+      "position": 4.0,
+      "growth_pct": 919.5
+    },
+    {
+      "query": "marathon server slam",
+      "clicks": 382,
+      "impressions": 6529,
+      "ctr": 0.0585,
+      "position": 1.7,
+      "growth_pct": null
+    },
+    {
+      "query": "assassin's creed: codename hexe",
+      "clicks": 378,
+      "impressions": 1332,
+      "ctr": 0.2838,
+      "position": 2.9,
+      "growth_pct": null
+    }
+  ],
+  "content_gaps": [
+    {
+      "query": "roblox",
+      "impressions": 62731,
+      "clicks": 35,
+      "ctr": 0.0006,
+      "position": 4.4
+    },
+    {
+      "query": "resident evil requiem",
+      "impressions": 36204,
+      "clicks": 306,
+      "ctr": 0.0085,
+      "position": 3.8
+    },
+    {
+      "query": "xbox",
+      "impressions": 32350,
+      "clicks": 129,
+      "ctr": 0.004,
+      "position": 3.0
+    },
+    {
+      "query": "sailor piece codes",
+      "impressions": 28703,
+      "clicks": 75,
+      "ctr": 0.0026,
+      "position": 8.6
+    },
+    {
+      "query": "spin a baddie codes",
+      "impressions": 21353,
+      "clicks": 33,
+      "ctr": 0.0015,
+      "position": 8.0
+    }
+  ],
+  "page2_wins": [
+    {
+      "query": "steal a brainrot script",
+      "impressions": 546,
+      "clicks": 32,
+      "position": 15.4
+    },
+    {
+      "query": "buckshot roulette",
+      "impressions": 369,
+      "clicks": 28,
+      "position": 11.1
+    },
+    {
+      "query": "clover pit unblocked",
+      "impressions": 77,
+      "clicks": 34,
+      "position": 14.8
+    },
+    {
+      "query": "cloverpit unblocked",
+      "impressions": 63,
+      "clicks": 25,
+      "position": 15.5
+    }
+  ],
+  "low_ctr_pages": [
+    {
+      "name": "Mewgenics All Quests And How To Complete Them",
+      "impressions": 40931,
+      "clicks": 537,
+      "ctr": 0.0131,
+      "position": 7.8
+    },
+    {
+      "name": "Sailor Piece Roblox Codes February 2026",
+      "impressions": 20563,
+      "clicks": 230,
+      "ctr": 0.0112,
+      "position": 4.9
+    },
+    {
+      "name": "Códigos Roblox Anime Ghosts Fevereiro 2026",
+      "impressions": 17782,
+      "clicks": 151,
+      "ctr": 0.0085,
+      "position": 6.0
+    },
+    {
+      "name": "Révélations Majeures Attendues Pour Le 30E Anniversaire De Pokémon",
+      "impressions": 17589,
+      "clicks": 297,
+      "ctr": 0.0169,
+      "position": 3.4
+    },
+    {
+      "name": "Codes Roblox Catch A Monster Février 2026",
+      "impressions": 14917,
+      "clicks": 183,
+      "ctr": 0.0123,
+      "position": 4.8
+    }
+  ],
+  "easy_wins": {
+    "cover_now": [
+      {
+        "game": "RESIDENT EVIL: requiem",
+        "hype_score": 417.9,
+        "sources": [
+          "Twitch #1",
+          "Steam Trending #1"
+        ],
+        "twitch_viewers": 168553,
+        "steam_players": 249318
+      },
+      {
+        "game": "ARC Raiders",
+        "hype_score": 338.2,
+        "sources": [
+          "Twitch #13",
+          "Steam Trending #2",
+          "Steam Rising"
+        ],
+        "twitch_viewers": 16179,
+        "steam_players": 177928
+      },
+      {
+        "game": "Marvel Rivals",
+        "hype_score": 196.9,
+        "sources": [
+          "Breakout #1",
+          "Steam Trending #4",
+          "Steam Rising"
+        ],
+        "twitch_viewers": 13167,
+        "steam_players": 88202
+      },
+      {
+        "game": "League of Legends",
+        "hype_score": 84.9,
+        "sources": [
+          "Twitch #2"
+        ],
+        "twitch_viewers": 84936,
+        "steam_players": 0
+      },
+      {
+        "game": "World of Warcraft",
+        "hype_score": 78.3,
+        "sources": [
+          "Twitch #3"
+        ],
+        "twitch_viewers": 78289,
+        "steam_players": 0
+      },
+      {
+        "game": "Baldur's Gate 3",
+        "hype_score": 74.8,
+        "sources": [
+          "Steam Trending #3",
+          "Steam Rising"
+        ],
+        "twitch_viewers": 0,
+        "steam_players": 59424
+      },
+      {
+        "game": "Rocket League",
+        "hype_score": 70.5,
+        "sources": [
+          "Twitch #5"
+        ],
+        "twitch_viewers": 70454,
+        "steam_players": 0
+      },
+      {
+        "game": "Apex Legends",
+        "hype_score": 66.7,
+        "sources": [
+          "Breakout #8",
+          "Steam Trending #8"
+        ],
+        "twitch_viewers": 6940,
+        "steam_players": 56297
+      },
+      {
+        "game": "HELLDIVERS™ 2",
+        "hype_score": 63.9,
+        "sources": [
+          "Steam Trending #6"
+        ],
+        "twitch_viewers": 0,
+        "steam_players": 63875
+      },
+      {
+        "game": "Grand Theft Auto V",
+        "hype_score": 56.2,
+        "sources": [
+          "Twitch #4"
+        ],
+        "twitch_viewers": 56181,
+        "steam_players": 0
+      }
+    ],
+    "capitalize": [
+      {
+        "game": "Slay the Spire 2",
+        "hype_score": 7,
+        "gam3s_sessions": 3287,
+        "gam3s_title": "Slay the Spire 2 早期アクセス開始日と協力プレイの詳細が明らかに | GAMES.GG",
+        "growth_pct": null
+      }
+    ],
+    "update_needed": []
+  }
+}
