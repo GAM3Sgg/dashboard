@@ -26,6 +26,7 @@ BLACKLIST_CATEGORIES = {
     "food & drink", "travel & outdoors", "makers & crafting",
     "science & technology", "special events", "politics",
     "software and game development", "chess", "poker",
+    "djs", "slots", "games + demos",
 }
 
 # Top languages to track (ISO 639-1 codes)
