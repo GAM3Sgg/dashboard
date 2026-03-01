@@ -164,7 +164,7 @@ def parse_gaming_trends_output():
                 })
 
     # Parse releasing section
-    rel_section = re.search(r'RELEASING (?:NEXT 30 DAYS|IN \w+).*?\n\n(.*?)(?=\n\n<b>|\Z)', content, re.DOTALL)
+    rel_section = re.search(r'(?:RELEASING (?:NEXT 30 DAYS|IN \w+)|UPCOMING RELEASES).*?\n\n(.*?)(?=\n\n<b>|\Z)', content, re.DOTALL)
     if rel_section:
         for line in rel_section.group(1).strip().split("\n"):
             line = line.strip()
