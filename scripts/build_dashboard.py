@@ -112,6 +112,11 @@ def build_gaming_trends_data():
     }
 
 
+def unescape_html(text):
+    """Unescape HTML entities back to plain text for JSON output."""
+    return text.replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">").replace("&quot;", '"')
+
+
 def parse_gaming_trends_output():
     """Parse the HTML-formatted output file for sections not in snapshots."""
     result = {"languages": {}, "wishlisted": [], "releasing": [], "just_released": []}
@@ -132,7 +137,7 @@ def parse_gaming_trends_output():
         for gm in re.finditer(r'([^·]+?)\s*\(([0-9,]+)\)', games_str):
             name = gm.group(1).strip()
             # Strip HTML tags from name
-            name = re.sub(r'<[^>]+>', '', name).strip()
+            name = unescape_html(re.sub(r'<[^>]+>', '', name).strip())
             viewers = int(gm.group(2).replace(",", ""))
             games.append({"name": name, "viewers": viewers})
         if games:
@@ -149,7 +154,7 @@ def parse_gaming_trends_output():
             name_m = re.search(r'<a href="([^"]+)">([^<]+)</a>', line)
             if name_m:
                 steam_url = name_m.group(1)
-                name = name_m.group(2)
+                name = unescape_html(name_m.group(2))
                 # Find release date (text between " — " and " · ")
                 date_m = re.search(r'</a>\s*—\s*([^·<]+)', line)
                 release_date = date_m.group(1).strip() if date_m else "TBA"
@@ -175,7 +180,7 @@ def parse_gaming_trends_output():
             if date_m:
                 date_str = date_m.group(1).strip()
                 igdb_url = date_m.group(2)
-                name = date_m.group(3)
+                name = unescape_html(date_m.group(3))
                 meta = date_m.group(4) or ""
                 # Extract hype count
                 hype_m = re.search(r'(\d+)\s*hype', meta)
@@ -200,7 +205,7 @@ def parse_gaming_trends_output():
             name_m = re.search(r'<a href="([^"]+)">([^<]+)</a>\s*(?:\(([^)]+)\))?', line)
             if name_m:
                 result["just_released"].append({
-                    "name": name_m.group(2),
+                    "name": unescape_html(name_m.group(2)),
                     "igdb_url": name_m.group(1),
                     "platforms": name_m.group(3) or ""
                 })
