@@ -265,11 +265,13 @@ header .dot {
 }
 .scroll-card h2 {
   position: sticky;
-  top: 0;
+  top: -16px;
   background: var(--card);
   z-index: 1;
-  padding-bottom: 10px;
-  margin-bottom: 4px;
+  padding-top: 16px;
+  padding-bottom: 12px;
+  margin-top: -16px;
+  margin-bottom: 0;
 }
 .scroll-card::-webkit-scrollbar { width: 4px; }
 .scroll-card::-webkit-scrollbar-track { background: transparent; }
@@ -484,14 +486,13 @@ function renderGameList(containerId, games, opts = {}) {
     const count = g.viewers != null ? g.viewers : g.players;
     const streams = g.streams ? ` &middot; ${g.streams}+ streams` : '';
     const change = changeBadge(g.change_pct);
-    const hist = g._sparkline || '';
     return `<li class="game-item">
       ${rank}
       <div class="game-info">
         <div class="game-name"><a href="${esc(url)}" target="_blank">${esc(g.name)}</a></div>
         <div class="game-meta">${fmt(count)} viewers${streams}</div>
       </div>
-      <div class="game-stats">${hist}${change}</div>
+      <div class="game-stats">${change}</div>
     </li>`;
   }).join('');
 }
@@ -527,11 +528,10 @@ function renderReleasing(data) {
   if (!data || !data.length) { el.innerHTML = '<div class="c-dim" style="padding:16px 0">No confirmed releases</div>'; return; }
   el.innerHTML = data.map(g => {
     const link = g.igdb_url ? `<a href="${esc(g.igdb_url)}" target="_blank">${esc(g.name)}</a>` : esc(g.name);
-    const hype = g.hypes ? `<span class="badge badge-purple">${g.hypes} hype</span>` : '';
     return `<div class="cal-item">
       <div class="cal-date">${esc(g.date)}</div>
       <div class="cal-info">
-        <div class="cal-name">${link} ${hype}</div>
+        <div class="cal-name">${link}</div>
         <div class="cal-meta">${platformBadges(g.platforms)}</div>
       </div>
     </div>`;
