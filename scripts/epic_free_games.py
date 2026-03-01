@@ -12,7 +12,7 @@ from pathlib import Path
 from datetime import datetime, timedelta
 
 REQUEST_DELAY = 0.3
-DATA_DIR = Path(__file__).parent / "egs_data"
+DATA_DIR = Path(__file__).parent / "epic_free_data"
 SNAPSHOT_FILE = DATA_DIR / "daily_snapshots.json"
 
 EGS_FREE_URL = "https://store-site-backend-static-ipv4.ak.epicgames.com/freeGamesPromotions"

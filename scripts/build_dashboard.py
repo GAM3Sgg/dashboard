@@ -16,7 +16,7 @@ DOCS_DATA_DIR = SCRIPTS_DIR.parent / "docs" / "data"
 # Snapshot sources
 GAMING_TRENDS_SNAPSHOTS = SCRIPTS_DIR / "gaming_trends_data" / "daily_snapshots.json"
 STEAM_SNAPSHOTS = SCRIPTS_DIR / "steam_data" / "daily_snapshots.json"
-EGS_SNAPSHOTS = SCRIPTS_DIR / "egs_data" / "daily_snapshots.json"
+EGS_SNAPSHOTS = SCRIPTS_DIR / "epic_free_data" / "daily_snapshots.json"
 CHEAPSHARK_SNAPSHOTS = SCRIPTS_DIR / "cheapshark_data" / "daily_snapshots.json"
 
 # Latest output files (HTML-formatted reports)
