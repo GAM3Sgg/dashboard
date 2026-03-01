@@ -18,6 +18,7 @@ GAMING_TRENDS_SNAPSHOTS = SCRIPTS_DIR / "gaming_trends_data" / "daily_snapshots.
 STEAM_SNAPSHOTS = SCRIPTS_DIR / "steam_data" / "daily_snapshots.json"
 EGS_SNAPSHOTS = SCRIPTS_DIR / "epic_free_data" / "daily_snapshots.json"
 CHEAPSHARK_SNAPSHOTS = SCRIPTS_DIR / "cheapshark_data" / "daily_snapshots.json"
+INSIGHTS_SNAPSHOTS = SCRIPTS_DIR / "insights_data" / "daily_snapshots.json"
 
 # Latest output files (HTML-formatted reports)
 GAMING_TRENDS_OUTPUT = SCRIPTS_DIR / "gaming_trends_output.txt"
@@ -408,6 +409,186 @@ def build_cheapshark_data():
     }
 
 
+def normalize_game_name(name):
+    """Normalize for fuzzy matching: lowercase, strip punctuation, collapse spaces."""
+    import re
+    name = name.lower()
+    name = re.sub(r'[^a-z0-9\s]', '', name)
+    name = re.sub(r'\s+', ' ', name).strip()
+    return name
+
+
+def slug_to_normalized(slug):
+    """Convert URL slug to normalized form: 'arc-raiders-guide' -> 'arc raiders guide'"""
+    return slug.replace('-', ' ').lower()
+
+
+STOP_WORDS = {'the', 'of', 'and', 'a', 'an', 'in', 'on', 'for', 'guide', 'best',
+              'tier', 'list', 'how', 'to', 'top', 'all', 'new', 'with'}
+
+
+def game_matches_topic(game_norm, topic_slug_norm):
+    """Check if a game name matches a GAM3S.GG topic slug."""
+    if not game_norm or not topic_slug_norm:
+        return False
+    if game_norm == topic_slug_norm:
+        return True
+    if game_norm in topic_slug_norm:
+        return True
+    if topic_slug_norm in game_norm:
+        return True
+    game_words = set(game_norm.split()) - STOP_WORDS
+    topic_words = set(topic_slug_norm.split()) - STOP_WORDS
+    if not game_words:
+        return False
+    overlap = game_words & topic_words
+    if len(overlap) >= 2 and len(overlap) / len(game_words) >= 0.5:
+        return True
+    return False
+
+
+def build_easy_wins(insights_data, gt_data, st_data):
+    """Cross-reference trending games against GAM3S.GG content to find opportunities."""
+    # Collect hot games with hype scores
+    hot_games = {}  # normalized_name -> {name, hype, sources, viewers, players}
+
+    def add_hot(name, hype, source, viewers=0, players=0):
+        norm = normalize_game_name(name)
+        if not norm or len(norm) < 3:
+            return
+        if norm not in hot_games:
+            hot_games[norm] = {"name": name, "hype": 0, "sources": [], "viewers": 0, "players": 0}
+        hot_games[norm]["hype"] += hype
+        hot_games[norm]["sources"].append(source)
+        if viewers:
+            hot_games[norm]["viewers"] = max(hot_games[norm]["viewers"], viewers)
+        if players:
+            hot_games[norm]["players"] = max(hot_games[norm]["players"], players)
+
+    # Twitch data
+    if gt_data:
+        for i, g in enumerate(gt_data.get("top_streamed", [])[:15]):
+            v = g.get("viewers", 0)
+            add_hot(g["name"], v / 1000, f"Twitch #{i+1}", viewers=v)
+        for i, g in enumerate(gt_data.get("breakout", [])[:10]):
+            v = g.get("viewers", 0)
+            add_hot(g["name"], v / 1000 * 1.5, f"Breakout #{i+1}", viewers=v)
+
+    # Steam data
+    if st_data:
+        for i, g in enumerate(st_data.get("trending", [])[:10]):
+            p = g.get("players", 0)
+            add_hot(g["name"], p / 1000, f"Steam Trending #{i+1}", players=p)
+        for i, g in enumerate(st_data.get("rising", [])[:8]):
+            c = abs(g.get("abs_change", 0))
+            add_hot(g["name"], c / 500, f"Steam Rising", players=g.get("players", 0))
+        for i, g in enumerate(st_data.get("wishlisted", [])[:10]):
+            add_hot(g["name"], 10 - i, f"Steam Wishlisted #{i+1}")
+
+    if not hot_games:
+        return {"cover_now": [], "capitalize": [], "update_needed": []}
+
+    # Build content lookup from insights
+    content_map = {}  # normalized_topic_slug -> topic_dict
+    top_pages = insights_data.get("top_pages_7d", [])
+    for t in top_pages:
+        slug_norm = slug_to_normalized(t.get("topic", ""))
+        if slug_norm and len(slug_norm) > 3:
+            content_map[slug_norm] = t
+
+    # Match each hot game against content
+    cover_now = []
+    capitalize = []
+    update_needed = []
+
+    for norm_name, info in hot_games.items():
+        matched_topic = None
+        for slug_norm, topic in content_map.items():
+            if game_matches_topic(norm_name, slug_norm):
+                matched_topic = topic
+                break
+
+        if not matched_topic:
+            cover_now.append({
+                "game": info["name"],
+                "hype_score": round(info["hype"], 1),
+                "sources": info["sources"][:3],
+                "twitch_viewers": info["viewers"],
+                "steam_players": info["players"],
+            })
+        else:
+            sessions = matched_topic.get("sessions", 0)
+            bounce = matched_topic.get("bounce_rate", 0)
+            if bounce > 0.80 or sessions < 200:
+                update_needed.append({
+                    "game": info["name"],
+                    "hype_score": round(info["hype"], 1),
+                    "gam3s_sessions": sessions,
+                    "gam3s_title": matched_topic.get("title", ""),
+                    "bounce_rate": round(bounce, 2),
+                    "reason": f"High bounce ({bounce:.0%})" if bounce > 0.80 else f"Low sessions ({sessions})",
+                })
+            else:
+                capitalize.append({
+                    "game": info["name"],
+                    "hype_score": round(info["hype"], 1),
+                    "gam3s_sessions": sessions,
+                    "gam3s_title": matched_topic.get("title", ""),
+                    "growth_pct": matched_topic.get("growth_pct"),
+                })
+
+    cover_now.sort(key=lambda x: -x["hype_score"])
+    capitalize.sort(key=lambda x: -x["hype_score"])
+    update_needed.sort(key=lambda x: -x["hype_score"])
+
+    return {
+        "cover_now": cover_now[:10],
+        "capitalize": capitalize[:5],
+        "update_needed": update_needed[:5],
+    }
+
+
+def build_insights_data():
+    """Build dashboard JSON from GAM3S.GG insights snapshots + cross-reference data."""
+    snapshots = load_json(INSIGHTS_SNAPSHOTS)
+    if not snapshots:
+        print("  No insights snapshots found, skipping", file=sys.stderr)
+        return None
+
+    sorted_dates = sorted(snapshots.keys())[-7:]
+    latest_date = sorted_dates[-1] if sorted_dates else None
+    if not latest_date:
+        return None
+
+    latest = snapshots[latest_date]
+
+    # Load external data for cross-referencing
+    gt_data = load_json(DOCS_DATA_DIR / "gaming_trends.json")
+    st_data = load_json(DOCS_DATA_DIR / "steam_trending.json")
+
+    easy_wins = build_easy_wins(latest, gt_data or {}, st_data or {})
+
+    return {
+        "updated": latest.get("date", datetime.now().isoformat()),
+        "report_date": latest_date,
+        "total_sessions_7d": latest.get("total_sessions_7d", 0),
+        "total_sessions_prior": latest.get("total_sessions_prior", 0),
+        "wow_pct": latest.get("wow_pct", 0),
+        "top_pages": latest.get("top_pages_7d", [])[:10],
+        "top_guides": latest.get("top_guides_7d", [])[:8],
+        "top_news": latest.get("top_news_7d", [])[:8],
+        "languages": latest.get("languages_7d", [])[:12],
+        "trending": latest.get("trending", [])[:8],
+        "fix_opportunities": latest.get("fix_opportunities", [])[:5],
+        "gsc_top_queries": latest.get("gsc_top_queries", [])[:10],
+        "gsc_rising_queries": latest.get("gsc_rising_queries", [])[:8],
+        "content_gaps": latest.get("content_gaps", [])[:5],
+        "page2_wins": latest.get("page2_wins", [])[:5],
+        "low_ctr_pages": latest.get("low_ctr_pages", [])[:5],
+        "easy_wins": easy_wins,
+    }
+
+
 def main():
     DOCS_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -444,6 +625,14 @@ def main():
         with open(cs_path, "w", encoding="utf-8") as f:
             json.dump(cs_data, f, indent=2, ensure_ascii=False)
         print(f"  CheapShark deals: {cs_path}", file=sys.stderr)
+
+    # GAM3S Insights
+    ins_data = build_insights_data()
+    if ins_data:
+        ins_path = DOCS_DATA_DIR / "gam3s_insights.json"
+        with open(ins_path, "w", encoding="utf-8") as f:
+            json.dump(ins_data, f, indent=2, ensure_ascii=False)
+        print(f"  GAM3S Insights: {ins_path}", file=sys.stderr)
 
     print("Dashboard data built.", file=sys.stderr)
 

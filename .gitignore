@@ -7,6 +7,7 @@ scripts/steam_data/daily_snapshots.json
 scripts/gaming_trends_data/daily_snapshots.json
 scripts/cheapshark_data/daily_snapshots.json
 scripts/epic_free_data/daily_snapshots.json
+scripts/insights_data/daily_snapshots.json
 scripts/*_output.txt
 scripts/logs/
 canvas/

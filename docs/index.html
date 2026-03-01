@@ -273,6 +273,21 @@ header .dot {
 .scroll-card::-webkit-scrollbar-track { background: transparent; }
 .scroll-card::-webkit-scrollbar-thumb { background: var(--border-light); border-radius: 2px; }
 
+/* Insights tab (green highlight) */
+.tab-insights { color: var(--green) !important; font-weight: 600; }
+.tab-insights.active { background: rgba(37,231,148,0.15); color: var(--green) !important; }
+.tab-insights:hover { color: var(--green) !important; opacity: 0.85; }
+
+.kpi-row { display: flex; gap: 24px; flex-wrap: wrap; align-items: center; }
+.kpi-item { text-align: center; }
+.kpi-num { font-size: 28px; font-weight: 700; letter-spacing: -1px; }
+.kpi-label { font-size: 11px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.5px; }
+
+.section-label {
+  font-size: 11px; text-transform: uppercase; letter-spacing: 1px;
+  font-weight: 600; margin-bottom: 8px; padding-top: 8px;
+}
+
 /* Color helpers for inline use */
 .c-green { color: var(--green); }
 .c-red { color: var(--red); }
@@ -304,6 +319,7 @@ header .dot {
     <button class="tab active" data-tab="steam">Steam</button>
     <button class="tab" data-tab="twitch">Twitch & IGDB</button>
     <button class="tab" data-tab="deals">Deals</button>
+    <button class="tab tab-insights" data-tab="insights">GAM3S Insights</button>
   </div>
 
   <!-- DEALS TAB -->
@@ -369,6 +385,80 @@ header .dot {
     <div class="card">
       <h2>Just Released (7 Days)</h2>
       <ul class="game-list" id="just-released"></ul>
+    </div>
+  </div>
+
+  <!-- INSIGHTS TAB -->
+  <div class="tab-content" id="tab-insights">
+    <!-- KPI Banner -->
+    <div class="card" style="margin-bottom:14px">
+      <h2>This Week (7 Days)</h2>
+      <div class="kpi-row" id="insights-kpi"></div>
+    </div>
+    <!-- Top Guides + Top News -->
+    <div class="grid grid-2" style="margin-bottom:14px">
+      <div class="card scroll-card">
+        <h2>Top Guides</h2>
+        <ul class="game-list" id="insights-guides"></ul>
+      </div>
+      <div class="card scroll-card">
+        <h2>Top News</h2>
+        <ul class="game-list" id="insights-news"></ul>
+      </div>
+    </div>
+    <!-- Easy Wins -->
+    <div class="card" style="margin-bottom:14px">
+      <h2 style="color:var(--green)">Easy Wins — Content Opportunities</h2>
+      <div style="margin-bottom:16px">
+        <div class="section-label" style="color:var(--orange)">Cover Now (No Content Yet)</div>
+        <ul class="game-list" id="insights-cover-now"></ul>
+      </div>
+      <div style="margin-bottom:16px">
+        <div class="section-label" style="color:var(--green)">Capitalize (Already Performing)</div>
+        <ul class="game-list" id="insights-capitalize"></ul>
+      </div>
+      <div>
+        <div class="section-label" style="color:var(--red)">Update Needed</div>
+        <ul class="game-list" id="insights-update-needed"></ul>
+      </div>
+    </div>
+    <!-- Trending + Fix -->
+    <div class="grid grid-2" style="margin-bottom:14px">
+      <div class="card scroll-card">
+        <h2>Trending & Rising</h2>
+        <ul class="game-list" id="insights-trending"></ul>
+      </div>
+      <div class="card scroll-card">
+        <h2>Fix Opportunities (High Bounce)</h2>
+        <ul class="game-list" id="insights-fixes"></ul>
+      </div>
+    </div>
+    <!-- GSC -->
+    <div class="grid grid-2" style="margin-bottom:14px">
+      <div class="card scroll-card">
+        <h2>Top Search Queries (GSC)</h2>
+        <ul class="game-list" id="insights-gsc-top"></ul>
+      </div>
+      <div class="card scroll-card">
+        <h2>Rising Queries</h2>
+        <ul class="game-list" id="insights-gsc-rising"></ul>
+      </div>
+    </div>
+    <!-- Actionables -->
+    <div class="grid grid-2" style="margin-bottom:14px">
+      <div class="card scroll-card">
+        <h2>Content Gaps (High Impressions, Low Clicks)</h2>
+        <ul class="game-list" id="insights-gaps"></ul>
+      </div>
+      <div class="card scroll-card">
+        <h2>Page 2 Wins + Low CTR</h2>
+        <ul class="game-list" id="insights-p2"></ul>
+      </div>
+    </div>
+    <!-- Languages -->
+    <div class="card">
+      <h2>Audience by Language</h2>
+      <div class="lang-grid" id="insights-langs"></div>
     </div>
   </div>
 
@@ -700,6 +790,159 @@ function renderCheapSharkDeals(containerId, deals) {
   }).join('');
 }
 
+// ── Insights Renders ─────────────────────────────────────────────
+function renderInsightsKPI(data) {
+  const el = document.getElementById('insights-kpi');
+  if (!data) { el.innerHTML = '<span class="c-dim">No data</span>'; return; }
+  const sessions = data.total_sessions_7d || 0;
+  const prior = data.total_sessions_prior || 0;
+  const wow = data.wow_pct || 0;
+  const wowCls = wow > 0 ? 'c-green' : wow < 0 ? 'c-red' : 'c-dim';
+  const wowSign = wow > 0 ? '+' : '';
+  el.innerHTML = `
+    <div class="kpi-item"><div class="kpi-num">${fmt(sessions)}</div><div class="kpi-label">Sessions (7d)</div></div>
+    <div class="kpi-item"><div class="kpi-num ${wowCls}">${wowSign}${wow.toFixed(1)}%</div><div class="kpi-label">vs Last Week</div></div>
+    <div class="kpi-item"><div class="kpi-num c-dim" style="font-size:20px">${fmt(prior)}</div><div class="kpi-label">Prior Week</div></div>
+  `;
+}
+
+function renderInsightsTopics(containerId, topics) {
+  const el = document.getElementById(containerId);
+  if (!topics || !topics.length) { el.innerHTML = '<li class="c-dim" style="padding:16px 0">No data</li>'; return; }
+  el.innerHTML = topics.map((t, i) => {
+    const growth = t.growth_pct != null
+      ? (t.growth_pct > 0 ? `<span class="badge badge-green">+${t.growth_pct.toFixed(0)}%</span>` : t.growth_pct < -10 ? `<span class="badge badge-red">${t.growth_pct.toFixed(0)}%</span>` : '')
+      : '<span class="badge badge-orange">NEW</span>';
+    const catBadge = `<span class="badge badge-dim">${esc(t.category || 'Page')}</span>`;
+    const bounce = t.bounce_rate != null ? `${(t.bounce_rate * 100).toFixed(0)}% bounce` : '';
+    const dur = t.avg_duration != null ? `${t.avg_duration.toFixed(0)}s avg` : '';
+    const meta = [bounce, dur].filter(Boolean).join(' / ');
+    return `<li class="game-item">
+      <span class="game-rank">${i + 1}</span>
+      <div class="game-info">
+        <div class="game-name">${esc(t.title || t.topic)}</div>
+        <div class="game-meta">${fmt(t.sessions)} sessions / ${fmt(t.users || 0)} users${meta ? ' / ' + meta : ''}</div>
+      </div>
+      <div class="game-stats">${catBadge} ${growth}</div>
+    </li>`;
+  }).join('');
+}
+
+function renderEasyWins(wins) {
+  if (!wins) wins = {};
+  // Cover Now
+  const cn = document.getElementById('insights-cover-now');
+  const coverNow = wins.cover_now || [];
+  if (!coverNow.length) { cn.innerHTML = '<li class="c-dim" style="padding:12px 0">All trending games covered!</li>'; }
+  else { cn.innerHTML = coverNow.map((g, i) => {
+    const sources = g.sources ? g.sources.map(s => `<span class="badge badge-dim">${esc(s)}</span>`).join(' ') : '';
+    const stats = [];
+    if (g.twitch_viewers) stats.push(`${fmt(g.twitch_viewers)} viewers`);
+    if (g.steam_players) stats.push(`${fmt(g.steam_players)} players`);
+    return `<li class="game-item">
+      <span class="game-rank">${i + 1}</span>
+      <div class="game-info">
+        <div class="game-name" style="color:var(--orange)">${esc(g.game)}</div>
+        <div class="game-meta">${stats.join(' / ')} ${sources}</div>
+      </div>
+      <div class="game-stats"><span class="badge badge-orange">Hype ${g.hype_score}</span></div>
+    </li>`;
+  }).join(''); }
+
+  // Capitalize
+  const cap = document.getElementById('insights-capitalize');
+  const capitalize = wins.capitalize || [];
+  if (!capitalize.length) { cap.innerHTML = '<li class="c-dim" style="padding:12px 0">No matches yet</li>'; }
+  else { cap.innerHTML = capitalize.map((g, i) => {
+    const growth = g.growth_pct != null && g.growth_pct > 0 ? `<span class="badge badge-green">+${g.growth_pct.toFixed(0)}%</span>` : '';
+    return `<li class="game-item">
+      <span class="game-rank">${i + 1}</span>
+      <div class="game-info">
+        <div class="game-name" style="color:var(--green)">${esc(g.game)}</div>
+        <div class="game-meta">${esc(g.gam3s_title || '')} / ${fmt(g.gam3s_sessions)} sessions</div>
+      </div>
+      <div class="game-stats">${growth} <span class="badge badge-dim">Hype ${g.hype_score}</span></div>
+    </li>`;
+  }).join(''); }
+
+  // Update Needed
+  const upd = document.getElementById('insights-update-needed');
+  const updateNeeded = wins.update_needed || [];
+  if (!updateNeeded.length) { upd.innerHTML = '<li class="c-dim" style="padding:12px 0">Nothing to fix</li>'; }
+  else { upd.innerHTML = updateNeeded.map((g, i) => {
+    return `<li class="game-item">
+      <span class="game-rank">${i + 1}</span>
+      <div class="game-info">
+        <div class="game-name" style="color:var(--red)">${esc(g.game)}</div>
+        <div class="game-meta">${esc(g.gam3s_title || '')} / ${fmt(g.gam3s_sessions)} sessions / ${esc(g.reason || '')}</div>
+      </div>
+      <div class="game-stats"><span class="badge badge-red">${esc(g.reason || 'Fix')}</span></div>
+    </li>`;
+  }).join(''); }
+}
+
+function renderGSCQueries(containerId, queries) {
+  const el = document.getElementById(containerId);
+  if (!queries || !queries.length) { el.innerHTML = '<li class="c-dim" style="padding:16px 0">No data</li>'; return; }
+  el.innerHTML = queries.map((q, i) => {
+    const growth = q.growth_pct != null
+      ? (q.growth_pct > 0 ? `<span class="badge badge-green">+${q.growth_pct.toFixed(0)}%</span>` : '')
+      : (containerId.includes('rising') ? '<span class="badge badge-orange">NEW</span>' : '');
+    const pos = q.position ? `pos ${q.position.toFixed(1)}` : '';
+    const ctr = q.ctr != null ? `${(q.ctr * 100).toFixed(1)}% CTR` : '';
+    return `<li class="game-item">
+      <span class="game-rank">${i + 1}</span>
+      <div class="game-info">
+        <div class="game-name">"${esc(q.query)}"</div>
+        <div class="game-meta">${fmt(q.clicks)} clicks / ${fmt(q.impressions)} impr / ${ctr} / ${pos}</div>
+      </div>
+      <div class="game-stats">${growth}</div>
+    </li>`;
+  }).join('');
+}
+
+function renderInsightsActionables(containerId, items, type) {
+  const el = document.getElementById(containerId);
+  if (!items || !items.length) { el.innerHTML = '<li class="c-dim" style="padding:16px 0">Nothing to act on</li>'; return; }
+  el.innerHTML = items.map((item, i) => {
+    if (item.query) {
+      // Content gap or page 2 win
+      const pos = item.position ? `pos ${item.position.toFixed(1)}` : '';
+      const badge = item.position >= 11 ? '<span class="badge badge-orange">Page 2</span>' : '<span class="badge badge-red">Low CTR</span>';
+      return `<li class="game-item">
+        <span class="game-rank">${i + 1}</span>
+        <div class="game-info">
+          <div class="game-name">"${esc(item.query)}"</div>
+          <div class="game-meta">${fmt(item.impressions)} impr / ${fmt(item.clicks)} clicks / ${pos}</div>
+        </div>
+        <div class="game-stats">${badge}</div>
+      </li>`;
+    } else {
+      // Low CTR page
+      const ctr = item.ctr != null ? `${(item.ctr * 100).toFixed(1)}% CTR` : '';
+      return `<li class="game-item">
+        <span class="game-rank">${i + 1}</span>
+        <div class="game-info">
+          <div class="game-name">${esc(item.name || '')}</div>
+          <div class="game-meta">${fmt(item.impressions)} impr / ${fmt(item.clicks)} clicks / ${ctr}</div>
+        </div>
+        <div class="game-stats"><span class="badge badge-red">Fix Title</span></div>
+      </li>`;
+    }
+  }).join('');
+}
+
+function renderInsightsLanguages(data) {
+  const el = document.getElementById('insights-langs');
+  if (!data || !data.length) { el.innerHTML = '<div class="c-dim">No data</div>'; return; }
+  el.innerHTML = data.map(l => {
+    const growth = l.growth_pct != null && Math.abs(l.growth_pct) >= 10
+      ? (l.growth_pct > 0 ? ` <span class="c-green">+${l.growth_pct.toFixed(0)}%</span>` : ` <span class="c-red">${l.growth_pct.toFixed(0)}%</span>`)
+      : '';
+    return `<div class="lang-item"><span class="lang-name">${esc(l.language)}</span>${fmt(l.sessions)} sessions / ${fmt(l.users || 0)} users${growth}</div>`;
+  }).join('');
+}
+
 // ── Tabs ────────────────────────────────────────────────────────
 document.querySelectorAll('.tab').forEach(tab => {
   tab.addEventListener('click', () => {
@@ -712,14 +955,15 @@ document.querySelectorAll('.tab').forEach(tab => {
 
 // ── Init ────────────────────────────────────────────────────────
 async function init() {
-  const [gt, st, egs, cs] = await Promise.all([
+  const [gt, st, egs, cs, ins] = await Promise.all([
     loadJSON('data/gaming_trends.json'),
     loadJSON('data/steam_trending.json'),
     loadJSON('data/egs_free_games.json'),
-    loadJSON('data/cheapshark_deals.json')
+    loadJSON('data/cheapshark_deals.json'),
+    loadJSON('data/gam3s_insights.json')
   ]);
 
-  const dates = [gt?.updated, st?.updated, egs?.updated, cs?.updated].filter(Boolean);
+  const dates = [gt?.updated, st?.updated, egs?.updated, cs?.updated, ins?.updated].filter(Boolean);
   if (dates.length) {
     const latest = dates.sort().pop();
     const d = new Date(latest);
@@ -757,6 +1001,20 @@ async function init() {
     renderMovers('steam-falling', st.falling || [], 'down');
     renderSteamSimple('steam-wishlisted', st.wishlisted || [], { showRank: true });
     renderWatch('steam-watch', st.watch || []);
+  }
+
+  if (ins) {
+    renderInsightsKPI(ins);
+    renderInsightsTopics('insights-guides', ins.top_guides);
+    renderInsightsTopics('insights-news', ins.top_news);
+    renderEasyWins(ins.easy_wins);
+    renderInsightsTopics('insights-trending', ins.trending);
+    renderInsightsTopics('insights-fixes', ins.fix_opportunities);
+    renderGSCQueries('insights-gsc-top', ins.gsc_top_queries);
+    renderGSCQueries('insights-gsc-rising', ins.gsc_rising_queries);
+    renderInsightsActionables('insights-gaps', ins.content_gaps);
+    renderInsightsActionables('insights-p2', (ins.page2_wins || []).concat(ins.low_ctr_pages || []));
+    renderInsightsLanguages(ins.languages);
   }
 }
 

@@ -7,6 +7,7 @@ Optimized for 2 Telegram messages max.
 """
 
 import re
+import json
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Dict, List, Optional
@@ -26,6 +27,9 @@ GA4_PROPERTY_ID = "334095714"
 GSC_SITE_URL = "sc-domain:gam3s.gg"
 CREDS_PATH = Path.home() / ".openclaw" / "credentials" / "gam3s-google-sa.json"
 TIMEZONE = pytz.timezone('Asia/Dubai')
+
+INSIGHTS_DATA_DIR = Path(__file__).parent / "insights_data"
+INSIGHTS_SNAPSHOT_FILE = INSIGHTS_DATA_DIR / "daily_snapshots.json"
 
 
 def categorize_page(path: str, title: str) -> str:
@@ -286,6 +290,19 @@ class GAM3SInsights:
         resp = self.gsc.searchanalytics().query(siteUrl=GSC_SITE_URL, body=body).execute()
         return resp.get('rows', [])
 
+    def save_snapshot(self, data: dict):
+        INSIGHTS_DATA_DIR.mkdir(exist_ok=True)
+        snapshots = {}
+        if INSIGHTS_SNAPSHOT_FILE.exists():
+            with open(INSIGHTS_SNAPSHOT_FILE, "r", encoding="utf-8") as f:
+                snapshots = json.load(f)
+        today = datetime.now(TIMEZONE).strftime("%Y-%m-%d")
+        snapshots[today] = data
+        cutoff = (datetime.now(TIMEZONE) - timedelta(days=30)).strftime("%Y-%m-%d")
+        snapshots = {k: v for k, v in snapshots.items() if k >= cutoff}
+        with open(INSIGHTS_SNAPSHOT_FILE, "w", encoding="utf-8") as f:
+            json.dump(snapshots, f, indent=2, ensure_ascii=False)
+
     def build_report(self, include_30d: bool = False) -> str:
         now = datetime.now(TIMEZONE)
         today = now.date()
@@ -337,6 +354,116 @@ class GAM3SInsights:
 
         total_7d = sum(r.sessions for r in pages_7d)
         total_prior = sum(r.sessions for r in prior_pages)
+
+        # === SAVE SNAPSHOT ===
+        wow_pct = round(((total_7d - total_prior) / total_prior) * 100, 1) if total_prior > 0 else 0
+
+        def _topic_dict(g):
+            prior_s = prior_page_map.get(g['topic'], 0)
+            growth = round(((g['sessions'] - prior_s) / prior_s) * 100, 1) if prior_s > 0 else None
+            return {
+                "topic": g['topic'],
+                "title": g['best_title'],
+                "category": g['category'],
+                "sessions": g['sessions'],
+                "users": g['users'],
+                "pageviews": g['pageviews'],
+                "bounce_rate": round(g['avg_bounce'], 3),
+                "avg_duration": round(g['avg_duration'], 1),
+                "page_count": g['count'],
+                "growth_pct": growth,
+                "urls": g['pages'][:3],
+            }
+
+        # Trending: 50%+ growth AND 500+ sessions, or new with 1000+
+        snap_trending = []
+        for g in agg_7d:
+            prior_s = prior_page_map.get(g['topic'], 0)
+            if prior_s > 0:
+                growth = ((g['sessions'] - prior_s) / prior_s) * 100
+                if growth >= 50 and g['sessions'] >= 500:
+                    snap_trending.append({**_topic_dict(g), "growth_pct": round(growth, 1)})
+            elif g['sessions'] >= 1000:
+                snap_trending.append({**_topic_dict(g), "growth_pct": None})
+        snap_trending.sort(key=lambda x: x['sessions'], reverse=True)
+
+        # Fix opportunities: bounce > 80%, sessions >= 500
+        snap_fixes = [_topic_dict(g) for g in agg_7d if g['avg_bounce'] > 0.80 and g['sessions'] >= 500]
+        snap_fixes.sort(key=lambda x: x['sessions'], reverse=True)
+
+        # GSC: rising queries
+        prior_qmap = {q.query: q for q in gsc_queries_prior}
+        snap_rising_q = []
+        for q in gsc_queries_7d:
+            prev = prior_qmap.get(q.query)
+            if prev and prev.clicks > 0:
+                growth = ((q.clicks - prev.clicks) / prev.clicks) * 100
+                if growth >= 50 and q.clicks >= 5:
+                    snap_rising_q.append({"query": q.query, "clicks": q.clicks, "impressions": q.impressions,
+                                          "ctr": round(q.ctr, 4), "position": round(q.position, 1), "growth_pct": round(growth, 1)})
+            elif not prev and q.clicks >= 10:
+                snap_rising_q.append({"query": q.query, "clicks": q.clicks, "impressions": q.impressions,
+                                      "ctr": round(q.ctr, 4), "position": round(q.position, 1), "growth_pct": None})
+        snap_rising_q.sort(key=lambda x: x['clicks'], reverse=True)
+
+        # Content gaps (high impressions, low clicks)
+        snap_gaps = []
+        for q in gsc_queries_7d:
+            if q.impressions >= 500 and q.ctr < 0.02 and q.position <= 20:
+                snap_gaps.append({"query": q.query, "impressions": q.impressions, "clicks": q.clicks,
+                                  "ctr": round(q.ctr, 4), "position": round(q.position, 1)})
+        snap_gaps.sort(key=lambda x: x['impressions'], reverse=True)
+
+        # Page 2 wins
+        snap_p2 = []
+        for q in gsc_queries_7d:
+            if 11 <= q.position <= 20 and q.impressions >= 50:
+                snap_p2.append({"query": q.query, "impressions": q.impressions, "clicks": q.clicks,
+                                "position": round(q.position, 1)})
+        snap_p2.sort(key=lambda x: x['impressions'], reverse=True)
+
+        # Low CTR pages
+        snap_low_ctr = []
+        for p in gsc_pages_7d:
+            impr = p.get('impressions', 0)
+            ctr = p.get('ctr', 0)
+            clicks = p.get('clicks', 0)
+            pos = p.get('position', 0)
+            if impr >= 500 and ctr < 0.02 and pos <= 15:
+                url = p['keys'][0]
+                slug = unquote(url.rstrip('/').split('/')[-1]) if '/' in url else url
+                name = slug_to_english(slug) if slug else url
+                snap_low_ctr.append({"name": name, "impressions": impr, "clicks": clicks,
+                                     "ctr": round(ctr, 4), "position": round(pos, 1)})
+        snap_low_ctr.sort(key=lambda x: x['impressions'], reverse=True)
+
+        # Language snapshot
+        snap_langs = []
+        for l in lang_7d[:15]:
+            prior_l = prior_lang_map.get(l['lang'], 0)
+            growth = round(((l['sessions'] - prior_l) / prior_l) * 100, 1) if prior_l > 0 else None
+            snap_langs.append({"language": l['lang'], "sessions": l['sessions'], "users": l['users'],
+                               "pageviews": l['pageviews'], "growth_pct": growth})
+
+        snapshot = {
+            "date": now.isoformat(),
+            "total_sessions_7d": total_7d,
+            "total_sessions_prior": total_prior,
+            "wow_pct": wow_pct,
+            "top_pages_7d": [_topic_dict(g) for g in agg_7d[:15]],
+            "top_guides_7d": [_topic_dict(g) for g in agg_7d if g['category'] == 'Guide'][:10],
+            "top_news_7d": [_topic_dict(g) for g in agg_7d if g['category'] == 'News'][:10],
+            "languages_7d": snap_langs,
+            "trending": snap_trending[:10],
+            "fix_opportunities": snap_fixes[:8],
+            "gsc_top_queries": [{"query": q.query, "clicks": q.clicks, "impressions": q.impressions,
+                                  "ctr": round(q.ctr, 4), "position": round(q.position, 1)} for q in gsc_queries_7d[:15]],
+            "gsc_rising_queries": snap_rising_q[:10],
+            "content_gaps": snap_gaps[:8],
+            "page2_wins": snap_p2[:8],
+            "low_ctr_pages": snap_low_ctr[:8],
+        }
+        self.save_snapshot(snapshot)
 
         # === HELPERS ===
         def page_line(g):
