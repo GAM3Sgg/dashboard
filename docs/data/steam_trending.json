@@ -1,12 +1,12 @@
 {
-  "updated": "2026-03-01T04:47:10.538274",
-  "report_date": "2026-03-01",
+  "updated": "2026-03-02T01:00:36.801235",
+  "report_date": "2026-03-02",
   "trending": [
     {
       "name": "Resident Evil Requiem",
       "appid": "3764200",
-      "players": 249318,
-      "change_pct": -19.0,
+      "players": 269784,
+      "change_pct": 8.2,
       "is_new": false,
       "price_str": "$69.99",
       "discount_pct": 0,
@@ -18,16 +18,16 @@
         "Action",
         "Adventure"
       ],
-      "review": "Very Positive",
-      "review_positive": 32688,
-      "review_negative": 1868,
+      "review": "Overwhelmingly Positive",
+      "review_positive": 49675,
+      "review_negative": 2342,
       "steam_url": "https://store.steampowered.com/app/3764200"
     },
     {
       "name": "ARC Raiders",
       "appid": "1808500",
-      "players": 177928,
-      "change_pct": 68.1,
+      "players": 237952,
+      "change_pct": 33.7,
       "is_new": false,
       "price_str": "$39.99",
       "discount_pct": 0,
@@ -39,15 +39,15 @@
         "Action"
       ],
       "review": "Very Positive",
-      "review_positive": 306138,
-      "review_negative": 46923,
+      "review_positive": 306723,
+      "review_negative": 47060,
       "steam_url": "https://store.steampowered.com/app/1808500"
     },
     {
       "name": "Baldur's Gate 3",
       "appid": "1086940",
-      "players": 59424,
-      "change_pct": 14.8,
+      "players": 85060,
+      "change_pct": 43.1,
       "is_new": false,
       "price_str": "$44.99",
       "discount_pct": 25,
@@ -61,36 +61,35 @@
         "Strategy"
       ],
       "review": "Overwhelmingly Positive",
-      "review_positive": 800384,
-      "review_negative": 26368,
+      "review_positive": 800587,
+      "review_negative": 26378,
       "steam_url": "https://store.steampowered.com/app/1086940"
     },
     {
-      "name": "Marvel Rivals",
-      "appid": "2767030",
-      "players": 88202,
-      "change_pct": 101.8,
+      "name": "HELLDIVERS™ 2",
+      "appid": "553850",
+      "players": 81215,
+      "change_pct": 27.1,
       "is_new": false,
-      "price_str": "Free",
+      "price_str": "$39.99",
       "discount_pct": 0,
-      "is_free": true,
+      "is_free": false,
       "coming_soon": false,
       "is_early_access": false,
-      "release_date": "Dec 5, 2024",
+      "release_date": "Feb 8, 2024",
       "genres": [
-        "Action",
-        "Free To Play"
+        "Action"
       ],
       "review": "Mostly Positive",
-      "review_positive": 286999,
-      "review_negative": 84660,
-      "steam_url": "https://store.steampowered.com/app/2767030"
+      "review_positive": 859924,
+      "review_negative": 249126,
+      "steam_url": "https://store.steampowered.com/app/553850"
     },
     {
       "name": "Warframe",
       "appid": "230410",
-      "players": 52140,
-      "change_pct": -21.2,
+      "players": 60245,
+      "change_pct": 15.5,
       "is_new": false,
       "price_str": "Free",
       "discount_pct": 0,
@@ -104,35 +103,36 @@
         "Free To Play"
       ],
       "review": "Very Positive",
-      "review_positive": 571966,
-      "review_negative": 80808,
+      "review_positive": 572074,
+      "review_negative": 80803,
       "steam_url": "https://store.steampowered.com/app/230410"
     },
     {
-      "name": "HELLDIVERS™ 2",
-      "appid": "553850",
-      "players": 63875,
-      "change_pct": -1.1,
+      "name": "Marvel Rivals",
+      "appid": "2767030",
+      "players": 93344,
+      "change_pct": 5.8,
       "is_new": false,
-      "price_str": "$39.99",
+      "price_str": "Free",
       "discount_pct": 0,
-      "is_free": false,
+      "is_free": true,
       "coming_soon": false,
       "is_early_access": false,
-      "release_date": "Feb 8, 2024",
+      "release_date": "Dec 5, 2024",
       "genres": [
-        "Action"
+        "Action",
+        "Free To Play"
       ],
       "review": "Mostly Positive",
-      "review_positive": 859587,
-      "review_negative": 249126,
-      "steam_url": "https://store.steampowered.com/app/553850"
+      "review_positive": 287085,
+      "review_negative": 84722,
+      "steam_url": "https://store.steampowered.com/app/2767030"
     },
     {
       "name": "Warhammer 40,000: Space Marine 2",
       "appid": "2183900",
-      "players": 24338,
-      "change_pct": -19.9,
+      "players": 33284,
+      "change_pct": 36.8,
       "is_new": false,
       "price_str": "$19.79",
       "discount_pct": 67,
@@ -146,37 +146,15 @@
         "RPG"
       ],
       "review": "Very Positive",
-      "review_positive": 166732,
-      "review_negative": 33213,
+      "review_positive": 166935,
+      "review_negative": 33254,
       "steam_url": "https://store.steampowered.com/app/2183900"
-    },
-    {
-      "name": "Apex Legends™",
-      "appid": "1172470",
-      "players": 56297,
-      "change_pct": -68.9,
-      "is_new": false,
-      "price_str": "Free",
-      "discount_pct": 0,
-      "is_free": true,
-      "coming_soon": false,
-      "is_early_access": false,
-      "release_date": "Nov 4, 2020",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Free To Play"
-      ],
-      "review": "Mixed",
-      "review_positive": 697541,
-      "review_negative": 335947,
-      "steam_url": "https://store.steampowered.com/app/1172470"
     },
     {
       "name": "Kingdom Come: Deliverance II",
       "appid": "1771300",
-      "players": 19093,
-      "change_pct": -33.0,
+      "players": 32044,
+      "change_pct": 67.8,
       "is_new": false,
       "price_str": "$29.99",
       "discount_pct": 50,
@@ -190,15 +168,81 @@
         "RPG"
       ],
       "review": "Very Positive",
-      "review_positive": 161010,
-      "review_negative": 9641,
+      "review_positive": 161182,
+      "review_negative": 9671,
       "steam_url": "https://store.steampowered.com/app/1771300"
+    },
+    {
+      "name": "Super Battle Golf",
+      "appid": "4069520",
+      "players": 10504,
+      "change_pct": 9.7,
+      "is_new": false,
+      "price_str": "$7.99",
+      "discount_pct": 0,
+      "is_free": false,
+      "coming_soon": false,
+      "is_early_access": false,
+      "release_date": "Feb 19, 2026",
+      "genres": [
+        "Casual",
+        "Indie",
+        "Sports"
+      ],
+      "review": "Overwhelmingly Positive",
+      "review_positive": 2788,
+      "review_negative": 132,
+      "steam_url": "https://store.steampowered.com/app/4069520"
+    },
+    {
+      "name": "Apex Legends™",
+      "appid": "1172470",
+      "players": 71969,
+      "change_pct": 27.8,
+      "is_new": false,
+      "price_str": "Free",
+      "discount_pct": 0,
+      "is_free": true,
+      "coming_soon": false,
+      "is_early_access": false,
+      "release_date": "Nov 4, 2020",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Free To Play"
+      ],
+      "review": "Mixed",
+      "review_positive": 697634,
+      "review_negative": 335973,
+      "steam_url": "https://store.steampowered.com/app/1172470"
+    },
+    {
+      "name": "Poppy Playtime",
+      "appid": "1721470",
+      "players": 15136,
+      "change_pct": 14.9,
+      "is_new": false,
+      "price_str": "Free",
+      "discount_pct": 0,
+      "is_free": true,
+      "coming_soon": false,
+      "is_early_access": false,
+      "release_date": "Oct 12, 2021",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Indie"
+      ],
+      "review": "Very Positive",
+      "review_positive": 105640,
+      "review_negative": 16081,
+      "steam_url": "https://store.steampowered.com/app/1721470"
     },
     {
       "name": "Where Winds Meet",
       "appid": "3564740",
-      "players": 22430,
-      "change_pct": -48.8,
+      "players": 29371,
+      "change_pct": 30.9,
       "is_new": false,
       "price_str": "Free",
       "discount_pct": 0,
@@ -212,101 +256,15 @@
         "RPG"
       ],
       "review": "Very Positive",
-      "review_positive": 89469,
-      "review_negative": 12844,
+      "review_positive": 89554,
+      "review_negative": 12869,
       "steam_url": "https://store.steampowered.com/app/3564740"
-    },
-    {
-      "name": "Super Battle Golf",
-      "appid": "4069520",
-      "players": 9579,
-      "change_pct": 205.8,
-      "is_new": false,
-      "price_str": "$7.99",
-      "discount_pct": 0,
-      "is_free": false,
-      "coming_soon": false,
-      "is_early_access": false,
-      "release_date": "Feb 19, 2026",
-      "genres": [
-        "Casual",
-        "Indie",
-        "Sports"
-      ],
-      "review": "Overwhelmingly Positive",
-      "review_positive": 2619,
-      "review_negative": 116,
-      "steam_url": "https://store.steampowered.com/app/4069520"
-    },
-    {
-      "name": "Fallout 76",
-      "appid": "1151340",
-      "players": 17903,
-      "change_pct": 30.7,
-      "is_new": false,
-      "price_str": "$39.99",
-      "discount_pct": 0,
-      "is_free": false,
-      "coming_soon": false,
-      "is_early_access": false,
-      "release_date": "Apr 14, 2020",
-      "genres": [
-        "RPG"
-      ],
-      "review": "Mostly Positive",
-      "review_positive": 98254,
-      "review_negative": 37958,
-      "steam_url": "https://store.steampowered.com/app/1151340"
-    },
-    {
-      "name": "Poppy Playtime",
-      "appid": "1721470",
-      "players": 13177,
-      "change_pct": null,
-      "is_new": true,
-      "price_str": "Free",
-      "discount_pct": 0,
-      "is_free": true,
-      "coming_soon": false,
-      "is_early_access": false,
-      "release_date": "Oct 12, 2021",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Indie"
-      ],
-      "review": "Very Positive",
-      "review_positive": 104990,
-      "review_negative": 16041,
-      "steam_url": "https://store.steampowered.com/app/1721470"
-    },
-    {
-      "name": "Grand Theft Auto V Enhanced",
-      "appid": "3240220",
-      "players": 38384,
-      "change_pct": -46.9,
-      "is_new": false,
-      "price_str": "$29.99",
-      "discount_pct": 0,
-      "is_free": false,
-      "coming_soon": false,
-      "is_early_access": false,
-      "release_date": "Mar 4, 2025",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Racing"
-      ],
-      "review": "Very Positive",
-      "review_positive": 128190,
-      "review_negative": 30522,
-      "steam_url": "https://store.steampowered.com/app/3240220"
     },
     {
       "name": "War Thunder",
       "appid": "236390",
-      "players": 46380,
-      "change_pct": -50.6,
+      "players": 69757,
+      "change_pct": 50.4,
       "is_new": false,
       "price_str": "Free",
       "discount_pct": 0,
@@ -320,17 +278,58 @@
         "Simulation"
       ],
       "review": "Mostly Positive",
-      "review_positive": 524310,
-      "review_negative": 195701,
+      "review_positive": 524555,
+      "review_negative": 195798,
       "steam_url": "https://store.steampowered.com/app/236390"
+    },
+    {
+      "name": "Dead by Daylight",
+      "appid": "381210",
+      "players": 65652,
+      "change_pct": null,
+      "is_new": true,
+      "price_str": "$19.99",
+      "discount_pct": 0,
+      "is_free": false,
+      "coming_soon": false,
+      "is_early_access": false,
+      "release_date": "Jun 14, 2016",
+      "genres": [
+        "Action"
+      ],
+      "review": "Mostly Positive",
+      "review_positive": 693301,
+      "review_negative": 188682,
+      "steam_url": "https://store.steampowered.com/app/381210"
+    },
+    {
+      "name": "Tom Clancy's Rainbow Six® Siege X",
+      "appid": "359550",
+      "players": 104626,
+      "change_pct": null,
+      "is_new": true,
+      "price_str": "Free",
+      "discount_pct": 0,
+      "is_free": true,
+      "coming_soon": false,
+      "is_early_access": false,
+      "release_date": "Dec 1, 2015",
+      "genres": [
+        "Action",
+        "Free To Play"
+      ],
+      "review": "Very Positive",
+      "review_positive": 1227001,
+      "review_negative": 258239,
+      "steam_url": "https://store.steampowered.com/app/359550"
     }
   ],
   "topsellers_paid": [
     {
       "name": "Resident Evil Requiem",
       "appid": "3764200",
-      "players": 249318,
-      "change_pct": -19.0,
+      "players": 269784,
+      "change_pct": 8.2,
       "is_new": false,
       "price_str": "$69.99",
       "discount_pct": 0,
@@ -342,16 +341,16 @@
         "Action",
         "Adventure"
       ],
-      "review": "Very Positive",
-      "review_positive": 32688,
-      "review_negative": 1868,
+      "review": "Overwhelmingly Positive",
+      "review_positive": 49675,
+      "review_negative": 2342,
       "steam_url": "https://store.steampowered.com/app/3764200"
     },
     {
       "name": "ARC Raiders",
       "appid": "1808500",
-      "players": 177928,
-      "change_pct": 68.1,
+      "players": 237952,
+      "change_pct": 33.7,
       "is_new": false,
       "price_str": "$39.99",
       "discount_pct": 0,
@@ -363,15 +362,15 @@
         "Action"
       ],
       "review": "Very Positive",
-      "review_positive": 306138,
-      "review_negative": 46923,
+      "review_positive": 306723,
+      "review_negative": 47060,
       "steam_url": "https://store.steampowered.com/app/1808500"
     },
     {
       "name": "Baldur's Gate 3",
       "appid": "1086940",
-      "players": 59424,
-      "change_pct": 14.8,
+      "players": 85060,
+      "change_pct": 43.1,
       "is_new": false,
       "price_str": "$44.99",
       "discount_pct": 25,
@@ -385,15 +384,35 @@
         "Strategy"
       ],
       "review": "Overwhelmingly Positive",
-      "review_positive": 800384,
-      "review_negative": 26368,
+      "review_positive": 800587,
+      "review_negative": 26378,
       "steam_url": "https://store.steampowered.com/app/1086940"
+    },
+    {
+      "name": "HELLDIVERS™ 2",
+      "appid": "553850",
+      "players": 81215,
+      "change_pct": 27.1,
+      "is_new": false,
+      "price_str": "$39.99",
+      "discount_pct": 0,
+      "is_free": false,
+      "coming_soon": false,
+      "is_early_access": false,
+      "release_date": "Feb 8, 2024",
+      "genres": [
+        "Action"
+      ],
+      "review": "Mostly Positive",
+      "review_positive": 859924,
+      "review_negative": 249126,
+      "steam_url": "https://store.steampowered.com/app/553850"
     },
     {
       "name": "Super Battle Golf",
       "appid": "4069520",
-      "players": 9579,
-      "change_pct": 205.8,
+      "players": 10504,
+      "change_pct": 9.7,
       "is_new": false,
       "price_str": "$7.99",
       "discount_pct": 0,
@@ -407,35 +426,15 @@
         "Sports"
       ],
       "review": "Overwhelmingly Positive",
-      "review_positive": 2619,
-      "review_negative": 116,
+      "review_positive": 2788,
+      "review_negative": 132,
       "steam_url": "https://store.steampowered.com/app/4069520"
-    },
-    {
-      "name": "HELLDIVERS™ 2",
-      "appid": "553850",
-      "players": 63875,
-      "change_pct": -1.1,
-      "is_new": false,
-      "price_str": "$39.99",
-      "discount_pct": 0,
-      "is_free": false,
-      "coming_soon": false,
-      "is_early_access": false,
-      "release_date": "Feb 8, 2024",
-      "genres": [
-        "Action"
-      ],
-      "review": "Mostly Positive",
-      "review_positive": 859587,
-      "review_negative": 249126,
-      "steam_url": "https://store.steampowered.com/app/553850"
     },
     {
       "name": "Mewgenics",
       "appid": "686060",
-      "players": 65091,
-      "change_pct": -0.9,
+      "players": 82072,
+      "change_pct": 26.1,
       "is_new": false,
       "price_str": "$29.99",
       "discount_pct": 0,
@@ -449,15 +448,15 @@
         "RPG"
       ],
       "review": "Very Positive",
-      "review_positive": 29285,
-      "review_negative": 2397,
+      "review_positive": 29793,
+      "review_negative": 2460,
       "steam_url": "https://store.steampowered.com/app/686060"
     },
     {
       "name": "Warhammer 40,000: Space Marine 2",
       "appid": "2183900",
-      "players": 24338,
-      "change_pct": -19.9,
+      "players": 33284,
+      "change_pct": 36.8,
       "is_new": false,
       "price_str": "$19.79",
       "discount_pct": 67,
@@ -471,35 +470,15 @@
         "RPG"
       ],
       "review": "Very Positive",
-      "review_positive": 166732,
-      "review_negative": 33213,
+      "review_positive": 166935,
+      "review_negative": 33254,
       "steam_url": "https://store.steampowered.com/app/2183900"
-    },
-    {
-      "name": "Fallout 76",
-      "appid": "1151340",
-      "players": 17903,
-      "change_pct": 30.7,
-      "is_new": false,
-      "price_str": "$39.99",
-      "discount_pct": 0,
-      "is_free": false,
-      "coming_soon": false,
-      "is_early_access": false,
-      "release_date": "Apr 14, 2020",
-      "genres": [
-        "RPG"
-      ],
-      "review": "Mostly Positive",
-      "review_positive": 98254,
-      "review_negative": 37958,
-      "steam_url": "https://store.steampowered.com/app/1151340"
     },
     {
       "name": "Kingdom Come: Deliverance II",
       "appid": "1771300",
-      "players": 19093,
-      "change_pct": -33.0,
+      "players": 32044,
+      "change_pct": 67.8,
       "is_new": false,
       "price_str": "$29.99",
       "discount_pct": 50,
@@ -513,16 +492,16 @@
         "RPG"
       ],
       "review": "Very Positive",
-      "review_positive": 161010,
-      "review_negative": 9641,
+      "review_positive": 161182,
+      "review_negative": 9671,
       "steam_url": "https://store.steampowered.com/app/1771300"
     },
     {
       "name": "Tom Clancy’s The Division® 2",
       "appid": "2221490",
-      "players": 7540,
-      "change_pct": null,
-      "is_new": true,
+      "players": 12527,
+      "change_pct": 66.1,
+      "is_new": false,
       "price_str": "$2.99",
       "discount_pct": 90,
       "is_free": false,
@@ -535,17 +514,39 @@
         "RPG"
       ],
       "review": "Mostly Positive",
-      "review_positive": 22479,
-      "review_negative": 6229,
+      "review_positive": 22528,
+      "review_negative": 6236,
       "steam_url": "https://store.steampowered.com/app/2221490"
+    },
+    {
+      "name": "ARK: Survival Ascended",
+      "appid": "2399830",
+      "players": 44131,
+      "change_pct": null,
+      "is_new": true,
+      "price_str": "$11.24",
+      "discount_pct": 75,
+      "is_free": false,
+      "coming_soon": false,
+      "is_early_access": false,
+      "release_date": "Oct 25, 2023",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Indie"
+      ],
+      "review": "Mixed",
+      "review_positive": 58091,
+      "review_negative": 38886,
+      "steam_url": "https://store.steampowered.com/app/2399830"
     }
   ],
   "topsellers_free": [
     {
       "name": "Counter-Strike 2",
       "appid": "730",
-      "players": 917373,
-      "change_pct": -38.6,
+      "players": 1293667,
+      "change_pct": 41.0,
       "is_new": false,
       "price_str": "Free",
       "discount_pct": 0,
@@ -558,15 +559,15 @@
         "Free To Play"
       ],
       "review": "Very Positive",
-      "review_positive": 8133204,
-      "review_negative": 1289428,
+      "review_positive": 8135038,
+      "review_negative": 1289815,
       "steam_url": "https://store.steampowered.com/app/730"
     },
     {
       "name": "Marvel Rivals",
       "appid": "2767030",
-      "players": 88202,
-      "change_pct": 101.8,
+      "players": 93344,
+      "change_pct": 5.8,
       "is_new": false,
       "price_str": "Free",
       "discount_pct": 0,
@@ -579,15 +580,15 @@
         "Free To Play"
       ],
       "review": "Mostly Positive",
-      "review_positive": 286999,
-      "review_negative": 84660,
+      "review_positive": 287085,
+      "review_negative": 84722,
       "steam_url": "https://store.steampowered.com/app/2767030"
     },
     {
       "name": "Apex Legends™",
       "appid": "1172470",
-      "players": 56297,
-      "change_pct": -68.9,
+      "players": 71969,
+      "change_pct": 27.8,
       "is_new": false,
       "price_str": "Free",
       "discount_pct": 0,
@@ -601,15 +602,15 @@
         "Free To Play"
       ],
       "review": "Mixed",
-      "review_positive": 697541,
-      "review_negative": 335947,
+      "review_positive": 697634,
+      "review_negative": 335973,
       "steam_url": "https://store.steampowered.com/app/1172470"
     },
     {
       "name": "Warframe",
       "appid": "230410",
-      "players": 52140,
-      "change_pct": -21.2,
+      "players": 60245,
+      "change_pct": 15.5,
       "is_new": false,
       "price_str": "Free",
       "discount_pct": 0,
@@ -623,16 +624,16 @@
         "Free To Play"
       ],
       "review": "Very Positive",
-      "review_positive": 571966,
-      "review_negative": 80808,
+      "review_positive": 572074,
+      "review_negative": 80803,
       "steam_url": "https://store.steampowered.com/app/230410"
     },
     {
       "name": "Poppy Playtime",
       "appid": "1721470",
-      "players": 13177,
-      "change_pct": null,
-      "is_new": true,
+      "players": 15136,
+      "change_pct": 14.9,
+      "is_new": false,
       "price_str": "Free",
       "discount_pct": 0,
       "is_free": true,
@@ -645,15 +646,15 @@
         "Indie"
       ],
       "review": "Very Positive",
-      "review_positive": 104990,
-      "review_negative": 16041,
+      "review_positive": 105640,
+      "review_negative": 16081,
       "steam_url": "https://store.steampowered.com/app/1721470"
     },
     {
       "name": "War Thunder",
       "appid": "236390",
-      "players": 46380,
-      "change_pct": -50.6,
+      "players": 69757,
+      "change_pct": 50.4,
       "is_new": false,
       "price_str": "Free",
       "discount_pct": 0,
@@ -667,137 +668,115 @@
         "Simulation"
       ],
       "review": "Mostly Positive",
-      "review_positive": 524310,
-      "review_negative": 195701,
+      "review_positive": 524555,
+      "review_negative": 195798,
       "steam_url": "https://store.steampowered.com/app/236390"
     },
     {
-      "name": "Where Winds Meet",
-      "appid": "3564740",
-      "players": 22430,
-      "change_pct": -48.8,
-      "is_new": false,
+      "name": "Tom Clancy's Rainbow Six® Siege X",
+      "appid": "359550",
+      "players": 104626,
+      "change_pct": null,
+      "is_new": true,
       "price_str": "Free",
       "discount_pct": 0,
       "is_free": true,
       "coming_soon": false,
       "is_early_access": false,
-      "release_date": "Nov 14, 2025",
+      "release_date": "Dec 1, 2015",
       "genres": [
         "Action",
-        "Adventure",
-        "RPG"
+        "Free To Play"
       ],
       "review": "Very Positive",
-      "review_positive": 89469,
-      "review_negative": 12844,
-      "steam_url": "https://store.steampowered.com/app/3564740"
+      "review_positive": 1227001,
+      "review_negative": 258239,
+      "steam_url": "https://store.steampowered.com/app/359550"
     }
   ],
   "rising": [
     {
-      "name": "ARC Raiders",
-      "appid": "1808500",
-      "players": 177928,
-      "prev_players": 105864,
-      "abs_change": 72064,
-      "pct_change": 68.1,
-      "steam_url": "https://store.steampowered.com/app/1808500"
+      "name": "Counter-Strike 2",
+      "appid": "730",
+      "players": 1293667,
+      "prev_players": 917373,
+      "abs_change": 376294,
+      "pct_change": 41.0,
+      "steam_url": "https://store.steampowered.com/app/730"
     },
     {
-      "name": "Marvel Rivals",
-      "appid": "2767030",
-      "players": 88202,
-      "prev_players": 43709,
-      "abs_change": 44493,
-      "pct_change": 101.8,
-      "steam_url": "https://store.steampowered.com/app/2767030"
+      "name": "ARC Raiders",
+      "appid": "1808500",
+      "players": 237952,
+      "prev_players": 177928,
+      "abs_change": 60024,
+      "pct_change": 33.7,
+      "steam_url": "https://store.steampowered.com/app/1808500"
     },
     {
       "name": "Baldur's Gate 3",
       "appid": "1086940",
-      "players": 59424,
-      "prev_players": 51749,
-      "abs_change": 7675,
-      "pct_change": 14.8,
+      "players": 85060,
+      "prev_players": 59424,
+      "abs_change": 25636,
+      "pct_change": 43.1,
       "steam_url": "https://store.steampowered.com/app/1086940"
-    },
-    {
-      "name": "Super Battle Golf",
-      "appid": "4069520",
-      "players": 9579,
-      "prev_players": 3132,
-      "abs_change": 6447,
-      "pct_change": 205.8,
-      "steam_url": "https://store.steampowered.com/app/4069520"
-    },
-    {
-      "name": "Halo: The Master Chief Collection",
-      "appid": "976730",
-      "players": 8175,
-      "prev_players": 3490,
-      "abs_change": 4685,
-      "pct_change": 134.2,
-      "steam_url": "https://store.steampowered.com/app/976730"
-    },
-    {
-      "name": "Fallout 76",
-      "appid": "1151340",
-      "players": 17903,
-      "prev_players": 13696,
-      "abs_change": 4207,
-      "pct_change": 30.7,
-      "steam_url": "https://store.steampowered.com/app/1151340"
-    }
-  ],
-  "falling": [
-    {
-      "name": "Apex Legends™",
-      "appid": "1172470",
-      "players": 56297,
-      "prev_players": 181176,
-      "abs_change": -124879,
-      "pct_change": -68.9,
-      "steam_url": "https://store.steampowered.com/app/1172470"
     },
     {
       "name": "War Thunder",
       "appid": "236390",
-      "players": 46380,
-      "prev_players": 93839,
-      "abs_change": -47459,
-      "pct_change": -50.6,
+      "players": 69757,
+      "prev_players": 46380,
+      "abs_change": 23377,
+      "pct_change": 50.4,
       "steam_url": "https://store.steampowered.com/app/236390"
     },
     {
-      "name": "Where Winds Meet",
-      "appid": "3564740",
-      "players": 22430,
-      "prev_players": 43771,
-      "abs_change": -21341,
-      "pct_change": -48.8,
-      "steam_url": "https://store.steampowered.com/app/3564740"
+      "name": "Resident Evil Requiem",
+      "appid": "3764200",
+      "players": 269784,
+      "prev_players": 249318,
+      "abs_change": 20466,
+      "pct_change": 8.2,
+      "steam_url": "https://store.steampowered.com/app/3764200"
     },
     {
-      "name": "Grand Theft Auto V Enhanced",
-      "appid": "3240220",
-      "players": 38384,
-      "prev_players": 72329,
-      "abs_change": -33945,
-      "pct_change": -46.9,
-      "steam_url": "https://store.steampowered.com/app/3240220"
+      "name": "HELLDIVERS™ 2",
+      "appid": "553850",
+      "players": 81215,
+      "prev_players": 63875,
+      "abs_change": 17340,
+      "pct_change": 27.1,
+      "steam_url": "https://store.steampowered.com/app/553850"
     },
     {
-      "name": "Counter-Strike 2",
-      "appid": "730",
-      "players": 917373,
-      "prev_players": 1494892,
-      "abs_change": -577519,
-      "pct_change": -38.6,
-      "steam_url": "https://store.steampowered.com/app/730"
+      "name": "Mewgenics",
+      "appid": "686060",
+      "players": 82072,
+      "prev_players": 65091,
+      "abs_change": 16981,
+      "pct_change": 26.1,
+      "steam_url": "https://store.steampowered.com/app/686060"
+    },
+    {
+      "name": "Apex Legends™",
+      "appid": "1172470",
+      "players": 71969,
+      "prev_players": 56297,
+      "abs_change": 15672,
+      "pct_change": 27.8,
+      "steam_url": "https://store.steampowered.com/app/1172470"
     }
   ],
+  "falling": [],
   "specials": [
+    {
+      "name": "Tom Clancy’s The Division® 2",
+      "appid": "2221490",
+      "discount_pct": 90,
+      "price": "$2.99",
+      "steam_url": "https://store.steampowered.com/app/2221490"
+    },
     {
       "name": "Tom Clancy’s The Division® 2",
       "appid": "2221490",
@@ -811,13 +790,6 @@
       "discount_pct": 75,
       "price": "$9.99",
       "steam_url": "https://store.steampowered.com/app/376282"
-    },
-    {
-      "name": "Star Wars Outlaws",
-      "appid": "2842040",
-      "discount_pct": 70,
-      "price": "$20.99",
-      "steam_url": "https://store.steampowered.com/app/2842040"
     },
     {
       "name": "Warhammer 40,000: Space Marine 2",
@@ -971,6 +943,30 @@
         "686060": 65091,
         "2221490": 7540,
         "976730": 8175
+      }
+    },
+    "2026-03-02": {
+      "player_counts": {
+        "3764200": 269784,
+        "1808500": 237952,
+        "1086940": 85060,
+        "553850": 81215,
+        "230410": 60245,
+        "2767030": 93344,
+        "2183900": 33284,
+        "1771300": 32044,
+        "4069520": 10504,
+        "1172470": 71969,
+        "1721470": 15136,
+        "3564740": 29371,
+        "236390": 69757,
+        "381210": 65652,
+        "359550": 104626,
+        "730": 1293667,
+        "686060": 82072,
+        "2221490": 12527,
+        "2399830": 44131,
+        "1151340": 22696
       }
     }
   }

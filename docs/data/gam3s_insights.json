@@ -1,20 +1,20 @@
 {
-  "updated": "2026-03-01T05:34:01.968584+04:00",
-  "report_date": "2026-03-01",
-  "total_sessions_7d": 84852,
-  "total_sessions_prior": 168261,
-  "wow_pct": -49.6,
+  "updated": "2026-03-02T00:58:25.372829+04:00",
+  "report_date": "2026-03-02",
+  "total_sessions_7d": 77132,
+  "total_sessions_prior": 153852,
+  "wow_pct": -49.9,
   "top_pages": [
     {
       "topic": "2026",
       "title": "2026年 おすすめゼルダの伝説シリーズ",
       "category": "News",
-      "sessions": 20550,
-      "users": 20260,
-      "pageviews": 20980,
-      "bounce_rate": 0.63,
+      "sessions": 23036,
+      "users": 22704,
+      "pageviews": 23527,
+      "bounce_rate": 0.631,
       "avg_duration": 24.1,
-      "page_count": 9,
+      "page_count": 11,
       "growth_pct": null,
       "urls": [
         "/ja/news/2026年におすすめのゼルダの伝説シリーズ/",
@@ -26,17 +26,17 @@
       "topic": "mario-tennis-fever",
       "title": "マリオテニスフィーバー：最強キャラtierリスト (Mario Tennis Fever)",
       "category": "Guide",
-      "sessions": 14051,
-      "users": 13348,
-      "pageviews": 14988,
-      "bounce_rate": 0.405,
-      "avg_duration": 76.8,
-      "page_count": 22,
-      "growth_pct": -37.5,
+      "sessions": 11435,
+      "users": 10891,
+      "pageviews": 12178,
+      "bounce_rate": 0.412,
+      "avg_duration": 74.3,
+      "page_count": 19,
+      "growth_pct": -55.4,
       "urls": [
         "/ja/mario-tennis-fever/guides/マリオテニスフィーバー最強キャラtierリスト/",
         "/ja/mario-tennis-fever/guides/マリオテニスフィーバー最強キャラtierリスト/",
-        "/ja/mario-tennis-fever/guides/マリオテニスフィーバー最強キャラtierリスト/"
+        "/ja/mario-tennis-fever/guides/mario-tennis-fever-初心者向け完全ガイド/"
       ]
     },
     {
@@ -58,12 +58,12 @@
       "topic": "assassins-creed-codename-hexe",
       "title": "Assassin's Creed: Codename Hexe",
       "category": "Page",
-      "sessions": 4311,
-      "users": 4173,
-      "pageviews": 4535,
-      "bounce_rate": 0.553,
-      "avg_duration": 46.6,
-      "page_count": 8,
+      "sessions": 4489,
+      "users": 4350,
+      "pageviews": 4728,
+      "bounce_rate": 0.551,
+      "avg_duration": 46.2,
+      "page_count": 9,
       "growth_pct": null,
       "urls": [
         "/assassins-creed-codename-hexe/",
@@ -92,13 +92,13 @@
       "topic": "/",
       "title": "GAM3S.GG | Gaming News, Reviews, Guides and Game Discovery",
       "category": "Page",
-      "sessions": 3402,
-      "users": 3146,
-      "pageviews": 4523,
-      "bounce_rate": 0.423,
-      "avg_duration": 69.2,
+      "sessions": 3321,
+      "users": 3089,
+      "pageviews": 4369,
+      "bounce_rate": 0.442,
+      "avg_duration": 67.2,
       "page_count": 8,
-      "growth_pct": -0.9,
+      "growth_pct": -3.4,
       "urls": [
         "/",
         "/",
@@ -109,13 +109,13 @@
       "topic": "slay-the-spire-2",
       "title": "Slay the Spire 2 早期アクセス開始日と協力プレイの詳細が明らかに | GAMES.GG",
       "category": "News",
-      "sessions": 3290,
-      "users": 3192,
-      "pageviews": 3373,
-      "bounce_rate": 0.646,
-      "avg_duration": 36.4,
+      "sessions": 3292,
+      "users": 3196,
+      "pageviews": 3384,
+      "bounce_rate": 0.637,
+      "avg_duration": 35.7,
       "page_count": 7,
-      "growth_pct": null,
+      "growth_pct": 794.6,
       "urls": [
         "/ja/news/slay-the-spire-2早期アクセス開始日と協力プレイの詳細が明らかに/",
         "/ja/news/slay-the-spire-2早期アクセス開始日と協力プレイの詳細が明らかに/",
@@ -123,52 +123,53 @@
       ]
     },
     {
-      "topic": "xbox-series-x-volta-ao-estoque",
-      "title": "Xbox Series X Volta ao Estoque Após Esgotar",
-      "category": "News",
-      "sessions": 2530,
-      "users": 2470,
-      "pageviews": 2601,
-      "bounce_rate": 0.641,
-      "avg_duration": 28.6,
-      "page_count": 4,
-      "growth_pct": null,
-      "urls": [
-        "/pt-BR/news/xbox-series-x-volta-ao-estoque-após-esgotar/",
-        "/pt-BR/news/xbox-series-x-volta-ao-estoque-após-esgotar/",
-        "/pt-BR/news/xbox-series-x-volta-ao-estoque-após-esgotar/"
-      ]
-    },
-    {
-      "topic": "ghost-of-yotei-legends-2026",
-      "title": "Ghost of Yotei Legends 2026年3月発売決定",
-      "category": "News",
-      "sessions": 2508,
-      "users": 2457,
-      "pageviews": 2542,
-      "bounce_rate": 0.703,
-      "avg_duration": 18.0,
-      "page_count": 2,
-      "growth_pct": -74.7,
-      "urls": [
-        "/ja/news/ghost-of-yotei-legends-2026年3月発売決定/",
-        "/ja/news/ghost-of-yotei-legends-2026年3月発売決定/"
-      ]
-    },
-    {
       "topic": "pokémon-windとpokémon-waveのリーク情報",
       "title": "「Pokémon Wind」「Pokémon Wave」リーク情報 | GAMES.GG (Pokémon WindとPokémon Waveのリーク情報)",
       "category": "News",
-      "sessions": 1835,
-      "users": 1812,
-      "pageviews": 1903,
+      "sessions": 1844,
+      "users": 1821,
+      "pageviews": 1912,
       "bounce_rate": 0.533,
-      "avg_duration": 28.0,
+      "avg_duration": 27.9,
       "page_count": 2,
       "growth_pct": null,
       "urls": [
         "/ja/news/pokémon-windとpokémon-waveのリーク情報/",
         "/ja/news/pokémon-windとpokémon-waveのリーク情報/"
+      ]
+    },
+    {
+      "topic": "nintendo-mario-serisini-abd-ma",
+      "title": "Nintendo Mario Serisini ABD Mağazalarına Getiriyor | GAMES.GG",
+      "category": "News",
+      "sessions": 1589,
+      "users": 1555,
+      "pageviews": 1763,
+      "bounce_rate": 0.882,
+      "avg_duration": 15.8,
+      "page_count": 5,
+      "growth_pct": null,
+      "urls": [
+        "/tr/news/nintendo-mario-serisini-abd-mağazalarına-getiriyor/",
+        "/tr/news/nintendo-mario-serisini-abd-mağazalarına-getiriyor/",
+        "/tr/news/nintendo-mario-serisini-abd-mağazalarına-getiriyor/"
+      ]
+    },
+    {
+      "topic": "xbox-series-x-volta-ao-estoque",
+      "title": "Xbox Series X Volta ao Estoque Após Esgotar",
+      "category": "News",
+      "sessions": 1560,
+      "users": 1516,
+      "pageviews": 1603,
+      "bounce_rate": 0.644,
+      "avg_duration": 28.1,
+      "page_count": 3,
+      "growth_pct": 60.8,
+      "urls": [
+        "/pt-BR/news/xbox-series-x-volta-ao-estoque-após-esgotar/",
+        "/pt-BR/news/xbox-series-x-volta-ao-estoque-após-esgotar/",
+        "/pt-BR/news/xbox-series-x-volta-ao-estoque-após-esgotar/"
       ]
     }
   ],
@@ -177,64 +178,30 @@
       "topic": "mario-tennis-fever",
       "title": "マリオテニスフィーバー：最強キャラtierリスト (Mario Tennis Fever)",
       "category": "Guide",
-      "sessions": 14051,
-      "users": 13348,
-      "pageviews": 14988,
-      "bounce_rate": 0.405,
-      "avg_duration": 76.8,
-      "page_count": 22,
-      "growth_pct": -37.5,
+      "sessions": 11435,
+      "users": 10891,
+      "pageviews": 12178,
+      "bounce_rate": 0.412,
+      "avg_duration": 74.3,
+      "page_count": 19,
+      "growth_pct": -55.4,
       "urls": [
         "/ja/mario-tennis-fever/guides/マリオテニスフィーバー最強キャラtierリスト/",
         "/ja/mario-tennis-fever/guides/マリオテニスフィーバー最強キャラtierリスト/",
-        "/ja/mario-tennis-fever/guides/マリオテニスフィーバー最強キャラtierリスト/"
-      ]
-    },
-    {
-      "topic": "poppy-playtime",
-      "title": "Guía Puzzle Casilleros Poppy Playtime Cap. 5: Obtén Mano de Presión",
-      "category": "Guide",
-      "sessions": 1608,
-      "users": 1579,
-      "pageviews": 1780,
-      "bounce_rate": 0.727,
-      "avg_duration": 33.2,
-      "page_count": 5,
-      "growth_pct": -40.0,
-      "urls": [
-        "/es/poppy-playtime/guides/guía-puzzle-casilleros-poppy-playtime-cap-5-obtén-mano-de-presión/",
-        "/es/poppy-playtime/guides/guía-poppy-playtime-cap-5-ubicaciones-de-las-3-cintas-vhs/",
-        "/es/poppy-playtime/guides/guía-poppy-playtime-cap-5-ubicaciones-de-las-3-cintas-vhs/"
-      ]
-    },
-    {
-      "topic": "steal-a-brainrot",
-      "title": "Guía Steal A Brainrot: Evento San Valentín Pt 2",
-      "category": "Guide",
-      "sessions": 1506,
-      "users": 1469,
-      "pageviews": 1654,
-      "bounce_rate": 0.864,
-      "avg_duration": 16.7,
-      "page_count": 4,
-      "growth_pct": -93.1,
-      "urls": [
-        "/es/steal-a-brainrot/guides/guía-steal-a-brainrot-evento-san-valentín-pt-2/",
-        "/es/steal-a-brainrot/guides/guía-steal-a-brainrot-evento-san-valentín-pt-2/",
-        "/es/steal-a-brainrot/guides/guía-steal-a-brainrot-evento-san-valentín-pt-2/"
+        "/ja/mario-tennis-fever/guides/mario-tennis-fever-初心者向け完全ガイド/"
       ]
     },
     {
       "topic": "yapyap",
-      "title": "YAPYAP 완드 & 주문 가이드: 모든 목록",
+      "title": "YAPYAP 완드 & 주문 가이드: 모든 목록 | GAMES.GG",
       "category": "Guide",
-      "sessions": 1224,
-      "users": 833,
-      "pageviews": 1278,
-      "bounce_rate": 0.465,
-      "avg_duration": 297.9,
+      "sessions": 1146,
+      "users": 773,
+      "pageviews": 1207,
+      "bounce_rate": 0.461,
+      "avg_duration": 300.2,
       "page_count": 6,
-      "growth_pct": 310.7,
+      "growth_pct": 94.2,
       "urls": [
         "/ko/yapyap/guides/yapyap-완드-주문-가이드-모든-목록/",
         "/ko/yapyap/guides/yapyap-완드-주문-가이드-모든-목록/",
@@ -242,20 +209,54 @@
       ]
     },
     {
+      "topic": "steal-a-brainrot",
+      "title": "Guía Steal A Brainrot: Evento San Valentín Pt 2",
+      "category": "Guide",
+      "sessions": 963,
+      "users": 938,
+      "pageviews": 1064,
+      "bounce_rate": 0.857,
+      "avg_duration": 18.0,
+      "page_count": 3,
+      "growth_pct": -94.4,
+      "urls": [
+        "/es/steal-a-brainrot/guides/guía-steal-a-brainrot-evento-san-valentín-pt-2/",
+        "/es/steal-a-brainrot/guides/guía-steal-a-brainrot-evento-san-valentín-pt-2/",
+        "/es/steal-a-brainrot/guides/guía-steal-a-brainrot-evento-san-valentín-pt-2/"
+      ]
+    },
+    {
       "topic": "arc-raiders",
       "title": "Arc Raiders Surgeon Deckガイド：報酬と入手方法",
       "category": "Guide",
-      "sessions": 848,
-      "users": 826,
-      "pageviews": 873,
-      "bounce_rate": 0.601,
-      "avg_duration": 44.2,
+      "sessions": 803,
+      "users": 776,
+      "pageviews": 824,
+      "bounce_rate": 0.587,
+      "avg_duration": 49.3,
       "page_count": 4,
-      "growth_pct": -63.8,
+      "growth_pct": -69.5,
       "urls": [
         "/ja/arc-raiders/guides/arc-raiders-surgeon-deckガイド報酬と入手方法/",
         "/ja/arc-raiders/guides/arc-raiders-shrouded-skyアップデート知っておくべきこと全て/",
         "/ja/arc-raiders/guides/arc-raiders-shrouded-skyアップデート知っておくべきこと全て/"
+      ]
+    },
+    {
+      "topic": "poppy-playtime",
+      "title": "Guía Poppy Playtime Cap. 5: Ubicaciones Cintas VHS",
+      "category": "Guide",
+      "sessions": 714,
+      "users": 701,
+      "pageviews": 813,
+      "bounce_rate": 0.79,
+      "avg_duration": 29.5,
+      "page_count": 3,
+      "growth_pct": -80.0,
+      "urls": [
+        "/es/poppy-playtime/guides/guía-poppy-playtime-cap-5-ubicaciones-de-las-3-cintas-vhs/",
+        "/es/poppy-playtime/guides/guía-poppy-playtime-cap-5-ubicaciones-de-las-3-cintas-vhs/",
+        "/es/poppy-playtime/guides/guía-poppy-playtime-cap-5-ubicaciones-de-las-3-cintas-vhs/"
       ]
     },
     {
@@ -275,21 +276,6 @@
       ]
     },
     {
-      "topic": "high-on-life-2",
-      "title": "High On Life 2 Guide: All Luglox Exterminators Locations",
-      "category": "Guide",
-      "sessions": 230,
-      "users": 212,
-      "pageviews": 249,
-      "bounce_rate": 0.457,
-      "avg_duration": 116.2,
-      "page_count": 1,
-      "growth_pct": -97.3,
-      "urls": [
-        "/high-on-life-2/guides/high-on-life-2-all-luglox-exterminators-locations/"
-      ]
-    },
-    {
       "topic": "overwatch-2",
       "title": "Overwatchガイド：アンランのランクプレイ向け最強のコツとテクニック (Overwatch 2)",
       "category": "Guide",
@@ -303,21 +289,6 @@
       "urls": [
         "/ja/overwatch-2/guides/overwatchガイドアンランのランクプレイ向け最強のコツとテクニック/"
       ]
-    },
-    {
-      "topic": "no-rest-for-the-wicked",
-      "title": "No Rest for the Wicked Best Builds: New META",
-      "category": "Guide",
-      "sessions": 200,
-      "users": 168,
-      "pageviews": 204,
-      "bounce_rate": 0.475,
-      "avg_duration": 191.7,
-      "page_count": 1,
-      "growth_pct": -86.7,
-      "urls": [
-        "/no-rest-for-the-wicked/guides/no-rest-for-the-wicked-best-builds/"
-      ]
     }
   ],
   "top_news": [
@@ -325,12 +296,12 @@
       "topic": "2026",
       "title": "2026年 おすすめゼルダの伝説シリーズ",
       "category": "News",
-      "sessions": 20550,
-      "users": 20260,
-      "pageviews": 20980,
-      "bounce_rate": 0.63,
+      "sessions": 23036,
+      "users": 22704,
+      "pageviews": 23527,
+      "bounce_rate": 0.631,
       "avg_duration": 24.1,
-      "page_count": 9,
+      "page_count": 11,
       "growth_pct": null,
       "urls": [
         "/ja/news/2026年におすすめのゼルダの伝説シリーズ/",
@@ -374,13 +345,13 @@
       "topic": "slay-the-spire-2",
       "title": "Slay the Spire 2 早期アクセス開始日と協力プレイの詳細が明らかに | GAMES.GG",
       "category": "News",
-      "sessions": 3290,
-      "users": 3192,
-      "pageviews": 3373,
-      "bounce_rate": 0.646,
-      "avg_duration": 36.4,
+      "sessions": 3292,
+      "users": 3196,
+      "pageviews": 3384,
+      "bounce_rate": 0.637,
+      "avg_duration": 35.7,
       "page_count": 7,
-      "growth_pct": null,
+      "growth_pct": 794.6,
       "urls": [
         "/ja/news/slay-the-spire-2早期アクセス開始日と協力プレイの詳細が明らかに/",
         "/ja/news/slay-the-spire-2早期アクセス開始日と協力プレイの詳細が明らかに/",
@@ -388,47 +359,14 @@
       ]
     },
     {
-      "topic": "xbox-series-x-volta-ao-estoque",
-      "title": "Xbox Series X Volta ao Estoque Após Esgotar",
-      "category": "News",
-      "sessions": 2530,
-      "users": 2470,
-      "pageviews": 2601,
-      "bounce_rate": 0.641,
-      "avg_duration": 28.6,
-      "page_count": 4,
-      "growth_pct": null,
-      "urls": [
-        "/pt-BR/news/xbox-series-x-volta-ao-estoque-após-esgotar/",
-        "/pt-BR/news/xbox-series-x-volta-ao-estoque-após-esgotar/",
-        "/pt-BR/news/xbox-series-x-volta-ao-estoque-após-esgotar/"
-      ]
-    },
-    {
-      "topic": "ghost-of-yotei-legends-2026",
-      "title": "Ghost of Yotei Legends 2026年3月発売決定",
-      "category": "News",
-      "sessions": 2508,
-      "users": 2457,
-      "pageviews": 2542,
-      "bounce_rate": 0.703,
-      "avg_duration": 18.0,
-      "page_count": 2,
-      "growth_pct": -74.7,
-      "urls": [
-        "/ja/news/ghost-of-yotei-legends-2026年3月発売決定/",
-        "/ja/news/ghost-of-yotei-legends-2026年3月発売決定/"
-      ]
-    },
-    {
       "topic": "pokémon-windとpokémon-waveのリーク情報",
       "title": "「Pokémon Wind」「Pokémon Wave」リーク情報 | GAMES.GG (Pokémon WindとPokémon Waveのリーク情報)",
       "category": "News",
-      "sessions": 1835,
-      "users": 1812,
-      "pageviews": 1903,
+      "sessions": 1844,
+      "users": 1821,
+      "pageviews": 1912,
       "bounce_rate": 0.533,
-      "avg_duration": 28.0,
+      "avg_duration": 27.9,
       "page_count": 2,
       "growth_pct": null,
       "urls": [
@@ -437,37 +375,37 @@
       ]
     },
     {
-      "topic": "epic-games-store",
-      "title": "Epic Games StoreモバイルでResidualが無料に",
-      "category": "News",
-      "sessions": 1396,
-      "users": 1348,
-      "pageviews": 1482,
-      "bounce_rate": 0.637,
-      "avg_duration": 44.9,
-      "page_count": 4,
-      "growth_pct": 68.6,
-      "urls": [
-        "/ja/news/epic-games-storeモバイルでresidualが無料に/",
-        "/ja/news/epic-games-storeモバイルでresidualが無料に/",
-        "/ja/news/epic-games-storeモバイルでresidualが無料に/"
-      ]
-    },
-    {
       "topic": "nintendo-mario-serisini-abd-ma",
       "title": "Nintendo Mario Serisini ABD Mağazalarına Getiriyor | GAMES.GG",
       "category": "News",
-      "sessions": 1364,
-      "users": 1334,
-      "pageviews": 1507,
-      "bounce_rate": 0.884,
-      "avg_duration": 13.9,
-      "page_count": 4,
+      "sessions": 1589,
+      "users": 1555,
+      "pageviews": 1763,
+      "bounce_rate": 0.882,
+      "avg_duration": 15.8,
+      "page_count": 5,
       "growth_pct": null,
       "urls": [
         "/tr/news/nintendo-mario-serisini-abd-mağazalarına-getiriyor/",
         "/tr/news/nintendo-mario-serisini-abd-mağazalarına-getiriyor/",
         "/tr/news/nintendo-mario-serisini-abd-mağazalarına-getiriyor/"
+      ]
+    },
+    {
+      "topic": "xbox-series-x-volta-ao-estoque",
+      "title": "Xbox Series X Volta ao Estoque Após Esgotar",
+      "category": "News",
+      "sessions": 1560,
+      "users": 1516,
+      "pageviews": 1603,
+      "bounce_rate": 0.644,
+      "avg_duration": 28.1,
+      "page_count": 3,
+      "growth_pct": 60.8,
+      "urls": [
+        "/pt-BR/news/xbox-series-x-volta-ao-estoque-após-esgotar/",
+        "/pt-BR/news/xbox-series-x-volta-ao-estoque-após-esgotar/",
+        "/pt-BR/news/xbox-series-x-volta-ao-estoque-após-esgotar/"
       ]
     },
     {
@@ -488,35 +426,82 @@
       ]
     },
     {
+      "topic": "epic-games-store",
+      "title": "Epic Games StoreモバイルでResidualが無料に",
+      "category": "News",
+      "sessions": 986,
+      "users": 958,
+      "pageviews": 1048,
+      "bounce_rate": 0.619,
+      "avg_duration": 48.0,
+      "page_count": 4,
+      "growth_pct": -29.4,
+      "urls": [
+        "/ja/news/epic-games-storeモバイルでresidualが無料に/",
+        "/ja/news/epic-games-storeモバイルでresidualが無料に/",
+        "/ja/news/epic-games-storeモバイルでresidualが無料に/"
+      ]
+    },
+    {
       "topic": "macbook-pro-m5-preço-reduzido-na",
       "title": "MacBook Pro M5: Preço Reduzido na Amazon (Macbook Pro M5 Preço Reduzido Na)",
       "category": "News",
-      "sessions": 923,
-      "users": 894,
-      "pageviews": 948,
-      "bounce_rate": 0.637,
-      "avg_duration": 48.0,
-      "page_count": 3,
-      "growth_pct": 58.3,
+      "sessions": 605,
+      "users": 586,
+      "pageviews": 621,
+      "bounce_rate": 0.625,
+      "avg_duration": 26.8,
+      "page_count": 2,
+      "growth_pct": -32.9,
       "urls": [
         "/pt-BR/news/macbook-pro-m5-preço-reduzido-na-amazon/",
-        "/pt-BR/news/macbook-pro-m5-preço-reduzido-na-amazon/",
         "/pt-BR/news/macbook-pro-m5-preço-reduzido-na-amazon/"
+      ]
+    },
+    {
+      "topic": "battlefield-6-season-2",
+      "title": "Battlefield 6 Season 2: 主要な変更点と新要素",
+      "category": "News",
+      "sessions": 592,
+      "users": 576,
+      "pageviews": 598,
+      "bounce_rate": 0.595,
+      "avg_duration": 58.7,
+      "page_count": 2,
+      "growth_pct": null,
+      "urls": [
+        "/ja/news/battlefield-6-season-2-主要な変更点と新要素/",
+        "/ja/news/battlefield-6-season-2-主要な変更点と新要素/"
+      ]
+    },
+    {
+      "topic": "novos-jogos-xbox-game-pass-fevereiro",
+      "title": "Novos Jogos Xbox Game Pass Fevereiro 2026",
+      "category": "News",
+      "sessions": 586,
+      "users": 572,
+      "pageviews": 608,
+      "bounce_rate": 0.643,
+      "avg_duration": 35.4,
+      "page_count": 2,
+      "growth_pct": null,
+      "urls": [
+        "/pt-BR/news/novos-jogos-xbox-game-pass-fevereiro-2026/",
+        "/pt-BR/news/novos-jogos-xbox-game-pass-fevereiro-2026/"
       ]
     },
     {
       "topic": "monitor-gamer-samsung-odyssey-oled-g5",
       "title": "Monitor Gamer Samsung Odyssey OLED G5 27″ por $350",
       "category": "News",
-      "sessions": 917,
-      "users": 885,
-      "pageviews": 976,
-      "bounce_rate": 0.574,
-      "avg_duration": 39.0,
-      "page_count": 3,
-      "growth_pct": 67.6,
+      "sessions": 578,
+      "users": 563,
+      "pageviews": 608,
+      "bounce_rate": 0.555,
+      "avg_duration": 35.3,
+      "page_count": 2,
+      "growth_pct": -34.8,
       "urls": [
-        "/pt-BR/news/monitor-gamer-samsung-odyssey-oled-g5-27-por-350/",
         "/pt-BR/news/monitor-gamer-samsung-odyssey-oled-g5-27-por-350/",
         "/pt-BR/news/monitor-gamer-samsung-odyssey-oled-g5-27-por-350/"
       ]
@@ -525,33 +510,16 @@
       "topic": "xbox-elite-series-2-core-controller",
       "title": "Xbox Elite Series 2 Core Controller: Preço Reduzido",
       "category": "News",
-      "sessions": 787,
-      "users": 764,
-      "pageviews": 830,
-      "bounce_rate": 0.634,
-      "avg_duration": 44.6,
-      "page_count": 3,
-      "growth_pct": null,
-      "urls": [
-        "/pt-BR/news/xbox-elite-series-2-core-controller-preço-reduzido/",
-        "/pt-BR/news/xbox-elite-series-2-core-controller-preço-reduzido/",
-        "/pt-BR/news/xbox-elite-series-2-core-controller-preço-reduzido/"
-      ]
-    },
-    {
-      "topic": "xbox-series-x-stoklara-geri-d",
-      "title": "Xbox Series X Stoklara Geri Döndü",
-      "category": "News",
-      "sessions": 643,
-      "users": 626,
-      "pageviews": 656,
-      "bounce_rate": 0.74,
-      "avg_duration": 19.4,
+      "sessions": 577,
+      "users": 561,
+      "pageviews": 606,
+      "bounce_rate": 0.638,
+      "avg_duration": 36.3,
       "page_count": 2,
       "growth_pct": null,
       "urls": [
-        "/tr/news/xbox-series-x-stoklara-geri-döndü/",
-        "/tr/news/xbox-series-x-stoklara-geri-döndü/"
+        "/pt-BR/news/xbox-elite-series-2-core-controller-preço-reduzido/",
+        "/pt-BR/news/xbox-elite-series-2-core-controller-preço-reduzido/"
       ]
     },
     {
@@ -574,87 +542,87 @@
   "languages": [
     {
       "language": "Japanese",
-      "sessions": 83167,
-      "users": 78713,
-      "pageviews": 92398,
-      "growth_pct": -14.5
+      "sessions": 78529,
+      "users": 74303,
+      "pageviews": 86964,
+      "growth_pct": -15.6
     },
     {
       "language": "English",
-      "sessions": 66749,
-      "users": 61399,
-      "pageviews": 76208,
-      "growth_pct": -52.2
+      "sessions": 64460,
+      "users": 59021,
+      "pageviews": 73064,
+      "growth_pct": -50.4
     },
     {
       "language": "French",
-      "sessions": 30205,
-      "users": 26218,
-      "pageviews": 34834,
-      "growth_pct": -21.4
+      "sessions": 27630,
+      "users": 24151,
+      "pageviews": 31949,
+      "growth_pct": -25.4
     },
     {
       "language": "Spanish",
-      "sessions": 28145,
-      "users": 25354,
-      "pageviews": 32581,
-      "growth_pct": -55.3
+      "sessions": 24281,
+      "users": 21779,
+      "pageviews": 27934,
+      "growth_pct": -57.2
     },
     {
       "language": "Portuguese",
-      "sessions": 20944,
-      "users": 19222,
-      "pageviews": 24342,
-      "growth_pct": -47.5
+      "sessions": 17259,
+      "users": 15769,
+      "pageviews": 20040,
+      "growth_pct": -55.2
     },
     {
       "language": "German",
-      "sessions": 18070,
-      "users": 16036,
-      "pageviews": 20468,
-      "growth_pct": -23.1
-    },
-    {
-      "language": "Korean",
-      "sessions": 13734,
-      "users": 12385,
-      "pageviews": 16495,
-      "growth_pct": 8.7
-    },
-    {
-      "language": "Russian",
-      "sessions": 13496,
-      "users": 11508,
-      "pageviews": 16824,
-      "growth_pct": -25.8
+      "sessions": 16396,
+      "users": 14503,
+      "pageviews": 18480,
+      "growth_pct": -28.7
     },
     {
       "language": "Chinese",
-      "sessions": 12976,
-      "users": 11684,
-      "pageviews": 15793,
-      "growth_pct": -19.3
+      "sessions": 12867,
+      "users": 11657,
+      "pageviews": 15521,
+      "growth_pct": -18.4
+    },
+    {
+      "language": "Korean",
+      "sessions": 12721,
+      "users": 11494,
+      "pageviews": 15322,
+      "growth_pct": -4.2
+    },
+    {
+      "language": "Russian",
+      "sessions": 12315,
+      "users": 10538,
+      "pageviews": 15401,
+      "growth_pct": -28.8
     },
     {
       "language": "Italian",
-      "sessions": 9752,
-      "users": 8831,
-      "pageviews": 11172,
-      "growth_pct": -23.3
+      "sessions": 8515,
+      "users": 7708,
+      "pageviews": 9705,
+      "growth_pct": -33.9
     },
     {
       "language": "Turkish",
-      "sessions": 9458,
-      "users": 8868,
-      "pageviews": 11009,
-      "growth_pct": -56.1
+      "sessions": 8041,
+      "users": 7560,
+      "pageviews": 9429,
+      "growth_pct": -59.7
     },
     {
       "language": "Dutch",
-      "sessions": 4115,
-      "users": 3871,
-      "pageviews": 4487,
-      "growth_pct": 9.1
+      "sessions": 4147,
+      "users": 3910,
+      "pageviews": 4540,
+      "growth_pct": 33.5
     }
   ],
   "trending": [
@@ -662,12 +630,12 @@
       "topic": "2026",
       "title": "2026年 おすすめゼルダの伝説シリーズ",
       "category": "News",
-      "sessions": 20550,
-      "users": 20260,
-      "pageviews": 20980,
-      "bounce_rate": 0.63,
+      "sessions": 23036,
+      "users": 22704,
+      "pageviews": 23527,
+      "bounce_rate": 0.631,
       "avg_duration": 24.1,
-      "page_count": 9,
+      "page_count": 11,
       "growth_pct": null,
       "urls": [
         "/ja/news/2026年におすすめのゼルダの伝説シリーズ/",
@@ -694,12 +662,12 @@
       "topic": "assassins-creed-codename-hexe",
       "title": "Assassin's Creed: Codename Hexe",
       "category": "Page",
-      "sessions": 4311,
-      "users": 4173,
-      "pageviews": 4535,
-      "bounce_rate": 0.553,
-      "avg_duration": 46.6,
-      "page_count": 8,
+      "sessions": 4489,
+      "users": 4350,
+      "pageviews": 4728,
+      "bounce_rate": 0.551,
+      "avg_duration": 46.2,
+      "page_count": 9,
       "growth_pct": null,
       "urls": [
         "/assassins-creed-codename-hexe/",
@@ -728,13 +696,13 @@
       "topic": "slay-the-spire-2",
       "title": "Slay the Spire 2 早期アクセス開始日と協力プレイの詳細が明らかに | GAMES.GG",
       "category": "News",
-      "sessions": 3290,
-      "users": 3192,
-      "pageviews": 3373,
-      "bounce_rate": 0.646,
-      "avg_duration": 36.4,
+      "sessions": 3292,
+      "users": 3196,
+      "pageviews": 3384,
+      "bounce_rate": 0.637,
+      "avg_duration": 35.7,
       "page_count": 7,
-      "growth_pct": null,
+      "growth_pct": 794.6,
       "urls": [
         "/ja/news/slay-the-spire-2早期アクセス開始日と協力プレイの詳細が明らかに/",
         "/ja/news/slay-the-spire-2早期アクセス開始日と協力プレイの詳細が明らかに/",
@@ -742,31 +710,14 @@
       ]
     },
     {
-      "topic": "xbox-series-x-volta-ao-estoque",
-      "title": "Xbox Series X Volta ao Estoque Após Esgotar",
-      "category": "News",
-      "sessions": 2530,
-      "users": 2470,
-      "pageviews": 2601,
-      "bounce_rate": 0.641,
-      "avg_duration": 28.6,
-      "page_count": 4,
-      "growth_pct": null,
-      "urls": [
-        "/pt-BR/news/xbox-series-x-volta-ao-estoque-após-esgotar/",
-        "/pt-BR/news/xbox-series-x-volta-ao-estoque-após-esgotar/",
-        "/pt-BR/news/xbox-series-x-volta-ao-estoque-após-esgotar/"
-      ]
-    },
-    {
       "topic": "pokémon-windとpokémon-waveのリーク情報",
       "title": "「Pokémon Wind」「Pokémon Wave」リーク情報 | GAMES.GG (Pokémon WindとPokémon Waveのリーク情報)",
       "category": "News",
-      "sessions": 1835,
-      "users": 1812,
-      "pageviews": 1903,
+      "sessions": 1844,
+      "users": 1821,
+      "pageviews": 1912,
       "bounce_rate": 0.533,
-      "avg_duration": 28.0,
+      "avg_duration": 27.9,
       "page_count": 2,
       "growth_pct": null,
       "urls": [
@@ -775,179 +726,196 @@
       ]
     },
     {
-      "topic": "epic-games-store",
-      "title": "Epic Games StoreモバイルでResidualが無料に",
-      "category": "News",
-      "sessions": 1396,
-      "users": 1348,
-      "pageviews": 1482,
-      "bounce_rate": 0.637,
-      "avg_duration": 44.9,
-      "page_count": 4,
-      "growth_pct": 68.6,
-      "urls": [
-        "/ja/news/epic-games-storeモバイルでresidualが無料に/",
-        "/ja/news/epic-games-storeモバイルでresidualが無料に/",
-        "/ja/news/epic-games-storeモバイルでresidualが無料に/"
-      ]
-    }
-  ],
-  "fix_opportunities": [
-    {
-      "topic": "steal-a-brainrot",
-      "title": "Guía Steal A Brainrot: Evento San Valentín Pt 2",
-      "category": "Guide",
-      "sessions": 1506,
-      "users": 1469,
-      "pageviews": 1654,
-      "bounce_rate": 0.864,
-      "avg_duration": 16.7,
-      "page_count": 4,
-      "growth_pct": -93.1,
-      "urls": [
-        "/es/steal-a-brainrot/guides/guía-steal-a-brainrot-evento-san-valentín-pt-2/",
-        "/es/steal-a-brainrot/guides/guía-steal-a-brainrot-evento-san-valentín-pt-2/",
-        "/es/steal-a-brainrot/guides/guía-steal-a-brainrot-evento-san-valentín-pt-2/"
-      ]
-    },
-    {
       "topic": "nintendo-mario-serisini-abd-ma",
       "title": "Nintendo Mario Serisini ABD Mağazalarına Getiriyor | GAMES.GG",
       "category": "News",
-      "sessions": 1364,
-      "users": 1334,
-      "pageviews": 1507,
-      "bounce_rate": 0.884,
-      "avg_duration": 13.9,
-      "page_count": 4,
+      "sessions": 1589,
+      "users": 1555,
+      "pageviews": 1763,
+      "bounce_rate": 0.882,
+      "avg_duration": 15.8,
+      "page_count": 5,
       "growth_pct": null,
       "urls": [
         "/tr/news/nintendo-mario-serisini-abd-mağazalarına-getiriyor/",
         "/tr/news/nintendo-mario-serisini-abd-mağazalarına-getiriyor/",
         "/tr/news/nintendo-mario-serisini-abd-mağazalarına-getiriyor/"
       ]
+    },
+    {
+      "topic": "xbox-series-x-volta-ao-estoque",
+      "title": "Xbox Series X Volta ao Estoque Após Esgotar",
+      "category": "News",
+      "sessions": 1560,
+      "users": 1516,
+      "pageviews": 1603,
+      "bounce_rate": 0.644,
+      "avg_duration": 28.1,
+      "page_count": 3,
+      "growth_pct": 60.8,
+      "urls": [
+        "/pt-BR/news/xbox-series-x-volta-ao-estoque-após-esgotar/",
+        "/pt-BR/news/xbox-series-x-volta-ao-estoque-após-esgotar/",
+        "/pt-BR/news/xbox-series-x-volta-ao-estoque-após-esgotar/"
+      ]
+    }
+  ],
+  "fix_opportunities": [
+    {
+      "topic": "nintendo-mario-serisini-abd-ma",
+      "title": "Nintendo Mario Serisini ABD Mağazalarına Getiriyor | GAMES.GG",
+      "category": "News",
+      "sessions": 1589,
+      "users": 1555,
+      "pageviews": 1763,
+      "bounce_rate": 0.882,
+      "avg_duration": 15.8,
+      "page_count": 5,
+      "growth_pct": null,
+      "urls": [
+        "/tr/news/nintendo-mario-serisini-abd-mağazalarına-getiriyor/",
+        "/tr/news/nintendo-mario-serisini-abd-mağazalarına-getiriyor/",
+        "/tr/news/nintendo-mario-serisini-abd-mağazalarına-getiriyor/"
+      ]
+    },
+    {
+      "topic": "steal-a-brainrot",
+      "title": "Guía Steal A Brainrot: Evento San Valentín Pt 2",
+      "category": "Guide",
+      "sessions": 963,
+      "users": 938,
+      "pageviews": 1064,
+      "bounce_rate": 0.857,
+      "avg_duration": 18.0,
+      "page_count": 3,
+      "growth_pct": -94.4,
+      "urls": [
+        "/es/steal-a-brainrot/guides/guía-steal-a-brainrot-evento-san-valentín-pt-2/",
+        "/es/steal-a-brainrot/guides/guía-steal-a-brainrot-evento-san-valentín-pt-2/",
+        "/es/steal-a-brainrot/guides/guía-steal-a-brainrot-evento-san-valentín-pt-2/"
+      ]
     }
   ],
   "gsc_top_queries": [
     {
       "query": "マリオテニス フィーバー 攻略",
-      "clicks": 2018,
-      "impressions": 5341,
-      "ctr": 0.3778,
-      "position": 1.6
+      "clicks": 1575,
+      "impressions": 4567,
+      "ctr": 0.3449,
+      "position": 1.7
     },
     {
       "query": "ポケモンデー",
-      "clicks": 1371,
-      "impressions": 14266,
-      "ctr": 0.0961,
+      "clicks": 1372,
+      "impressions": 14312,
+      "ctr": 0.0959,
       "position": 2.4
     },
     {
       "query": "マリオテニスフィーバー 最強",
-      "clicks": 1070,
-      "impressions": 2052,
-      "ctr": 0.5214,
+      "clicks": 919,
+      "impressions": 1912,
+      "ctr": 0.4806,
       "position": 1.3
     },
     {
       "query": "マリオ テニス フィーバー 最強 キャラ",
-      "clicks": 878,
-      "impressions": 1785,
-      "ctr": 0.4919,
+      "clicks": 740,
+      "impressions": 1438,
+      "ctr": 0.5146,
       "position": 1.1
     },
     {
       "query": "ポケモンデー 2026",
-      "clicks": 611,
-      "impressions": 5057,
+      "clicks": 612,
+      "impressions": 5065,
       "ctr": 0.1208,
       "position": 1.8
     },
     {
       "query": "マリオテニス 最強キャラ",
-      "clicks": 563,
-      "impressions": 925,
-      "ctr": 0.6086,
+      "clicks": 552,
+      "impressions": 906,
+      "ctr": 0.6093,
       "position": 1.5
     },
     {
       "query": "xbox game pass",
-      "clicks": 538,
-      "impressions": 12395,
-      "ctr": 0.0434,
+      "clicks": 535,
+      "impressions": 11066,
+      "ctr": 0.0483,
       "position": 3.3
     },
     {
       "query": "ポケモンプレゼンツ 2026",
       "clicks": 479,
-      "impressions": 6872,
-      "ctr": 0.0697,
+      "impressions": 6893,
+      "ctr": 0.0695,
       "position": 3.0
-    },
-    {
-      "query": "マリオテニス フィーバー キャラ",
-      "clicks": 449,
-      "impressions": 1540,
-      "ctr": 0.2916,
-      "position": 2.7
     },
     {
       "query": "nintendo switch online",
       "clicks": 430,
-      "impressions": 1368,
-      "ctr": 0.3143,
+      "impressions": 1392,
+      "ctr": 0.3089,
+      "position": 4.2
+    },
+    {
+      "query": "ポケモン ウィンド ウェーブ リーク",
+      "clicks": 418,
+      "impressions": 2563,
+      "ctr": 0.1631,
       "position": 4.1
     }
   ],
   "gsc_rising_queries": [
     {
       "query": "ポケモンデー",
-      "clicks": 1371,
-      "impressions": 14266,
-      "ctr": 0.0961,
+      "clicks": 1372,
+      "impressions": 14312,
+      "ctr": 0.0959,
       "position": 2.4,
       "growth_pct": null
     },
     {
       "query": "ポケモンデー 2026",
-      "clicks": 611,
-      "impressions": 5057,
+      "clicks": 612,
+      "impressions": 5065,
       "ctr": 0.1208,
       "position": 1.8,
       "growth_pct": null
     },
     {
       "query": "xbox game pass",
-      "clicks": 538,
-      "impressions": 12395,
-      "ctr": 0.0434,
+      "clicks": 535,
+      "impressions": 11066,
+      "ctr": 0.0483,
       "position": 3.3,
-      "growth_pct": 466.3
+      "growth_pct": 451.5
     },
     {
       "query": "ポケモンプレゼンツ 2026",
       "clicks": 479,
-      "impressions": 6872,
-      "ctr": 0.0697,
+      "impressions": 6893,
+      "ctr": 0.0695,
       "position": 3.0,
       "growth_pct": null
     },
     {
       "query": "nintendo switch online",
       "clicks": 430,
-      "impressions": 1368,
-      "ctr": 0.3143,
-      "position": 4.1,
+      "impressions": 1392,
+      "ctr": 0.3089,
+      "position": 4.2,
       "growth_pct": null
     },
     {
       "query": "ポケモン ウィンド ウェーブ リーク",
       "clicks": 418,
-      "impressions": 2537,
-      "ctr": 0.1648,
-      "position": 4.0,
-      "growth_pct": 919.5
+      "impressions": 2563,
+      "ctr": 0.1631,
+      "position": 4.1,
+      "growth_pct": 770.8
     },
     {
       "query": "marathon server slam",
@@ -959,220 +927,227 @@
     },
     {
       "query": "assassin's creed: codename hexe",
-      "clicks": 378,
-      "impressions": 1332,
-      "ctr": 0.2838,
-      "position": 2.9,
+      "clicks": 379,
+      "impressions": 1354,
+      "ctr": 0.2799,
+      "position": 3.0,
       "growth_pct": null
     }
   ],
   "content_gaps": [
     {
-      "query": "roblox",
-      "impressions": 62731,
-      "clicks": 35,
-      "ctr": 0.0006,
-      "position": 4.4
+      "query": "sailor piece codes",
+      "impressions": 38616,
+      "clicks": 88,
+      "ctr": 0.0023,
+      "position": 8.4
     },
     {
       "query": "resident evil requiem",
-      "impressions": 36215,
-      "clicks": 306,
-      "ctr": 0.0084,
-      "position": 3.8
+      "impressions": 38158,
+      "clicks": 308,
+      "ctr": 0.0081,
+      "position": 4.1
+    },
+    {
+      "query": "roblox",
+      "impressions": 27765,
+      "clicks": 21,
+      "ctr": 0.0008,
+      "position": 4.2
     },
     {
       "query": "xbox",
-      "impressions": 32351,
-      "clicks": 129,
-      "ctr": 0.004,
+      "impressions": 27718,
+      "clicks": 91,
+      "ctr": 0.0033,
       "position": 3.0
     },
     {
-      "query": "sailor piece codes",
-      "impressions": 28788,
-      "clicks": 75,
-      "ctr": 0.0026,
-      "position": 8.6
-    },
-    {
       "query": "spin a baddie codes",
-      "impressions": 21382,
-      "clicks": 34,
-      "ctr": 0.0016,
-      "position": 8.0
+      "impressions": 20711,
+      "clicks": 35,
+      "ctr": 0.0017,
+      "position": 7.7
     }
   ],
   "page2_wins": [
     {
       "query": "steal a brainrot script",
-      "impressions": 550,
-      "clicks": 32,
-      "position": 15.3
+      "impressions": 715,
+      "clicks": 42,
+      "position": 12.3
     },
     {
       "query": "buckshot roulette",
-      "impressions": 369,
+      "impressions": 376,
       "clicks": 28,
-      "position": 11.1
+      "position": 11.4
     },
     {
       "query": "clover pit unblocked",
-      "impressions": 77,
+      "impressions": 80,
       "clicks": 34,
-      "position": 14.8
+      "position": 14.7
     },
     {
       "query": "cloverpit unblocked",
-      "impressions": 63,
+      "impressions": 67,
       "clicks": 25,
-      "position": 15.5
+      "position": 15.3
     }
   ],
   "low_ctr_pages": [
     {
+      "name": "Sailor Piece Roblox Codes February 2026",
+      "impressions": 69314,
+      "clicks": 141,
+      "ctr": 0.002,
+      "position": 8.5
+    },
+    {
       "name": "Mewgenics All Quests And How To Complete Them",
-      "impressions": 40980,
-      "clicks": 537,
-      "ctr": 0.0131,
-      "position": 7.8
+      "impressions": 38937,
+      "clicks": 487,
+      "ctr": 0.0125,
+      "position": 7.7
     },
     {
       "name": "Sailor Piece Roblox Codes February 2026",
-      "impressions": 20565,
+      "impressions": 19554,
       "clicks": 230,
-      "ctr": 0.0112,
+      "ctr": 0.0118,
       "position": 4.9
     },
     {
       "name": "Códigos Roblox Anime Ghosts Fevereiro 2026",
-      "impressions": 17794,
-      "clicks": 151,
-      "ctr": 0.0085,
+      "impressions": 19330,
+      "clicks": 125,
+      "ctr": 0.0065,
       "position": 6.0
     },
     {
       "name": "Révélations Majeures Attendues Pour Le 30E Anniversaire De Pokémon",
-      "impressions": 17589,
-      "clicks": 297,
+      "impressions": 17644,
+      "clicks": 298,
       "ctr": 0.0169,
       "position": 3.4
-    },
-    {
-      "name": "Codes Roblox Catch A Monster Février 2026",
-      "impressions": 14921,
-      "clicks": 183,
-      "ctr": 0.0123,
-      "position": 4.8
     }
   ],
   "easy_wins": {
     "cover_now": [
       {
-        "game": "RESIDENT EVIL: requiem",
-        "hype_score": 417.9,
+        "game": "Counter-Strike 2",
+        "hype_score": 752.6,
         "sources": [
-          "Twitch #1",
-          "Steam Trending #1"
-        ],
-        "twitch_viewers": 168553,
-        "steam_players": 249318
-      },
-      {
-        "game": "ARC Raiders",
-        "hype_score": 338.2,
-        "sources": [
-          "Twitch #13",
-          "Steam Trending #2",
           "Steam Rising"
         ],
-        "twitch_viewers": 16179,
-        "steam_players": 177928
-      },
-      {
-        "game": "Marvel Rivals",
-        "hype_score": 196.9,
-        "sources": [
-          "Breakout #1",
-          "Steam Trending #4",
-          "Steam Rising"
-        ],
-        "twitch_viewers": 13167,
-        "steam_players": 88202
+        "twitch_viewers": 0,
+        "steam_players": 1293667
       },
       {
         "game": "League of Legends",
-        "hype_score": 84.9,
+        "hype_score": 565.2,
         "sources": [
-          "Twitch #2"
+          "Twitch #1"
         ],
-        "twitch_viewers": 84936,
+        "twitch_viewers": 565241,
         "steam_players": 0
       },
       {
-        "game": "World of Warcraft",
-        "hype_score": 78.3,
+        "game": "RESIDENT EVIL: requiem",
+        "hype_score": 482.1,
+        "sources": [
+          "Twitch #2",
+          "Steam Trending #1",
+          "Steam Rising"
+        ],
+        "twitch_viewers": 171426,
+        "steam_players": 269784
+      },
+      {
+        "game": "VALORANT",
+        "hype_score": 220.2,
         "sources": [
           "Twitch #3"
         ],
-        "twitch_viewers": 78289,
+        "twitch_viewers": 220233,
+        "steam_players": 0
+      },
+      {
+        "game": "Counter-Strike",
+        "hype_score": 169.3,
+        "sources": [
+          "Twitch #4"
+        ],
+        "twitch_viewers": 169291,
         "steam_players": 0
       },
       {
         "game": "Baldur's Gate 3",
-        "hype_score": 74.8,
+        "hype_score": 136.3,
         "sources": [
           "Steam Trending #3",
           "Steam Rising"
         ],
         "twitch_viewers": 0,
-        "steam_players": 59424
-      },
-      {
-        "game": "Rocket League",
-        "hype_score": 70.5,
-        "sources": [
-          "Twitch #5"
-        ],
-        "twitch_viewers": 70454,
-        "steam_players": 0
+        "steam_players": 85060
       },
       {
         "game": "Apex Legends",
-        "hype_score": 66.7,
+        "hype_score": 117.8,
         "sources": [
-          "Breakout #8",
-          "Steam Trending #8"
+          "Breakout #9",
+          "Steam Trending #10",
+          "Steam Rising"
         ],
-        "twitch_viewers": 6940,
-        "steam_players": 56297
+        "twitch_viewers": 9668,
+        "steam_players": 71969
       },
       {
         "game": "HELLDIVERS™ 2",
-        "hype_score": 63.9,
+        "hype_score": 115.9,
         "sources": [
-          "Steam Trending #6"
+          "Steam Trending #4",
+          "Steam Rising"
         ],
         "twitch_viewers": 0,
-        "steam_players": 63875
+        "steam_players": 81215
       },
       {
-        "game": "Grand Theft Auto V",
-        "hype_score": 56.2,
+        "game": "Marvel Rivals",
+        "hype_score": 108.0,
         "sources": [
-          "Twitch #4"
+          "Breakout #8",
+          "Steam Trending #6"
         ],
-        "twitch_viewers": 56181,
+        "twitch_viewers": 9765,
+        "steam_players": 93344
+      },
+      {
+        "game": "EA Sports FC 26",
+        "hype_score": 82.5,
+        "sources": [
+          "Twitch #6"
+        ],
+        "twitch_viewers": 82509,
         "steam_players": 0
       }
     ],
     "capitalize": [
       {
+        "game": "ARC Raiders",
+        "hype_score": 393.5,
+        "gam3s_sessions": 803,
+        "gam3s_title": "Arc Raiders Surgeon Deckガイド：報酬と入手方法",
+        "growth_pct": -69.5
+      },
+      {
         "game": "Slay the Spire 2",
         "hype_score": 7,
-        "gam3s_sessions": 3290,
+        "gam3s_sessions": 3292,
         "gam3s_title": "Slay the Spire 2 早期アクセス開始日と協力プレイの詳細が明らかに | GAMES.GG",
-        "growth_pct": null
+        "growth_pct": 794.6
       }
     ],
     "update_needed": []

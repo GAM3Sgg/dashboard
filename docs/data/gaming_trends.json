@@ -1,422 +1,422 @@
 {
-  "updated": "2026-03-01T04:46:18.262639",
-  "report_date": "2026-03-01",
+  "updated": "2026-03-02T00:59:40.357672",
+  "report_date": "2026-03-02",
   "top_streamed": [
     {
-      "name": "RESIDENT EVIL: requiem",
-      "viewers": 168553,
-      "streams": 100,
-      "change_pct": -11.1,
-      "twitch_url": "https://www.twitch.tv/directory/category/resident-evil-requiem"
-    },
-    {
       "name": "League of Legends",
-      "viewers": 84936,
-      "streams": 100,
-      "change_pct": 3.5,
+      "viewers": 565241,
+      "streams": 97,
+      "change_pct": 565.5,
       "twitch_url": "https://www.twitch.tv/directory/category/league-of-legends"
     },
     {
-      "name": "World of Warcraft",
-      "viewers": 78289,
+      "name": "RESIDENT EVIL: requiem",
+      "viewers": 171426,
       "streams": 100,
-      "change_pct": -11.4,
-      "twitch_url": "https://www.twitch.tv/directory/category/world-of-warcraft"
-    },
-    {
-      "name": "Grand Theft Auto V",
-      "viewers": 56181,
-      "streams": 94,
-      "change_pct": -62.0,
-      "twitch_url": "https://www.twitch.tv/directory/category/grand-theft-auto-v"
-    },
-    {
-      "name": "Rocket League",
-      "viewers": 70454,
-      "streams": 97,
-      "change_pct": 741.2,
-      "twitch_url": "https://www.twitch.tv/directory/category/rocket-league"
-    },
-    {
-      "name": "Fortnite",
-      "viewers": 54635,
-      "streams": 99,
-      "change_pct": 274.7,
-      "twitch_url": "https://www.twitch.tv/directory/category/fortnite"
+      "change_pct": 1.7,
+      "twitch_url": "https://www.twitch.tv/directory/category/resident-evil-requiem"
     },
     {
       "name": "VALORANT",
-      "viewers": 41206,
-      "streams": 99,
-      "change_pct": -11.1,
+      "viewers": 220233,
+      "streams": 97,
+      "change_pct": 434.5,
       "twitch_url": "https://www.twitch.tv/directory/category/valorant"
     },
     {
-      "name": "Call of Duty: Black Ops 7",
-      "viewers": 43208,
-      "streams": 100,
-      "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/call-of-duty-black-ops-7"
-    },
-    {
       "name": "Counter-Strike",
-      "viewers": 35847,
-      "streams": 91,
-      "change_pct": -56.8,
+      "viewers": 169291,
+      "streams": 99,
+      "change_pct": 372.3,
       "twitch_url": "https://www.twitch.tv/directory/category/counter-strike"
     },
     {
+      "name": "Grand Theft Auto V",
+      "viewers": 65392,
+      "streams": 100,
+      "change_pct": 16.4,
+      "twitch_url": "https://www.twitch.tv/directory/category/grand-theft-auto-v"
+    },
+    {
+      "name": "EA Sports FC 26",
+      "viewers": 82509,
+      "streams": 96,
+      "change_pct": 787.5,
+      "twitch_url": "https://www.twitch.tv/directory/category/ea-sports-fc-26"
+    },
+    {
+      "name": "World of Warcraft",
+      "viewers": 57278,
+      "streams": 100,
+      "change_pct": -26.8,
+      "twitch_url": "https://www.twitch.tv/directory/category/world-of-warcraft"
+    },
+    {
+      "name": "Call of Duty: Black Ops 7",
+      "viewers": 64277,
+      "streams": 100,
+      "change_pct": 48.8,
+      "twitch_url": "https://www.twitch.tv/directory/category/call-of-duty-black-ops-7"
+    },
+    {
       "name": "Minecraft",
-      "viewers": 26430,
-      "streams": 92,
-      "change_pct": 153.2,
+      "viewers": 46140,
+      "streams": 95,
+      "change_pct": 74.6,
       "twitch_url": "https://www.twitch.tv/directory/category/minecraft"
     },
     {
-      "name": "Marathon",
-      "viewers": 33295,
-      "streams": 99,
-      "change_pct": 63.8,
-      "twitch_url": "https://www.twitch.tv/directory/category/marathon"
+      "name": "Fortnite",
+      "viewers": 41001,
+      "streams": 100,
+      "change_pct": -25.0,
+      "twitch_url": "https://www.twitch.tv/directory/category/fortnite"
     },
     {
-      "name": "Overwatch",
-      "viewers": 20513,
+      "name": "Pokémon FireRed/LeafGreen",
+      "viewers": 46377,
       "streams": 100,
-      "change_pct": -25.5,
-      "twitch_url": "https://www.twitch.tv/directory/category/overwatch"
+      "change_pct": 442.9,
+      "twitch_url": "https://www.twitch.tv/directory/category/pokémon-firered/leafgreen"
+    },
+    {
+      "name": "GeoGuessr",
+      "viewers": 47566,
+      "streams": 100,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/geoguessr"
     },
     {
       "name": "ARC Raiders",
-      "viewers": 16179,
-      "streams": 99,
-      "change_pct": 22.1,
+      "viewers": 35482,
+      "streams": 96,
+      "change_pct": 119.3,
       "twitch_url": "https://www.twitch.tv/directory/category/arc-raiders"
     },
     {
-      "name": "Dota 2",
-      "viewers": 21101,
-      "streams": 100,
-      "change_pct": -15.5,
-      "twitch_url": "https://www.twitch.tv/directory/category/dota-2"
+      "name": "Marathon",
+      "viewers": 30646,
+      "streams": 98,
+      "change_pct": -8.0,
+      "twitch_url": "https://www.twitch.tv/directory/category/marathon"
     },
     {
-      "name": "Call of Duty: Warzone",
-      "viewers": 13903,
-      "streams": 98,
-      "change_pct": 107.4,
-      "twitch_url": "https://www.twitch.tv/directory/category/call-of-duty-warzone"
+      "name": "Dota 2",
+      "viewers": 30388,
+      "streams": 100,
+      "change_pct": 44.0,
+      "twitch_url": "https://www.twitch.tv/directory/category/dota-2"
     }
   ],
   "breakout": [
     {
-      "name": "Marvel Rivals",
-      "viewers": 13167,
-      "streams": 99,
-      "change_pct": 26.1,
-      "twitch_url": "https://www.twitch.tv/directory/category/marvel-rivals"
-    },
-    {
-      "name": "ROBLOX",
-      "viewers": 13234,
+      "name": "Overwatch",
+      "viewers": 23522,
       "streams": 100,
-      "change_pct": 169.2,
-      "twitch_url": "https://www.twitch.tv/directory/category/roblox"
-    },
-    {
-      "name": "Dead by Daylight",
-      "viewers": 9479,
-      "streams": 98,
-      "change_pct": -16.5,
-      "twitch_url": "https://www.twitch.tv/directory/category/dead-by-daylight"
-    },
-    {
-      "name": "Virtual Casino",
-      "viewers": 15450,
-      "streams": 47,
-      "change_pct": 55.3,
-      "twitch_url": "https://www.twitch.tv/directory/category/virtual-casino"
-    },
-    {
-      "name": "Escape From Yandere",
-      "viewers": 14580,
-      "streams": 4,
-      "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/escape-from-yandere"
-    },
-    {
-      "name": "Deadlock",
-      "viewers": 12834,
-      "streams": 98,
-      "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/deadlock"
-    },
-    {
-      "name": "EA Sports FC 26",
-      "viewers": 9297,
-      "streams": 94,
-      "change_pct": -4.9,
-      "twitch_url": "https://www.twitch.tv/directory/category/ea-sports-fc-26"
-    },
-    {
-      "name": "Apex Legends",
-      "viewers": 6940,
-      "streams": 100,
-      "change_pct": -43.0,
-      "twitch_url": "https://www.twitch.tv/directory/category/apex-legends"
-    },
-    {
-      "name": "Escape from Tarkov",
-      "viewers": 8846,
-      "streams": 100,
-      "change_pct": 37.9,
-      "twitch_url": "https://www.twitch.tv/directory/category/escape-from-tarkov"
-    },
-    {
-      "name": "Pokémon FireRed/LeafGreen",
-      "viewers": 8542,
-      "streams": 100,
-      "change_pct": -44.0,
-      "twitch_url": "https://www.twitch.tv/directory/category/pokémon-firered/leafgreen"
-    },
-    {
-      "name": "NBA 2K26",
-      "viewers": 7066,
-      "streams": 100,
-      "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/nba-2k26"
+      "change_pct": 14.7,
+      "twitch_url": "https://www.twitch.tv/directory/category/overwatch"
     },
     {
       "name": "Path of Exile",
-      "viewers": 7841,
-      "streams": 81,
-      "change_pct": 1.9,
+      "viewers": 23180,
+      "streams": 100,
+      "change_pct": 195.6,
       "twitch_url": "https://www.twitch.tv/directory/category/path-of-exile"
     },
     {
-      "name": "Rust",
-      "viewers": 7235,
-      "streams": 100,
-      "change_pct": 19.9,
-      "twitch_url": "https://www.twitch.tv/directory/category/rust"
+      "name": "Rocket League",
+      "viewers": 18857,
+      "streams": 96,
+      "change_pct": -73.2,
+      "twitch_url": "https://www.twitch.tv/directory/category/rocket-league"
     },
     {
-      "name": "Super Battle Golf",
-      "viewers": 7662,
-      "streams": 100,
+      "name": "Dead by Daylight",
+      "viewers": 13389,
+      "streams": 97,
+      "change_pct": 41.2,
+      "twitch_url": "https://www.twitch.tv/directory/category/dead-by-daylight"
+    },
+    {
+      "name": "Call of Duty: Warzone",
+      "viewers": 15656,
+      "streams": 97,
+      "change_pct": 12.6,
+      "twitch_url": "https://www.twitch.tv/directory/category/call-of-duty-warzone"
+    },
+    {
+      "name": "How to Make an Atomic Bomb in Your Garden",
+      "viewers": 16550,
+      "streams": 2,
       "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/super-battle-golf"
+      "twitch_url": "https://www.twitch.tv/directory/category/how-to-make-an-atomic-bomb-in-your-garden"
     },
     {
       "name": "PUBG: BATTLEGROUNDS",
-      "viewers": 6375,
-      "streams": 94,
-      "change_pct": -25.5,
+      "viewers": 13503,
+      "streams": 98,
+      "change_pct": 111.8,
       "twitch_url": "https://www.twitch.tv/directory/category/pubg-battlegrounds"
     },
     {
-      "name": "Hearthstone",
-      "viewers": 7332,
-      "streams": 70,
-      "change_pct": -40.7,
-      "twitch_url": "https://www.twitch.tv/directory/category/hearthstone"
-    },
-    {
-      "name": "Black Desert",
-      "viewers": 6645,
+      "name": "Marvel Rivals",
+      "viewers": 9765,
       "streams": 99,
-      "change_pct": -34.0,
-      "twitch_url": "https://www.twitch.tv/directory/category/black-desert"
+      "change_pct": -25.8,
+      "twitch_url": "https://www.twitch.tv/directory/category/marvel-rivals"
     },
     {
-      "name": "Tibia",
-      "viewers": 6024,
+      "name": "Apex Legends",
+      "viewers": 9668,
+      "streams": 100,
+      "change_pct": 39.3,
+      "twitch_url": "https://www.twitch.tv/directory/category/apex-legends"
+    },
+    {
+      "name": "Virtual Casino",
+      "viewers": 12410,
+      "streams": 32,
+      "change_pct": -19.7,
+      "twitch_url": "https://www.twitch.tv/directory/category/virtual-casino"
+    },
+    {
+      "name": "ELDEN RING",
+      "viewers": 11704,
+      "streams": 99,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/elden-ring"
+    },
+    {
+      "name": "Among Us",
+      "viewers": 12265,
       "streams": 100,
       "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/tibia"
+      "twitch_url": "https://www.twitch.tv/directory/category/among-us"
     },
     {
-      "name": "Red Dead Redemption II",
-      "viewers": 5661,
-      "streams": 99,
-      "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/red-dead-redemption-ii"
-    },
-    {
-      "name": "Albion Online",
-      "viewers": 6292,
+      "name": "Rainbow Six Siege",
+      "viewers": 8594,
       "streams": 100,
-      "change_pct": -25.7,
-      "twitch_url": "https://www.twitch.tv/directory/category/albion-online"
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/rainbow-six-siege"
+    },
+    {
+      "name": "Deadlock",
+      "viewers": 10273,
+      "streams": 100,
+      "change_pct": -20.0,
+      "twitch_url": "https://www.twitch.tv/directory/category/deadlock"
+    },
+    {
+      "name": "Windrose",
+      "viewers": 11005,
+      "streams": 100,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/windrose"
+    },
+    {
+      "name": "Nitroglycerine!",
+      "viewers": 11019,
+      "streams": 1,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/nitroglycerine!"
+    },
+    {
+      "name": "Clash Royale",
+      "viewers": 10793,
+      "streams": 95,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/clash-royale"
+    },
+    {
+      "name": "Diablo II: Resurrected",
+      "viewers": 10268,
+      "streams": 98,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/diablo-ii-resurrected"
+    },
+    {
+      "name": "ROBLOX",
+      "viewers": 5427,
+      "streams": 100,
+      "change_pct": -59.0,
+      "twitch_url": "https://www.twitch.tv/directory/category/roblox"
+    },
+    {
+      "name": "World of Tanks",
+      "viewers": 9944,
+      "streams": 100,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/world-of-tanks"
     }
   ],
   "languages": {
     "Arabic": [
       {
         "name": "RESIDENT EVIL: requiem",
-        "viewers": 1990
-      },
-      {
-        "name": "Call of Duty: Black Ops 7",
-        "viewers": 792
+        "viewers": 1862
       },
       {
         "name": "VALORANT",
-        "viewers": 564
+        "viewers": 1384
+      },
+      {
+        "name": "Rocket League",
+        "viewers": 544
       }
     ],
     "Chinese": [
       {
         "name": "RESIDENT EVIL: requiem",
-        "viewers": 7666
+        "viewers": 11099
       },
       {
-        "name": "Lineage",
-        "viewers": 659
+        "name": "VALORANT",
+        "viewers": 6161
       },
       {
         "name": "League of Legends",
-        "viewers": 461
+        "viewers": 2410
       }
     ],
     "English": [
       {
-        "name": "RESIDENT EVIL: requiem",
-        "viewers": 76814
+        "name": "League of Legends",
+        "viewers": 194125
       },
       {
-        "name": "Rocket League",
-        "viewers": 57136
+        "name": "VALORANT",
+        "viewers": 87545
       },
       {
-        "name": "World of Warcraft",
-        "viewers": 43099
+        "name": "GeoGuessr",
+        "viewers": 42066
       }
     ],
     "French": [
       {
+        "name": "League of Legends",
+        "viewers": 226352
+      },
+      {
+        "name": "Call of Duty: Black Ops 7",
+        "viewers": 29103
+      },
+      {
         "name": "Grand Theft Auto V",
-        "viewers": 11598
-      },
-      {
-        "name": "VALORANT",
-        "viewers": 8174
-      },
-      {
-        "name": "RESIDENT EVIL: requiem",
-        "viewers": 7393
+        "viewers": 17799
       }
     ],
     "German": [
       {
-        "name": "World of Warcraft",
-        "viewers": 9720
+        "name": "EA Sports FC 26",
+        "viewers": 56711
       },
       {
-        "name": "RESIDENT EVIL: requiem",
-        "viewers": 9585
+        "name": "Pokémon FireRed/LeafGreen",
+        "viewers": 31968
       },
       {
         "name": "League of Legends",
-        "viewers": 7908
+        "viewers": 28346
       }
     ],
     "Italian": [
       {
-        "name": "Trackmania",
-        "viewers": 2511
+        "name": "League of Legends",
+        "viewers": 5635
+      },
+      {
+        "name": "RESIDENT EVIL: requiem",
+        "viewers": 3707
       },
       {
         "name": "Grand Theft Auto V",
-        "viewers": 2131
-      },
-      {
-        "name": "League of Legends",
-        "viewers": 1175
+        "viewers": 3310
       }
     ],
     "Japanese": [
       {
+        "name": "VALORANT",
+        "viewers": 26304
+      },
+      {
         "name": "League of Legends",
-        "viewers": 4320
+        "viewers": 8038
       },
       {
         "name": "Overwatch",
-        "viewers": 3742
-      },
-      {
-        "name": "RESIDENT EVIL: requiem",
-        "viewers": 3185
+        "viewers": 3060
       }
     ],
     "Korean": [
       {
-        "name": "League of Legends",
-        "viewers": 408
-      },
-      {
-        "name": "I'm Only Sleeping",
-        "viewers": 69
-      },
-      {
         "name": "Overwatch",
-        "viewers": 22
+        "viewers": 30
+      },
+      {
+        "name": "Eternal Return",
+        "viewers": 13
+      },
+      {
+        "name": "Diablo II: Resurrected",
+        "viewers": 9
       }
     ],
     "Portuguese": [
       {
-        "name": "Escape From Yandere",
-        "viewers": 14192
+        "name": "VALORANT",
+        "viewers": 19409
+      },
+      {
+        "name": "Counter-Strike",
+        "viewers": 14297
       },
       {
         "name": "Virtual Casino",
-        "viewers": 13313
-      },
-      {
-        "name": "RESIDENT EVIL: requiem",
-        "viewers": 9974
+        "viewers": 6686
       }
     ],
     "Russian": [
       {
-        "name": "Dota 2",
-        "viewers": 12278
-      },
-      {
         "name": "Counter-Strike",
-        "viewers": 6217
+        "viewers": 94697
       },
       {
         "name": "RESIDENT EVIL: requiem",
-        "viewers": 4482
+        "viewers": 33156
+      },
+      {
+        "name": "Dota 2",
+        "viewers": 14370
       }
     ],
     "Spanish": [
       {
-        "name": "RESIDENT EVIL: requiem",
-        "viewers": 30499
+        "name": "League of Legends",
+        "viewers": 60871
       },
       {
         "name": "VALORANT",
-        "viewers": 16708
+        "viewers": 46679
       },
       {
-        "name": "League of Legends",
-        "viewers": 9629
+        "name": "RESIDENT EVIL: requiem",
+        "viewers": 37503
       }
     ],
     "Turkish": [
       {
-        "name": "Knight Online",
-        "viewers": 1262
-      },
-      {
         "name": "Rise Online",
-        "viewers": 1099
+        "viewers": 3776
       },
       {
-        "name": "Metin2",
-        "viewers": 580
+        "name": "Knight Online",
+        "viewers": 1843
+      },
+      {
+        "name": "VALORANT",
+        "viewers": 1425
       }
     ]
   },
@@ -473,7 +473,7 @@
       "name": "Fable",
       "steam_url": "https://store.steampowered.com/app/2769570",
       "igdb_url": "https://www.igdb.com/games/fable-484f2a75-7a61-4dba-9952-7e70e6bd881b",
-      "release_date": "Dec 31"
+      "release_date": "Feb 28"
     },
     {
       "name": "Ark II",
@@ -550,7 +550,7 @@
       "name": "Marathon",
       "date": "Mar 05, 2026",
       "platforms": "PS5 · XSX · PC",
-      "hypes": 89,
+      "hypes": 91,
       "igdb_url": "https://www.igdb.com/games/marathon--2"
     },
     {
@@ -612,7 +612,7 @@
     {
       "name": "Mr. Sleepy Man",
       "date": "Mar 10, 2026",
-      "platforms": "PC · Switch",
+      "platforms": "Switch · PC",
       "hypes": 4,
       "igdb_url": "https://www.igdb.com/games/mr-sleepy-man"
     },
@@ -711,7 +711,7 @@
       "name": "Crimson Desert",
       "date": "Mar 19, 2026",
       "platforms": "PS5 · PC · Mac · XSX",
-      "hypes": 233,
+      "hypes": 234,
       "igdb_url": "https://www.igdb.com/games/crimson-desert"
     },
     {
@@ -837,7 +837,7 @@
       "name": "Raccoin: Coin Pusher Roguelike",
       "date": "Mar 31, 2026",
       "platforms": "PC",
-      "hypes": 9,
+      "hypes": 10,
       "igdb_url": "https://www.igdb.com/games/raccoin-coin-pusher-roguelike"
     },
     {
@@ -921,7 +921,7 @@
       "name": "Mouse: P.I. For Hire",
       "date": "Apr 16, 2026",
       "platforms": "XSX · Switch · PS5 · Switch 2 · PC",
-      "hypes": 64,
+      "hypes": 65,
       "igdb_url": "https://www.igdb.com/games/mouse-pi-for-hire--1"
     },
     {
@@ -1131,6 +1131,45 @@
         "Tibia": 6024,
         "Red Dead Redemption II": 5661,
         "Albion Online": 6292
+      }
+    },
+    "2026-03-02": {
+      "viewers": {
+        "League of Legends": 565241,
+        "RESIDENT EVIL: requiem": 171426,
+        "VALORANT": 220233,
+        "Counter-Strike": 169291,
+        "Grand Theft Auto V": 65392,
+        "EA Sports FC 26": 82509,
+        "World of Warcraft": 57278,
+        "Call of Duty: Black Ops 7": 64277,
+        "Minecraft": 46140,
+        "Fortnite": 41001,
+        "Pokémon FireRed/LeafGreen": 46377,
+        "GeoGuessr": 47566,
+        "ARC Raiders": 35482,
+        "Marathon": 30646,
+        "Dota 2": 30388,
+        "Overwatch": 23522,
+        "Path of Exile": 23180,
+        "Rocket League": 18857,
+        "Dead by Daylight": 13389,
+        "Call of Duty: Warzone": 15656,
+        "How to Make an Atomic Bomb in Your Garden": 16550,
+        "PUBG: BATTLEGROUNDS": 13503,
+        "Marvel Rivals": 9765,
+        "Apex Legends": 9668,
+        "Virtual Casino": 12410,
+        "ELDEN RING": 11704,
+        "Among Us": 12265,
+        "Rainbow Six Siege": 8594,
+        "Deadlock": 10273,
+        "Windrose": 11005,
+        "Nitroglycerine!": 11019,
+        "Clash Royale": 10793,
+        "Diablo II: Resurrected": 10268,
+        "ROBLOX": 5427,
+        "World of Tanks": 9944
       }
     }
   }

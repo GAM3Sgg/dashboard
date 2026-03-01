@@ -1,6 +1,6 @@
 {
-  "updated": "2026-03-01T04:47:21.764226",
-  "report_date": "2026-03-01",
+  "updated": "2026-03-02T01:00:48.464268",
+  "report_date": "2026-03-02",
   "stores": {
     "1": "Steam",
     "2": "GamersGate",
@@ -27,7 +27,7 @@
       "store_name": "GameBillet",
       "store_id": "23",
       "metacritic": 78,
-      "steam_rating": 75,
+      "steam_rating": 76,
       "steam_rating_text": "Mostly Positive",
       "deal_rating": "10.0",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=znV0gTCyWvLN8L2sP3OJ%2Bat0Vudm7h%2FQQp3ysER8S%2Bg%3D",
@@ -256,7 +256,7 @@
       "metacritic": 0,
       "steam_rating": 82,
       "steam_rating_text": "Very Positive",
-      "deal_rating": "8.5",
+      "deal_rating": "8.4",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=h13UX%2BCt9NYJ1Wyh3doc7YMwoXmBuRbwMTpzKbJeoG4%3D",
       "steam_url": "https://store.steampowered.com/app/437100",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/437100/1c086023645d474fd7f994093c562b408addcfc2/capsule_231x87.jpg?t=1738587180"
@@ -286,7 +286,7 @@
       "metacritic": 0,
       "steam_rating": 66,
       "steam_rating_text": "Mixed",
-      "deal_rating": "6.8",
+      "deal_rating": "6.6",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=SwXaxXF1vpfvIBoIgxBhakJ%2BoUgtVRc%2FFWvgGJFM4Zg%3D",
       "steam_url": "https://store.steampowered.com/app/1717270",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1717270/capsule_231x87.jpg?t=1727356241"
@@ -346,7 +346,7 @@
       "metacritic": 0,
       "steam_rating": 0,
       "steam_rating_text": null,
-      "deal_rating": "5.8",
+      "deal_rating": "5.7",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=9iTN0bnSB5MKb3yJ8dN8AEgwypCeQ655IUAUeVNoa%2B0%3D",
       "steam_url": "",
       "thumb": "https://cdn.fanatical.com/production/product/400x225/727acc1f-daa8-4862-8ec7-76314e821b7f.jpeg"
@@ -361,7 +361,7 @@
       "metacritic": 0,
       "steam_rating": 91,
       "steam_rating_text": "Positive",
-      "deal_rating": "6.5",
+      "deal_rating": "6.4",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=CcMyCrZKFtAR%2BIvm5DBUeH9NaIFYLCrafVm%2FXjA%2FOIc%3D",
       "steam_url": "https://store.steampowered.com/app/1303140",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1303140/capsule_231x87.jpg?t=1624885543"
@@ -412,6 +412,21 @@
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/332380/3644b8c12f7936c45d032e0286c94d38a3d36fc1/capsule_231x87.jpg?t=1730487357"
     },
     {
+      "title": "Unclaimed World",
+      "sale_price": "0.67",
+      "normal_price": "16.99",
+      "savings_pct": 96,
+      "store_name": "Humble Store",
+      "store_id": "11",
+      "metacritic": 0,
+      "steam_rating": 49,
+      "steam_rating_text": "Mixed",
+      "deal_rating": "8.1",
+      "deal_url": "https://www.cheapshark.com/redirect?dealID=hV1uGbDuy%2FdMUfxYZb%2BPCBj345sgqPwRWHlLgtuAxAk%3D",
+      "steam_url": "https://store.steampowered.com/app/284100",
+      "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/284100/capsule_231x87.jpg?t=1487698153"
+    },
+    {
       "title": "Cyber Avenger",
       "sale_price": "0.59",
       "normal_price": "11.99",
@@ -421,7 +436,7 @@
       "metacritic": 0,
       "steam_rating": 85,
       "steam_rating_text": "Very Positive",
-      "deal_rating": "4.1",
+      "deal_rating": "4.0",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=arQEBCqKwnWNKnJh%2BDzJgD%2F2L60jcJiWjxKM%2Fr0iBLQ%3D",
       "steam_url": "https://store.steampowered.com/app/2606270",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2606270/999f5dd68c940b281def83a4b261698afd44c442/capsule_231x87.jpg?t=1757268783"
@@ -455,21 +470,6 @@
       "deal_url": "https://www.cheapshark.com/redirect?dealID=Mv5bUBdVbELz9bvtQoJDX%2F2scke6aQFCMzsoQCEUNWs%3D",
       "steam_url": "https://store.steampowered.com/app/422610",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/422610/capsule_231x87.jpg?t=1731082244"
-    },
-    {
-      "title": "Police Shootout",
-      "sale_price": "0.66",
-      "normal_price": "14.99",
-      "savings_pct": 96,
-      "store_name": "GameBillet",
-      "store_id": "23",
-      "metacritic": 0,
-      "steam_rating": 54,
-      "steam_rating_text": "Mixed",
-      "deal_rating": "3.9",
-      "deal_url": "https://www.cheapshark.com/redirect?dealID=1de7yfhpUQv3OgkuRccxWlkQC73PzG3JUPwNj5S7%2Fz4%3D",
-      "steam_url": "https://store.steampowered.com/app/1279240",
-      "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1279240/capsule_231x87.jpg?t=1758644293"
     }
   ],
   "top_rated": [
@@ -483,7 +483,7 @@
       "metacritic": 80,
       "steam_rating": 81,
       "steam_rating_text": "Very Positive",
-      "deal_rating": "7.6",
+      "deal_rating": "7.5",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=%2B1vW63o6PTZHnUuygWOkzU5kgkeRsdPqmlpmY24WhDY%3D",
       "steam_url": "https://store.steampowered.com/app/201870",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/201870/capsule_231x87.jpg?t=1739176298"
@@ -498,7 +498,7 @@
       "metacritic": 80,
       "steam_rating": 86,
       "steam_rating_text": "Very Positive",
-      "deal_rating": "7.4",
+      "deal_rating": "7.3",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=1myORSb88PurpWzzNCzYqA1c1FdF4F%2FI3V5kqpTZeTw%3D",
       "steam_url": "https://store.steampowered.com/app/1630",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1630/capsule_231x87.jpg?t=1764279401"
@@ -513,7 +513,7 @@
       "metacritic": 80,
       "steam_rating": 87,
       "steam_rating_text": "Very Positive",
-      "deal_rating": "7.4",
+      "deal_rating": "7.2",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=ygxskNt4eKUHdC81VWjwdW2kzc%2FyDb9rGohuFiGxwPs%3D",
       "steam_url": "https://store.steampowered.com/app/2910",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2910/capsule_231x87.jpg?t=1759951826"
@@ -528,7 +528,7 @@
       "metacritic": 80,
       "steam_rating": 91,
       "steam_rating_text": "Very Positive",
-      "deal_rating": "7.9",
+      "deal_rating": "7.7",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=opvRO6EmojLMoFINeyLgNxW3s7OiHJDIJ5OsYI2Zb%2BU%3D",
       "steam_url": "https://store.steampowered.com/app/223730",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/223730/capsule_231x87.jpg?t=1753954633"
@@ -543,7 +543,7 @@
       "metacritic": 80,
       "steam_rating": 88,
       "steam_rating_text": "Very Positive",
-      "deal_rating": "8.0",
+      "deal_rating": "7.8",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=2lZrOrrX2M0oqPC0BYR%2FxCA1HOL4RtMxqte4uGWnn7c%3D",
       "steam_url": "https://store.steampowered.com/app/209190",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/209190/capsule_231x87.jpg?t=1747738814"
@@ -558,7 +558,7 @@
       "metacritic": 80,
       "steam_rating": 97,
       "steam_rating_text": "Overwhelmingly Positive",
-      "deal_rating": "5.6",
+      "deal_rating": "5.5",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=J%2F9aG3aFKBhLjxSGkDcladhLrk5GMWlTmiI6LZQOLSU%3D",
       "steam_url": "https://store.steampowered.com/app/250320",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/250320/capsule_231x87.jpg?t=1734104991"
@@ -573,10 +573,25 @@
       "metacritic": 80,
       "steam_rating": 96,
       "steam_rating_text": "Overwhelmingly Positive",
-      "deal_rating": "7.2",
+      "deal_rating": "7.1",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=msNSEzEvoY80%2FqQmz9%2Br7uZsgHVR8UiUJH28znnV1Yw%3D",
       "steam_url": "https://store.steampowered.com/app/238320",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/238320/capsule_231x87.jpg?t=1666817106"
+    },
+    {
+      "title": "LUFTRAUSERS",
+      "sale_price": "1.99",
+      "normal_price": "9.99",
+      "savings_pct": 80,
+      "store_name": "GOG",
+      "store_id": "7",
+      "metacritic": 80,
+      "steam_rating": 91,
+      "steam_rating_text": "Very Positive",
+      "deal_rating": "8.8",
+      "deal_url": "https://www.cheapshark.com/redirect?dealID=4P%2FFORIMhJ2ZxUh9jmL6WnTxGsnQZni8W2NOh57WE2Q%3D",
+      "steam_url": "https://store.steampowered.com/app/233150",
+      "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/233150/capsule_231x87.jpg?t=1769028660"
     },
     {
       "title": "Darkwood",
@@ -588,7 +603,7 @@
       "metacritic": 80,
       "steam_rating": 94,
       "steam_rating_text": "Very Positive",
-      "deal_rating": "8.6",
+      "deal_rating": "8.5",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=qay5h2%2F6Lexy0yBwtKUDybjsvJLt5upFZQg1h26DkjI%3D",
       "steam_url": "https://store.steampowered.com/app/274520",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/274520/b2902056c13270bba1d4aba1c91a2cb36beb175e/capsule_231x87.jpg?t=1771525702"
@@ -603,7 +618,7 @@
       "metacritic": 80,
       "steam_rating": 81,
       "steam_rating_text": "Very Positive",
-      "deal_rating": "8.3",
+      "deal_rating": "8.2",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=0E0cCnSwBjyE3MGJXz5WmY1b8SALerbGySWmvH2zB1o%3D",
       "steam_url": "https://store.steampowered.com/app/298110",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/298110/capsule_231x87.jpg?t=1764168324"
@@ -618,7 +633,7 @@
       "metacritic": 80,
       "steam_rating": 85,
       "steam_rating_text": "Very Positive",
-      "deal_rating": "9.2",
+      "deal_rating": "9.1",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=F%2BeYAbVQ5ye95e9thiOdZQ63EGC836JuDQZ2KTers0o%3D",
       "steam_url": "https://store.steampowered.com/app/7830",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/7830/8195a994ddab81a64669f5f51baf47a9da81fe63/capsule_231x87.jpg?t=1768394269"
@@ -633,7 +648,7 @@
       "metacritic": 80,
       "steam_rating": 89,
       "steam_rating_text": "Very Positive",
-      "deal_rating": "7.6",
+      "deal_rating": "7.5",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=362saRBOtPWBkX%2BIf3w7B8sOgJV9rtJ%2BoaMlrFbOEgM%3D",
       "steam_url": "https://store.steampowered.com/app/365360",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/365360/6d11e94a198276fb77dc429edc3f4a2aa1517bde/capsule_231x87.jpg?t=1771525315"
@@ -648,7 +663,7 @@
       "metacritic": 80,
       "steam_rating": 90,
       "steam_rating_text": "Very Positive",
-      "deal_rating": "6.5",
+      "deal_rating": "6.3",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=2VYX9C%2B8VU1N9KwbHMVu%2BJ0UYNzGC9yvrEWVazo1I9Y%3D",
       "steam_url": "https://store.steampowered.com/app/319480",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/319480/capsule_231x87.jpg?t=1675458202"
@@ -663,7 +678,7 @@
       "metacritic": 80,
       "steam_rating": 85,
       "steam_rating_text": "Very Positive",
-      "deal_rating": "7.9",
+      "deal_rating": "7.7",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=av67VKesLH3XzxuoPfd8MJu0aHvhbxvOioXxQCP03P4%3D",
       "steam_url": "https://store.steampowered.com/app/91200",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/91200/capsule_231x87.jpg?t=1634818526"
@@ -678,25 +693,10 @@
       "metacritic": 80,
       "steam_rating": 90,
       "steam_rating_text": "Very Positive",
-      "deal_rating": "1.4",
+      "deal_rating": "1.2",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=mCuuz8IxU%2Fk91zuyudvNMYNDa2obnoXkxeqPU%2FMlGus%3D",
       "steam_url": "https://store.steampowered.com/app/321800",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/321800/capsule_231x87.jpg?t=1746122443"
-    },
-    {
-      "title": "Total War: Attila",
-      "sale_price": "40.49",
-      "normal_price": "44.99",
-      "savings_pct": 10,
-      "store_name": "Fanatical",
-      "store_id": "15",
-      "metacritic": 80,
-      "steam_rating": 80,
-      "steam_rating_text": "Very Positive",
-      "deal_rating": "0.6",
-      "deal_url": "https://www.cheapshark.com/redirect?dealID=LWIm8di7RdHqzSRJdn54cDLlJ43NcFjxr6GZ65btINA%3D",
-      "steam_url": "https://store.steampowered.com/app/325610",
-      "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/325610/capsule_231x87.jpg?t=1768911096"
     }
   ],
   "aaa_deals": [
@@ -710,7 +710,7 @@
       "metacritic": 0,
       "steam_rating": 66,
       "steam_rating_text": "Mixed",
-      "deal_rating": "6.8",
+      "deal_rating": "6.6",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=SwXaxXF1vpfvIBoIgxBhakJ%2BoUgtVRc%2FFWvgGJFM4Zg%3D",
       "steam_url": "https://store.steampowered.com/app/1717270",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1717270/capsule_231x87.jpg?t=1727356241"
@@ -785,7 +785,7 @@
       "metacritic": 63,
       "steam_rating": 75,
       "steam_rating_text": "Mostly Positive",
-      "deal_rating": "7.5",
+      "deal_rating": "7.4",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=1GMqVXVWJYmjhfwC1HMXprZEQYHBI8ooq75bo5YuHJ0%3D",
       "steam_url": "https://store.steampowered.com/app/1414850",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1414850/capsule_231x87.jpg?t=1746026335"
@@ -800,7 +800,7 @@
       "metacritic": 0,
       "steam_rating": 62,
       "steam_rating_text": "Mixed",
-      "deal_rating": "7.3",
+      "deal_rating": "7.1",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=vez53Y848GQfByvvNFmmdm52GFrfT0472CHQ33VBGIA%3D",
       "steam_url": "https://store.steampowered.com/app/2533370",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2533370/capsule_231x87.jpg?t=1699552797"
@@ -815,7 +815,7 @@
       "metacritic": 0,
       "steam_rating": 76,
       "steam_rating_text": "Mostly Positive",
-      "deal_rating": "6.3",
+      "deal_rating": "6.1",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=yQQ8CoM1Rm4kyjaXtmGYNWkZq1Syxmz6PuhF8zQxx18%3D",
       "steam_url": "https://store.steampowered.com/app/471010",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/471010/capsule_231x87.jpg?t=1589292453"
@@ -830,7 +830,7 @@
       "metacritic": 0,
       "steam_rating": 77,
       "steam_rating_text": "Mostly Positive",
-      "deal_rating": "2.7",
+      "deal_rating": "2.5",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=vZVii%2BMDLTSKDqPsQ2QzQUCl2zuybHOT79lR3eHYFRA%3D",
       "steam_url": "https://store.steampowered.com/app/307070",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/307070/capsule_231x87.jpg?t=1613074136"
@@ -845,7 +845,7 @@
       "metacritic": 0,
       "steam_rating": 73,
       "steam_rating_text": "Mostly Positive",
-      "deal_rating": "6.7",
+      "deal_rating": "6.5",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=%2BL8OwNPYtK%2FSaaruoGVf5ORfsCe0CQa2520IA9GdgLA%3D",
       "steam_url": "https://store.steampowered.com/app/468490",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/468490/capsule_231x87.jpg?t=1696797376"
@@ -860,7 +860,7 @@
       "metacritic": 0,
       "steam_rating": 68,
       "steam_rating_text": "Mixed",
-      "deal_rating": "6.7",
+      "deal_rating": "6.5",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=PZ1E8yCF1UFLbSKjCPacyMihGKGQEzjw08sTbMKgcjM%3D",
       "steam_url": "https://store.steampowered.com/app/467950",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/467950/capsule_231x87.jpg?t=1696796899"
@@ -875,7 +875,7 @@
       "metacritic": 76,
       "steam_rating": 69,
       "steam_rating_text": "Mixed",
-      "deal_rating": "9.4",
+      "deal_rating": "9.3",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=ZDm2IOa8i4W9PVLT8y1ykf6Xf%2BJXiXuP8GGpfKTFw9M%3D",
       "steam_url": "https://store.steampowered.com/app/304390",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/304390/5b4909717c94e99511e459aad48cd2202e191046/capsule_231x87.jpg?t=1770752619"
@@ -890,7 +890,7 @@
       "metacritic": 0,
       "steam_rating": 73,
       "steam_rating_text": "Mostly Positive",
-      "deal_rating": "6.7",
+      "deal_rating": "6.5",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=bb7ihjpuRiffzVzcmjajnygtfPsbg1I7jkMVNmTqwxc%3D",
       "steam_url": "https://store.steampowered.com/app/505210",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/505210/capsule_231x87.jpg?t=1696796913"
@@ -905,7 +905,7 @@
       "metacritic": 0,
       "steam_rating": 76,
       "steam_rating_text": "Mostly Positive",
-      "deal_rating": "6.7",
+      "deal_rating": "6.5",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=MWOIDL3tb9WqPEXUjfM4bmOENpwQiJUH119orjRuZSM%3D",
       "steam_url": "https://store.steampowered.com/app/528660",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/528660/capsule_231x87.jpg?t=1696797265"
@@ -920,7 +920,7 @@
       "metacritic": 0,
       "steam_rating": 72,
       "steam_rating_text": "Mostly Positive",
-      "deal_rating": "6.7",
+      "deal_rating": "6.5",
       "deal_url": "https://www.cheapshark.com/redirect?dealID=d8F19gGK7NndTDRi6jqBvlSiKO5Zw3%2BxIibOO5HDgZI%3D",
       "steam_url": "https://store.steampowered.com/app/556280",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/556280/capsule_231x87.jpg?t=1696797065"
