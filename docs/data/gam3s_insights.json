@@ -1,7 +1,7 @@
 {
-  "updated": "2026-03-01T05:26:59.047268+04:00",
+  "updated": "2026-03-01T05:34:01.968584+04:00",
   "report_date": "2026-03-01",
-  "total_sessions_7d": 84831,
+  "total_sessions_7d": 84852,
   "total_sessions_prior": 168261,
   "wow_pct": -49.6,
   "top_pages": [
@@ -9,9 +9,9 @@
       "topic": "2026",
       "title": "2026年 おすすめゼルダの伝説シリーズ",
       "category": "News",
-      "sessions": 20543,
-      "users": 20253,
-      "pageviews": 20973,
+      "sessions": 20550,
+      "users": 20260,
+      "pageviews": 20980,
       "bounce_rate": 0.63,
       "avg_duration": 24.1,
       "page_count": 9,
@@ -26,9 +26,9 @@
       "topic": "mario-tennis-fever",
       "title": "マリオテニスフィーバー：最強キャラtierリスト (Mario Tennis Fever)",
       "category": "Guide",
-      "sessions": 14049,
-      "users": 13346,
-      "pageviews": 14986,
+      "sessions": 14051,
+      "users": 13348,
+      "pageviews": 14988,
       "bounce_rate": 0.405,
       "avg_duration": 76.8,
       "page_count": 22,
@@ -58,9 +58,9 @@
       "topic": "assassins-creed-codename-hexe",
       "title": "Assassin's Creed: Codename Hexe",
       "category": "Page",
-      "sessions": 4309,
-      "users": 4171,
-      "pageviews": 4533,
+      "sessions": 4311,
+      "users": 4173,
+      "pageviews": 4535,
       "bounce_rate": 0.553,
       "avg_duration": 46.6,
       "page_count": 8,
@@ -109,10 +109,10 @@
       "topic": "slay-the-spire-2",
       "title": "Slay the Spire 2 早期アクセス開始日と協力プレイの詳細が明らかに | GAMES.GG",
       "category": "News",
-      "sessions": 3287,
-      "users": 3189,
-      "pageviews": 3370,
-      "bounce_rate": 0.645,
+      "sessions": 3290,
+      "users": 3192,
+      "pageviews": 3373,
+      "bounce_rate": 0.646,
       "avg_duration": 36.4,
       "page_count": 7,
       "growth_pct": null,
@@ -177,9 +177,9 @@
       "topic": "mario-tennis-fever",
       "title": "マリオテニスフィーバー：最強キャラtierリスト (Mario Tennis Fever)",
       "category": "Guide",
-      "sessions": 14049,
-      "users": 13346,
-      "pageviews": 14986,
+      "sessions": 14051,
+      "users": 13348,
+      "pageviews": 14988,
       "bounce_rate": 0.405,
       "avg_duration": 76.8,
       "page_count": 22,
@@ -228,13 +228,13 @@
       "topic": "yapyap",
       "title": "YAPYAP 완드 & 주문 가이드: 모든 목록",
       "category": "Guide",
-      "sessions": 1223,
+      "sessions": 1224,
       "users": 833,
       "pageviews": 1278,
-      "bounce_rate": 0.464,
-      "avg_duration": 298.1,
+      "bounce_rate": 0.465,
+      "avg_duration": 297.9,
       "page_count": 6,
-      "growth_pct": 310.4,
+      "growth_pct": 310.7,
       "urls": [
         "/ko/yapyap/guides/yapyap-완드-주문-가이드-모든-목록/",
         "/ko/yapyap/guides/yapyap-완드-주문-가이드-모든-목록/",
@@ -303,6 +303,21 @@
       "urls": [
         "/ja/overwatch-2/guides/overwatchガイドアンランのランクプレイ向け最強のコツとテクニック/"
       ]
+    },
+    {
+      "topic": "no-rest-for-the-wicked",
+      "title": "No Rest for the Wicked Best Builds: New META",
+      "category": "Guide",
+      "sessions": 200,
+      "users": 168,
+      "pageviews": 204,
+      "bounce_rate": 0.475,
+      "avg_duration": 191.7,
+      "page_count": 1,
+      "growth_pct": -86.7,
+      "urls": [
+        "/no-rest-for-the-wicked/guides/no-rest-for-the-wicked-best-builds/"
+      ]
     }
   ],
   "top_news": [
@@ -310,9 +325,9 @@
       "topic": "2026",
       "title": "2026年 おすすめゼルダの伝説シリーズ",
       "category": "News",
-      "sessions": 20543,
-      "users": 20253,
-      "pageviews": 20973,
+      "sessions": 20550,
+      "users": 20260,
+      "pageviews": 20980,
       "bounce_rate": 0.63,
       "avg_duration": 24.1,
       "page_count": 9,
@@ -359,10 +374,10 @@
       "topic": "slay-the-spire-2",
       "title": "Slay the Spire 2 早期アクセス開始日と協力プレイの詳細が明らかに | GAMES.GG",
       "category": "News",
-      "sessions": 3287,
-      "users": 3189,
-      "pageviews": 3370,
-      "bounce_rate": 0.645,
+      "sessions": 3290,
+      "users": 3192,
+      "pageviews": 3373,
+      "bounce_rate": 0.646,
       "avg_duration": 36.4,
       "page_count": 7,
       "growth_pct": null,
@@ -437,92 +452,209 @@
         "/ja/news/epic-games-storeモバイルでresidualが無料に/",
         "/ja/news/epic-games-storeモバイルでresidualが無料に/"
       ]
+    },
+    {
+      "topic": "nintendo-mario-serisini-abd-ma",
+      "title": "Nintendo Mario Serisini ABD Mağazalarına Getiriyor | GAMES.GG",
+      "category": "News",
+      "sessions": 1364,
+      "users": 1334,
+      "pageviews": 1507,
+      "bounce_rate": 0.884,
+      "avg_duration": 13.9,
+      "page_count": 4,
+      "growth_pct": null,
+      "urls": [
+        "/tr/news/nintendo-mario-serisini-abd-mağazalarına-getiriyor/",
+        "/tr/news/nintendo-mario-serisini-abd-mağazalarına-getiriyor/",
+        "/tr/news/nintendo-mario-serisini-abd-mağazalarına-getiriyor/"
+      ]
+    },
+    {
+      "topic": "nieuwe-xbox-game-pass-games-februari",
+      "title": "Nieuwe Xbox Game Pass Games Februari 2026",
+      "category": "News",
+      "sessions": 1294,
+      "users": 1278,
+      "pageviews": 1336,
+      "bounce_rate": 0.663,
+      "avg_duration": 24.2,
+      "page_count": 3,
+      "growth_pct": null,
+      "urls": [
+        "/nl/news/nieuwe-xbox-game-pass-games-februari-2026/",
+        "/nl/news/nieuwe-xbox-game-pass-games-februari-2026/",
+        "/nl/news/nieuwe-xbox-game-pass-games-februari-2026/"
+      ]
+    },
+    {
+      "topic": "macbook-pro-m5-preço-reduzido-na",
+      "title": "MacBook Pro M5: Preço Reduzido na Amazon (Macbook Pro M5 Preço Reduzido Na)",
+      "category": "News",
+      "sessions": 923,
+      "users": 894,
+      "pageviews": 948,
+      "bounce_rate": 0.637,
+      "avg_duration": 48.0,
+      "page_count": 3,
+      "growth_pct": 58.3,
+      "urls": [
+        "/pt-BR/news/macbook-pro-m5-preço-reduzido-na-amazon/",
+        "/pt-BR/news/macbook-pro-m5-preço-reduzido-na-amazon/",
+        "/pt-BR/news/macbook-pro-m5-preço-reduzido-na-amazon/"
+      ]
+    },
+    {
+      "topic": "monitor-gamer-samsung-odyssey-oled-g5",
+      "title": "Monitor Gamer Samsung Odyssey OLED G5 27″ por $350",
+      "category": "News",
+      "sessions": 917,
+      "users": 885,
+      "pageviews": 976,
+      "bounce_rate": 0.574,
+      "avg_duration": 39.0,
+      "page_count": 3,
+      "growth_pct": 67.6,
+      "urls": [
+        "/pt-BR/news/monitor-gamer-samsung-odyssey-oled-g5-27-por-350/",
+        "/pt-BR/news/monitor-gamer-samsung-odyssey-oled-g5-27-por-350/",
+        "/pt-BR/news/monitor-gamer-samsung-odyssey-oled-g5-27-por-350/"
+      ]
+    },
+    {
+      "topic": "xbox-elite-series-2-core-controller",
+      "title": "Xbox Elite Series 2 Core Controller: Preço Reduzido",
+      "category": "News",
+      "sessions": 787,
+      "users": 764,
+      "pageviews": 830,
+      "bounce_rate": 0.634,
+      "avg_duration": 44.6,
+      "page_count": 3,
+      "growth_pct": null,
+      "urls": [
+        "/pt-BR/news/xbox-elite-series-2-core-controller-preço-reduzido/",
+        "/pt-BR/news/xbox-elite-series-2-core-controller-preço-reduzido/",
+        "/pt-BR/news/xbox-elite-series-2-core-controller-preço-reduzido/"
+      ]
+    },
+    {
+      "topic": "xbox-series-x-stoklara-geri-d",
+      "title": "Xbox Series X Stoklara Geri Döndü",
+      "category": "News",
+      "sessions": 643,
+      "users": 626,
+      "pageviews": 656,
+      "bounce_rate": 0.74,
+      "avg_duration": 19.4,
+      "page_count": 2,
+      "growth_pct": null,
+      "urls": [
+        "/tr/news/xbox-series-x-stoklara-geri-döndü/",
+        "/tr/news/xbox-series-x-stoklara-geri-döndü/"
+      ]
+    },
+    {
+      "topic": "kode-garden-horizons-roblox-februari-2026",
+      "title": "Kode Garden Horizons Roblox Februari 2026",
+      "category": "News",
+      "sessions": 552,
+      "users": 518,
+      "pageviews": 589,
+      "bounce_rate": 0.732,
+      "avg_duration": 71.7,
+      "page_count": 2,
+      "growth_pct": null,
+      "urls": [
+        "/id/news/kode-garden-horizons-roblox-februari-2026/",
+        "/id/news/kode-garden-horizons-roblox-februari-2026/"
+      ]
     }
   ],
   "languages": [
     {
       "language": "Japanese",
-      "sessions": 83142,
-      "users": 78694,
-      "pageviews": 92364,
+      "sessions": 83167,
+      "users": 78713,
+      "pageviews": 92398,
       "growth_pct": -14.5
     },
     {
       "language": "English",
-      "sessions": 66566,
-      "users": 61268,
-      "pageviews": 76050,
-      "growth_pct": -52.3
+      "sessions": 66749,
+      "users": 61399,
+      "pageviews": 76208,
+      "growth_pct": -52.2
     },
     {
       "language": "French",
-      "sessions": 30118,
-      "users": 26141,
-      "pageviews": 34732,
-      "growth_pct": -21.6
+      "sessions": 30205,
+      "users": 26218,
+      "pageviews": 34834,
+      "growth_pct": -21.4
     },
     {
       "language": "Spanish",
-      "sessions": 28100,
-      "users": 25314,
-      "pageviews": 32529,
-      "growth_pct": -55.4
+      "sessions": 28145,
+      "users": 25354,
+      "pageviews": 32581,
+      "growth_pct": -55.3
     },
     {
       "language": "Portuguese",
-      "sessions": 20917,
-      "users": 19198,
-      "pageviews": 24313,
+      "sessions": 20944,
+      "users": 19222,
+      "pageviews": 24342,
       "growth_pct": -47.5
     },
     {
       "language": "German",
-      "sessions": 17999,
-      "users": 15974,
-      "pageviews": 20393,
-      "growth_pct": -23.4
+      "sessions": 18070,
+      "users": 16036,
+      "pageviews": 20468,
+      "growth_pct": -23.1
     },
     {
       "language": "Korean",
-      "sessions": 13723,
-      "users": 12378,
-      "pageviews": 16480,
-      "growth_pct": 8.6
+      "sessions": 13734,
+      "users": 12385,
+      "pageviews": 16495,
+      "growth_pct": 8.7
     },
     {
       "language": "Russian",
-      "sessions": 13467,
-      "users": 11487,
-      "pageviews": 16786,
-      "growth_pct": -26.0
+      "sessions": 13496,
+      "users": 11508,
+      "pageviews": 16824,
+      "growth_pct": -25.8
     },
     {
       "language": "Chinese",
-      "sessions": 12964,
-      "users": 11674,
-      "pageviews": 15780,
-      "growth_pct": -19.4
+      "sessions": 12976,
+      "users": 11684,
+      "pageviews": 15793,
+      "growth_pct": -19.3
     },
     {
       "language": "Italian",
-      "sessions": 9732,
-      "users": 8816,
-      "pageviews": 11152,
-      "growth_pct": -23.4
+      "sessions": 9752,
+      "users": 8831,
+      "pageviews": 11172,
+      "growth_pct": -23.3
     },
     {
       "language": "Turkish",
-      "sessions": 9442,
-      "users": 8851,
-      "pageviews": 10989,
-      "growth_pct": -56.2
+      "sessions": 9458,
+      "users": 8868,
+      "pageviews": 11009,
+      "growth_pct": -56.1
     },
     {
       "language": "Dutch",
-      "sessions": 4110,
-      "users": 3867,
-      "pageviews": 4482,
-      "growth_pct": 9.0
+      "sessions": 4115,
+      "users": 3871,
+      "pageviews": 4487,
+      "growth_pct": 9.1
     }
   ],
   "trending": [
@@ -530,9 +662,9 @@
       "topic": "2026",
       "title": "2026年 おすすめゼルダの伝説シリーズ",
       "category": "News",
-      "sessions": 20543,
-      "users": 20253,
-      "pageviews": 20973,
+      "sessions": 20550,
+      "users": 20260,
+      "pageviews": 20980,
       "bounce_rate": 0.63,
       "avg_duration": 24.1,
       "page_count": 9,
@@ -562,9 +694,9 @@
       "topic": "assassins-creed-codename-hexe",
       "title": "Assassin's Creed: Codename Hexe",
       "category": "Page",
-      "sessions": 4309,
-      "users": 4171,
-      "pageviews": 4533,
+      "sessions": 4311,
+      "users": 4173,
+      "pageviews": 4535,
       "bounce_rate": 0.553,
       "avg_duration": 46.6,
       "page_count": 8,
@@ -596,10 +728,10 @@
       "topic": "slay-the-spire-2",
       "title": "Slay the Spire 2 早期アクセス開始日と協力プレイの詳細が明らかに | GAMES.GG",
       "category": "News",
-      "sessions": 3287,
-      "users": 3189,
-      "pageviews": 3370,
-      "bounce_rate": 0.645,
+      "sessions": 3290,
+      "users": 3192,
+      "pageviews": 3373,
+      "bounce_rate": 0.646,
       "avg_duration": 36.4,
       "page_count": 7,
       "growth_pct": null,
@@ -682,11 +814,11 @@
       "topic": "nintendo-mario-serisini-abd-ma",
       "title": "Nintendo Mario Serisini ABD Mağazalarına Getiriyor | GAMES.GG",
       "category": "News",
-      "sessions": 1358,
-      "users": 1328,
-      "pageviews": 1501,
+      "sessions": 1364,
+      "users": 1334,
+      "pageviews": 1507,
       "bounce_rate": 0.884,
-      "avg_duration": 14.0,
+      "avg_duration": 13.9,
       "page_count": 4,
       "growth_pct": null,
       "urls": [
@@ -699,9 +831,9 @@
   "gsc_top_queries": [
     {
       "query": "マリオテニス フィーバー 攻略",
-      "clicks": 2016,
-      "impressions": 5335,
-      "ctr": 0.3779,
+      "clicks": 2018,
+      "impressions": 5341,
+      "ctr": 0.3778,
       "position": 1.6
     },
     {
@@ -714,15 +846,15 @@
     {
       "query": "マリオテニスフィーバー 最強",
       "clicks": 1070,
-      "impressions": 2051,
-      "ctr": 0.5217,
+      "impressions": 2052,
+      "ctr": 0.5214,
       "position": 1.3
     },
     {
       "query": "マリオ テニス フィーバー 最強 キャラ",
-      "clicks": 877,
-      "impressions": 1782,
-      "ctr": 0.4921,
+      "clicks": 878,
+      "impressions": 1785,
+      "ctr": 0.4919,
       "position": 1.1
     },
     {
@@ -734,15 +866,15 @@
     },
     {
       "query": "マリオテニス 最強キャラ",
-      "clicks": 561,
-      "impressions": 923,
-      "ctr": 0.6078,
+      "clicks": 563,
+      "impressions": 925,
+      "ctr": 0.6086,
       "position": 1.5
     },
     {
       "query": "xbox game pass",
       "clicks": 538,
-      "impressions": 12389,
+      "impressions": 12395,
       "ctr": 0.0434,
       "position": 3.3
     },
@@ -755,16 +887,16 @@
     },
     {
       "query": "マリオテニス フィーバー キャラ",
-      "clicks": 448,
-      "impressions": 1538,
-      "ctr": 0.2913,
+      "clicks": 449,
+      "impressions": 1540,
+      "ctr": 0.2916,
       "position": 2.7
     },
     {
       "query": "nintendo switch online",
       "clicks": 430,
-      "impressions": 1367,
-      "ctr": 0.3146,
+      "impressions": 1368,
+      "ctr": 0.3143,
       "position": 4.1
     }
   ],
@@ -788,7 +920,7 @@
     {
       "query": "xbox game pass",
       "clicks": 538,
-      "impressions": 12389,
+      "impressions": 12395,
       "ctr": 0.0434,
       "position": 3.3,
       "growth_pct": 466.3
@@ -804,8 +936,8 @@
     {
       "query": "nintendo switch online",
       "clicks": 430,
-      "impressions": 1367,
-      "ctr": 0.3146,
+      "impressions": 1368,
+      "ctr": 0.3143,
       "position": 4.1,
       "growth_pct": null
     },
@@ -844,39 +976,39 @@
     },
     {
       "query": "resident evil requiem",
-      "impressions": 36204,
+      "impressions": 36215,
       "clicks": 306,
-      "ctr": 0.0085,
+      "ctr": 0.0084,
       "position": 3.8
     },
     {
       "query": "xbox",
-      "impressions": 32350,
+      "impressions": 32351,
       "clicks": 129,
       "ctr": 0.004,
       "position": 3.0
     },
     {
       "query": "sailor piece codes",
-      "impressions": 28703,
+      "impressions": 28788,
       "clicks": 75,
       "ctr": 0.0026,
       "position": 8.6
     },
     {
       "query": "spin a baddie codes",
-      "impressions": 21353,
-      "clicks": 33,
-      "ctr": 0.0015,
+      "impressions": 21382,
+      "clicks": 34,
+      "ctr": 0.0016,
       "position": 8.0
     }
   ],
   "page2_wins": [
     {
       "query": "steal a brainrot script",
-      "impressions": 546,
+      "impressions": 550,
       "clicks": 32,
-      "position": 15.4
+      "position": 15.3
     },
     {
       "query": "buckshot roulette",
@@ -900,21 +1032,21 @@
   "low_ctr_pages": [
     {
       "name": "Mewgenics All Quests And How To Complete Them",
-      "impressions": 40931,
+      "impressions": 40980,
       "clicks": 537,
       "ctr": 0.0131,
       "position": 7.8
     },
     {
       "name": "Sailor Piece Roblox Codes February 2026",
-      "impressions": 20563,
+      "impressions": 20565,
       "clicks": 230,
       "ctr": 0.0112,
       "position": 4.9
     },
     {
       "name": "Códigos Roblox Anime Ghosts Fevereiro 2026",
-      "impressions": 17782,
+      "impressions": 17794,
       "clicks": 151,
       "ctr": 0.0085,
       "position": 6.0
@@ -928,7 +1060,7 @@
     },
     {
       "name": "Codes Roblox Catch A Monster Février 2026",
-      "impressions": 14917,
+      "impressions": 14921,
       "clicks": 183,
       "ctr": 0.0123,
       "position": 4.8
@@ -1038,7 +1170,7 @@
       {
         "game": "Slay the Spire 2",
         "hype_score": 7,
-        "gam3s_sessions": 3287,
+        "gam3s_sessions": 3290,
         "gam3s_title": "Slay the Spire 2 早期アクセス開始日と協力プレイの詳細が明らかに | GAMES.GG",
         "growth_pct": null
       }
