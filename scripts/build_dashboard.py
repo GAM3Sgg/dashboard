@@ -93,8 +93,11 @@ def build_gaming_trends_data():
         history[d] = {"viewers": snap.get("viewers", {})}
 
     # Parse latest output for sections we can't get from snapshots
-    # (wishlisted, releasing, languages, just_released)
+    # (wishlisted, languages, just_released)
     extra = parse_gaming_trends_output()
+
+    # Prefer snapshot releasing data (full list) over parsed text (capped at 30)
+    releasing = latest.get("releasing", []) or extra.get("releasing", [])
 
     return {
         "updated": latest.get("date", datetime.now().isoformat()),
@@ -103,7 +106,7 @@ def build_gaming_trends_data():
         "breakout": breakout,
         "languages": extra.get("languages", {}),
         "wishlisted": extra.get("wishlisted", []),
-        "releasing": extra.get("releasing", []),
+        "releasing": releasing,
         "just_released": extra.get("just_released", []),
         "history": history
     }

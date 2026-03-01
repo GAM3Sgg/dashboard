@@ -1,422 +1,422 @@
 {
-  "updated": "2026-02-28T17:30:48.941882",
-  "report_date": "2026-02-28",
+  "updated": "2026-03-01T04:10:57.425014",
+  "report_date": "2026-03-01",
   "top_streamed": [
     {
       "name": "RESIDENT EVIL: requiem",
-      "viewers": 189687,
+      "viewers": 178972,
       "streams": 100,
-      "change_pct": null,
+      "change_pct": -5.6,
       "twitch_url": "https://www.twitch.tv/directory/category/resident-evil-requiem"
     },
     {
-      "name": "Grand Theft Auto V",
-      "viewers": 147769,
-      "streams": 100,
-      "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/grand-theft-auto-v"
-    },
-    {
-      "name": "World of Warcraft",
-      "viewers": 88393,
-      "streams": 100,
-      "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/world-of-warcraft"
-    },
-    {
       "name": "League of Legends",
-      "viewers": 82044,
-      "streams": 99,
-      "change_pct": null,
+      "viewers": 93327,
+      "streams": 100,
+      "change_pct": 13.8,
       "twitch_url": "https://www.twitch.tv/directory/category/league-of-legends"
     },
     {
-      "name": "Counter-Strike",
-      "viewers": 83067,
-      "streams": 98,
-      "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/counter-strike"
-    },
-    {
-      "name": "VALORANT",
-      "viewers": 46347,
-      "streams": 98,
-      "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/valorant"
-    },
-    {
-      "name": "Overwatch",
-      "viewers": 27536,
-      "streams": 98,
-      "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/overwatch"
-    },
-    {
-      "name": "Dota 2",
-      "viewers": 24970,
-      "streams": 97,
-      "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/dota-2"
-    },
-    {
-      "name": "Marathon",
-      "viewers": 20326,
+      "name": "World of Warcraft",
+      "viewers": 79963,
       "streams": 100,
-      "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/marathon"
+      "change_pct": -9.5,
+      "twitch_url": "https://www.twitch.tv/directory/category/world-of-warcraft"
+    },
+    {
+      "name": "Grand Theft Auto V",
+      "viewers": 55151,
+      "streams": 96,
+      "change_pct": -62.7,
+      "twitch_url": "https://www.twitch.tv/directory/category/grand-theft-auto-v"
+    },
+    {
+      "name": "Rocket League",
+      "viewers": 72999,
+      "streams": 94,
+      "change_pct": 771.6,
+      "twitch_url": "https://www.twitch.tv/directory/category/rocket-league"
     },
     {
       "name": "Fortnite",
-      "viewers": 14581,
-      "streams": 99,
-      "change_pct": null,
+      "viewers": 37792,
+      "streams": 94,
+      "change_pct": 159.2,
       "twitch_url": "https://www.twitch.tv/directory/category/fortnite"
     },
     {
-      "name": "Apex Legends",
-      "viewers": 12183,
-      "streams": 98,
+      "name": "VALORANT",
+      "viewers": 44602,
+      "streams": 95,
+      "change_pct": -3.8,
+      "twitch_url": "https://www.twitch.tv/directory/category/valorant"
+    },
+    {
+      "name": "Counter-Strike",
+      "viewers": 47831,
+      "streams": 100,
+      "change_pct": -42.4,
+      "twitch_url": "https://www.twitch.tv/directory/category/counter-strike"
+    },
+    {
+      "name": "Marathon",
+      "viewers": 46951,
+      "streams": 100,
+      "change_pct": 131.0,
+      "twitch_url": "https://www.twitch.tv/directory/category/marathon"
+    },
+    {
+      "name": "Call of Duty: Black Ops 7",
+      "viewers": 44337,
+      "streams": 100,
       "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/apex-legends"
+      "twitch_url": "https://www.twitch.tv/directory/category/call-of-duty-black-ops-7"
     },
     {
       "name": "Minecraft",
-      "viewers": 10439,
-      "streams": 100,
-      "change_pct": null,
+      "viewers": 30182,
+      "streams": 99,
+      "change_pct": 189.1,
       "twitch_url": "https://www.twitch.tv/directory/category/minecraft"
     },
     {
+      "name": "Dota 2",
+      "viewers": 29036,
+      "streams": 99,
+      "change_pct": 16.3,
+      "twitch_url": "https://www.twitch.tv/directory/category/dota-2"
+    },
+    {
+      "name": "Overwatch",
+      "viewers": 20052,
+      "streams": 96,
+      "change_pct": -27.2,
+      "twitch_url": "https://www.twitch.tv/directory/category/overwatch"
+    },
+    {
       "name": "ARC Raiders",
-      "viewers": 13248,
+      "viewers": 15720,
       "streams": 95,
-      "change_pct": null,
+      "change_pct": 18.7,
       "twitch_url": "https://www.twitch.tv/directory/category/arc-raiders"
     },
     {
-      "name": "Pokémon FireRed/LeafGreen",
-      "viewers": 15244,
-      "streams": 100,
+      "name": "Slots",
+      "viewers": 21550,
+      "streams": 76,
       "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/pokémon-firered/leafgreen"
-    },
-    {
-      "name": "Dead by Daylight",
-      "viewers": 11349,
-      "streams": 98,
-      "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/dead-by-daylight"
+      "twitch_url": "https://www.twitch.tv/directory/category/slots"
     }
   ],
   "breakout": [
     {
-      "name": "World of Tanks",
-      "viewers": 13274,
-      "streams": 100,
-      "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/world-of-tanks"
-    },
-    {
-      "name": "Hearthstone",
-      "viewers": 12370,
-      "streams": 97,
-      "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/hearthstone"
-    },
-    {
-      "name": "2XKO",
-      "viewers": 11761,
-      "streams": 36,
-      "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/2xko"
-    },
-    {
       "name": "Marvel Rivals",
-      "viewers": 10440,
-      "streams": 93,
-      "change_pct": null,
+      "viewers": 13715,
+      "streams": 94,
+      "change_pct": 31.4,
       "twitch_url": "https://www.twitch.tv/directory/category/marvel-rivals"
     },
     {
-      "name": "EA Sports FC 26",
-      "viewers": 9775,
-      "streams": 99,
-      "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/ea-sports-fc-26"
-    },
-    {
-      "name": "Black Desert",
-      "viewers": 10068,
-      "streams": 97,
-      "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/black-desert"
-    },
-    {
-      "name": "Virtual Casino",
-      "viewers": 9947,
-      "streams": 27,
-      "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/virtual-casino"
-    },
-    {
-      "name": "Rocket League",
-      "viewers": 8375,
-      "streams": 95,
-      "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/rocket-league"
-    },
-    {
-      "name": "Megabonk",
-      "viewers": 7631,
-      "streams": 29,
-      "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/megabonk"
-    },
-    {
-      "name": "PUBG: BATTLEGROUNDS",
-      "viewers": 8558,
-      "streams": 100,
-      "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/pubg-battlegrounds"
-    },
-    {
-      "name": "Teamfight Tactics",
-      "viewers": 9142,
-      "streams": 99,
-      "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/teamfight-tactics"
-    },
-    {
-      "name": "Albion Online",
-      "viewers": 8472,
-      "streams": 99,
-      "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/albion-online"
-    },
-    {
-      "name": "The Walking Dead: A New Frontier",
-      "viewers": 7959,
-      "streams": 1,
-      "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/the-walking-dead-a-new-frontier"
-    },
-    {
       "name": "Call of Duty: Warzone",
-      "viewers": 6705,
-      "streams": 100,
-      "change_pct": null,
+      "viewers": 14687,
+      "streams": 95,
+      "change_pct": 119.0,
       "twitch_url": "https://www.twitch.tv/directory/category/call-of-duty-warzone"
     },
     {
-      "name": "Path of Exile",
-      "viewers": 7694,
-      "streams": 83,
-      "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/path-of-exile"
+      "name": "Pokémon FireRed/LeafGreen",
+      "viewers": 19259,
+      "streams": 100,
+      "change_pct": 26.3,
+      "twitch_url": "https://www.twitch.tv/directory/category/pokémon-firered/leafgreen"
     },
     {
-      "name": "ROBLOX",
-      "viewers": 4916,
-      "streams": 98,
-      "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/roblox"
+      "name": "Dead by Daylight",
+      "viewers": 8894,
+      "streams": 100,
+      "change_pct": -21.6,
+      "twitch_url": "https://www.twitch.tv/directory/category/dead-by-daylight"
     },
     {
-      "name": "Escape from Tarkov",
-      "viewers": 6415,
-      "streams": 99,
+      "name": "Escape From Yandere",
+      "viewers": 272,
+      "streams": 2,
       "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/escape-from-tarkov"
+      "twitch_url": "https://www.twitch.tv/directory/category/escape-from-yandere"
+    },
+    {
+      "name": "DJs",
+      "viewers": 12170,
+      "streams": 96,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/djs"
     },
     {
       "name": "Games + Demos",
-      "viewers": 3922,
-      "streams": 95,
-      "change_pct": null,
+      "viewers": 7412,
+      "streams": 100,
+      "change_pct": 89.0,
       "twitch_url": "https://www.twitch.tv/directory/category/games-+-demos"
     },
     {
-      "name": "Delta Force",
-      "viewers": 6615,
-      "streams": 98,
+      "name": "Deadlock",
+      "viewers": 12636,
+      "streams": 100,
       "change_pct": null,
-      "twitch_url": "https://www.twitch.tv/directory/category/delta-force"
+      "twitch_url": "https://www.twitch.tv/directory/category/deadlock"
+    },
+    {
+      "name": "EA Sports FC 26",
+      "viewers": 9597,
+      "streams": 93,
+      "change_pct": -1.8,
+      "twitch_url": "https://www.twitch.tv/directory/category/ea-sports-fc-26"
+    },
+    {
+      "name": "Virtual Casino",
+      "viewers": 10807,
+      "streams": 37,
+      "change_pct": 8.6,
+      "twitch_url": "https://www.twitch.tv/directory/category/virtual-casino"
+    },
+    {
+      "name": "Apex Legends",
+      "viewers": 6114,
+      "streams": 95,
+      "change_pct": -49.8,
+      "twitch_url": "https://www.twitch.tv/directory/category/apex-legends"
+    },
+    {
+      "name": "NBA 2K26",
+      "viewers": 6742,
+      "streams": 95,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/nba-2k26"
+    },
+    {
+      "name": "Mewgenics",
+      "viewers": 9214,
+      "streams": 100,
+      "change_pct": null,
+      "twitch_url": "https://www.twitch.tv/directory/category/mewgenics"
+    },
+    {
+      "name": "Escape from Tarkov",
+      "viewers": 8248,
+      "streams": 100,
+      "change_pct": 28.6,
+      "twitch_url": "https://www.twitch.tv/directory/category/escape-from-tarkov"
+    },
+    {
+      "name": "ROBLOX",
+      "viewers": 3541,
+      "streams": 94,
+      "change_pct": -28.0,
+      "twitch_url": "https://www.twitch.tv/directory/category/roblox"
+    },
+    {
+      "name": "Path of Exile",
+      "viewers": 8389,
+      "streams": 81,
+      "change_pct": 9.0,
+      "twitch_url": "https://www.twitch.tv/directory/category/path-of-exile"
+    },
+    {
+      "name": "PUBG: BATTLEGROUNDS",
+      "viewers": 6743,
+      "streams": 100,
+      "change_pct": -21.2,
+      "twitch_url": "https://www.twitch.tv/directory/category/pubg-battlegrounds"
     },
     {
       "name": "Rust",
-      "viewers": 6035,
-      "streams": 97,
-      "change_pct": null,
+      "viewers": 7260,
+      "streams": 99,
+      "change_pct": 20.3,
       "twitch_url": "https://www.twitch.tv/directory/category/rust"
+    },
+    {
+      "name": "Hearthstone",
+      "viewers": 7648,
+      "streams": 80,
+      "change_pct": -38.2,
+      "twitch_url": "https://www.twitch.tv/directory/category/hearthstone"
+    },
+    {
+      "name": "Black Desert",
+      "viewers": 7344,
+      "streams": 100,
+      "change_pct": -27.1,
+      "twitch_url": "https://www.twitch.tv/directory/category/black-desert"
     }
   ],
   "languages": {
     "Arabic": [
       {
         "name": "RESIDENT EVIL: requiem",
-        "viewers": 167
+        "viewers": 2648
       },
       {
-        "name": "The Salma World",
-        "viewers": 160
+        "name": "Call of Duty: Black Ops 7",
+        "viewers": 755
       },
       {
-        "name": "Megabonk",
-        "viewers": 149
+        "name": "VALORANT",
+        "viewers": 677
       }
     ],
     "Chinese": [
       {
         "name": "RESIDENT EVIL: requiem",
-        "viewers": 27290
+        "viewers": 7366
       },
       {
-        "name": "2XKO",
-        "viewers": 11557
+        "name": "Lineage",
+        "viewers": 609
       },
       {
-        "name": "League of Legends",
-        "viewers": 7880
+        "name": "VALORANT",
+        "viewers": 441
       }
     ],
     "English": [
       {
-        "name": "World of Warcraft",
-        "viewers": 36713
-      },
-      {
         "name": "RESIDENT EVIL: requiem",
-        "viewers": 27893
+        "viewers": 85878
       },
       {
-        "name": "League of Legends",
-        "viewers": 15853
+        "name": "Rocket League",
+        "viewers": 60483
+      },
+      {
+        "name": "World of Warcraft",
+        "viewers": 45946
       }
     ],
     "French": [
       {
-        "name": "RESIDENT EVIL: requiem",
-        "viewers": 7978
+        "name": "Grand Theft Auto V",
+        "viewers": 14052
+      },
+      {
+        "name": "VALORANT",
+        "viewers": 12587
       },
       {
         "name": "League of Legends",
-        "viewers": 7903
-      },
-      {
-        "name": "World of Warcraft",
-        "viewers": 6568
+        "viewers": 7407
       }
     ],
     "German": [
       {
-        "name": "World of Warcraft",
-        "viewers": 21184
+        "name": "Pokémon FireRed/LeafGreen",
+        "viewers": 13266
       },
       {
         "name": "RESIDENT EVIL: requiem",
-        "viewers": 11837
+        "viewers": 10394
       },
       {
-        "name": "League of Legends",
-        "viewers": 6563
+        "name": "Grand Theft Auto V",
+        "viewers": 7369
       }
     ],
     "Italian": [
       {
+        "name": "Trackmania",
+        "viewers": 2581
+      },
+      {
+        "name": "Grand Theft Auto V",
+        "viewers": 1991
+      },
+      {
         "name": "RESIDENT EVIL: requiem",
-        "viewers": 2638
-      },
-      {
-        "name": "Counter-Strike",
-        "viewers": 1249
-      },
-      {
-        "name": "Fortnite",
-        "viewers": 919
+        "viewers": 1989
       }
     ],
     "Japanese": [
       {
-        "name": "Grand Theft Auto V",
-        "viewers": 127143
+        "name": "League of Legends",
+        "viewers": 3902
+      },
+      {
+        "name": "Overwatch",
+        "viewers": 3162
       },
       {
         "name": "RESIDENT EVIL: requiem",
-        "viewers": 51604
-      },
-      {
-        "name": "VALORANT",
-        "viewers": 27349
+        "viewers": 3038
       }
     ],
     "Korean": [
       {
-        "name": "League of Legends",
-        "viewers": 396
+        "name": "Teamfight Tactics",
+        "viewers": 433
       },
       {
-        "name": "osu!",
-        "viewers": 88
+        "name": "I'm Only Sleeping",
+        "viewers": 63
       },
       {
-        "name": "Don't Starve Together",
-        "viewers": 58
+        "name": "Overwatch",
+        "viewers": 13
       }
     ],
     "Portuguese": [
       {
-        "name": "Virtual Casino",
-        "viewers": 9263
-      },
-      {
-        "name": "Counter-Strike",
-        "viewers": 8409
+        "name": "Escape From Yandere",
+        "viewers": 14070
       },
       {
         "name": "RESIDENT EVIL: requiem",
-        "viewers": 3121
+        "viewers": 11864
+      },
+      {
+        "name": "Minecraft",
+        "viewers": 10689
       }
     ],
     "Russian": [
       {
+        "name": "Dota 2",
+        "viewers": 13292
+      },
+      {
         "name": "Counter-Strike",
-        "viewers": 46788
+        "viewers": 9495
       },
       {
         "name": "RESIDENT EVIL: requiem",
-        "viewers": 43271
-      },
-      {
-        "name": "Dota 2",
-        "viewers": 14240
+        "viewers": 4073
       }
     ],
     "Spanish": [
       {
+        "name": "RESIDENT EVIL: requiem",
+        "viewers": 32052
+      },
+      {
+        "name": "VALORANT",
+        "viewers": 16203
+      },
+      {
         "name": "League of Legends",
-        "viewers": 5934
-      },
-      {
-        "name": "World of Warcraft",
-        "viewers": 2568
-      },
-      {
-        "name": "Albion Online",
-        "viewers": 2430
+        "viewers": 11894
       }
     ],
     "Turkish": [
       {
-        "name": "VALORANT",
-        "viewers": 894
-      },
-      {
         "name": "Rise Online",
-        "viewers": 808
+        "viewers": 1541
       },
       {
         "name": "Knight Online",
-        "viewers": 713
+        "viewers": 1271
+      },
+      {
+        "name": "Metin2",
+        "viewers": 637
       }
     ]
   },
@@ -484,18 +484,123 @@
   ],
   "releasing": [
     {
-      "name": "World of Warcraft: Midnight",
-      "date": "Mar 02, 2026",
-      "platforms": "PC · Mac",
-      "hypes": 7,
-      "igdb_url": "https://www.igdb.com/games/world-of-warcraft-midnight"
-    },
-    {
       "name": "The Abbess Garden",
       "date": "Mar 02, 2026",
       "platforms": "PC",
       "hypes": 3,
       "igdb_url": "https://www.igdb.com/games/the-abbess-garden"
+    },
+    {
+      "name": "Lost In Reefs 2",
+      "date": "Mar 02, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/lost-in-reefs-2"
+    },
+    {
+      "name": "Breeze of Ashes",
+      "date": "Mar 02, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/breeze-of-ashes"
+    },
+    {
+      "name": "100 Candy Cats",
+      "date": "Mar 02, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/100-candy-cats"
+    },
+    {
+      "name": "Legends of Amberland III: The Crimson Tower",
+      "date": "Mar 02, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/legends-of-amberland-iii-the-crimson-tower"
+    },
+    {
+      "name": "Don't Feed the Cat",
+      "date": "Mar 02, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/dont-feed-the-cat"
+    },
+    {
+      "name": "The High Tower",
+      "date": "Mar 02, 2026",
+      "platforms": "Mac · Linux · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/the-high-tower"
+    },
+    {
+      "name": "Dreamcore: Rabbit Hole",
+      "date": "Mar 02, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/dreamcore-rabbit-hole"
+    },
+    {
+      "name": "Space Digger Red Beard",
+      "date": "Mar 02, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/space-digger-red-beard"
+    },
+    {
+      "name": "Mining Shift",
+      "date": "Mar 02, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/mining-shift"
+    },
+    {
+      "name": "Rise of State",
+      "date": "Mar 02, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/rise-of-state"
+    },
+    {
+      "name": "Roguesweeper",
+      "date": "Mar 02, 2026",
+      "platforms": "PC",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/roguesweeper--1"
+    },
+    {
+      "name": "Mega Memory",
+      "date": "Mar 02, 2026",
+      "platforms": "Mac · Linux · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/mega-memory"
+    },
+    {
+      "name": "Project Liminal 2",
+      "date": "Mar 02, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/project-liminal-2"
+    },
+    {
+      "name": "Can I Not Fall for Idols?",
+      "date": "Mar 02, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/can-i-not-fall-for-idols"
+    },
+    {
+      "name": "The Cats of Monte Cristo",
+      "date": "Mar 02, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/the-cats-of-monte-cristo"
+    },
+    {
+      "name": "Metal Hunter",
+      "date": "Mar 02, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/metal-hunter--1"
     },
     {
       "name": "Scott Pilgrim EX",
@@ -505,25 +610,284 @@
       "igdb_url": "https://www.igdb.com/games/scott-pilgrim-ex"
     },
     {
-      "name": "Esoteric Ebb",
+      "name": "Nauts",
       "date": "Mar 03, 2026",
       "platforms": "PC",
-      "hypes": 20,
-      "igdb_url": "https://www.igdb.com/games/esoteric-ebb"
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/nauts"
     },
     {
-      "name": "Legacy of Kain: Defiance Remastered",
+      "name": "DrainSim",
       "date": "Mar 03, 2026",
-      "platforms": "PS5 · PS4 · Switch · PC · Switch 2",
-      "hypes": 9,
-      "igdb_url": "https://www.igdb.com/games/legacy-of-kain-defiance-remastered"
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/drainsim"
     },
     {
-      "name": "Homura Hime",
-      "date": "Mar 04, 2026",
+      "name": "Coffie Simulator",
+      "date": "Mar 03, 2026",
       "platforms": "PC",
-      "hypes": 5,
-      "igdb_url": "https://www.igdb.com/games/homura-hime"
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/coffie-simulator"
+    },
+    {
+      "name": "Lust Arcanum",
+      "date": "Mar 03, 2026",
+      "platforms": "Linux · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/lust-arcanum"
+    },
+    {
+      "name": "Luxman Moonlit Market",
+      "date": "Mar 03, 2026",
+      "platforms": "Linux · Mac · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/luxman-moonlit-market"
+    },
+    {
+      "name": "Everything I Know, and Everything I'm Ever Gonna Know",
+      "date": "Mar 03, 2026",
+      "platforms": "PC",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/everything-i-know-and-everything-im-ever-gonna-know"
+    },
+    {
+      "name": "Tin Lord",
+      "date": "Mar 03, 2026",
+      "platforms": "PC",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/tin-lord"
+    },
+    {
+      "name": "Dreiframe",
+      "date": "Mar 03, 2026",
+      "platforms": "PC",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/dreiframe"
+    },
+    {
+      "name": "Haunted: Village",
+      "date": "Mar 03, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/haunted-village--1"
+    },
+    {
+      "name": "Mine Puzzle Pieces of Flower Garden World",
+      "date": "Mar 03, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/mine-puzzle-pieces-of-flower-garden-world"
+    },
+    {
+      "name": "Rebel Infernal Path",
+      "date": "Mar 03, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/rebel-infernal-path"
+    },
+    {
+      "name": "A Game About Shooting Bullets At Bullets",
+      "date": "Mar 03, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/a-game-about-shooting-bullets-at-bullets"
+    },
+    {
+      "name": "Gaia",
+      "date": "Mar 03, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/gaia--3"
+    },
+    {
+      "name": "Oradea",
+      "date": "Mar 03, 2026",
+      "platforms": "PC · Linux",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/oradea"
+    },
+    {
+      "name": "Ham: The Game",
+      "date": "Mar 03, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/ham-the-game"
+    },
+    {
+      "name": "Eternal Afternoon",
+      "date": "Mar 03, 2026",
+      "platforms": "Linux · Mac · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/eternal-afternoon"
+    },
+    {
+      "name": "Teddy Collector",
+      "date": "Mar 03, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/teddy-collector"
+    },
+    {
+      "name": "Card Roguelike of Musou Farming",
+      "date": "Mar 03, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/card-roguelike-of-musou-farming"
+    },
+    {
+      "name": "Oonga Boonga",
+      "date": "Mar 03, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/oonga-boonga"
+    },
+    {
+      "name": "Monstergirl Hunters",
+      "date": "Mar 03, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/monstergirl-hunters"
+    },
+    {
+      "name": "Star and Serpent Solitaire",
+      "date": "Mar 03, 2026",
+      "platforms": "Linux · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/star-and-serpent-solitaire"
+    },
+    {
+      "name": "Mega Trons Survivors",
+      "date": "Mar 03, 2026",
+      "platforms": "Linux · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/mega-trons-survivors"
+    },
+    {
+      "name": "GagImpact",
+      "date": "Mar 03, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/gagimpact"
+    },
+    {
+      "name": "Freaking Hallway",
+      "date": "Mar 03, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/freaking-hallway"
+    },
+    {
+      "name": "DunDie",
+      "date": "Mar 03, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/dundie"
+    },
+    {
+      "name": "Idle Rat: Island Digger",
+      "date": "Mar 03, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/idle-rat-island-digger"
+    },
+    {
+      "name": "Cardwheel",
+      "date": "Mar 03, 2026",
+      "platforms": "Linux · PC · Mac",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/cardwheel"
+    },
+    {
+      "name": "Bochi Collection",
+      "date": "Mar 03, 2026",
+      "platforms": "PC · Mac",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/bochi-collection"
+    },
+    {
+      "name": "Netoo",
+      "date": "Mar 03, 2026",
+      "platforms": "PC · Linux · Mac",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/netoo"
+    },
+    {
+      "name": "Rapid Puppet",
+      "date": "Mar 03, 2026",
+      "platforms": "Linux · Mac · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/rapid-puppet"
+    },
+    {
+      "name": "Satsuman",
+      "date": "Mar 03, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/satsuman"
+    },
+    {
+      "name": "Enough",
+      "date": "Mar 03, 2026",
+      "platforms": "PC · Linux · Mac",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/enough"
+    },
+    {
+      "name": "Siro",
+      "date": "Mar 03, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/siro"
+    },
+    {
+      "name": "Follow Nightmare",
+      "date": "Mar 03, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/follow-nightmare"
+    },
+    {
+      "name": "Mark of Cain",
+      "date": "Mar 03, 2026",
+      "platforms": "PC · Linux",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/mark-of-cain"
+    },
+    {
+      "name": "BrawlMart",
+      "date": "Mar 03, 2026",
+      "platforms": "PC · Mac · Linux",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/brawlmart"
+    },
+    {
+      "name": "Draw, Draw, Pass!",
+      "date": "Mar 03, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/draw-draw-pass"
+    },
+    {
+      "name": "Core Descent",
+      "date": "Mar 03, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/core-descent"
+    },
+    {
+      "name": "Apopia: Sugar Coated Tale",
+      "date": "Mar 03, 2026",
+      "platforms": "Mac · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/apopia-sugar-coated-tale"
+    },
+    {
+      "name": "Dig to Escape: Obby",
+      "date": "Mar 03, 2026",
+      "platforms": "Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/dig-to-escape-obby"
     },
     {
       "name": "Creepy Shift: Uncle Joe’s Motel",
@@ -535,21 +899,189 @@
     {
       "name": "iRacing Arcade",
       "date": "Mar 04, 2026",
-      "platforms": "PC · PS5 · XSX",
+      "platforms": "PC",
       "hypes": 3,
       "igdb_url": "https://www.igdb.com/games/iracing-arcade"
     },
     {
-      "name": "Marathon",
-      "date": "Mar 05, 2026",
-      "platforms": "PS5 · XSX · PC",
-      "hypes": 88,
-      "igdb_url": "https://www.igdb.com/games/marathon--2"
+      "name": "Goose vs. Zombies",
+      "date": "Mar 04, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/goose-vs-zombies"
+    },
+    {
+      "name": "Dr. Alb's Prodigy",
+      "date": "Mar 04, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/dr-albs-prodigy"
+    },
+    {
+      "name": "Nuggle",
+      "date": "Mar 04, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/nuggle"
+    },
+    {
+      "name": "Yankee Rabbits",
+      "date": "Mar 04, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/yankee-rabbits"
+    },
+    {
+      "name": "Ninja Gaiden 4: The Two Masters",
+      "date": "Mar 04, 2026",
+      "platforms": "PS5 · PC · XSX",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/ninja-gaiden-4-the-two-masters"
+    },
+    {
+      "name": "Mistpaw Ravine",
+      "date": "Mar 04, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/mistpaw-ravine"
+    },
+    {
+      "name": "Back in the Swamp",
+      "date": "Mar 04, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/back-in-the-swamp"
+    },
+    {
+      "name": "Hajimeow: Tiny Box Cat",
+      "date": "Mar 04, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/hajimeow-tiny-box-cat"
+    },
+    {
+      "name": "Ser Jorryn",
+      "date": "Mar 04, 2026",
+      "platforms": "Linux · Mac · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/ser-jorryn"
+    },
+    {
+      "name": "Iron Colony",
+      "date": "Mar 04, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/iron-colony"
+    },
+    {
+      "name": "North Sentinel Island",
+      "date": "Mar 04, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/north-sentinel-island"
+    },
+    {
+      "name": "Roommates, Romance, and Ringing Hearts",
+      "date": "Mar 04, 2026",
+      "platforms": "Mac · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/roommates-romance-and-ringing-hearts"
+    },
+    {
+      "name": "Applecalypse",
+      "date": "Mar 04, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/applecalypse"
+    },
+    {
+      "name": "The Devil Card",
+      "date": "Mar 04, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/the-devil-card"
+    },
+    {
+      "name": "Grind TD",
+      "date": "Mar 04, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/grind-td"
+    },
+    {
+      "name": "Picto-Cross: 1 Nonogram per Day",
+      "date": "Mar 04, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/picto-cross-1-nonogram-per-day"
+    },
+    {
+      "name": "Idle Quest Simulator",
+      "date": "Mar 04, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/idle-quest-simulator"
+    },
+    {
+      "name": "KunKunNest",
+      "date": "Mar 04, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/kunkunnest"
+    },
+    {
+      "name": "Ball Chasers",
+      "date": "Mar 04, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/ball-chasers"
+    },
+    {
+      "name": "Hamstory",
+      "date": "Mar 04, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/hamstory"
+    },
+    {
+      "name": "Walto",
+      "date": "Mar 04, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/walto"
+    },
+    {
+      "name": "Water Margin Scrolls",
+      "date": "Mar 04, 2026",
+      "platforms": "PC · Mac",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/water-margin-scrolls"
+    },
+    {
+      "name": "Obscure Chronicle of Dynastia",
+      "date": "Mar 04, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/obscure-chronicle-of-dynastia"
+    },
+    {
+      "name": "Fruits vs. Veggies",
+      "date": "Mar 04, 2026",
+      "platforms": "Linux · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/fruits-vs-veggies"
+    },
+    {
+      "name": "Sylva: Curse of the Demon Woods",
+      "date": "Mar 04, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/sylva-curse-of-the-demon-woods"
     },
     {
       "name": "Planet of Lana II: Children of the Leaf",
       "date": "Mar 05, 2026",
-      "platforms": "Switch 2 · PC · PS4 · PS5 · Switch",
+      "platforms": "Switch 2",
       "hypes": 22,
       "igdb_url": "https://www.igdb.com/games/planet-of-lana-ii-children-of-the-leaf"
     },
@@ -566,58 +1098,3117 @@
       "platforms": "Switch · XSX · PS5 · PS4 · PC",
       "hypes": 7,
       "igdb_url": "https://www.igdb.com/games/never-grave-the-witch-and-the-curse"
+    },
+    {
+      "name": "Kromlech",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 3,
+      "igdb_url": "https://www.igdb.com/games/kromlech"
+    },
+    {
+      "name": "Age of Barbarians Chronicles",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/age-of-barbarians-chronicles"
+    },
+    {
+      "name": "Death Scourges",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/death-scourges"
+    },
+    {
+      "name": "Cupiclaw",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 2,
+      "igdb_url": "https://www.igdb.com/games/cupiclaw"
+    },
+    {
+      "name": "Songs of Conquest: Rise Eternal",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/songs-of-conquest-rise-eternal"
+    },
+    {
+      "name": "Cards and Dungeons",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/cards-and-dungeons"
+    },
+    {
+      "name": "Machine Mind",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 2,
+      "igdb_url": "https://www.igdb.com/games/machine-mind"
+    },
+    {
+      "name": "Whispering Memories",
+      "date": "Mar 05, 2026",
+      "platforms": "Linux · Mac · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/whispering-memories"
+    },
+    {
+      "name": "The Walking Trade",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/the-walking-trade"
+    },
+    {
+      "name": "Solitaire Battle",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/solitaire-battle"
+    },
+    {
+      "name": "Mech Fortress",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/mech-fortress"
+    },
+    {
+      "name": "Trials of Valor",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/trials-of-valor"
+    },
+    {
+      "name": "Pumuckl and the Crown of the Pirate King",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/pumuckl-and-the-crown-of-the-pirate-king"
+    },
+    {
+      "name": "Ratcheteer DX",
+      "date": "Mar 05, 2026",
+      "platforms": "PC · Mac · Switch",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/ratcheteer-dx"
+    },
+    {
+      "name": "Sushi Cat: Tower Defense",
+      "date": "Mar 05, 2026",
+      "platforms": "PC · Switch",
+      "hypes": 2,
+      "igdb_url": "https://www.igdb.com/games/sushi-cat-tower-defense"
+    },
+    {
+      "name": "Beer Manufacture Simulator",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/beer-manufacture-simulator"
+    },
+    {
+      "name": "Tomorrowness",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/tomorrowness"
+    },
+    {
+      "name": "A World of Keflings: Sugar, Spice and Not So Nice",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/a-world-of-keflings-sugar-spice-and-not-so-nice"
+    },
+    {
+      "name": "Tenshoku Maou",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/tenshoku-maou"
+    },
+    {
+      "name": "Breaching Harkon",
+      "date": "Mar 05, 2026",
+      "platforms": "PC · Mac",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/breaching-harkon"
+    },
+    {
+      "name": "Veil: Project Conductor",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/veil-project-conductor"
+    },
+    {
+      "name": "Musynx Return",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/musynx-return"
+    },
+    {
+      "name": "Directory Dungeon - File Explorer Dungeon Crawler",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/directory-dungeon-file-explorer-dungeon-crawler"
+    },
+    {
+      "name": "Spinwave Survivors",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/spinwave-survivors"
+    },
+    {
+      "name": "Asphalt Racing Bundle Speedway & Grand Prix",
+      "date": "Mar 05, 2026",
+      "platforms": "PS4 · PS5",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/asphalt-racing-bundle-speedway-and-grand-prix"
+    },
+    {
+      "name": "Hidden Raccoons",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/hidden-raccoons"
+    },
+    {
+      "name": "My Sliem Gets Stronger After It Dies",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/my-sliem-gets-stronger-after-it-dies"
+    },
+    {
+      "name": "Mega Kaiju Boom Ball",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/mega-kaiju-boom-ball"
+    },
+    {
+      "name": "Scrub Dudes",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/scrub-dudes"
+    },
+    {
+      "name": "Warboss",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/warboss"
+    },
+    {
+      "name": "Inkoid",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/inkoid"
+    },
+    {
+      "name": "Chicken Chicken",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/chicken-chicken"
+    },
+    {
+      "name": "Twiggle's Grove",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/twiggles-grove"
+    },
+    {
+      "name": "HyakuTyping",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/hyakutyping"
+    },
+    {
+      "name": "Black Arhat: Wujing",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/black-arhat-wujing"
+    },
+    {
+      "name": "The End of the World and Her Room",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/the-end-of-the-world-and-her-room"
+    },
+    {
+      "name": "Archerio",
+      "date": "Mar 05, 2026",
+      "platforms": "Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/archerio"
+    },
+    {
+      "name": "Ritsu Reasoning 2 Lost Memories",
+      "date": "Mar 05, 2026",
+      "platforms": "Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/ritsu-reasoning-2-lost-memories"
+    },
+    {
+      "name": "Drift Survivors",
+      "date": "Mar 05, 2026",
+      "platforms": "Linux · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/drift-survivors"
+    },
+    {
+      "name": "HexBreakerII",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/hexbreakerii"
+    },
+    {
+      "name": "Serial Killers & Zombies: Horror Bundle",
+      "date": "Mar 05, 2026",
+      "platforms": "Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/serial-killers-and-zombies-horror-bundle"
+    },
+    {
+      "name": "Echoes of a Thread",
+      "date": "Mar 05, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/echoes-of-a-thread"
+    },
+    {
+      "name": "Lost and Found Co.",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 9,
+      "igdb_url": "https://www.igdb.com/games/lost-and-found-co"
+    },
+    {
+      "name": "Peregrino",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 4,
+      "igdb_url": "https://www.igdb.com/games/peregrino"
+    },
+    {
+      "name": "Entertainment Simulator",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/entertainment-simulator"
+    },
+    {
+      "name": "Injection",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/injection--1"
+    },
+    {
+      "name": "Froggonit",
+      "date": "Mar 06, 2026",
+      "platforms": "PC · Linux · Mac",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/froggonit"
+    },
+    {
+      "name": "Injection",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/injection--2"
+    },
+    {
+      "name": "Aethus",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 2,
+      "igdb_url": "https://www.igdb.com/games/aethus"
+    },
+    {
+      "name": "Iridescent",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/iridescent--1"
+    },
+    {
+      "name": "Rising Army",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/rising-army"
+    },
+    {
+      "name": "Love Hospital",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/love-hospital"
+    },
+    {
+      "name": "Shoestrings Story",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/shoestrings-story"
+    },
+    {
+      "name": "Pilgrim of Darkness",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 2,
+      "igdb_url": "https://www.igdb.com/games/pilgrim-of-darkness"
+    },
+    {
+      "name": "Reenchant",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/reenchant"
+    },
+    {
+      "name": "Tabletop Fantasy War",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/tabletop-fantasy-war"
+    },
+    {
+      "name": "Alchemist's Alcove",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/alchemists-alcove"
+    },
+    {
+      "name": "Packing Life",
+      "date": "Mar 06, 2026",
+      "platforms": "PC · Linux",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/packing-life"
+    },
+    {
+      "name": "Summer Adventurers: Mediterranean",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/summer-adventurers-mediterranean"
+    },
+    {
+      "name": "Parking Garage Simulator",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/parking-garage-simulator"
+    },
+    {
+      "name": "Hovercrafts x Nihilism",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/hovercrafts-x-nihilism"
+    },
+    {
+      "name": "Glue Blocks",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/glue-blocks"
+    },
+    {
+      "name": "Bob's Beaker Blobs",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/bobs-beaker-blobs"
+    },
+    {
+      "name": "RageByte",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/ragebyte"
+    },
+    {
+      "name": "Bloksie (For Now)",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/bloksie-for-now"
+    },
+    {
+      "name": "Bit//Cycle",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/bit-slash-slash-cycle"
+    },
+    {
+      "name": "Endstation",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/endstation"
+    },
+    {
+      "name": "Poker TD",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/poker-td"
+    },
+    {
+      "name": "Colorboration",
+      "date": "Mar 06, 2026",
+      "platforms": "Linux · Mac",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/colorboration"
+    },
+    {
+      "name": "Push Box 3D",
+      "date": "Mar 06, 2026",
+      "platforms": "Mac · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/push-box-3d"
+    },
+    {
+      "name": "Birds Watching",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/birds-watching"
+    },
+    {
+      "name": "Magic Realm Obby",
+      "date": "Mar 06, 2026",
+      "platforms": "Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/magic-realm-obby"
+    },
+    {
+      "name": "Briefcase",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/briefcase"
+    },
+    {
+      "name": "Grimslair",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/grimslair"
+    },
+    {
+      "name": "Steam Revolution: The Age of Rail",
+      "date": "Mar 06, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/steam-revolution-the-age-of-rail"
+    },
+    {
+      "name": "Beyond the Eyes",
+      "date": "Mar 06, 2026",
+      "platforms": "PC · Linux",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/beyond-the-eyes"
+    },
+    {
+      "name": "Johnny Trigger: Diamond Edition",
+      "date": "Mar 06, 2026",
+      "platforms": "Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/johnny-trigger-diamond-edition"
+    },
+    {
+      "name": "Ys X: Proud Nordics - Balduq Mascot Set",
+      "date": "Mar 06, 2026",
+      "platforms": "Switch 2",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/ys-x-proud-nordics-balduq-mascot-set"
+    },
+    {
+      "name": "Ys X: Proud Nordics - Isle of Seiren Mascot Set",
+      "date": "Mar 06, 2026",
+      "platforms": "Switch 2",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/ys-x-proud-nordics-isle-of-seiren-mascot-set"
+    },
+    {
+      "name": "Warlords Battleground: Extraction",
+      "date": "Mar 08, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/warlords-battleground-extraction"
+    },
+    {
+      "name": "Dungeon Apollonios",
+      "date": "Mar 08, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/dungeon-apollonios"
+    },
+    {
+      "name": "Desktop Raid",
+      "date": "Mar 08, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/desktop-raid"
+    },
+    {
+      "name": "Pluto",
+      "date": "Mar 09, 2026",
+      "platforms": "Mac · Linux · PC",
+      "hypes": 3,
+      "igdb_url": "https://www.igdb.com/games/pluto"
+    },
+    {
+      "name": "Starweave",
+      "date": "Mar 09, 2026",
+      "platforms": "PC · Mac",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/starweave"
+    },
+    {
+      "name": "Connected Clue",
+      "date": "Mar 09, 2026",
+      "platforms": "PC · Mac",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/connected-clue"
+    },
+    {
+      "name": "Cargo Hunters",
+      "date": "Mar 09, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/cargo-hunters"
+    },
+    {
+      "name": "Iter-8",
+      "date": "Mar 09, 2026",
+      "platforms": "PC",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/iter-8"
+    },
+    {
+      "name": "Plylbl",
+      "date": "Mar 09, 2026",
+      "platforms": "Linux · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/plylbl"
+    },
+    {
+      "name": "Thysiastery",
+      "date": "Mar 09, 2026",
+      "platforms": "PC · Linux",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/thysiastery"
+    },
+    {
+      "name": "Luxuriant",
+      "date": "Mar 09, 2026",
+      "platforms": "PC · Mac",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/luxuriant"
+    },
+    {
+      "name": "TerraScape: Ancient Egypt",
+      "date": "Mar 09, 2026",
+      "platforms": "PC · Mac",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/terrascape-ancient-egypt"
+    },
+    {
+      "name": "Labyrinth Trailblazer",
+      "date": "Mar 09, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/labyrinth-trailblazer"
+    },
+    {
+      "name": "Age of Wonders 4: Rise from Ruin",
+      "date": "Mar 09, 2026",
+      "platforms": "PC",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/age-of-wonders-4-rise-from-ruin"
+    },
+    {
+      "name": "Walker",
+      "date": "Mar 09, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/walker--2"
+    },
+    {
+      "name": "Space Tower Defense",
+      "date": "Mar 09, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/space-tower-defense--1"
+    },
+    {
+      "name": "Echoes From The Soul",
+      "date": "Mar 09, 2026",
+      "platforms": "Linux · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/echoes-from-the-soul"
+    },
+    {
+      "name": "Captain of Industry: Trains Expansion",
+      "date": "Mar 09, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/captain-of-industry-trains-expansion"
+    },
+    {
+      "name": "Dead Bit",
+      "date": "Mar 09, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/dead-bit"
+    },
+    {
+      "name": "Dogfight Darlings",
+      "date": "Mar 09, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/dogfight-darlings"
+    },
+    {
+      "name": "Steel Force: Top Down Shooter",
+      "date": "Mar 09, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/steel-force-top-down-shooter"
+    },
+    {
+      "name": "Project Starblade",
+      "date": "Mar 09, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/project-starblade"
+    },
+    {
+      "name": "Knight of Noshland",
+      "date": "Mar 09, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/knight-of-noshland"
+    },
+    {
+      "name": "Dice Goblin's Den",
+      "date": "Mar 09, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/dice-goblins-den"
+    },
+    {
+      "name": "Tree of Knowledge",
+      "date": "Mar 09, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/tree-of-knowledge"
+    },
+    {
+      "name": "Drft",
+      "date": "Mar 09, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/drft"
+    },
+    {
+      "name": "Puppy Park",
+      "date": "Mar 09, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/puppy-park"
+    },
+    {
+      "name": "Sophie: Starlight Whispers",
+      "date": "Mar 10, 2026",
+      "platforms": "Linux · PC · Mac",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/sophie-starlight-whispers"
+    },
+    {
+      "name": "Kritter: Defend Together",
+      "date": "Mar 10, 2026",
+      "platforms": "PC · Linux",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/kritter-defend-together"
+    },
+    {
+      "name": "Corgi Race",
+      "date": "Mar 10, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/corgi-race"
+    },
+    {
+      "name": "Desperate 1: After Sunset",
+      "date": "Mar 10, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/desperate-1-after-sunset"
+    },
+    {
+      "name": "The Artifactory",
+      "date": "Mar 10, 2026",
+      "platforms": "PC",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/the-artifactory"
+    },
+    {
+      "name": "Crabmeat",
+      "date": "Mar 10, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/crabmeat"
+    },
+    {
+      "name": "Galactic Vault",
+      "date": "Mar 10, 2026",
+      "platforms": "Linux",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/galactic-vault"
+    },
+    {
+      "name": "Nitro Turtles",
+      "date": "Mar 10, 2026",
+      "platforms": "PC · Linux",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/nitro-turtles"
+    },
+    {
+      "name": "Nightmarena",
+      "date": "Mar 10, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/nightmarena"
+    },
+    {
+      "name": "Oeuf",
+      "date": "Mar 10, 2026",
+      "platforms": "Linux · PC · Mac",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/oeuf"
+    },
+    {
+      "name": "Summer Delicous Simulator",
+      "date": "Mar 10, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/summer-delicous-simulator"
+    },
+    {
+      "name": "Servo",
+      "date": "Mar 10, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/servo--1"
+    },
+    {
+      "name": "Smashometry",
+      "date": "Mar 10, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/smashometry"
+    },
+    {
+      "name": "Thelma Fantastic",
+      "date": "Mar 10, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/thelma-fantastic"
+    },
+    {
+      "name": "Quest-Top",
+      "date": "Mar 10, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/quest-top"
+    },
+    {
+      "name": "Myth Monkey Card",
+      "date": "Mar 10, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/myth-monkey-card"
+    },
+    {
+      "name": "Coco Block",
+      "date": "Mar 10, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/coco-block"
+    },
+    {
+      "name": "Misery Nights",
+      "date": "Mar 10, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/misery-nights"
+    },
+    {
+      "name": "Bubblegum Galaxy",
+      "date": "Mar 12, 2026",
+      "platforms": "Switch · PC",
+      "hypes": 2,
+      "igdb_url": "https://www.igdb.com/games/bubblegum-galaxy"
+    },
+    {
+      "name": "The State of Nowhere",
+      "date": "Mar 11, 2026",
+      "platforms": "Linux · PC · Mac",
+      "hypes": 2,
+      "igdb_url": "https://www.igdb.com/games/the-state-of-nowhere"
+    },
+    {
+      "name": "Mama's Sleeping Angels",
+      "date": "Mar 11, 2026",
+      "platforms": "PC",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/mamas-sleeping-angels"
+    },
+    {
+      "name": "MultiEnding Heroes",
+      "date": "Mar 11, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/multiending-heroes"
+    },
+    {
+      "name": "Forest Construction VR",
+      "date": "Mar 11, 2026",
+      "platforms": "SteamVR",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/forest-construction-vr"
+    },
+    {
+      "name": "Your Love Ai",
+      "date": "Mar 11, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/your-love-ai"
+    },
+    {
+      "name": "Disc Golf",
+      "date": "Mar 11, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/disc-golf--2"
+    },
+    {
+      "name": "Cirno! Lifts a Boulder",
+      "date": "Mar 11, 2026",
+      "platforms": "PC · Linux",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/cirno-lifts-a-boulder"
+    },
+    {
+      "name": "Pig Commander",
+      "date": "Mar 11, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/pig-commander"
+    },
+    {
+      "name": "Pawnbroker Simulator",
+      "date": "Mar 11, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/pawnbroker-simulator--1"
+    },
+    {
+      "name": "Mekanion",
+      "date": "Mar 11, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/mekanion"
+    },
+    {
+      "name": "1 CatLine",
+      "date": "Mar 11, 2026",
+      "platforms": "Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/1-catline"
+    },
+    {
+      "name": "Fatal Frame II: Crimson Butterfly Remake",
+      "date": "Mar 12, 2026",
+      "platforms": "Switch 2 · PC · PS5 · XSX",
+      "hypes": 26,
+      "igdb_url": "https://www.igdb.com/games/fatal-frame-ii-crimson-butterfly-remake"
+    },
+    {
+      "name": "Collector's Cove",
+      "date": "Mar 12, 2026",
+      "platforms": "PS5 · PC · Switch",
+      "hypes": 5,
+      "igdb_url": "https://www.igdb.com/games/collectors-cove"
+    },
+    {
+      "name": "Wraith Ops",
+      "date": "Mar 12, 2026",
+      "platforms": "PC",
+      "hypes": 3,
+      "igdb_url": "https://www.igdb.com/games/wraith-ops"
+    },
+    {
+      "name": "RoadOut",
+      "date": "Mar 12, 2026",
+      "platforms": "XSX · PS5 · Switch · PC",
+      "hypes": 3,
+      "igdb_url": "https://www.igdb.com/games/roadout"
+    },
+    {
+      "name": "Neon Runner",
+      "date": "Mar 12, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/neon-runner"
+    },
+    {
+      "name": "Solateria",
+      "date": "Mar 12, 2026",
+      "platforms": "PC",
+      "hypes": 2,
+      "igdb_url": "https://www.igdb.com/games/solateria"
+    },
+    {
+      "name": "Tezzel: The Tilemaker's Tale",
+      "date": "Mar 12, 2026",
+      "platforms": "PC · Mac · Linux",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/tezzel-the-tilemakers-tale"
+    },
+    {
+      "name": "Anarchy Road",
+      "date": "Mar 12, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/anarchy-road"
+    },
+    {
+      "name": "Space Supermarket Simulator",
+      "date": "Mar 12, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/space-supermarket-simulator"
+    },
+    {
+      "name": "Corner Shop: NightShift",
+      "date": "Mar 12, 2026",
+      "platforms": "PC",
+      "hypes": 2,
+      "igdb_url": "https://www.igdb.com/games/corner-shop-nightshift"
+    },
+    {
+      "name": "Rhell: Warped Worlds & Troubled Times",
+      "date": "Mar 12, 2026",
+      "platforms": "Linux · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/rhell-warped-worlds-and-troubled-times"
+    },
+    {
+      "name": "End of Line",
+      "date": "Mar 12, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/end-of-line--1"
+    },
+    {
+      "name": "Wandfall",
+      "date": "Mar 12, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/wandfall"
+    },
+    {
+      "name": "Absolute Tennis Manager 2",
+      "date": "Mar 12, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/absolute-tennis-manager-2"
+    },
+    {
+      "name": "No Nap November",
+      "date": "Mar 12, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/no-nap-november"
+    },
+    {
+      "name": "Korean Drone Flying Tour Daedunsan",
+      "date": "Mar 12, 2026",
+      "platforms": "Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/korean-drone-flying-tour-daedunsan"
+    },
+    {
+      "name": "Let Deco Desktop",
+      "date": "Mar 12, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/let-deco-desktop"
+    },
+    {
+      "name": "Writer's Block",
+      "date": "Mar 12, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/writers-block--2"
+    },
+    {
+      "name": "Mewseum: Film Festival",
+      "date": "Mar 12, 2026",
+      "platforms": "Linux · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/mewseum-film-festival"
+    },
+    {
+      "name": "Chosen Garden",
+      "date": "Mar 12, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/chosen-garden"
+    },
+    {
+      "name": "Ollie and the Merchant of Dreams",
+      "date": "Mar 12, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/ollie-and-the-merchant-of-dreams"
+    },
+    {
+      "name": "Card-en-Ciel: The World of the \"Blaster Master Zero Series\"",
+      "date": "Mar 12, 2026",
+      "platforms": "Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/card-en-ciel-the-world-of-the-blaster-master-zero-series"
+    },
+    {
+      "name": "Echoes of Myth",
+      "date": "Mar 12, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/echoes-of-myth"
+    },
+    {
+      "name": "CFS: Chinese Football Simulator",
+      "date": "Mar 12, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/cfs-chinese-football-simulator"
+    },
+    {
+      "name": "Koltera 2",
+      "date": "Mar 12, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/koltera-2"
+    },
+    {
+      "name": "Collector's Cove: Supporter Pack",
+      "date": "Mar 12, 2026",
+      "platforms": "Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/collectors-cove-supporter-pack"
+    },
+    {
+      "name": "Collector's Cove: Supporter Edition",
+      "date": "Mar 12, 2026",
+      "platforms": "Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/collectors-cove-supporter-edition"
+    },
+    {
+      "name": "Monster Hunter Stories 3: Twisted Reflection",
+      "date": "Mar 13, 2026",
+      "platforms": "PS5 · PC · Switch 2 · XSX",
+      "hypes": 14,
+      "igdb_url": "https://www.igdb.com/games/monster-hunter-stories-3-twisted-reflection"
+    },
+    {
+      "name": "Lucid Blocks",
+      "date": "Mar 13, 2026",
+      "platforms": "PC",
+      "hypes": 3,
+      "igdb_url": "https://www.igdb.com/games/lucid-blocks"
+    },
+    {
+      "name": "Dyping Escape",
+      "date": "Mar 13, 2026",
+      "platforms": "PC",
+      "hypes": 3,
+      "igdb_url": "https://www.igdb.com/games/dyping-escape"
+    },
+    {
+      "name": "Drill and Delve",
+      "date": "Mar 13, 2026",
+      "platforms": "PC",
+      "hypes": 2,
+      "igdb_url": "https://www.igdb.com/games/drill-and-delve"
+    },
+    {
+      "name": "Neve",
+      "date": "Mar 13, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/neve"
+    },
+    {
+      "name": "Mythmatch",
+      "date": "Mar 13, 2026",
+      "platforms": "PC · Mac",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/mythmatch"
+    },
+    {
+      "name": "Yellow Trouble",
+      "date": "Mar 13, 2026",
+      "platforms": "Mac · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/yellow-trouble"
+    },
+    {
+      "name": "Vespera Bononia",
+      "date": "Mar 13, 2026",
+      "platforms": "PC",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/vespera-bononia--1"
+    },
+    {
+      "name": "Funi Raccoon Game",
+      "date": "Mar 13, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/funi-raccoon-game--1"
+    },
+    {
+      "name": "Shifting To The Backrooms",
+      "date": "Mar 13, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/shifting-to-the-backrooms"
+    },
+    {
+      "name": "Reflections of the Void",
+      "date": "Mar 13, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/reflections-of-the-void"
+    },
+    {
+      "name": "Mafioso's Dice",
+      "date": "Mar 13, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/mafiosos-dice"
+    },
+    {
+      "name": "The Shame of a Daydreamer",
+      "date": "Mar 13, 2026",
+      "platforms": "PC · Mac",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/the-shame-of-a-daydreamer"
+    },
+    {
+      "name": "The Last Screening",
+      "date": "Mar 13, 2026",
+      "platforms": "PC",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/the-last-screening"
+    },
+    {
+      "name": "You're My Favorite Person",
+      "date": "Mar 13, 2026",
+      "platforms": "Linux · Mac · PC",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/youre-my-favorite-person"
+    },
+    {
+      "name": "Happy Bones: Welcome Home",
+      "date": "Mar 13, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/happy-bones-welcome-home"
+    },
+    {
+      "name": "Shuffles 'n Scuffles",
+      "date": "Mar 13, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/shuffles-n-scuffles"
+    },
+    {
+      "name": "Monster Hunter Stories 3: Twisted Reflection - Deluxe Edition",
+      "date": "Mar 13, 2026",
+      "platforms": "Switch 2",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/monster-hunter-stories-3-twisted-reflection-deluxe-edition"
+    },
+    {
+      "name": "Monster Hunter Stories 3: Twisted Reflection - Layered Armor for Kora: Attendant's Attire",
+      "date": "Mar 13, 2026",
+      "platforms": "Switch 2",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/monster-hunter-stories-3-twisted-reflection-layered-armor-for-kora-attendants-attire"
+    },
+    {
+      "name": "Monster Hunter Stories 3: Twisted Reflection - Layered Armor for Gaul: Fur-tive Five Leader",
+      "date": "Mar 13, 2026",
+      "platforms": "Switch 2",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/monster-hunter-stories-3-twisted-reflection-layered-armor-for-gaul-fur-tive-five-leader"
+    },
+    {
+      "name": "Monster Hunter Stories 3: Twisted Reflection - Layered Armor for Eleanor: Foreign Dancer",
+      "date": "Mar 13, 2026",
+      "platforms": "Switch 2",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/monster-hunter-stories-3-twisted-reflection-layered-armor-for-eleanor-foreign-dancer"
+    },
+    {
+      "name": "Monster Hunter Stories 3: Twisted Reflection - Layered Armor for Ogden: Summertime Ogden",
+      "date": "Mar 13, 2026",
+      "platforms": "Switch 2",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/monster-hunter-stories-3-twisted-reflection-layered-armor-for-ogden-summertime-ogden"
+    },
+    {
+      "name": "Monster Hunter Stories 3: Twisted Reflection - Monster Hair: Octolocks Princess",
+      "date": "Mar 13, 2026",
+      "platforms": "Switch 2",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/monster-hunter-stories-3-twisted-reflection-monster-hair-octolocks-princess"
+    },
+    {
+      "name": "Monster Hunter Stories 3: Twisted Reflection - Monster Hair: Espinas Spikes",
+      "date": "Mar 13, 2026",
+      "platforms": "Switch 2",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/monster-hunter-stories-3-twisted-reflection-monster-hair-espinas-spikes"
+    },
+    {
+      "name": "Monster Hunter Stories 3: Twisted Reflection - Monster Hair: Garangolm Nest",
+      "date": "Mar 13, 2026",
+      "platforms": "Switch 2",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/monster-hunter-stories-3-twisted-reflection-monster-hair-garangolm-nest"
+    },
+    {
+      "name": "Monster Hunter Stories 3: Twisted Reflection - Monster Hair: Malzeno Bob",
+      "date": "Mar 13, 2026",
+      "platforms": "Switch 2",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/monster-hunter-stories-3-twisted-reflection-monster-hair-malzeno-bob"
+    },
+    {
+      "name": "Monster Hunter Stories 3: Twisted Reflection - Rudy's Outfit: Rudy's Arkbelt",
+      "date": "Mar 13, 2026",
+      "platforms": "Switch 2",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/monster-hunter-stories-3-twisted-reflection-rudys-outfit-rudys-arkbelt"
+    },
+    {
+      "name": "Monster Hunter Stories 3: Twisted Reflection - Rudy's Outfit: Shogun Rudy",
+      "date": "Mar 13, 2026",
+      "platforms": "Switch 2",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/monster-hunter-stories-3-twisted-reflection-rudys-outfit-shogun-rudy"
+    },
+    {
+      "name": "Monster Hunter Stories 3: Twisted Reflection - Rudy's Outfit: Scintillating Armor",
+      "date": "Mar 13, 2026",
+      "platforms": "Switch 2",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/monster-hunter-stories-3-twisted-reflection-rudys-outfit-scintillating-armor"
+    },
+    {
+      "name": "Monster Hunter Stories 3: Twisted Reflection - Rudy's Outfit: Rudyzeno",
+      "date": "Mar 13, 2026",
+      "platforms": "Switch 2",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/monster-hunter-stories-3-twisted-reflection-rudys-outfit-rudyzeno"
+    },
+    {
+      "name": "Monster Hunter Stories 3: Twisted Reflection - Special Outfits Set",
+      "date": "Mar 13, 2026",
+      "platforms": "Switch 2",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/monster-hunter-stories-3-twisted-reflection-special-outfits-set"
+    },
+    {
+      "name": "Cat Familiar Center",
+      "date": "Mar 13, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/cat-familiar-center"
+    },
+    {
+      "name": "Caribbean Legend: Age of Pirates",
+      "date": "Mar 13, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/caribbean-legend-age-of-pirates"
+    },
+    {
+      "name": "Echo Factory",
+      "date": "Mar 13, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/echo-factory"
+    },
+    {
+      "name": "Recursive",
+      "date": "Mar 13, 2026",
+      "platforms": "PC · Linux",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/recursive"
+    },
+    {
+      "name": "Desktop Aquarium",
+      "date": "Mar 13, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/desktop-aquarium--1"
+    },
+    {
+      "name": "Scission",
+      "date": "Mar 13, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/scission"
+    },
+    {
+      "name": "Droste Detective",
+      "date": "Mar 13, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/droste-detective--2"
+    },
+    {
+      "name": "Mazy",
+      "date": "Mar 13, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/mazy--1"
+    },
+    {
+      "name": "Darkrite: The Blight of Love",
+      "date": "Mar 13, 2026",
+      "platforms": "PC · Mac · Linux",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/darkrite-the-blight-of-love"
+    },
+    {
+      "name": "Out of the Park Baseball 27",
+      "date": "Mar 10, 2026",
+      "platforms": "Mac · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/out-of-the-park-baseball-27"
+    },
+    {
+      "name": "WWE 2K26",
+      "date": "Mar 06, 2026",
+      "platforms": "XSX · Switch 2 · PS5 · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/wwe-2k26"
+    },
+    {
+      "name": "Today's Menu",
+      "date": "Mar 13, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/todays-menu"
+    },
+    {
+      "name": "I am Slime",
+      "date": "Mar 13, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/i-am-slime"
+    },
+    {
+      "name": "Everfall 2: Idle Dungeon RPG",
+      "date": "Mar 13, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/everfall-2-idle-dungeon-rpg"
+    },
+    {
+      "name": "Exercise Your Demons",
+      "date": "Mar 13, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/exercise-your-demons--1"
+    },
+    {
+      "name": "Night of Nightmare",
+      "date": "Mar 13, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/night-of-nightmare"
+    },
+    {
+      "name": "Sand Seeker",
+      "date": "Mar 14, 2026",
+      "platforms": "Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/sand-seeker"
+    },
+    {
+      "name": "Keplerian Space Discovery",
+      "date": "Mar 15, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/keplerian-space-discovery"
+    },
+    {
+      "name": "Giant’s Heart",
+      "date": "Mar 15, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/giants-heart"
+    },
+    {
+      "name": "Friendslop Drive",
+      "date": "Mar 15, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/friendslop-drive"
+    },
+    {
+      "name": "Wizard Punks!!!",
+      "date": "Mar 15, 2026",
+      "platforms": "Mac · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/wizard-punks"
+    },
+    {
+      "name": "The Seven Deadly Sins: Origin",
+      "date": "Mar 16, 2026",
+      "platforms": "PS5 · iOS · PC · Android",
+      "hypes": 14,
+      "igdb_url": "https://www.igdb.com/games/the-seven-deadly-sins-origin"
+    },
+    {
+      "name": "Stitched Together",
+      "date": "Mar 16, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/stitched-together"
+    },
+    {
+      "name": "Murder at the Birch Tree Theater",
+      "date": "Mar 16, 2026",
+      "platforms": "Mac · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/murder-at-the-birch-tree-theater"
+    },
+    {
+      "name": "Frog Holm",
+      "date": "Mar 16, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/frog-holm"
+    },
+    {
+      "name": "Creature Creation Station",
+      "date": "Mar 16, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/creature-creation-station--1"
+    },
+    {
+      "name": "Yes, My Warlord",
+      "date": "Mar 16, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/yes-my-warlord"
+    },
+    {
+      "name": "Balltopia",
+      "date": "Mar 16, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/balltopia"
+    },
+    {
+      "name": "All Hail the Orb",
+      "date": "Mar 16, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/all-hail-the-orb"
+    },
+    {
+      "name": "Vice Versa",
+      "date": "Mar 16, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/vice-versa"
+    },
+    {
+      "name": "Mine Mine",
+      "date": "Mar 16, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/mine-mine"
+    },
+    {
+      "name": "Doomstacker",
+      "date": "Mar 16, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/doomstacker"
+    },
+    {
+      "name": "Pit Pioneers",
+      "date": "Mar 16, 2026",
+      "platforms": "Linux · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/pit-pioneers"
+    },
+    {
+      "name": "SkyVerse",
+      "date": "Mar 17, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/skyverse"
+    },
+    {
+      "name": "Pretend Cars Racing 2",
+      "date": "Mar 17, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/pretend-cars-racing-2"
+    },
+    {
+      "name": "College Basketball Manager",
+      "date": "Mar 17, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/college-basketball-manager"
+    },
+    {
+      "name": "Valkyrie Destruction",
+      "date": "Mar 17, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/valkyrie-destruction"
+    },
+    {
+      "name": "Retro Rewind: Video Store Simulator",
+      "date": "Mar 17, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/retro-rewind-video-store-simulator"
+    },
+    {
+      "name": "Street Fighter 6: Additional Character - Alex",
+      "date": "Mar 17, 2026",
+      "platforms": "PC · Switch 2 · PS5 · PS4 · XSX",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/street-fighter-6-additional-character-alex--1"
+    },
+    {
+      "name": "The Ratline",
+      "date": "Mar 17, 2026",
+      "platforms": "Mac · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/the-ratline"
+    },
+    {
+      "name": "The Demon's Apple: Otome Game",
+      "date": "Mar 17, 2026",
+      "platforms": "PC · Mac",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/the-demons-apple-otome-game"
+    },
+    {
+      "name": "Bearly Flying",
+      "date": "Mar 17, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/bearly-flying"
+    },
+    {
+      "name": "The Lost Experiment",
+      "date": "Mar 17, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/the-lost-experiment"
+    },
+    {
+      "name": "Trinket Bag Maker",
+      "date": "Mar 17, 2026",
+      "platforms": "PC · Mac",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/trinket-bag-maker"
+    },
+    {
+      "name": "Twisted Fate",
+      "date": "Mar 17, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/twisted-fate"
+    },
+    {
+      "name": "MLB The Show 26",
+      "date": "Mar 17, 2026",
+      "platforms": "XSX · PS5 · Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/mlb-the-show-26"
+    },
+    {
+      "name": "Hearthstone: Cataclysm",
+      "date": "Mar 17, 2026",
+      "platforms": "Mac · PC · iOS · Android",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/hearthstone-cataclysm"
+    },
+    {
+      "name": "Timber Rush",
+      "date": "Mar 17, 2026",
+      "platforms": "PC · Mac",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/timber-rush"
+    },
+    {
+      "name": "Side Hustle",
+      "date": "Mar 17, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/side-hustle--1"
+    },
+    {
+      "name": "Cypher Dungeon",
+      "date": "Mar 17, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/cypher-dungeon"
+    },
+    {
+      "name": "MLB The Show 26: Digital Deluxe Edition Bonus Content",
+      "date": "Mar 17, 2026",
+      "platforms": "Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/mlb-the-show-26-digital-deluxe-edition-bonus-content"
+    },
+    {
+      "name": "Relicguard",
+      "date": "Mar 17, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/relicguard"
+    },
+    {
+      "name": "Opus Magnum: De Re Metallica",
+      "date": "Mar 17, 2026",
+      "platforms": "Linux · Mac · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/opus-magnum-de-re-metallica"
+    },
+    {
+      "name": "Deck of Treads",
+      "date": "Mar 17, 2026",
+      "platforms": "PC · Linux",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/deck-of-treads"
+    },
+    {
+      "name": "Opus Magnum: Complete Edition",
+      "date": "Mar 17, 2026",
+      "platforms": "Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/opus-magnum-complete-edition"
+    },
+    {
+      "name": "Poly Impulse",
+      "date": "Mar 18, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/poly-impulse"
+    },
+    {
+      "name": "World's Goodest Pup",
+      "date": "Mar 18, 2026",
+      "platforms": "PC",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/worlds-goodest-pup"
+    },
+    {
+      "name": "AI.VI",
+      "date": "Mar 18, 2026",
+      "platforms": "Mac · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/ai-dot-vi"
+    },
+    {
+      "name": "SOG: Vietnam",
+      "date": "Mar 18, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/sog-vietnam"
+    },
+    {
+      "name": "Let's Freeze Some Penguins",
+      "date": "Mar 18, 2026",
+      "platforms": "Switch · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/lets-freeze-some-penguins"
+    },
+    {
+      "name": "Fireside Fables",
+      "date": "Mar 18, 2026",
+      "platforms": "PC",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/fireside-fables"
+    },
+    {
+      "name": "Cloudwalkers",
+      "date": "Mar 18, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/cloudwalkers"
+    },
+    {
+      "name": "Void of Lilly",
+      "date": "Mar 18, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/void-of-lilly"
+    },
+    {
+      "name": "In Their Shoes",
+      "date": "Mar 18, 2026",
+      "platforms": "Mac · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/in-their-shoes"
+    },
+    {
+      "name": "Crawling Angels",
+      "date": "Mar 18, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/crawling-angels"
+    },
+    {
+      "name": "Andromis",
+      "date": "Mar 18, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/andromis"
+    },
+    {
+      "name": "Shadow Tactics: Blades of the Shogun Ultimate Bundle",
+      "date": "Mar 18, 2026",
+      "platforms": "Switch 2",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/shadow-tactics-blades-of-the-shogun-ultimate-bundle"
+    },
+    {
+      "name": "Layer Land",
+      "date": "Mar 18, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/layer-land"
+    },
+    {
+      "name": "Rule the Waves 3: Expanded Battles",
+      "date": "Mar 19, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/rule-the-waves-3-expanded-battles"
+    },
+    {
+      "name": "Quickcast",
+      "date": "Mar 19, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/quickcast"
+    },
+    {
+      "name": "True Vikings",
+      "date": "Mar 19, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/true-vikings"
+    },
+    {
+      "name": "Rushing Beat X: Return of Brawl Brothers",
+      "date": "Mar 19, 2026",
+      "platforms": "XSX · PS5 · Switch 2 · PC",
+      "hypes": 2,
+      "igdb_url": "https://www.igdb.com/games/rushing-beat-x-return-of-brawl-brothers"
+    },
+    {
+      "name": "Heroes of Magic & Cards",
+      "date": "Mar 19, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/heroes-of-magic-and-cards"
+    },
+    {
+      "name": "Three Kingdom: Zhang Jiao Revival",
+      "date": "Mar 19, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/three-kingdom-zhang-jiao-revival"
+    },
+    {
+      "name": "Briar Flame",
+      "date": "Mar 19, 2026",
+      "platforms": "Mac · Linux · PC",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/briar-flame"
+    },
+    {
+      "name": "Codex Mortis",
+      "date": "Mar 19, 2026",
+      "platforms": "PC",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/codex-mortis"
+    },
+    {
+      "name": "Card Colony",
+      "date": "Mar 19, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/card-colony"
+    },
+    {
+      "name": "Unwilling Host",
+      "date": "Mar 19, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/unwilling-host"
+    },
+    {
+      "name": "Aviarium",
+      "date": "Mar 19, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/aviarium"
+    },
+    {
+      "name": "The Mortimer Paradox",
+      "date": "Mar 19, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/the-mortimer-paradox"
+    },
+    {
+      "name": "Setuna: Legend of Hamburger 2",
+      "date": "Mar 19, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/setuna-legend-of-hamburger-2"
+    },
+    {
+      "name": "Hatters",
+      "date": "Mar 19, 2026",
+      "platforms": "PC · Linux · Mac",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/hatters"
+    },
+    {
+      "name": "Rubato",
+      "date": "Mar 20, 2026",
+      "platforms": "PS5 · Switch · PC · XSX",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/rubato"
+    },
+    {
+      "name": "Poke All Toads",
+      "date": "Mar 20, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/poke-all-toads"
+    },
+    {
+      "name": "Excoverse",
+      "date": "Mar 20, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/excoverse"
+    },
+    {
+      "name": "Lap of the Gods",
+      "date": "Mar 20, 2026",
+      "platforms": "Mac · Linux · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/lap-of-the-gods--1"
+    },
+    {
+      "name": "VeilWood",
+      "date": "Mar 20, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/veilwood"
+    },
+    {
+      "name": "Lost Wiki: Kozlovka",
+      "date": "Mar 20, 2026",
+      "platforms": "Linux · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/lost-wiki-kozlovka"
+    },
+    {
+      "name": "Butler Guillotine",
+      "date": "Mar 20, 2026",
+      "platforms": "PC · Mac",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/butler-guillotine"
+    },
+    {
+      "name": "Völund",
+      "date": "Mar 20, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/volund"
+    },
+    {
+      "name": "The Great Flood",
+      "date": "Mar 20, 2026",
+      "platforms": "Meta Quest",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/the-great-flood"
+    },
+    {
+      "name": "Ghost Master: Resurrection - Core Edition",
+      "date": "Mar 20, 2026",
+      "platforms": "Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/ghost-master-resurrection-core-edition"
+    },
+    {
+      "name": "Hell Dice Gambit",
+      "date": "Mar 20, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/hell-dice-gambit"
+    },
+    {
+      "name": "Chopping Together",
+      "date": "Mar 20, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/chopping-together"
+    },
+    {
+      "name": "Doodle Wipeout",
+      "date": "Mar 20, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/doodle-wipeout"
+    },
+    {
+      "name": "Spot the Spy Guy",
+      "date": "Mar 20, 2026",
+      "platforms": "Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/spot-the-spy-guy"
+    },
+    {
+      "name": "Meta Card Backpack Legend",
+      "date": "Mar 20, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/meta-card-backpack-legend"
+    },
+    {
+      "name": "GunX",
+      "date": "Mar 20, 2026",
+      "platforms": "SteamVR",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/gunx"
+    },
+    {
+      "name": "Mote: The Old Office",
+      "date": "Mar 20, 2026",
+      "platforms": "PS4 · PS5",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/mote-the-old-office"
+    },
+    {
+      "name": "Mistfall Ruins",
+      "date": "Mar 21, 2026",
+      "platforms": "Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/mistfall-ruins"
+    },
+    {
+      "name": "Pakinpaks",
+      "date": "Mar 23, 2026",
+      "platforms": "PC",
+      "hypes": 4,
+      "igdb_url": "https://www.igdb.com/games/pakinpaks"
+    },
+    {
+      "name": "Nothing Beyond This Point",
+      "date": "Mar 23, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/nothing-beyond-this-point"
+    },
+    {
+      "name": "Journey of the Garden Rose",
+      "date": "Mar 23, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/journey-of-the-garden-rose"
+    },
+    {
+      "name": "To Be a Millionaire",
+      "date": "Mar 23, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/to-be-a-millionaire"
+    },
+    {
+      "name": "Violet Impetus",
+      "date": "Mar 23, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/violet-impetus"
+    },
+    {
+      "name": "Stickman Physics Battle Arena",
+      "date": "Mar 23, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/stickman-physics-battle-arena"
+    },
+    {
+      "name": "The Mystical Traveler",
+      "date": "Mar 24, 2026",
+      "platforms": "PC · Linux",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/the-mystical-traveler"
+    },
+    {
+      "name": "Rank: Warmaster Bunker Buster",
+      "date": "Mar 24, 2026",
+      "platforms": "PC",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/rank-warmaster-bunker-buster"
+    },
+    {
+      "name": "Mask of Soul",
+      "date": "Mar 24, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/mask-of-soul"
+    },
+    {
+      "name": "Ariana and the Elder Codex: Mothers' Blessing",
+      "date": "Mar 24, 2026",
+      "platforms": "Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/ariana-and-the-elder-codex-mothers-blessing"
+    },
+    {
+      "name": "Ariana and the Elder Codex: Ocean Bookmark",
+      "date": "Mar 24, 2026",
+      "platforms": "Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/ariana-and-the-elder-codex-ocean-bookmark"
+    },
+    {
+      "name": "Ariana and the Elder Codex: Rainfall Ring",
+      "date": "Mar 24, 2026",
+      "platforms": "Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/ariana-and-the-elder-codex-rainfall-ring"
+    },
+    {
+      "name": "Ariana and the Elder Codex Deluxe Bundle",
+      "date": "Mar 24, 2026",
+      "platforms": "Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/ariana-and-the-elder-codex-deluxe-bundle"
+    },
+    {
+      "name": "Genji Reincarnation: The Seven Mysteries of Shirahata High",
+      "date": "Mar 24, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/genji-reincarnation-the-seven-mysteries-of-shirahata-high"
+    },
+    {
+      "name": "Farming Simulator 25: Vredo Pack",
+      "date": "Mar 24, 2026",
+      "platforms": "PS5 · XSX · Mac · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/farming-simulator-25-vredo-pack"
+    },
+    {
+      "name": "Granser",
+      "date": "Mar 25, 2026",
+      "platforms": "PC",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/granser"
+    },
+    {
+      "name": "Coincidences?",
+      "date": "Mar 25, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/coincidences"
+    },
+    {
+      "name": "Lofi Mahjong",
+      "date": "Mar 25, 2026",
+      "platforms": "PS4 · PC · PS5",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/lofi-mahjong"
+    },
+    {
+      "name": "Reconquista",
+      "date": "Mar 25, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/reconquista--1"
+    },
+    {
+      "name": "Damon and Baby: Deluxe Edition",
+      "date": "Mar 25, 2026",
+      "platforms": "Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/damon-and-baby-deluxe-edition"
+    },
+    {
+      "name": "Screamer",
+      "date": "Mar 26, 2026",
+      "platforms": "PS5 · XSX · PC",
+      "hypes": 32,
+      "igdb_url": "https://www.igdb.com/games/screamer--1"
+    },
+    {
+      "name": "Opus: Prism Peak",
+      "date": "Mar 26, 2026",
+      "platforms": "Switch · Switch 2 · PC",
+      "hypes": 13,
+      "igdb_url": "https://www.igdb.com/games/opus-prism-peak"
+    },
+    {
+      "name": "Super Mario Bros. Wonder: Nintendo Switch 2 Edition + Meetup in Bellabel Park",
+      "date": "Mar 26, 2026",
+      "platforms": "Switch 2",
+      "hypes": 10,
+      "igdb_url": "https://www.igdb.com/games/super-mario-bros-wonder-nintendo-switch-2-edition-plus-meetup-in-bellabel-park"
+    },
+    {
+      "name": "Life is Strange: Reunion",
+      "date": "Mar 26, 2026",
+      "platforms": "XSX · PS5 · PC",
+      "hypes": 9,
+      "igdb_url": "https://www.igdb.com/games/life-is-strange-reunion"
+    },
+    {
+      "name": "Project Songbird",
+      "date": "Mar 26, 2026",
+      "platforms": "XSX · PS5 · PC",
+      "hypes": 7,
+      "igdb_url": "https://www.igdb.com/games/project-songbird"
+    },
+    {
+      "name": "EverSiege: Untold Ages",
+      "date": "Mar 26, 2026",
+      "platforms": "PC",
+      "hypes": 6,
+      "igdb_url": "https://www.igdb.com/games/eversiege-untold-ages"
+    },
+    {
+      "name": "Etrange Overlord",
+      "date": "Mar 26, 2026",
+      "platforms": "PC · Switch · PS4 · PS5",
+      "hypes": 3,
+      "igdb_url": "https://www.igdb.com/games/etrange-overlord"
+    },
+    {
+      "name": "Call of Dookie",
+      "date": "Mar 26, 2026",
+      "platforms": "Linux · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/call-of-dookie"
+    },
+    {
+      "name": "VMX",
+      "date": "Mar 26, 2026",
+      "platforms": "SteamVR",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/vmx"
+    },
+    {
+      "name": "Curse Warrior",
+      "date": "Mar 26, 2026",
+      "platforms": "PS4 · PS5 · Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/curse-warrior--1"
+    },
+    {
+      "name": "Chico's Rebound",
+      "date": "Mar 26, 2026",
+      "platforms": "PC · Linux",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/chicos-rebound"
+    },
+    {
+      "name": "Nutmeg!",
+      "date": "Mar 26, 2026",
+      "platforms": "PC",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/nutmeg"
+    },
+    {
+      "name": "Living Dead House",
+      "date": "Mar 26, 2026",
+      "platforms": "Mac · PC · Linux",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/living-dead-house"
+    },
+    {
+      "name": "GridBeat!",
+      "date": "Mar 26, 2026",
+      "platforms": "PC · Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/gridbeat"
+    },
+    {
+      "name": "Before Exit: Gas Station - Daylight DLC",
+      "date": "Mar 26, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/before-exit-gas-station-daylight-dlc"
+    },
+    {
+      "name": "Sweet Starlight Sisters",
+      "date": "Mar 26, 2026",
+      "platforms": "Switch · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/sweet-starlight-sisters"
+    },
+    {
+      "name": "Go Hell Go Gou: Tsukiotoshitego",
+      "date": "Mar 26, 2026",
+      "platforms": "PS4 · PC · Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/go-hell-go-gou-tsukiotoshitego"
+    },
+    {
+      "name": "Taito Milestones 4",
+      "date": "Mar 26, 2026",
+      "platforms": "Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/taito-milestones-4"
+    },
+    {
+      "name": "Weed Supermarket Simulator",
+      "date": "Mar 26, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/weed-supermarket-simulator"
+    },
+    {
+      "name": "Neopets: Mega Mini Games Collection - The Neopian Arcade Odyssey",
+      "date": "Mar 26, 2026",
+      "platforms": "Switch",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/neopets-mega-mini-games-collection-the-neopian-arcade-odyssey"
+    },
+    {
+      "name": "Dwarf Guild Mania",
+      "date": "Mar 26, 2026",
+      "platforms": "PC · Linux · Mac",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/dwarf-guild-mania"
+    },
+    {
+      "name": "Diceaster",
+      "date": "Mar 26, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/diceaster"
+    },
+    {
+      "name": "Karigurashi Renai: Living on Borrowed Love",
+      "date": "Mar 26, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/karigurashi-renai-living-on-borrowed-love"
+    },
+    {
+      "name": "Commie Block",
+      "date": "Mar 26, 2026",
+      "platforms": "Linux · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/commie-block"
+    },
+    {
+      "name": "Cards Lie",
+      "date": "Mar 26, 2026",
+      "platforms": "Switch · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/cards-lie"
+    },
+    {
+      "name": "Virtua Fighter 5 R.E.V.O. World Stage: Legendary Pack",
+      "date": "Mar 26, 2026",
+      "platforms": "Switch 2",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/virtua-fighter-5-revo-world-stage-legendary-pack"
+    },
+    {
+      "name": "Virtua Fighter 5 R.E.V.O. World Stage: Yakuza Series Collaboration Pack",
+      "date": "Mar 26, 2026",
+      "platforms": "Switch 2",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/virtua-fighter-5-revo-world-stage-yakuza-series-collaboration-pack"
+    },
+    {
+      "name": "Virtua Fighter 5 R.E.V.O. World Stage: 30th Anniversary Bonus",
+      "date": "Mar 26, 2026",
+      "platforms": "Switch 2",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/virtua-fighter-5-revo-world-stage-30th-anniversary-bonus"
+    },
+    {
+      "name": "Virtua Fighter 5 R.E.V.O. World Stage: 30th Anniversary Edition",
+      "date": "Mar 26, 2026",
+      "platforms": "Switch 2",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/virtua-fighter-5-revo-world-stage-30th-anniversary-edition"
+    },
+    {
+      "name": "BasketBlow",
+      "date": "Mar 26, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/basketblow"
+    },
+    {
+      "name": "Rocky Idle",
+      "date": "Mar 26, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/rocky-idle"
+    },
+    {
+      "name": "Otome Daoshi Fighting For Love",
+      "date": "Mar 26, 2026",
+      "platforms": "Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/otome-daoshi-fighting-for-love"
+    },
+    {
+      "name": "DVG Survivors",
+      "date": "Mar 26, 2026",
+      "platforms": "PC · Linux",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/dvg-survivors"
+    },
+    {
+      "name": "Tiny Misery",
+      "date": "Mar 26, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/tiny-misery"
+    },
+    {
+      "name": "Who Are You!?",
+      "date": "Mar 27, 2026",
+      "platforms": "PC",
+      "hypes": 5,
+      "igdb_url": "https://www.igdb.com/games/who-are-you--2"
+    },
+    {
+      "name": "CyberPunk Sex Tower",
+      "date": "Mar 27, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/cyberpunk-sex-tower"
+    },
+    {
+      "name": "Farming Sweeper",
+      "date": "Mar 27, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/farming-sweeper"
+    },
+    {
+      "name": "The Host: Cataclysm",
+      "date": "Mar 27, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/the-host-cataclysm"
+    },
+    {
+      "name": "The Hungry Town",
+      "date": "Mar 27, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/the-hungry-town"
+    },
+    {
+      "name": "Project Chameleon",
+      "date": "Mar 27, 2026",
+      "platforms": "PC",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/project-chameleon"
+    },
+    {
+      "name": "Somniora: Chapter 1",
+      "date": "Mar 27, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/somniora-chapter-1"
+    },
+    {
+      "name": "Flora Corner",
+      "date": "Mar 27, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/flora-corner"
+    },
+    {
+      "name": "Dictocracy",
+      "date": "Mar 27, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/dictocracy"
+    },
+    {
+      "name": "Don't Fall",
+      "date": "Mar 27, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/dont-fall--6"
+    },
+    {
+      "name": "The Cubes",
+      "date": "Mar 27, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/the-cubes"
+    },
+    {
+      "name": "ChloroLink",
+      "date": "Mar 27, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/chlorolink"
+    },
+    {
+      "name": "Eastern Era",
+      "date": "Mar 27, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/eastern-era"
+    },
+    {
+      "name": "AI Limit: Eirene's Furnace of War",
+      "date": "Mar 27, 2026",
+      "platforms": "PS5 · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/ai-limit-eirenes-furnace-of-war"
+    },
+    {
+      "name": "Echoes Untold",
+      "date": "Mar 27, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/echoes-untold"
+    },
+    {
+      "name": "Forever With You",
+      "date": "Mar 27, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/forever-with-you--1"
+    },
+    {
+      "name": "Alastrius",
+      "date": "Mar 27, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/alastrius"
+    },
+    {
+      "name": "Roof Leak Hero",
+      "date": "Mar 27, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/roof-leak-hero"
+    },
+    {
+      "name": "Noneday",
+      "date": "Mar 27, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/noneday"
+    },
+    {
+      "name": "Idle Demon Summoner",
+      "date": "Mar 27, 2026",
+      "platforms": "Linux · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/idle-demon-summoner"
+    },
+    {
+      "name": "Farming With Lasers",
+      "date": "Mar 27, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/farming-with-lasers"
+    },
+    {
+      "name": "Don’t Turn off the Light",
+      "date": "Mar 27, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/dont-turn-off-the-light"
+    },
+    {
+      "name": "Trushybin & Removin: What I Couldn’t Delete",
+      "date": "Mar 27, 2026",
+      "platforms": "Linux · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/trushybin-and-removin-what-i-couldnt-delete"
+    },
+    {
+      "name": "Anything Simulator",
+      "date": "Mar 27, 2026",
+      "platforms": "PC · Mac",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/anything-simulator"
+    },
+    {
+      "name": "My Egg Girls: A Gentle Story",
+      "date": "Mar 27, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/my-egg-girls-a-gentle-story"
+    },
+    {
+      "name": "Princess of Worlds End",
+      "date": "Mar 27, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/princess-of-worlds-end"
+    },
+    {
+      "name": "Crispy Kart",
+      "date": "Mar 27, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/crispy-kart"
+    },
+    {
+      "name": "IncreKnight",
+      "date": "Mar 27, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/increknight"
+    },
+    {
+      "name": "Baseball Scouter",
+      "date": "Mar 29, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/baseball-scouter"
+    },
+    {
+      "name": "Legends of Wasteland",
+      "date": "Mar 29, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/legends-of-wasteland"
+    },
+    {
+      "name": "Operation Terra",
+      "date": "Mar 30, 2026",
+      "platforms": "PC · Mac",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/operation-terra"
+    },
+    {
+      "name": "Gobocore",
+      "date": "Mar 30, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/gobocore"
+    },
+    {
+      "name": "Puzzle Spy International",
+      "date": "Mar 30, 2026",
+      "platforms": "PC · Mac · Linux",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/puzzle-spy-international"
+    },
+    {
+      "name": "Buckle Up",
+      "date": "Mar 30, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/buckle-up--1"
+    },
+    {
+      "name": "Sacrificio",
+      "date": "Mar 30, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/sacrificio"
+    },
+    {
+      "name": "HyperTyper 2000",
+      "date": "Mar 30, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/hypertyper-2000"
+    },
+    {
+      "name": "Cubin II",
+      "date": "Mar 30, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/cubin-ii"
+    },
+    {
+      "name": "Quintillion Quest",
+      "date": "Mar 30, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/quintillion-quest"
+    },
+    {
+      "name": "Fate Architect",
+      "date": "Mar 30, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/fate-architect"
+    },
+    {
+      "name": "Towerlings",
+      "date": "Mar 30, 2026",
+      "platforms": "Mac · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/towerlings"
+    },
+    {
+      "name": "Hong Huang Evolution",
+      "date": "Mar 30, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/hong-huang-evolution"
+    },
+    {
+      "name": "Gear Slots",
+      "date": "Mar 30, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/gear-slots"
+    },
+    {
+      "name": "All Will Fall",
+      "date": "Jun 09, 2025",
+      "platforms": "PC",
+      "hypes": 13,
+      "igdb_url": "https://www.igdb.com/games/all-will-fall"
+    },
+    {
+      "name": "Raccoin: Coin Pusher Roguelike",
+      "date": "Mar 31, 2026",
+      "platforms": "PC",
+      "hypes": 9,
+      "igdb_url": "https://www.igdb.com/games/raccoin-coin-pusher-roguelike"
+    },
+    {
+      "name": "Grime II",
+      "date": "Mar 31, 2026",
+      "platforms": "PC",
+      "hypes": 6,
+      "igdb_url": "https://www.igdb.com/games/grime-ii"
+    },
+    {
+      "name": "Legends of the Round Table",
+      "date": "Mar 31, 2026",
+      "platforms": "PC",
+      "hypes": 5,
+      "igdb_url": "https://www.igdb.com/games/legends-of-the-round-table"
+    },
+    {
+      "name": "Little Nemo and the Guardians of Slumberland",
+      "date": "Mar 31, 2026",
+      "platforms": "PC",
+      "hypes": 4,
+      "igdb_url": "https://www.igdb.com/games/little-nemo-and-the-guardians-of-slumberland"
+    },
+    {
+      "name": "Tombwater",
+      "date": "Mar 31, 2026",
+      "platforms": "PC",
+      "hypes": 3,
+      "igdb_url": "https://www.igdb.com/games/tombwater"
+    },
+    {
+      "name": "Rise of the Robots X",
+      "date": "Oct 13, 2024",
+      "platforms": "PC · Linux · Mac",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/rise-of-the-robots-x"
+    },
+    {
+      "name": "Occulto",
+      "date": "Mar 31, 2026",
+      "platforms": "Linux · PC",
+      "hypes": 2,
+      "igdb_url": "https://www.igdb.com/games/occulto"
+    },
+    {
+      "name": "The Posthumous Investigation",
+      "date": "Mar 31, 2026",
+      "platforms": "Switch · PC",
+      "hypes": 2,
+      "igdb_url": "https://www.igdb.com/games/the-posthumous-investigation"
+    },
+    {
+      "name": "Saddle Up and Drive: El Contrabandista",
+      "date": "Mar 31, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/saddle-up-and-drive-el-contrabandista"
+    },
+    {
+      "name": "Cooking Simulator 2: Better Together",
+      "date": "Mar 31, 2026",
+      "platforms": "PC",
+      "hypes": 2,
+      "igdb_url": "https://www.igdb.com/games/cooking-simulator-2-better-together"
+    },
+    {
+      "name": "Aether & Iron",
+      "date": "Mar 31, 2026",
+      "platforms": "Mac · PC",
+      "hypes": 2,
+      "igdb_url": "https://www.igdb.com/games/aether-and-iron"
+    },
+    {
+      "name": "Fuel Me Up",
+      "date": "Mar 31, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/fuel-me-up"
+    },
+    {
+      "name": "Dice Card Heroes",
+      "date": "Aug 30, 2025",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/dice-card-heroes"
+    },
+    {
+      "name": "Hand Meat Walker",
+      "date": "Mar 31, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/hand-meat-walker"
+    },
+    {
+      "name": "SpongeBob SquarePants: Titans of the Tide - Double Deluxe Costume Pack DLC",
+      "date": "Mar 31, 2026",
+      "platforms": "Switch 2",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/spongebob-squarepants-titans-of-the-tide-double-deluxe-costume-pack-dlc"
+    },
+    {
+      "name": "SpongeBob SquarePants: Titans of the Tide - Search for SquarePants Costume Pack DLC",
+      "date": "Mar 31, 2026",
+      "platforms": "Switch 2",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/spongebob-squarepants-titans-of-the-tide-search-for-squarepants-costume-pack-dlc"
+    },
+    {
+      "name": "SpongeBob SquarePants: Titans of the Tide - Search for SquarePants DLC",
+      "date": "Mar 31, 2026",
+      "platforms": "Switch 2",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/spongebob-squarepants-titans-of-the-tide-search-for-squarepants-dlc"
+    },
+    {
+      "name": "Overtrick",
+      "date": "Jun 27, 2025",
+      "platforms": "PC · Linux · Mac · Web browse",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/overtrick"
+    },
+    {
+      "name": "Data Center",
+      "date": "Mar 31, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/data-center--1"
+    },
+    {
+      "name": "Dragon Gate: Tournament",
+      "date": "Mar 31, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/dragon-gate-tournament"
+    },
+    {
+      "name": "Bag of Dreams",
+      "date": "Dec 12, 2026",
+      "platforms": "PC · Web browse",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/bag-of-dreams"
+    },
+    {
+      "name": "Highway Noir",
+      "date": "Mar 31, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/highway-noir"
+    },
+    {
+      "name": "Deco Online Origins",
+      "date": "Feb 12, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/deco-online-origins"
+    },
+    {
+      "name": "DeGen Rivals",
+      "date": "Jul 23, 2025",
+      "platforms": "Android · iOS · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/degen-rivals"
+    },
+    {
+      "name": "Mythic Love: Iberian Legends",
+      "date": "Mar 31, 2026",
+      "platforms": "PC · Mac",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/mythic-love-iberian-legends--1"
+    },
+    {
+      "name": "Clue: Legacy Suspect Pack",
+      "date": "Mar 31, 2026",
+      "platforms": "Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/clue-legacy-suspect-pack"
+    },
+    {
+      "name": "Chop Chains",
+      "date": "Sep 22, 2025",
+      "platforms": "Mac · PC · Web browse",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/chop-chains"
+    },
+    {
+      "name": "Gravity's Edge",
+      "date": "Mar 31, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/gravitys-edge"
+    },
+    {
+      "name": "Malware Tycoon",
+      "date": "Mar 31, 2026",
+      "platforms": "Linux · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/malware-tycoon"
+    },
+    {
+      "name": "Legacy of Kain: Ascendance",
+      "date": "Mar 31, 2026",
+      "platforms": "PS4 · PC · PS5 · XSX · Switch",
+      "hypes": 1,
+      "igdb_url": "https://www.igdb.com/games/legacy-of-kain-ascendance"
+    },
+    {
+      "name": "Hyphae",
+      "date": "Mar 31, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/hyphae"
+    },
+    {
+      "name": "Homura: The Crimson Warriors - Deluxe Edition",
+      "date": "Mar 31, 2026",
+      "platforms": "Switch",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/homura-the-crimson-warriors-deluxe-edition"
+    },
+    {
+      "name": "Jargon",
+      "date": "Mar 31, 2026",
+      "platforms": "Mac",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/jargon"
+    },
+    {
+      "name": "Take You Home",
+      "date": "Mar 31, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/take-you-home"
+    },
+    {
+      "name": "Rakka: Wake 01 - Soot",
+      "date": "Feb 17, 2025",
+      "platforms": "Linux · PC · Mac",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/rakka-wake-01-soot"
+    },
+    {
+      "name": "Thumbylina",
+      "date": "Apr 01, 2026",
+      "platforms": "Handheld E",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/thumbylina"
+    },
+    {
+      "name": "Ship v Maze",
+      "date": "Apr 02, 2026",
+      "platforms": "PC · Linux",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/ship-v-maze"
+    },
+    {
+      "name": "Waddle Words",
+      "date": "Apr 01, 2026",
+      "platforms": "Linux · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/waddle-words"
+    },
+    {
+      "name": "Glass Cannon Defense",
+      "date": "Apr 01, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/glass-cannon-defense"
+    },
+    {
+      "name": "4Below",
+      "date": "Apr 01, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/4below"
+    },
+    {
+      "name": "Matchward",
+      "date": "Apr 01, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/matchward"
+    },
+    {
+      "name": "Fairy Tale TD:Hero",
+      "date": "Apr 01, 2026",
+      "platforms": "PC · Mac",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/fairy-tale-td-hero"
+    },
+    {
+      "name": "Microwave Simulator",
+      "date": "Apr 01, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/microwave-simulator"
+    },
+    {
+      "name": "Slorbis: Tower Defense",
+      "date": "Apr 01, 2026",
+      "platforms": "Linux · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/slorbis-tower-defense"
+    },
+    {
+      "name": "Morkull: Ascend to the Gods",
+      "date": "Apr 01, 2026",
+      "platforms": "PS5 · PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/morkull-ascend-to-the-gods"
+    },
+    {
+      "name": "Storytime Cats: A Twilight Tale",
+      "date": "Apr 01, 2026",
+      "platforms": "PC",
+      "hypes": 0,
+      "igdb_url": "https://www.igdb.com/games/storytime-cats-a-twilight-tale"
     }
   ],
   "just_released": [
     {
-      "name": "Sunbreak War",
-      "igdb_url": "https://www.igdb.com/games/sunbreak-war",
+      "name": "Freerunners",
+      "igdb_url": "https://www.igdb.com/games/freerunners--1",
       "platforms": "PC"
     },
     {
-      "name": "The Town of Nowhere: End Of The Line",
-      "igdb_url": "https://www.igdb.com/games/the-town-of-nowhere-end-of-the-line",
+      "name": "WorldNeverland: Daily Life in the Elnea Kingdom",
+      "igdb_url": "https://www.igdb.com/games/worldneverland-daily-life-in-the-elnea-kingdom",
+      "platforms": "PS4"
+    },
+    {
+      "name": "Island of Hearts",
+      "igdb_url": "https://www.igdb.com/games/island-of-hearts",
       "platforms": "PC"
     },
     {
-      "name": "Top Cop: Police Training",
-      "igdb_url": "https://www.igdb.com/games/top-cop-police-training",
-      "platforms": "Switch"
-    },
-    {
-      "name": "Glowfall Vale",
-      "igdb_url": "https://www.igdb.com/games/glowfall-vale",
-      "platforms": "Switch"
-    },
-    {
-      "name": "Pokémon Legends: Z-A: Additional Story Content",
-      "igdb_url": "https://www.igdb.com/games/pokemon-legends-z-a-additional-story-content",
-      "platforms": "Switch"
-    },
-    {
-      "name": "Dimensional Animals",
-      "igdb_url": "https://www.igdb.com/games/dimensional-animals",
-      "platforms": "XSX · XB1 · PS5 · PS4 · Switch"
-    },
-    {
-      "name": "Darkest Cube",
-      "igdb_url": "https://www.igdb.com/games/darkest-cube",
-      "platforms": "PC"
-    },
-    {
-      "name": "Night Clerk",
-      "igdb_url": "https://www.igdb.com/games/night-clerk--1",
-      "platforms": "PC"
-    },
-    {
-      "name": "Cozy Holes",
-      "igdb_url": "https://www.igdb.com/games/cozy-holes",
-      "platforms": "PC"
-    },
-    {
-      "name": "Peace Island",
-      "igdb_url": "https://www.igdb.com/games/peace-island",
+      "name": "Fetch Quest Remastered",
+      "igdb_url": "https://www.igdb.com/games/fetch-quest-remastered",
       "platforms": "PC · Mac · Linux"
+    },
+    {
+      "name": "Woman Simulator",
+      "igdb_url": "https://www.igdb.com/games/woman-simulator",
+      "platforms": "PC"
+    },
+    {
+      "name": "OneShot Challenge",
+      "igdb_url": "https://www.igdb.com/games/oneshot-challenge",
+      "platforms": "PC"
+    },
+    {
+      "name": "Corner Streamer",
+      "igdb_url": "https://www.igdb.com/games/corner-streamer",
+      "platforms": "PC"
+    },
+    {
+      "name": "Humanity's Fall",
+      "igdb_url": "https://www.igdb.com/games/humanitys-fall",
+      "platforms": "PC"
+    },
+    {
+      "name": "For Stella",
+      "igdb_url": "https://www.igdb.com/games/for-stella",
+      "platforms": "Mac · PC"
+    },
+    {
+      "name": "Flame in Glass",
+      "igdb_url": "https://www.igdb.com/games/flame-in-glass",
+      "platforms": "PC"
     }
   ],
   "history": {
@@ -658,6 +4249,45 @@
         "Games + Demos": 3922,
         "Delta Force": 6615,
         "Rust": 6035
+      }
+    },
+    "2026-03-01": {
+      "viewers": {
+        "RESIDENT EVIL: requiem": 178972,
+        "League of Legends": 93327,
+        "World of Warcraft": 79963,
+        "Grand Theft Auto V": 55151,
+        "Rocket League": 72999,
+        "Fortnite": 37792,
+        "VALORANT": 44602,
+        "Counter-Strike": 47831,
+        "Marathon": 46951,
+        "Call of Duty: Black Ops 7": 44337,
+        "Minecraft": 30182,
+        "Dota 2": 29036,
+        "Overwatch": 20052,
+        "ARC Raiders": 15720,
+        "Slots": 21550,
+        "Marvel Rivals": 13715,
+        "Call of Duty: Warzone": 14687,
+        "Pokémon FireRed/LeafGreen": 19259,
+        "Dead by Daylight": 8894,
+        "Escape From Yandere": 272,
+        "DJs": 12170,
+        "Games + Demos": 7412,
+        "Deadlock": 12636,
+        "EA Sports FC 26": 9597,
+        "Virtual Casino": 10807,
+        "Apex Legends": 6114,
+        "NBA 2K26": 6742,
+        "Mewgenics": 9214,
+        "Escape from Tarkov": 8248,
+        "ROBLOX": 3541,
+        "Path of Exile": 8389,
+        "PUBG: BATTLEGROUNDS": 6743,
+        "Rust": 7260,
+        "Hearthstone": 7648,
+        "Black Desert": 7344
       }
     }
   }

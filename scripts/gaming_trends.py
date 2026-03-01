@@ -315,56 +315,73 @@ def fetch_steam_wishlisted():
 # ── IGDB data ─────────────────────────────────────────────────────────────────
 
 def fetch_upcoming_releases(client_id, token):
-    """Games releasing through end of current month, sorted by IGDB hypes (anticipation).
-    Uses games endpoint with hypes field to surface notable titles first."""
+    """Games releasing through end of current month.
+    Two-pass approach: hyped/notable games first, then fill remaining dates."""
     now_dt = datetime.now()
     now = int(now_dt.timestamp())
-    # End of current month (first day of next month, minus 1 second)
     if now_dt.month == 12:
         end_of_month = now_dt.replace(year=now_dt.year + 1, month=1, day=1) - timedelta(seconds=1)
     else:
         end_of_month = now_dt.replace(month=now_dt.month + 1, day=1) - timedelta(seconds=1)
     future = int(end_of_month.timestamp())
 
-    # Query games sorted by hypes (anticipation score) — only games with confirmed exact dates
-    body = (
+    # Pass 1: Notable games (have hype or follows)
+    body1 = (
         f"fields name,url,hypes,follows,total_rating,first_release_date,platforms.name;"
         f" where first_release_date >= {now} & first_release_date <= {future} & hypes > 0;"
-        f" sort hypes desc; limit 50;"
+        f" sort hypes desc; limit 100;"
     )
-    games = igdb_post("games", body, client_id, token)
-    if not games:
-        return []
+    hyped = igdb_post("games", body1, client_id, token) or []
+
+    # Pass 2: All other games (no hype requirement) — paginate to cover full month
+    all_games = []
+    seen_ids = {g["id"] for g in hyped}
+    for offset in range(0, 1500, 500):
+        body2 = (
+            f"fields name,url,hypes,follows,total_rating,first_release_date,platforms.name;"
+            f" where first_release_date >= {now} & first_release_date <= {future};"
+            f" sort first_release_date asc; limit 500; offset {offset};"
+        )
+        page = igdb_post("games", body2, client_id, token) or []
+        for g in page:
+            if g["id"] not in seen_ids:
+                all_games.append(g)
+                seen_ids.add(g["id"])
+        if len(page) < 500:
+            break
+
+    games = hyped + all_games
 
     # Get human-readable dates + date_format from release_dates endpoint
     # date_format: 0=YYYYMMDD (exact day), 1=YYYYMM (month), 2=YYYYQ (quarter), 3=YYYY, 4=TBD
-    game_ids = [str(g["id"]) for g in games]
-    ids_str = ",".join(game_ids)
-    rd_body = (
-        f"fields game,date,human,platform.name,date_format;"
-        f" where game = ({ids_str});"
-        f" limit 500;"
-    )
-    rd_raw = igdb_post("release_dates", rd_body, client_id, token)
-
     rd_map = {}
-    for entry in rd_raw:
-        gid = entry.get("game")
-        if not gid:
-            continue
-        if gid not in rd_map:
-            rd_map[gid] = {
-                "human": entry.get("human", ""),
-                "date_format": entry.get("date_format", 99),
-                "platforms": []
-            }
-        else:
-            # Keep the most precise date (lowest date_format number)
-            if entry.get("date_format", 99) < rd_map[gid]["date_format"]:
-                rd_map[gid]["human"] = entry.get("human", "")
-                rd_map[gid]["date_format"] = entry.get("date_format", 99)
-        if entry.get("platform"):
-            rd_map[gid]["platforms"].append(entry["platform"])
+    game_ids = [str(g["id"]) for g in games]
+    # Batch release_dates queries (IGDB limit is 500 per request)
+    for batch_start in range(0, len(game_ids), 500):
+        batch = game_ids[batch_start:batch_start + 500]
+        ids_str = ",".join(batch)
+        rd_body = (
+            f"fields game,date,human,platform.name,date_format;"
+            f" where game = ({ids_str});"
+            f" limit 500;"
+        )
+        rd_raw = igdb_post("release_dates", rd_body, client_id, token) or []
+        for entry in rd_raw:
+            gid = entry.get("game")
+            if not gid:
+                continue
+            if gid not in rd_map:
+                rd_map[gid] = {
+                    "human": entry.get("human", ""),
+                    "date_format": entry.get("date_format", 99),
+                    "platforms": []
+                }
+            else:
+                if entry.get("date_format", 99) < rd_map[gid]["date_format"]:
+                    rd_map[gid]["human"] = entry.get("human", "")
+                    rd_map[gid]["date_format"] = entry.get("date_format", 99)
+            if entry.get("platform"):
+                rd_map[gid]["platforms"].append(entry["platform"])
 
     results = []
     for g in games:
@@ -390,7 +407,7 @@ def fetch_upcoming_releases(client_id, token):
             "human": human,
             "platforms": rd.get("platforms", g.get("platforms", []))
         })
-    # Sort chronologically (ascending by release date)
+    # Sort chronologically
     results.sort(key=lambda x: x.get("date") or 0)
     return results
 
@@ -627,14 +644,14 @@ def build_daily_report(client_id, token, today, snapshots, prev_viewers, prev_na
             lines.append(f"  {link}{meta_str}")
         lines.append("")
 
-    # ── 6. Upcoming Releases (next 30 days) ──
+    # ── 6. Upcoming Releases (this month) ──
     print("Fetching upcoming releases...", file=sys.stderr)
     upcoming = fetch_upcoming_releases(client_id, token)
     if upcoming:
         month_name = datetime.now().strftime("%B").upper()
         lines.append(f"<b>RELEASING IN {month_name}</b>")
         lines.append("")
-        for g in upcoming[:12]:
+        for g in upcoming[:30]:  # Telegram gets top 30
             name = safe_html(g["name"])
             url = g.get("url", "")
             link = f'<a href="{url}">{name}</a>' if url else name
@@ -667,10 +684,22 @@ def build_daily_report(client_id, token, today, snapshots, prev_viewers, prev_na
         lines.append("")
 
     # ── Save snapshot ──
+    # Format releases for dashboard (full list, not capped like Telegram)
+    releasing_data = []
+    for g in upcoming:
+        plats = fmt_platforms(g.get("platforms", []))
+        releasing_data.append({
+            "name": g.get("name", ""),
+            "date": g.get("human", "TBA"),
+            "platforms": plats,
+            "hypes": g.get("hypes", 0),
+            "igdb_url": g.get("url", ""),
+        })
     snapshot_data = {
         "top_game_names": [g["name"] for g in all_enriched[:50]],
         "viewers": {g["name"]: g["viewers"] for g in all_enriched},
         "streams": {g["name"]: g["streams"] for g in all_enriched},
+        "releasing": releasing_data,
         "date": datetime.now().isoformat()
     }
     save_snapshot(snapshots, today, snapshot_data)

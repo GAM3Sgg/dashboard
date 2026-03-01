@@ -6,18 +6,18 @@
 <title>Gaming Analytics Dashboard</title>
 <style>
 :root {
-  --bg: #0B0E1A;
-  --card: #111527;
-  --card-hover: #171C32;
-  --border: #1C2240;
-  --border-light: #252B4A;
+  --bg: #0E1420;
+  --card: #131B2B;
+  --card-hover: #192336;
+  --border: #1E2A3E;
+  --border-light: #283650;
   --text: #ffffff;
   --text-secondary: #9CA3AF;
   --text-dim: #6B7280;
   --accent: #ffffff;
   --link: #9CA3AF;
   --link-hover: #ffffff;
-  --green: #00d26a;
+  --green: #25E794;
   --red: #ff3b30;
   --orange: #ff9500;
   --purple: #a78bfa;
@@ -183,7 +183,7 @@ header .dot {
   font-weight: 600;
   letter-spacing: 0.2px;
 }
-.badge-green { background: rgba(0,210,106,0.12); color: var(--green); }
+.badge-green { background: rgba(37,231,148,0.12); color: var(--green); }
 .badge-red { background: rgba(255,59,48,0.12); color: var(--red); }
 .badge-orange { background: rgba(255,149,0,0.12); color: var(--orange); }
 .badge-purple { background: rgba(167,139,250,0.12); color: var(--purple); }
@@ -263,9 +263,13 @@ header .dot {
   max-height: 520px;
   overflow-y: auto;
 }
-.scroll-card .game-list,
-.scroll-card > div:not(h2) {
-  overflow-y: auto;
+.scroll-card h2 {
+  position: sticky;
+  top: 0;
+  background: var(--card);
+  z-index: 1;
+  padding-bottom: 10px;
+  margin-bottom: 4px;
 }
 .scroll-card::-webkit-scrollbar { width: 4px; }
 .scroll-card::-webkit-scrollbar-track { background: transparent; }
